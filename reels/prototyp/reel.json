@@ -1,0 +1,9 @@
+{
+ "label": "Rules",
+ "claim": "Your serve hits the fence after the bounce.",
+ "verdict": "FAULT",
+ "pill": "Second serve",
+ "line": "Glass is fine.\nThe **fence** is not.",
+ "source": "FIP rules · Serve",
+ "diagram": "serve-side-mesh"
+}
