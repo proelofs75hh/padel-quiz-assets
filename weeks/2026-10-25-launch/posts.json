@@ -3,7 +3,7 @@
  "timezone": "Europe/Berlin",
  "posts": [
   {
-   "id": "2026-10-25-launch",
+   "id": "2026-10-25-launch-v2",
    "slot": "2026-10-25T11:30:00",
    "pillar": "rules",
    "topic_key": "rule.serve-bounce-then-side-mesh",
@@ -12,7 +12,7 @@
     {
      "type": "question",
      "label": "Rules",
-     "claim": "Your serve bounces in the box and then hits the wire fence."
+     "claim": "Your serve hits the fence after the bounce."
     },
     {
      "type": "verdict",

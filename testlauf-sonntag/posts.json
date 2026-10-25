@@ -12,7 +12,7 @@
     {
      "type": "question",
      "label": "Rules",
-     "claim": "Your serve bounces in the box and then hits the wire fence."
+     "claim": "Your serve hits the fence after the bounce."
     },
     {
      "type": "verdict",
