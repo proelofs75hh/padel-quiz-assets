@@ -170,7 +170,7 @@ async def render(spec, out):
             for f in range(frames):
                 await pg.evaluate(f"setT({f/FPS})")
                 await pg.screenshot(path=str(tmp / f"f{f:04d}.png"))
-            await pg.evaluate("setT(1.0)")
+            await pg.evaluate("setT(T_READ-0.05)")
             await pg.screenshot(path=str(pathlib.Path(out).with_suffix('.cover.png')))
             await b.close()
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", str(tmp / "f%04d.png"),
