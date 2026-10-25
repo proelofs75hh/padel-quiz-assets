@@ -211,6 +211,38 @@
    ]
   },
   {
+   "id": "2026-10-25-1700b",
+   "slot": "2026-10-25T17:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.no-weight-limit",
+   "fact_source": "FIP Reglamento, La Pala: limits only length 45.5 cm, width 26 cm, thickness 38 mm; no weight limit",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Gear",
+     "claim": "The rules set a maximum weight for padel rackets."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "No limit",
+     "line": "Only **length**, **width**\nand **thickness**\nare limited.",
+     "source": "FIP rules · Racket"
+    }
+   ],
+   "caption": "WELCOME TO FAIR OR FAULT. YOUR DAILY PADEL QUIZ.\n\nHeavy racket, light racket – is there a rule? 🤔\n\nNo! The official rules only limit length, width and thickness. The weight is up to you.\n\nDid you know? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
    "id": "2026-10-25-pm",
    "slot": "2026-10-25T18:30:00",
    "pillar": "rules",

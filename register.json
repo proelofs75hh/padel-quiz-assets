@@ -168,6 +168,14 @@
    "topic_key": "market.new-courts-2025",
    "claim": "Fewer than 5,000 new padel courts were built in 2025.",
    "verdict": "FAULT"
+  },
+  {
+   "id": "2026-10-25-1700b",
+   "date": "2026-10-25",
+   "pillar": "gear",
+   "topic_key": "gear.no-weight-limit",
+   "claim": "The rules set a maximum weight for padel rackets.",
+   "verdict": "FAULT"
   }
  ]
 }
