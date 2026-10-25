@@ -8,3 +8,6 @@ Metricool fetches the slide images from `raw.githubusercontent.com`.
 - `engine/fonts/` – Bricolage Grotesque, Instrument Sans, JetBrains Mono (SIL Open Font License)
 - `weeks/<week>/` – spec, slides and `_sheet.png` contact sheet per week
 - `register.json` – every post ever planned (topic key, date, claim, verdict)
+- `engine/diagrams.py` – court diagram library (10 situations, each checked against the FIP rules) used by carousels and reels
+- `engine/reel.py` – renders one quiz reel (1080×1920, silent): formats `refs_view`, `three_second_call`, `guess_number`
+- `engine/reels_week.py` – renders all reels of `weeks/<week>/reels.json` into `weeks/<week>/reels/` plus `_frames.png`
