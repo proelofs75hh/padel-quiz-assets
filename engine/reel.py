@@ -15,7 +15,7 @@ Format-specific:
   guess_number       number (float), marker (the claim's value), decimals (int, default 0),
                      unit (text under the number), marker_label (default "the claim")
 
-Shared timeline: intro "Fair or Fault / Your Daily Padel Quiz" (2.2 s) -> statement word by word (0.32 s per word) -> "Fair or fault?" ->
+Shared timeline: intro "Fair or Fault / Your Daily Padel Quiz" (2.5 s) -> statement word by word (0.32 s per word) -> 0.7 s gap -> "Fair or fault?" ->
 1.6 s reading pause -> question moves up, the middle part fades in ->
 middle part (ball path / 3-2-1 ball timer / counting number) -> verdict, reason,
 comment prompt -> 0.4 s fade to the empty opening frame (seamless loop).
@@ -32,7 +32,7 @@ import diagrams  # noqa: E402
 FONTS = ENGINE / "fonts"
 FPS = 30
 C = diagrams.C
-INTRO, WORD, CALL_LEN, FADE = 2.2, 0.32, 3.4, 0.4
+INTRO, WORD, CALL_LEN, FADE, ASK_GAP = 2.5, 0.32, 3.4, 0.4, 0.7
 MID_LEN = {"refs_view": 2.6, "three_second_call": 3.2, "guess_number": 3.0}
 
 
@@ -48,8 +48,9 @@ def words(t):
 
 def timeline(spec):
     nw = len(spec["claim"].split())
-    t_ask = INTRO + 0.3 + nw * WORD + 0.15
-    t_read = t_ask + 0.5 + 1.6
+    # "Fair or fault?" starts ASK_GAP after the last word is fully visible
+    t_ask = INTRO + 0.3 + (nw - 1) * WORD + 0.25 + ASK_GAP
+    t_read = t_ask + 0.35 + 1.6
     t_mid = t_read + 0.4
     t_call = t_mid + MID_LEN[spec["format"]]
     return dict(T_ASK=t_ask, T_READ=t_read, T_MID=t_mid, T_CALL=t_call,
@@ -208,7 +209,7 @@ function setT(t){{
   $('intro').style.opacity=it; $('intro').style.transform=`scale(${{lerp(0.94,1,clamp(t/0.8))}})`;
   $('top').style.opacity=clamp((t-{INTRO}+0.1)/0.3);
   WS.forEach((w,i)=>w.style.opacity=clamp((t-{INTRO}-0.3-i*{WORD})/0.25));
-  $('ask').style.opacity=clamp((t-T_ASK-0.15)/0.35);
+  $('ask').style.opacity=clamp((t-T_ASK)/0.35);
   const g=ease(clamp((t-T_READ)/0.4));
   $('q').style.transform=`scale(${{lerp(1,0.62,g)}})`;
   $('mid').style.top=lerp({top0},{top1},g)+'px';
