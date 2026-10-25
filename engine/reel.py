@@ -15,7 +15,7 @@ Format-specific:
   guess_number       number (float), marker (the claim's value), decimals (int, default 0),
                      unit (text under the number), marker_label (default "the claim")
 
-Shared timeline: statement word by word (0.22 s per word) -> "Fair or fault?" ->
+Shared timeline: intro "Fair or Fault / Your Daily Padel Quiz" (1.6 s) -> statement word by word (0.22 s per word) -> "Fair or fault?" ->
 1.6 s reading pause -> question moves up, the middle part fades in ->
 middle part (ball path / 3-2-1 ball timer / counting number) -> verdict, reason,
 comment prompt -> 0.4 s fade to the empty opening frame (seamless loop).
@@ -32,7 +32,7 @@ import diagrams  # noqa: E402
 FONTS = ENGINE / "fonts"
 FPS = 30
 C = diagrams.C
-WORD, CALL_LEN, FADE = 0.22, 3.4, 0.4
+INTRO, WORD, CALL_LEN, FADE = 1.6, 0.22, 3.4, 0.4
 MID_LEN = {"refs_view": 2.6, "three_second_call": 3.2, "guess_number": 3.0}
 
 
@@ -48,7 +48,7 @@ def words(t):
 
 def timeline(spec):
     nw = len(spec["claim"].split())
-    t_ask = 0.3 + nw * WORD + 0.15
+    t_ask = INTRO + 0.3 + nw * WORD + 0.15
     t_read = t_ask + 0.35 + 1.6
     t_mid = t_read + 0.4
     t_call = t_mid + MID_LEN[spec["format"]]
@@ -180,9 +180,14 @@ body{{width:1080px;height:1920px;overflow:hidden;font-family:'Instrument Sans';c
 #why{{font-size:76px;line-height:1.1;font-weight:700;margin-top:60px;opacity:0}}
 #cta{{font-size:44px;margin-top:70px;color:{C['ball']};opacity:0}}
 .hl{{color:{C['ball']}}}
+#intro{{position:absolute;left:0;right:0;top:700px;text-align:center}}
+#intro .t{{font-size:170px;line-height:.9}}
+#intro .t .f{{color:{C['ball']}}}
+#intro .s{{font-size:44px;margin-top:40px;letter-spacing:.06em}}
 {mid_css}
 </style></head><body>
 <div id="bg"></div><div id="night"></div>
+<div id="intro"><div class="t disp"><span class="f">Fair</span> or<br>Fault</div><div class="s mono">Your Daily Padel Quiz</div></div>
 <div id="top" class="mono"><span class="chip">Padel {fmt(spec['label'])}</span><span>@fairorfault</span></div>
 <div id="q"><h1 id="claim" class="disp">{words(spec['claim'])}</h1><p id="ask" class="disp">Fair or fault?</p></div>
 {mid_html}
@@ -199,7 +204,10 @@ const ease=(k)=>k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
 const WS=[...document.querySelectorAll('.w')];
 {mid_js}
 function setT(t){{
-  WS.forEach((w,i)=>w.style.opacity=clamp((t-0.3-i*{WORD})/0.15));
+  const it=clamp(t/0.3)*(1-clamp((t-{INTRO}+0.35)/0.3));
+  $('intro').style.opacity=it; $('intro').style.transform=`scale(${{lerp(0.94,1,clamp(t/0.5))}})`;
+  $('top').style.opacity=clamp((t-{INTRO}+0.1)/0.3);
+  WS.forEach((w,i)=>w.style.opacity=clamp((t-{INTRO}-0.3-i*{WORD})/0.15));
   $('ask').style.opacity=clamp((t-T_ASK)/0.25);
   const g=ease(clamp((t-T_READ)/0.4));
   $('q').style.transform=`scale(${{lerp(1,0.62,g)}})`;
