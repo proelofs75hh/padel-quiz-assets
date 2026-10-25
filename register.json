@@ -128,6 +128,22 @@
    "topic_key": "pros.2026-titles-coello-tapia-vs-galan-chingotto",
    "claim": "Galán & Chingotto won more 2026 titles than Coello & Tapia.",
    "verdict": "FAULT"
+  },
+  {
+   "id": "2026-10-25-1300",
+   "date": "2026-10-25",
+   "pillar": "rules",
+   "topic_key": "rule.two-serves",
+   "claim": "You get two tries for every serve.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-10-25-1400",
+   "date": "2026-10-25",
+   "pillar": "rules",
+   "topic_key": "rule.bounce-then-fence-in-rally",
+   "claim": "Your shot bounces on their side, then hits the fence.",
+   "verdict": "FAIR"
   }
  ]
 }

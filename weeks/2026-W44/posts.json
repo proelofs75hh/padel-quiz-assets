@@ -37,7 +37,71 @@
      ]
     }
    ],
-   "caption": "Welcome to Fair or Fault – your daily padel quiz! 🎾\n\nFirst question, easy one: can you smash the ball into your OWN back glass and let it fly over the net? Yes – as long as it then bounces on the other side.\n\nComment FAIR or FAULT before you swipe 👇\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "WELCOME TO FAIR OR FAULT. YOUR DAILY PADEL QUIZ.\n\nFirst question, an easy one: can you play the ball into your OWN back glass and let it fly over the net? 🎾\n\nComment FAIR or FAULT before you swipe 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padellife",
+    "padelquiz",
+    "padelplayer",
+    "padeltips",
+    "padelbeginner",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-25-1300",
+   "slot": "2026-10-25T13:00:00",
+   "pillar": "rules",
+   "topic_key": "rule.two-serves",
+   "fact_source": "FIP Reglamento de Juego, Regla 6.1",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "You get two tries for every serve."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "Second chance",
+     "line": "Miss the first?\nYou serve again.",
+     "source": "FIP rules · Serve"
+    }
+   ],
+   "caption": "WELCOME TO FAIR OR FAULT. YOUR DAILY PADEL QUIZ.\n\nMissed your first serve? Don't panic 😅\n\nJust like in tennis, you get a second try.\n\nFAIR or FAULT? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padellife",
+    "padelquiz",
+    "padelplayer",
+    "padeltips",
+    "padelbeginner",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-25-1400",
+   "slot": "2026-10-25T14:00:00",
+   "pillar": "rules",
+   "topic_key": "rule.bounce-then-fence-in-rally",
+   "fact_source": "FIP Reglamento de Juego, Regla 14.1.c",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "Your shot bounces on their side, then hits the fence."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "Play on",
+     "line": "Bounce first,\nthen fence = fine.",
+     "source": "FIP rules · Rally"
+    }
+   ],
+   "caption": "WELCOME TO FAIR OR FAULT. YOUR DAILY PADEL QUIZ.\n\nYour shot bounces on their side and then hits the fence. Is the point still on? 🤔\n\nYes – in a rally, the fence is fine after the bounce. Only the serve is different.\n\nFAIR or FAULT? 👇\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",
@@ -84,7 +148,7 @@
      ]
     }
    ],
-   "caption": "Bounces in. Clips the fence. Your partner is already celebrating… should they be? 🎾\n\nAfter the bounce, a serve may touch the glass – but the wire fence ends it. Second serve.\n\nComment FAIR or FAULT before you swipe 👇\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "WELCOME TO FAIR OR FAULT. YOUR DAILY PADEL QUIZ.\n\nBounces in. Clips the fence. Your partner is already celebrating… should they be? 🎾\n\nAfter the bounce, a serve may touch the glass – but the wire fence ends it. Second serve.\n\nComment FAIR or FAULT before you swipe 👇\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",
