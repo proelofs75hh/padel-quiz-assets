@@ -1,0 +1,504 @@
+{
+ "week": "testlauf-sonntag",
+ "timezone": "Europe/Berlin",
+ "posts": [
+  {
+   "id": "2026-10-26-am",
+   "slot": "2026-10-26T07:30:00",
+   "pillar": "rules",
+   "topic_key": "rule.serve-bounce-then-side-mesh",
+   "fact_source": "FIP Reglamento de Juego, Regla 7.1.e",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "Your serve bounces in the box and then hits the wire fence."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "Second serve",
+     "line": "Glass is fine.\nThe fence is not.",
+     "source": "FIP rules · Serve"
+    },
+    {
+     "type": "explainer",
+     "diagram": "serve-side-mesh",
+     "title_good": "Glass: yes.",
+     "title_bad": "Fence: no.",
+     "steps": [
+      {
+       "text": "Bounce in the box"
+      },
+      {
+       "text": "Hits the fence = **fault**",
+       "bad": true
+      }
+     ]
+    }
+   ],
+   "caption": "Bounces in. Clips the fence. Your partner is already celebrating… should they be? 🎾\n\nAfter the bounce, a serve may touch the glass – but the wire fence ends it. Second serve.\n\nComment FAIR or FAULT before you swipe 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padellife",
+    "padelquiz",
+    "padelplayer",
+    "padeltips",
+    "padeladdict",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-26-pm",
+   "slot": "2026-10-26T18:30:00",
+   "pillar": "gear",
+   "topic_key": "gear.carbon-k-number",
+   "fact_source": "Carbon tow designation: K = thousands of filaments per tow (3K, 12K, 18K)",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Gear",
+     "big": "12K",
+     "claim": "on a racket means 12 kg of carbon."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "Not kilos",
+     "line": "**12K = 12,000**\ncarbon filaments\nper thread.",
+     "source": "Gear · Carbon"
+    }
+   ],
+   "caption": "3K, 12K, 18K… sounds like a weight class, right? 🏋️\n\nThe K counts filaments: 12K = 12,000 carbon fibres twisted into each thread of the weave. More K usually means a stiffer face.\n\nKnew it? Drop a ✅\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "carbon",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-27-am",
+   "slot": "2026-10-27T07:30:00",
+   "pillar": "rules",
+   "topic_key": "rule.own-wall-then-over",
+   "fact_source": "FIP Reglamento de Juego, Regla 14.1.b",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "You hit the ball into your own back glass and it flies over the net."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "Play on",
+     "line": "Your own walls\nare fair game.",
+     "source": "FIP rules · Walls"
+    },
+    {
+     "type": "explainer",
+     "diagram": "own-back-glass",
+     "title_good": "Your glass: yes.",
+     "title_bad": "Theirs first: no.",
+     "steps": [
+      {
+       "text": "Hit into your own back glass"
+      },
+      {
+       "text": "Bounces on their side = good"
+      }
+     ]
+    }
+   ],
+   "caption": "The panic shot we all play: smash it into your OWN back glass and pray 🙏\n\nTotally legal – as long as the ball then bounces in the opponents' court.\n\nFAIR or FAULT? Tell us below 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padellife",
+    "padelquiz",
+    "padeltips",
+    "padelplayer",
+    "padeladdict",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-27-pm",
+   "slot": "2026-10-27T18:30:00",
+   "pillar": "pros",
+   "topic_key": "pros.coello-10-majors",
+   "fact_source": "Excélsior, 26 Aug 2026: Coello first player to reach 10 Major titles",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Pros",
+     "big": "10",
+     "claim": "Major titles: Arturo Coello is the first player to win that many."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "History made",
+     "line": "**First ever**\nto 10 Majors –\nwon in Rome.",
+     "source": "Premier Padel · Aug 26"
+    }
+   ],
+   "caption": "Ten. Major. Titles. 🏆\n\nWith the Italy Major in Rome, Arturo Coello became the first player to reach 10 Major titles.\n\nWho's your favourite pro? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "premierpadel",
+    "arturocoello",
+    "padelpro",
+    "padelquiz",
+    "padellife",
+    "worldpadel",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-28-am",
+   "slot": "2026-10-28T07:30:00",
+   "pillar": "rules",
+   "topic_key": "rule.serve-waist-height",
+   "fact_source": "FIP Reglamento de Juego, Regla 6.5",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "You must hit your serve at waist height or lower."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "Below the belt",
+     "line": "No tennis serves.\nWaist height, max.",
+     "source": "FIP rules · Serve"
+    }
+   ],
+   "caption": "Former tennis players, this one's for you 👀\n\nIn padel the ball must be at or below your waist when you hit the serve. Bounce it first, then underhand-ish.\n\nFAIR or FAULT? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelserve",
+    "padelquiz",
+    "padelbeginner",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-28-pm",
+   "slot": "2026-10-28T18:30:00",
+   "pillar": "market",
+   "topic_key": "market.courts-worldwide",
+   "fact_source": "Global Padel Report 2026 (Playtomic/Deloitte via Padel Addict): 58,334 courts worldwide, 6x 2016",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Market",
+     "big": "< 50K",
+     "claim": "padel courts in the whole world."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "Way more",
+     "figure": "58,334",
+     "line": "courts – 6× more\nthan in 2016.",
+     "source": "Global Padel Report 26"
+    }
+   ],
+   "caption": "How many courts do you think the world has? Guess before you swipe 🌍\n\n58,334 – six times more than in 2016. And still not enough at 7 pm on a Tuesday.\n\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelworld",
+    "padelcourt",
+    "padelquiz",
+    "padelgrowth",
+    "padellife",
+    "padelclub",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-29-am",
+   "slot": "2026-10-29T07:30:00",
+   "pillar": "rules",
+   "topic_key": "rule.receiver-volley-serve",
+   "fact_source": "FIP Reglamento de Juego, Regla 8.1 and Caso 3",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "You are allowed to volley the return of a serve."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "Let it bounce",
+     "line": "The serve must\nbounce in your\nbox first.",
+     "source": "FIP rules · Return"
+    }
+   ],
+   "caption": "Tempting to step in and volley that soft serve, right? 😏\n\nNope. The receiver must always let the serve bounce in the box first.\n\nFAIR or FAULT? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelreturn",
+    "padelquiz",
+    "padelbeginner",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-29-pm",
+   "slot": "2026-10-29T18:30:00",
+   "pillar": "gear",
+   "topic_key": "gear.racket-no-strings",
+   "fact_source": "FIP Reglamento, La Pala: solid perforated face, no strings",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Gear",
+     "claim": "A padel racket has strings, like a tennis racket."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "Solid face",
+     "line": "Foam core,\ncarbon skin –\n**and holes**.",
+     "source": "Gear · Racket"
+    }
+   ],
+   "caption": "Your non-padel friends call it a \"bat\" for a reason 🏓\n\nNo strings: a padel racket is a solid, perforated face – foam core inside, carbon or fibreglass outside.\n\nTag the friend who still calls it a tennis racket 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelbeginner",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-30-am",
+   "slot": "2026-10-30T07:30:00",
+   "pillar": "rules",
+   "topic_key": "rule.touch-net-loses-point",
+   "fact_source": "FIP Reglamento de Juego, Regla 13.1.a",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "If your racket touches the net during a rally, you lose the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "Hands off",
+     "line": "Net and posts\nare off limits.",
+     "source": "FIP rules · Net"
+    }
+   ],
+   "caption": "That sweet put-away at the net… and your racket brushes the tape 😬\n\nPoint gone. Body, racket or anything you carry touching the net or posts while the ball is in play = point lost.\n\nFAIR or FAULT? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelnet",
+    "padelquiz",
+    "padeltips",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-30-pm",
+   "slot": "2026-10-30T18:30:00",
+   "pillar": "rules",
+   "topic_key": "rule.direct-opponent-glass",
+   "fact_source": "FIP Reglamento de Juego, Regla 13.1.g",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "Your shot hits their back glass before it bounces. You win the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "Your point lost",
+     "line": "It must bounce\non their floor first.",
+     "source": "FIP rules · Walls"
+    },
+    {
+     "type": "explainer",
+     "diagram": "direct-back-glass",
+     "title_good": "Floor first.",
+     "title_bad": "Glass first: no.",
+     "steps": [
+      {
+       "text": "Straight into their glass = **fault**",
+       "bad": true
+      },
+      {
+       "text": "Bounce first, then glass = good"
+      }
+     ]
+    }
+   ],
+   "caption": "Full power, straight into their back glass, no bounce. Winner? 💥\n\nNope – the ball must bounce on the opponents' floor before it touches any of their walls.\n\nFAIR or FAULT? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelglass",
+    "padelquiz",
+    "padeltips",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-31-am",
+   "slot": "2026-10-31T07:30:00",
+   "pillar": "gear",
+   "topic_key": "gear.racket-max-length",
+   "fact_source": "FIP Reglamento, La Pala: max length 45.5 cm, width 26 cm, thickness 38 mm",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Gear",
+     "big": "45.5 cm",
+     "claim": "is the maximum length of a padel racket."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "Exactly",
+     "line": "Max **26 cm** wide,\n**38 mm** thick.",
+     "source": "FIP rules · Racket"
+    }
+   ],
+   "caption": "Head + handle together: 45.5 cm, not a millimetre more 📏\n\nAnd the face may be max 26 cm wide and 38 mm thick.\n\nDid you know the numbers? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-31-pm",
+   "slot": "2026-10-31T18:30:00",
+   "pillar": "rules",
+   "topic_key": "rule.serve-net-cord",
+   "fact_source": "FIP Reglamento de Juego, Regla 9.1.a",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "Your serve touches the net and lands in the box. You serve again."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "Serve again",
+     "line": "Net + in = replay.\nUnless it then\nhits the **fence**.",
+     "source": "FIP rules · Serve"
+    }
+   ],
+   "caption": "Net cord on the serve, ball drops in the box. Fault? 🤔\n\nNo – you simply serve again. Only if it then hits the wire fence does it become a fault.\n\nFAIR or FAULT? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelserve",
+    "padelquiz",
+    "padelbeginner",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-01-am",
+   "slot": "2026-11-01T07:30:00",
+   "pillar": "market",
+   "topic_key": "market.spain-most-courts",
+   "fact_source": "Global Padel Report 2026 (via Padel Addict): Spain most courts; France built the most new courts in 2025",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Market",
+     "claim": "Spain has more padel courts than any other country."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "Still on top",
+     "line": "But **France** built\nthe most new courts\nin 2025.",
+     "source": "Global Padel Report 26"
+    }
+   ],
+   "caption": "Spain still has more padel courts than any other country 🇪🇸\n\nBut the fastest builder in 2025? France 🇫🇷\n\nWhich country's next? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelspain",
+    "padelfrance",
+    "padelquiz",
+    "padelgrowth",
+    "padellife",
+    "padelclub",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-01-pm",
+   "slot": "2026-11-01T18:30:00",
+   "pillar": "pros",
+   "topic_key": "pros.2026-titles-coello-tapia-vs-galan-chingotto",
+   "fact_source": "Premier Padel 2026 results (Wikipedia, as of 18 Oct 2026): Coello/Tapia 12, Galán/Chingotto 7",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Pros",
+     "claim": "In 2026, Galán and Chingotto won more titles than Coello and Tapia."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "Not even close",
+     "figure": "12 vs 7",
+     "line": "Premier Padel titles,\nas of 18 Oct.",
+     "source": "Premier Padel 2026"
+    }
+   ],
+   "caption": "The rivalry of the season – but the trophy count is lopsided 🏆\n\nCoello & Tapia: 12 titles. Galán & Chingotto: 7 (as of 18 October).\n\nTeam Coello/Tapia or Team Galán/Chingotto? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "premierpadel",
+    "coello",
+    "tapia",
+    "galan",
+    "chingotto",
+    "padelquiz",
+    "fairorfault"
+   ]
+  }
+ ]
+}

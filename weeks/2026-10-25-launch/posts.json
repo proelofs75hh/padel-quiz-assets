@@ -1,0 +1,53 @@
+{
+ "week": "2026-10-25-launch",
+ "timezone": "Europe/Berlin",
+ "posts": [
+  {
+   "id": "2026-10-25-launch",
+   "slot": "2026-10-25T11:30:00",
+   "pillar": "rules",
+   "topic_key": "rule.serve-bounce-then-side-mesh",
+   "fact_source": "FIP Reglamento de Juego, Regla 7.1.e",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "Your serve bounces in the box and then hits the wire fence."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "Second serve",
+     "line": "Glass is fine.\nThe fence is not.",
+     "source": "FIP rules · Serve"
+    },
+    {
+     "type": "explainer",
+     "diagram": "serve-side-mesh",
+     "title_good": "Glass: yes.",
+     "title_bad": "Fence: no.",
+     "steps": [
+      {
+       "text": "Bounce in the box"
+      },
+      {
+       "text": "Hits the fence = **fault**",
+       "bad": true
+      }
+     ]
+    }
+   ],
+   "caption": "Bounces in. Clips the fence. Your partner is already celebrating… should they be? 🎾\n\nAfter the bounce, a serve may touch the glass – but the wire fence ends it. Second serve.\n\nComment FAIR or FAULT before you swipe 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padellife",
+    "padelquiz",
+    "padelplayer",
+    "padeltips",
+    "padeladdict",
+    "fairorfault"
+   ]
+  }
+ ]
+}

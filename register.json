@@ -2,115 +2,11 @@
  "about": "Every Fair or Fault post ever planned. Used by engine/dupcheck.py.",
  "posts": [
   {
-   "id": "2026-10-26-am",
-   "date": "2026-10-26",
+   "id": "2026-10-25-launch",
+   "date": "2026-10-25",
    "pillar": "rules",
    "topic_key": "rule.serve-bounce-then-side-mesh",
-   "claim": "Your serve bounces in the box, then hits the side mesh.",
-   "verdict": "FAULT"
-  },
-  {
-   "id": "2026-10-26-pm",
-   "date": "2026-10-26",
-   "pillar": "gear",
-   "topic_key": "gear.carbon-k-number",
-   "claim": "on your racket means 12 kg of carbon.",
-   "verdict": "FAULT"
-  },
-  {
-   "id": "2026-10-27-am",
-   "date": "2026-10-27",
-   "pillar": "rules",
-   "topic_key": "rule.own-wall-then-over",
-   "claim": "Your shot hits your own back glass, then goes over.",
-   "verdict": "FAIR"
-  },
-  {
-   "id": "2026-10-27-pm",
-   "date": "2026-10-27",
-   "pillar": "pros",
-   "topic_key": "pros.coello-10-majors",
-   "claim": "Major titles: Arturo Coello is the first player to get there.",
-   "verdict": "FAIR"
-  },
-  {
-   "id": "2026-10-28-am",
-   "date": "2026-10-28",
-   "pillar": "rules",
-   "topic_key": "rule.serve-waist-height",
-   "claim": "You must hit your serve at or below waist height.",
-   "verdict": "FAIR"
-  },
-  {
-   "id": "2026-10-28-pm",
-   "date": "2026-10-28",
-   "pillar": "market",
-   "topic_key": "market.courts-worldwide",
-   "claim": "padel courts exist worldwide.",
-   "verdict": "FAULT"
-  },
-  {
-   "id": "2026-10-29-am",
-   "date": "2026-10-29",
-   "pillar": "rules",
-   "topic_key": "rule.receiver-volley-serve",
-   "claim": "You may volley the return of serve.",
-   "verdict": "FAULT"
-  },
-  {
-   "id": "2026-10-29-pm",
-   "date": "2026-10-29",
-   "pillar": "gear",
-   "topic_key": "gear.racket-no-strings",
-   "claim": "A padel racket has strings, just like a tennis racket.",
-   "verdict": "FAULT"
-  },
-  {
-   "id": "2026-10-30-am",
-   "date": "2026-10-30",
-   "pillar": "rules",
-   "topic_key": "rule.touch-net-loses-point",
-   "claim": "Touch the net with your racket mid-rally: you lose the point.",
-   "verdict": "FAIR"
-  },
-  {
-   "id": "2026-10-30-pm",
-   "date": "2026-10-30",
-   "pillar": "rules",
-   "topic_key": "rule.direct-opponent-glass",
-   "claim": "Your shot hits their back glass before bouncing. Point to you.",
-   "verdict": "FAULT"
-  },
-  {
-   "id": "2026-10-31-am",
-   "date": "2026-10-31",
-   "pillar": "gear",
-   "topic_key": "gear.racket-max-length",
-   "claim": "is the maximum length of a padel racket.",
-   "verdict": "FAIR"
-  },
-  {
-   "id": "2026-10-31-pm",
-   "date": "2026-10-31",
-   "pillar": "rules",
-   "topic_key": "rule.serve-net-cord",
-   "claim": "Your serve clips the net and lands in the box. You serve again.",
-   "verdict": "FAIR"
-  },
-  {
-   "id": "2026-11-01-am",
-   "date": "2026-11-01",
-   "pillar": "market",
-   "topic_key": "market.spain-most-courts",
-   "claim": "country for padel courts: Spain.",
-   "verdict": "FAIR"
-  },
-  {
-   "id": "2026-11-01-pm",
-   "date": "2026-11-01",
-   "pillar": "pros",
-   "topic_key": "pros.2026-titles-coello-tapia-vs-galan-chingotto",
-   "claim": "In 2026, Galán & Chingotto won more titles than Coello & Tapia.",
+   "claim": "Your serve bounces in the box and then hits the wire fence.",
    "verdict": "FAULT"
   }
  ]

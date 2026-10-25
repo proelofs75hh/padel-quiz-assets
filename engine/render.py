@@ -50,12 +50,12 @@ def question(s, n, total):
     big = f'<p class="disp big" style="margin-top:64px">{fmt(s["big"])}</p>' if has_big else ""
     claim_mt, ask_size = ("32px", 104) if has_big else ("72px", 128)
     return f'''<div class="post" style="background:{C['court']};color:{C['paper']}">
-  <div class="top"><span class="chip">{fmt(s['label'])}</span><span>{n}/{total}</span></div>
+  <div class="top"><span class="chip">Padel {fmt(s['label'])}</span><span>{n}/{total}</span></div>
   {big}
   <h1 class="disp fit" style="margin-top:{claim_mt};font-size:104px;line-height:.98">{fmt(s['claim'])}</h1>
   <p class="disp" style="margin-top:36px;font-size:{ask_size}px;line-height:.9;color:{C['ball']}">Fair or fault?</p>
   <div class="tiles"><div class="tile" style="background:{C['ball']}">Fair</div><div class="tile" style="background:{C['paper']}">Fault</div></div>
-  <p style="margin:40px 0 0;text-align:right;font-family:'JetBrains Mono',monospace;font-size:40px;font-weight:700;text-transform:uppercase">Swipe for the call →</p>
+  <p style="margin:40px 0 0;text-align:right;font-family:'JetBrains Mono',monospace;font-size:40px;font-weight:700;text-transform:uppercase">Swipe for the answer →</p>
 </div>'''
 
 
@@ -71,7 +71,7 @@ def verdict(s, n, total):
         line_style = "margin:56px 0 0;font-size:72px;line-height:1.1;font-weight:700"
     right = "Why? →" if n < total else "@fairorfault"
     return f'''<div class="post" style="background:{C['night']};color:{C['paper']}">
-  <div class="top"><span>The call</span><span>{n}/{total}</span></div>
+  <div class="top"><span>The answer</span><span>{n}/{total}</span></div>
   <div style="margin-top:auto;display:flex;flex-direction:column;align-items:flex-start">
     <span class="pill" style="background:{pill_bg};color:{pill_fg}">{icon}{fmt(s['pill'])}</span>
     <h1 class="disp" style="margin-top:40px;font-size:240px;line-height:.88;letter-spacing:-.04em;color:{word_col}">{'FAIR.' if fair else 'FAULT.'}</h1>
