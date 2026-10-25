@@ -15,7 +15,7 @@ Format-specific:
   guess_number       number (float), marker (the claim's value), decimals (int, default 0),
                      unit (text under the number), marker_label (default "the claim")
 
-Shared timeline: intro "Fair or Fault / Your Daily Padel Quiz" (1.6 s) -> statement word by word (0.22 s per word) -> "Fair or fault?" ->
+Shared timeline: intro "Fair or Fault / Your Daily Padel Quiz" (2.2 s) -> statement word by word (0.32 s per word) -> "Fair or fault?" ->
 1.6 s reading pause -> question moves up, the middle part fades in ->
 middle part (ball path / 3-2-1 ball timer / counting number) -> verdict, reason,
 comment prompt -> 0.4 s fade to the empty opening frame (seamless loop).
@@ -32,7 +32,7 @@ import diagrams  # noqa: E402
 FONTS = ENGINE / "fonts"
 FPS = 30
 C = diagrams.C
-INTRO, WORD, CALL_LEN, FADE = 1.6, 0.22, 3.4, 0.4
+INTRO, WORD, CALL_LEN, FADE = 2.2, 0.32, 3.4, 0.4
 MID_LEN = {"refs_view": 2.6, "three_second_call": 3.2, "guess_number": 3.0}
 
 
@@ -49,7 +49,7 @@ def words(t):
 def timeline(spec):
     nw = len(spec["claim"].split())
     t_ask = INTRO + 0.3 + nw * WORD + 0.15
-    t_read = t_ask + 0.35 + 1.6
+    t_read = t_ask + 0.5 + 1.6
     t_mid = t_read + 0.4
     t_call = t_mid + MID_LEN[spec["format"]]
     return dict(T_ASK=t_ask, T_READ=t_read, T_MID=t_mid, T_CALL=t_call,
@@ -204,11 +204,11 @@ const ease=(k)=>k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
 const WS=[...document.querySelectorAll('.w')];
 {mid_js}
 function setT(t){{
-  const it=clamp(t/0.3)*(1-clamp((t-{INTRO}+0.35)/0.3));
-  $('intro').style.opacity=it; $('intro').style.transform=`scale(${{lerp(0.94,1,clamp(t/0.5))}})`;
+  const it=clamp(t/0.4)*(1-clamp((t-{INTRO}+0.45)/0.4));
+  $('intro').style.opacity=it; $('intro').style.transform=`scale(${{lerp(0.94,1,clamp(t/0.8))}})`;
   $('top').style.opacity=clamp((t-{INTRO}+0.1)/0.3);
-  WS.forEach((w,i)=>w.style.opacity=clamp((t-{INTRO}-0.3-i*{WORD})/0.15));
-  $('ask').style.opacity=clamp((t-T_ASK)/0.25);
+  WS.forEach((w,i)=>w.style.opacity=clamp((t-{INTRO}-0.3-i*{WORD})/0.25));
+  $('ask').style.opacity=clamp((t-T_ASK-0.15)/0.35);
   const g=ease(clamp((t-T_READ)/0.4));
   $('q').style.transform=`scale(${{lerp(1,0.62,g)}})`;
   $('mid').style.top=lerp({top0},{top1},g)+'px';
