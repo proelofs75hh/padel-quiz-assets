@@ -13,7 +13,7 @@ reel.json:
   "diagram": "serve-side-mesh"   # key of REEL_DIAGRAMS below
 }
 
-Timeline (8 s, 30 fps, loops cleanly):
+Timeline (11 s, 30 fps, loops cleanly): word-by-word statement, question, reading pause, then court + ball, countdown, verdict, reason.
   0.0-1.5  claim + "Fair or fault?" over a static court
   1.5-4.5  ball path animates, countdown 3-2-1, freeze before the call
   4.5-6.0  verdict flips in (FAIR ball-yellow / FAULT red)
@@ -28,7 +28,7 @@ from playwright.async_api import async_playwright
 
 ENGINE = pathlib.Path(__file__).resolve().parent
 FONTS = ENGINE / "fonts"
-FPS, DURATION = 30, 8.0
+FPS, DURATION = 30, 11.0
 C = dict(court="#1747B0", night="#0E1630", paper="#F4F1E8", glass="#9FC3E3",
          ball="#D7F23A", fault="#C2361F", muted="#4A5470")
 
@@ -45,6 +45,10 @@ def fmt(t, cls="hl"):
     t = html.escape(t or "")
     t = re.sub(r"\*\*(.+?)\*\*", rf'<span class="{cls}">\1</span>', t)
     return t.replace("\n", "<br>")
+
+
+def words(t):
+    return " ".join(f'<span class="w">{html.escape(w)}</span>' for w in t.split())
 
 
 def page(spec):
@@ -68,6 +72,7 @@ body{{width:1080px;height:1920px;overflow:hidden;font-family:'Instrument Sans';c
 .chip{{border:4px solid currentColor;border-radius:999px;padding:8px 28px}}
 #q{{position:absolute;left:88px;right:88px;top:360px}}
 #claim{{font-size:96px;line-height:.98}}
+.w{{opacity:0}}
 #ask{{font-size:120px;line-height:.9;color:{C['ball']};margin-top:28px}}
 #court{{position:absolute;left:50%;top:940px;transform:translateX(-50%)}}
 #count{{position:absolute;right:88px;top:1040px;font-size:260px;color:{C['ball']};opacity:0}}
@@ -80,7 +85,7 @@ body{{width:1080px;height:1920px;overflow:hidden;font-family:'Instrument Sans';c
 </style></head><body>
 <div id="bg"></div><div id="night"></div>
 <div id="top" class="mono"><span class="chip">Padel {fmt(spec['label'])}</span><span>@fairorfault</span></div>
-<div id="q"><h1 id="claim" class="disp">{fmt(spec['claim'])}</h1><p id="ask" class="disp">Fair or fault?</p></div>
+<div id="q"><h1 id="claim" class="disp">{words(spec['claim'])}</h1><p id="ask" class="disp">Fair or fault?</p></div>
 <svg id="court" viewBox="-22 -22 244 444" width="470" height="855">
   <rect x="0" y="0" width="200" height="400" fill="#1E56C8"/>
   <rect x="0" y="0" width="200" height="400" fill="none" stroke="#FFF" stroke-width="2.5"/>
@@ -111,37 +116,43 @@ function seg(){{ // cumulative lengths for constant-speed travel
 const L=seg(), TOT=L[L.length-1];
 function at(k){{ const d=k*TOT; let i=1; while(i<L.length-1&&L[i]<d) i++;
   const f=(d-L[i-1])/(L[i]-L[i-1]||1); return [lerp(P[i-1][0],P[i][0],f), lerp(P[i-1][1],P[i][1],f), i]; }}
+// Timeline (10 s):
+// 0.3-W   statement appears word by word (0.22 s per word)
+// +0.35   "Fair or fault?" appears, then 1.6 s reading pause
+// R-R+.4  question moves up, court fades in (only now)
+// ball travels 1.8 s, countdown 3-2-1 (0.8 s each), freeze
+// call: night background, verdict, reason, comment prompt
+// last 0.4 s: fade out to the empty opening frame -> seamless loop
+const WS=[...document.querySelectorAll('.w')], NW=WS.length;
+const T_ASK=0.3+NW*0.22+0.15, T_READ=T_ASK+0.35+1.6, T_BALL=T_READ+0.4, T_CALL=T_BALL+2.4+0.2;
 function setT(t){{
   const $=id=>document.getElementById(id);
-  // 1.2-1.5s: question shrinks to the top, court grows
-  const g=ease(clamp((t-1.2)/0.3));
+  WS.forEach((w,i)=>w.style.opacity=clamp((t-0.3-i*0.22)/0.15));
+  $('ask').style.opacity=clamp((t-T_ASK)/0.25);
+  // question moves up, court appears
+  const g=ease(clamp((t-T_READ)/0.4));
   $('q').style.transformOrigin='left top'; $('q').style.transform=`scale(${{lerp(1,0.62,g)}})`;
-  $('court').style.top=lerp(940,610,g)+'px'; $('court').setAttribute('width',lerp(470,520,g)); $('court').setAttribute('height',lerp(855,946,g));
-  // ball travel 1.5-3.6s, freeze, countdown 1.5-4.5
-  const k=ease(clamp((t-1.5)/2.1)); const [x,y,i]=at(k);
+  $('court').style.top=lerp(760,610,g)+'px'; $('court').setAttribute('width',520); $('court').setAttribute('height',946);
+  $('court').style.opacity=g;
+  // ball 1.8 s
+  const k=ease(clamp((t-T_BALL)/1.8)); const [x,y,i]=at(k);
   $('ball').setAttribute('cx',x); $('ball').setAttribute('cy',y);
   const tr=P.slice(0,i).concat([[x,y]]); $('trail').setAttribute('points', k>0? tr.map(p=>p.join(',')).join(' '):'');
-  // bounce ring once the ball has passed the first turning point
   if(P.length>2 && i>=2){{ $('bnc').setAttribute('cx',P[1][0]); $('bnc').setAttribute('cy',P[1][1]); $('bnc').setAttribute('r',16); }} else $('bnc').setAttribute('r',0);
-  const n=t<1.5?0:t<2.5?3:t<3.5?2:t<4.5?1:0;
+  const dt=t-T_BALL, n= dt<0?0: dt<0.8?3: dt<1.6?2: dt<2.4?1:0;
   $('count').textContent=n||''; $('count').style.opacity = n? 1:0;
   const target = BAD!==null? P[BAD] : P[P.length-1];
-  const r = t>3.6 ? 16+26*clamp((t-3.6)/0.4) : 0;
+  const r = t>T_BALL+1.8 ? 16+26*clamp((t-T_BALL-1.8)/0.4) : 0;
   $('hit').setAttribute('cx',target[0]); $('hit').setAttribute('cy',target[1]); $('hit').setAttribute('r',r);
-  // call 4.5-7.6s: night background, court hidden
-  const c=clamp((t-4.5)/0.35);
-  $('night').style.opacity=c; $('call').style.opacity=c; $('top').style.opacity=1;
+  // call
+  const c=clamp((t-T_CALL)/0.35);
+  $('night').style.opacity=c; $('call').style.opacity=c;
   $('call').style.transform=`scale(${{lerp(1.08,1,c)}})`; $('call').style.transformOrigin='left top';
-  $('q').style.opacity=1-c; $('court').style.opacity=1-c;
-  $('why').style.opacity=clamp((t-6.0)/0.3); $('cta').style.opacity=clamp((t-6.4)/0.3);
-  // loop: 7.6-7.8 fade out, 7.8-8.0 fade in the opening frame
-  if(t>=7.6){{
-    const o=clamp((t-7.6)/0.2), f=clamp((t-7.8)/0.2);
-    $('call').style.opacity=1-o; $('night').style.opacity=1-o;
-    $('q').style.transform='scale(1)'; $('q').style.opacity=f;
-    $('court').style.top='940px'; $('court').setAttribute('width',470); $('court').setAttribute('height',855); $('court').style.opacity=f;
-    $('ball').setAttribute('cx',P[0][0]); $('ball').setAttribute('cy',P[0][1]);
-    $('trail').setAttribute('points',''); $('hit').setAttribute('r',0); $('bnc').setAttribute('r',0); }}
+  if(c>0){{ $('q').style.opacity=1-c; $('court').style.opacity=Math.min(g,1-c); }} else $('q').style.opacity=1;
+  $('why').style.opacity=clamp((t-T_CALL-0.6)/0.3); $('cta').style.opacity=clamp((t-T_CALL-1.0)/0.3);
+  // loop fade
+  const o=clamp((t-(11.0-0.4))/0.3);
+  if(o>0){{ $('call').style.opacity=1-o; $('night').style.opacity=1-o; }}
 }}
 </script></body></html>"""
 
