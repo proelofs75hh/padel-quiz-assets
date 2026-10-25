@@ -2,11 +2,131 @@
  "about": "Every Fair or Fault post ever planned. Used by engine/dupcheck.py.",
  "posts": [
   {
-   "id": "2026-10-25-launch-v2",
+   "id": "2026-10-25-am",
+   "date": "2026-10-25",
+   "pillar": "rules",
+   "topic_key": "rule.own-wall-then-over",
+   "claim": "You can play the ball off your own back glass.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-10-25-pm",
    "date": "2026-10-25",
    "pillar": "rules",
    "topic_key": "rule.serve-bounce-then-side-mesh",
    "claim": "Your serve hits the fence after the bounce.",
+   "verdict": "FAULT"
+  },
+  {
+   "id": "2026-10-26-am",
+   "date": "2026-10-26",
+   "pillar": "rules",
+   "topic_key": "rule.serve-waist-height",
+   "claim": "You must serve at waist height or lower.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-10-26-pm",
+   "date": "2026-10-26",
+   "pillar": "gear",
+   "topic_key": "gear.carbon-k-number",
+   "claim": "on a racket means 12 kg of carbon.",
+   "verdict": "FAULT"
+  },
+  {
+   "id": "2026-10-27-am",
+   "date": "2026-10-27",
+   "pillar": "rules",
+   "topic_key": "rule.receiver-volley-serve",
+   "claim": "You are allowed to volley the return of a serve.",
+   "verdict": "FAULT"
+  },
+  {
+   "id": "2026-10-27-pm",
+   "date": "2026-10-27",
+   "pillar": "pros",
+   "topic_key": "pros.coello-10-majors",
+   "claim": "Major titles: Arturo Coello got there first.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-10-28-am",
+   "date": "2026-10-28",
+   "pillar": "rules",
+   "topic_key": "rule.touch-net-loses-point",
+   "claim": "Your racket touches the net. You lose the point.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-10-28-pm",
+   "date": "2026-10-28",
+   "pillar": "market",
+   "topic_key": "market.courts-worldwide",
+   "claim": "padel courts in the whole world.",
+   "verdict": "FAULT"
+  },
+  {
+   "id": "2026-10-29-am",
+   "date": "2026-10-29",
+   "pillar": "rules",
+   "topic_key": "rule.server-bounces-ball-first",
+   "claim": "You must bounce the ball before you serve.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-10-29-pm",
+   "date": "2026-10-29",
+   "pillar": "gear",
+   "topic_key": "gear.racket-no-strings",
+   "claim": "A padel racket has strings.",
+   "verdict": "FAULT"
+  },
+  {
+   "id": "2026-10-30-am",
+   "date": "2026-10-30",
+   "pillar": "rules",
+   "topic_key": "rule.direct-opponent-glass",
+   "claim": "Your shot hits their back glass before it bounces.",
+   "verdict": "FAULT"
+  },
+  {
+   "id": "2026-10-30-pm",
+   "date": "2026-10-30",
+   "pillar": "rules",
+   "topic_key": "rule.double-bounce",
+   "claim": "You are allowed to let the ball bounce twice.",
+   "verdict": "FAULT"
+  },
+  {
+   "id": "2026-10-31-am",
+   "date": "2026-10-31",
+   "pillar": "gear",
+   "topic_key": "gear.racket-max-length",
+   "claim": "is the maximum length of a padel racket.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-10-31-pm",
+   "date": "2026-10-31",
+   "pillar": "rules",
+   "topic_key": "rule.serve-net-cord",
+   "claim": "Serve touches the net, lands in: you serve again.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-11-01-am",
+   "date": "2026-11-01",
+   "pillar": "market",
+   "topic_key": "market.spain-most-courts",
+   "claim": "Spain has the most padel courts in the world.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-11-01-pm",
+   "date": "2026-11-01",
+   "pillar": "pros",
+   "topic_key": "pros.2026-titles-coello-tapia-vs-galan-chingotto",
+   "claim": "Galán & Chingotto won more 2026 titles than Coello & Tapia.",
    "verdict": "FAULT"
   }
  ]
