@@ -82,48 +82,10 @@ def verdict(s, n, total):
 </div>'''
 
 
-# ---- explainer diagrams (court seen from above, 200 x 400 units) -----------
-def _court(paths):
-    return f'''<svg viewBox="-22 -22 244 444" width="420" height="764">
-  <rect x="0" y="0" width="200" height="400" fill="{C['court']}"/>
-  <rect x="0" y="0" width="200" height="400" fill="none" stroke="#FFF" stroke-width="2.5"/>
-  <line x1="0" y1="61" x2="200" y2="61" stroke="#FFF" stroke-width="2.5"/>
-  <line x1="0" y1="339" x2="200" y2="339" stroke="#FFF" stroke-width="2.5"/>
-  <line x1="100" y1="61" x2="100" y2="339" stroke="#FFF" stroke-width="2.5"/>
-  <line x1="-10" y1="200" x2="210" y2="200" stroke="#FFF" stroke-width="5"/>
-  <path d="M-6 80 V-6 H206 V80" fill="none" stroke="#9FC3E3" stroke-width="10"/>
-  <path d="M-6 320 V406 H206 V320" fill="none" stroke="#9FC3E3" stroke-width="10"/>
-  <line x1="-6" y1="80" x2="-6" y2="320" stroke="{C['muted']}" stroke-width="4" stroke-dasharray="3 6"/>
-  <line x1="206" y1="80" x2="206" y2="320" stroke="{C['muted']}" stroke-width="4" stroke-dasharray="3 6"/>
-  {paths}
-</svg>'''
+# ---- explainer diagrams: shared library in engine/diagrams.py -------------
+import diagrams as _diagrams
 
-
-def _mark(x, y, n, col):
-    return (f'<circle cx="{x}" cy="{y}" r="17" fill="{col}"/>'
-            f'<text x="{x}" y="{y+8}" text-anchor="middle" fill="{C["paper"]}" font-family="JetBrains Mono" font-size="22" font-weight="700">{n}</text>')
-
-
-DIAGRAMS = {
-    # serve bounces in the box (1), then hits the side mesh (2)
-    "serve-side-mesh": lambda: _court(
-        f'<circle cx="150" cy="376" r="10" fill="{C["night"]}"/>'
-        f'<path d="M150 366 L60 150 L-2 104" fill="none" stroke="{C["fault"]}" stroke-width="6" stroke-dasharray="12 8"/>'
-        + _mark(60, 150, 1, C["night"]) + _mark(30, 80, 2, C["fault"]) +
-        f'<circle cx="-2" cy="104" r="10" fill="{C["ball"]}" stroke="{C["night"]}" stroke-width="3"/>'),
-    # shot hits the hitter's own back glass (1) and goes over the net (2)
-    "own-back-glass": lambda: _court(
-        f'<circle cx="130" cy="330" r="10" fill="{C["night"]}"/>'
-        f'<path d="M130 330 L110 404 L80 110" fill="none" stroke="{C["ball"]}" stroke-width="6" stroke-dasharray="12 8"/>'
-        + _mark(110, 380, 1, C["night"]) + _mark(85, 160, 2, C["night"]) +
-        f'<circle cx="80" cy="110" r="10" fill="{C["ball"]}" stroke="{C["night"]}" stroke-width="3"/>'),
-    # shot hits the opponents' back glass before bouncing (1) = fault
-    "direct-back-glass": lambda: _court(
-        f'<circle cx="120" cy="300" r="10" fill="{C["night"]}"/>'
-        f'<path d="M120 300 L90 -2" fill="none" stroke="{C["fault"]}" stroke-width="6" stroke-dasharray="12 8"/>'
-        + _mark(90, 24, 1, C["fault"]) +
-        f'<circle cx="90" cy="-2" r="10" fill="{C["ball"]}" stroke="{C["night"]}" stroke-width="3"/>'),
-}
+DIAGRAMS = {k: (lambda k=k: _diagrams.static_svg(k)) for k in _diagrams.LIB}
 
 
 def explainer(s, n, total):
