@@ -114,6 +114,103 @@
    ]
   },
   {
+   "id": "2026-10-25-1500",
+   "slot": "2026-10-25T15:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.wrist-cord-mandatory",
+   "fact_source": "FIP Reglamento, La Pala: non-elastic wrist cord, use mandatory, max 35 cm",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Gear",
+     "claim": "You must wear the wrist cord of your racket."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "Safety first",
+     "line": "The cord is **required**\nby the official rules.",
+     "source": "FIP rules · Racket"
+    }
+   ],
+   "caption": "WELCOME TO FAIR OR FAULT. YOUR DAILY PADEL QUIZ.\n\nThat little strap on your racket handle isn't decoration 😉\n\nThe official rules say every racket needs a wrist cord – and you have to wear it. Flying rackets hurt.\n\nFAIR or FAULT? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-25-1600",
+   "slot": "2026-10-25T16:00:00",
+   "pillar": "pros",
+   "topic_key": "pros.2026-paris-major-winners",
+   "fact_source": "padelfip.com 13 Sep 2026 + Wikipedia Premier Padel 2026: Coello/Tapia won Paris Major 6-3 4-6 7-6 vs Galán/Chingotto",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Pros",
+     "claim": "Coello & Tapia won the 2026 Paris Major."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pill": "Roland Garros",
+     "line": "6-3, 4-6, 7-6\nagainst **Galán & Chingotto**.",
+     "source": "Premier Padel · Sep 26"
+    }
+   ],
+   "caption": "WELCOME TO FAIR OR FAULT. YOUR DAILY PADEL QUIZ.\n\nPadel on the clay courts of Roland Garros – and a final for the history books 🏆\n\nCoello & Tapia beat Galán & Chingotto 6-3, 4-6, 7-6 at the 2026 Paris Major.\n\nWere you watching? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "premierpadel",
+    "parismajor",
+    "rolandgarros",
+    "coello",
+    "tapia",
+    "padelquiz",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-10-25-1700",
+   "slot": "2026-10-25T17:00:00",
+   "pillar": "market",
+   "topic_key": "market.new-courts-2025",
+   "fact_source": "Global Padel Report 2026 (via Padel Addict): 7,898 new courts built worldwide in 2025",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Market",
+     "claim": "Fewer than 5,000 new padel courts were built in 2025."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "Way more",
+     "figure": "7,898",
+     "line": "new courts\nin a single year.",
+     "source": "Global Padel Report 26"
+    }
+   ],
+   "caption": "WELCOME TO FAIR OR FAULT. YOUR DAILY PADEL QUIZ.\n\nPadel is growing fast – but how fast? Guess before you swipe 🚀\n\n7,898 new courts were built around the world in 2025. That's more than 20 per day.\n\nIs there a new court near you? 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelworld",
+    "padelcourt",
+    "padelquiz",
+    "padelgrowth",
+    "padellife",
+    "padelclub",
+    "fairorfault"
+   ]
+  },
+  {
    "id": "2026-10-25-pm",
    "slot": "2026-10-25T18:30:00",
    "pillar": "rules",

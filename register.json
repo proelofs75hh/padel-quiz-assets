@@ -144,6 +144,30 @@
    "topic_key": "rule.bounce-then-fence-in-rally",
    "claim": "Your shot bounces on their side, then hits the fence.",
    "verdict": "FAIR"
+  },
+  {
+   "id": "2026-10-25-1500",
+   "date": "2026-10-25",
+   "pillar": "gear",
+   "topic_key": "gear.wrist-cord-mandatory",
+   "claim": "You must wear the wrist cord of your racket.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-10-25-1600",
+   "date": "2026-10-25",
+   "pillar": "pros",
+   "topic_key": "pros.2026-paris-major-winners",
+   "claim": "Coello & Tapia won the 2026 Paris Major.",
+   "verdict": "FAIR"
+  },
+  {
+   "id": "2026-10-25-1700",
+   "date": "2026-10-25",
+   "pillar": "market",
+   "topic_key": "market.new-courts-2025",
+   "claim": "Fewer than 5,000 new padel courts were built in 2025.",
+   "verdict": "FAULT"
   }
  ]
 }
