@@ -12,6 +12,7 @@ Common fields:
 Format-specific:
   refs_view          diagram: key of engine/diagrams.py LIB
   three_second_call  -
+  spec_sheet         rows: [[label, value], ...] (value "?" = the open question), racket outline
   guess_number       number (float), marker (the claim's value), decimals (int, default 0),
                      unit (text under the number), marker_label (default "the claim")
 
@@ -34,7 +35,7 @@ FPS = 30
 C = diagrams.C
 INTRO, WORD, CALL_LEN, FADE, ASK_GAP = 2.5, 0.32, 3.4, 0.4, 0.7
 TRANS = 0.5  # extra pause question -> proof and proof -> answer
-MID_LEN = {"refs_view": 2.6, "three_second_call": 3.2, "guess_number": 3.0}
+MID_LEN = {"refs_view": 2.6, "three_second_call": 3.2, "guess_number": 3.0, "spec_sheet": 3.4}
 
 
 def fmt(t, cls="hl"):
@@ -149,8 +150,38 @@ function mid(t){{
     return html_, css, js
 
 
-MIDS = {"refs_view": mid_refs_view, "three_second_call": mid_three_second_call, "guess_number": mid_guess_number}
-MID_TOP = {"refs_view": (760, 610), "three_second_call": (900, 760), "guess_number": (980, 820)}
+def mid_spec_sheet(spec):
+    rows = spec["rows"]
+    racket = f'''<svg id="rk" viewBox="0 0 260 520" width="250" height="500">
+  <path d="M130 8 C 225 8 252 80 252 170 C 252 255 205 300 165 318 L 158 360 L 102 360 L 95 318 C 55 300 8 255 8 170 C 8 80 35 8 130 8 Z"
+        fill="none" stroke="{C['ball']}" stroke-width="10"/>
+  {"".join(f'<circle cx="{x}" cy="{y}" r="7" fill="{C['ball']}" opacity=".7"/>' for x in range(60, 210, 30) for y in range(70, 260, 34) if (x-130)**2/110**2 + (y-165)**2/120**2 < 1)}
+  <rect x="104" y="360" width="52" height="150" rx="14" fill="{C['paper']}"/>
+</svg>'''
+    items = "".join(
+        f'<div class="sr" id="sr{i}"><span class="sl mono">{fmt(l)}</span>'
+        f'<span class="sv disp{" q" if v == "?" else ""}">{fmt(v)}</span></div>' for i, (l, v) in enumerate(rows))
+    html_ = f'<div id="mid">{racket}<div id="rows">{items}</div></div>'
+    css = f"""#mid{{position:absolute;left:88px;right:88px;display:flex;gap:56px;align-items:center}}
+#rows{{flex:1;display:flex;flex-direction:column;gap:34px}}
+.sr{{opacity:0;border-bottom:3px solid rgba(244,241,232,.3);padding-bottom:18px}}
+.sl{{display:block;font-size:34px;color:{C['glass']}}}
+.sv{{display:block;font-size:92px;line-height:1;margin-top:6px}}
+.sv.q{{color:{C['ball']};font-size:150px}}"""
+    js = f"""
+const NR={len(rows)};
+function mid(t){{
+  const dt=t-T_MID;
+  for(let i=0;i<NR;i++){{ const e=$('sr'+i); const k=clamp((dt-i*0.6)/0.3);
+    e.style.opacity=k; e.style.transform=`translateX(${{(1-k)*40}}px)`; }}
+  const q=document.querySelector('.sv.q');
+  if(q){{ const qt=dt-(NR-1)*0.6-0.3; q.style.transform = qt>0? `scale(${{1+0.08*Math.abs(Math.sin(qt*Math.PI*1.5))}})`:'none'; q.style.transformOrigin='left center'; }}
+}}"""
+    return html_, css, js
+
+
+MIDS = {"refs_view": mid_refs_view, "three_second_call": mid_three_second_call, "guess_number": mid_guess_number, "spec_sheet": mid_spec_sheet}
+MID_TOP = {"refs_view": (760, 610), "three_second_call": (900, 760), "guess_number": (980, 820), "spec_sheet": (900, 700)}
 
 
 def page(spec):

@@ -1,6 +1,51 @@
 {
  "reels": [
   {
+   "id": "2026-10-26-reel",
+   "slot": "2026-10-26T13:15:00",
+   "pillar": "gear",
+   "topic_key": "gear.no-weight-limit",
+   "fact_source": "FIP Reglamento de Juego, Anexo/La Pala: max length 45.5 cm, width 26 cm, thickness 38 mm; no weight limit",
+   "caption": "Heavy racket, light racket – is there a limit? 🤔\n\nThe rules set a maximum weight for padel rackets. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelreels",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "spec": {
+    "format": "spec_sheet",
+    "label": "Gear",
+    "claim": "The rules set a maximum weight for padel rackets.",
+    "verdict": "FAULT",
+    "pill": "No weight limit",
+    "line": "Only length, width and\nthickness are **limited**.",
+    "rows": [
+     [
+      "Max length",
+      "45.5 cm"
+     ],
+     [
+      "Max width",
+      "26 cm"
+     ],
+     [
+      "Max thickness",
+      "38 mm"
+     ],
+     [
+      "Max weight",
+      "?"
+     ]
+    ],
+    "source": "FIP rules · Racket"
+   }
+  },
+  {
    "id": "2026-10-27-reel",
    "slot": "2026-10-27T07:30:00",
    "pillar": "rules",

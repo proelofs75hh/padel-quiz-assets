@@ -230,6 +230,15 @@
    "claim": "Tie-break: the first serve comes from the left side.",
    "verdict": "FAULT",
    "format": "carousel"
+  },
+  {
+   "id": "2026-10-26-reel",
+   "date": "2026-10-26",
+   "pillar": "gear",
+   "topic_key": "gear.no-weight-limit",
+   "claim": "The rules set a maximum weight for padel rackets.",
+   "verdict": "FAULT",
+   "format": "reel"
   }
  ]
 }
