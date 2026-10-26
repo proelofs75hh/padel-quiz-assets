@@ -106,13 +106,15 @@
     "fairorfault"
    ],
    "spec": {
-    "format": "three_second_call",
+    "format": "refs_view",
     "label": "Rules",
     "claim": "Tie-break: the first serve comes from the left side.",
     "verdict": "FAULT",
     "pill": "Not left",
-    "line": "Point 1: one serve\nfrom the **right**.",
-    "source": "FIP rules · Rule 1"
+    "line": "Point 1: one serve\nfrom the **right**.\nThen 2 each, left first.",
+    "source": "FIP rules · Rule 1",
+    "diagram": "tiebreak-first-serve",
+    "ring": "neutral"
    }
   }
  ]

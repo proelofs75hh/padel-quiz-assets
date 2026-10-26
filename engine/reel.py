@@ -62,6 +62,8 @@ def timeline(spec):
 def mid_refs_view(spec):
     d = diagrams.LIB[spec["diagram"]]
     vcol = C["ball"] if spec["verdict"].upper() == "FAIR" else C["fault"]
+    if spec.get("ring") == "neutral":  # decisive point shows the correct play, not the fault
+        vcol = C["ball"]
     players = "".join(f'<circle cx="{x}" cy="{y}" r="12" fill="{C["night"]}" stroke="#FFF" stroke-width="3"/>'
                       for x, y in d.get("players", []))
     inner = f'''{players}
