@@ -1,0 +1,41 @@
+{
+ "posts": [
+  {
+   "id": "2026-10-26-tiebreak",
+   "slot": "2026-10-26T12:30:00",
+   "pillar": "rules",
+   "topic_key": "rule.tiebreak-first-serve-side",
+   "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), Regla 1 – tie-break, puntos 3 y 5; Regla 5.2",
+   "slides": [
+    {
+     "type": "question",
+     "label": "Rules",
+     "claim": "Tie-break: the first serve comes from the left side."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "pill": "Not left",
+     "line": "Point 1: one serve\nfrom the **right**.",
+     "source": "FIP rules · Rule 1"
+    },
+    {
+     "type": "explainer",
+     "diagram": "tiebreak-first-serve",
+     "title_good": "Right first.",
+     "steps": [
+      {
+       "text": "Point 1: right side."
+      },
+      {
+       "text": "Then 2 each, left first."
+      },
+      {
+       "text": "Swap sides every 6 points."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

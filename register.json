@@ -221,6 +221,15 @@
    "claim": "Tie-break: the first serve comes from the left side.",
    "verdict": "FAULT",
    "format": "reel"
+  },
+  {
+   "id": "2026-10-26-tiebreak",
+   "date": "2026-10-26",
+   "pillar": "rules",
+   "topic_key": "rule.tiebreak-first-serve-side",
+   "claim": "Tie-break: the first serve comes from the left side.",
+   "verdict": "FAULT",
+   "format": "carousel"
   }
  ]
 }

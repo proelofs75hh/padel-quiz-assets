@@ -50,6 +50,9 @@ LIB = {
     "double-bounce": dict(  # ball bounces twice on your side before you hit it
         points=[[100, 60], [80, 280], [68, 340]], bounces=[1, 2], decisive=2, ok=False,
         rule="Regla 13.1.c"),
+    "tiebreak-first-serve": dict(  # tie-break point 1: served from the server's right side, diagonally
+        points=[[150, 376], [60, 150]], bounces=[], decisive=0, ok=True,
+        rule="Regla 1 (tie-break, punto 3)"),
 }
 
 

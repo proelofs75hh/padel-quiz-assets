@@ -97,7 +97,7 @@ def explainer(s, n, total):
     return f'''<div class="post" style="background:{C['paper']};color:{C['night']}">
   <style>.hlf{{color:{C['fault']}}} .hlc{{color:{C['court']}}}</style>
   <div class="top" style="color:{C['muted']}"><span>Why</span><span>{n}/{total}</span></div>
-  <h1 class="disp" style="margin-top:40px;font-size:120px;line-height:.95"><span class="hlc">{fmt(s['title_good'])}</span><br><span class="hlf">{fmt(s['title_bad'])}</span></h1>
+  <h1 class="disp" style="margin-top:40px;font-size:120px;line-height:.95"><span class="hlc">{fmt(s['title_good'])}</span>{('<br><span class="hlf">' + fmt(s['title_bad']) + '</span>') if s.get('title_bad') else ''}</h1>
   <div style="display:flex;gap:48px;align-items:center;margin-top:auto">{DIAGRAMS[s['diagram']]()}
     <div style="display:flex;flex-direction:column;gap:64px;flex:1">{steps}</div></div>
   <p style="margin:48px 0 0;font-family:'JetBrains Mono',monospace;font-size:40px;font-weight:700;text-transform:uppercase;color:{C['muted']}">Got it right? Comment ✓</p>
