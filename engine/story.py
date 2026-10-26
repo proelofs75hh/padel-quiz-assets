@@ -52,7 +52,7 @@ def steps(s, n, t):
     return f'''<div class="post" style="background:{C['paper']};color:{C['night']}">
   <style>.hlc{{color:{C['court']}}}</style>
   <div class="top" style="color:{C['muted']}"><span>How it goes on</span><span>{n}/{t}</span></div>
-  <h1 class="disp" style="margin-top:72px;font-size:150px;line-height:.92">{fmt(s['title'], 'hlc')}</h1>
+  <h1 class="disp" style="margin-top:56px;font-size:130px;line-height:.92">{fmt(s['title'], 'hlc')}</h1>
   <div style="display:flex;flex-direction:column;gap:48px;margin-top:72px">{rows}</div>
   <p style="margin:auto 0 0;font-family:'JetBrains Mono',monospace;font-size:44px;font-weight:700;text-transform:uppercase;color:{C['muted']}">{fmt(s['foot'])}</p>
 </div>'''
