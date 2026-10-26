@@ -1,0 +1,19 @@
+{
+ "topic_key": "rule.tiebreak-first-serve-side",
+ "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), Regla 1 – Muerte súbita o tie-break, puntos 3 y 5; Regla 5.2",
+ "frames": [
+  {"type": "question", "label": "Rules", "big": "Tie-break.",
+   "claim": "The first serve comes from the right side."},
+  {"type": "answer", "verdict": "FAIR", "pill": "Right side",
+   "line": "Point 1: one serve,\nfrom the **right**.",
+   "note": "Right = your right side when you face the net.\n\nServe diagonally, as always.",
+   "paths": "<rect x='100' y='339' width='100' height='61' fill='#D7F23A' opacity='.25'/><path d='M150 376 L60 150' fill='none' stroke='#D7F23A' stroke-width='6' stroke-dasharray='12 8'/><circle cx='150' cy='392' r='12' fill='#0E1630' stroke='#FFF' stroke-width='3'/><circle cx='60' cy='150' r='10' fill='#D7F23A' stroke='#0E1630' stroke-width='3'/>",
+   "source": "FIP rules · Rule 1"},
+  {"type": "steps", "title": "Then it's\n**2 points** each.",
+   "steps": ["Point 1: whoever is next to serve. **Right** side.",
+             "Points 2 + 3: the other team serves. **Left** first, then right.",
+             "Keep going: 2 points per server, always **left** first.",
+             "Change ends every **6 points**."],
+   "foot": "Save this for your tie-break"}
+ ]
+}

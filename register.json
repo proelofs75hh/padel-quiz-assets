@@ -203,6 +203,15 @@
    "claim": "You are allowed to serve straight, not diagonally.",
    "verdict": "FAULT",
    "format": "reel"
+  },
+  {
+   "id": "2026-10-26-story-tiebreak",
+   "date": "2026-10-26",
+   "pillar": "rules",
+   "topic_key": "rule.tiebreak-first-serve-side",
+   "claim": "Tie-break. The first serve comes from the right side.",
+   "verdict": "FAIR",
+   "format": "story"
   }
  ]
 }
