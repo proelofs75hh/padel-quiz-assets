@@ -11,7 +11,7 @@
   {
    "type": "answer",
    "verdict": "FAULT",
-   "pill": "Right side",
+   "pill": "Not left",
    "line": "Point 1: one serve,\nfrom the **right**.",
    "note": "Right = your right side when you face the net.\n\nServe diagonally, as always.",
    "paths": "<rect x='100' y='339' width='100' height='61' fill='#D7F23A' opacity='.25'/><path d='M150 376 L60 150' fill='none' stroke='#D7F23A' stroke-width='6' stroke-dasharray='12 8'/><circle cx='150' cy='392' r='12' fill='#0E1630' stroke='#FFF' stroke-width='3'/><circle cx='60' cy='150' r='10' fill='#D7F23A' stroke='#0E1630' stroke-width='3'/>",
