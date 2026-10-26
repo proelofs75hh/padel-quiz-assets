@@ -176,6 +176,33 @@
    "topic_key": "gear.no-weight-limit",
    "claim": "The rules set a maximum weight for padel rackets.",
    "verdict": "FAULT"
+  },
+  {
+   "id": "2026-10-27-reel",
+   "date": "2026-10-27",
+   "pillar": "rules",
+   "topic_key": "rule.serve-bounce-then-back-glass",
+   "claim": "Your serve hits the glass after the bounce.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-10-28-reel",
+   "date": "2026-10-28",
+   "pillar": "market",
+   "topic_key": "market.players-worldwide",
+   "claim": "More than 15 million people play padel worldwide.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-10-29-reel",
+   "date": "2026-10-29",
+   "pillar": "rules",
+   "topic_key": "rule.serve-diagonal",
+   "claim": "You are allowed to serve straight, not diagonally.",
+   "verdict": "FAULT",
+   "format": "reel"
   }
  ]
 }
