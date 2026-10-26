@@ -1,0 +1,29 @@
+{
+ "reels": [
+  {"id": "2026-10-27-reel", "slot": "2026-10-27T07:30:00", "pillar": "rules",
+   "topic_key": "rule.serve-bounce-then-back-glass",
+   "fact_source": "FIP Reglamento de Juego, Regla 7.1.e / 12.3",
+   "caption": "Watch the ball. Make the call. 🎾\n\nYour serve hits the glass after the bounce. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": ["padel", "padelrules", "padelquiz", "padelreels", "padelserve", "padellife", "padelplayer", "fairorfault"],
+   "spec": {"format": "refs_view", "label": "Rules", "claim": "Your serve hits the glass after the bounce.",
+            "verdict": "FAIR", "pill": "Play on", "line": "Glass after the bounce\nis **fine**.",
+            "source": "FIP rules · Serve", "diagram": "serve-then-glass"}},
+  {"id": "2026-10-28-reel", "slot": "2026-10-28T07:30:00", "pillar": "market",
+   "topic_key": "market.players-worldwide",
+   "fact_source": "Global Padel Report 2026 (Playtomic): 19.4 million players",
+   "caption": "Guess the number before it stops 🌍\n\nMore than 15 million people play padel worldwide. Fair or fault?\n\nComment your guess 👇\nFollow @fairorfault – your daily padel quiz.\n\nSource: Global Padel Report 2026",
+   "hashtags": ["padel", "padelworld", "padelquiz", "padelreels", "padelgrowth", "padellife", "padelclub", "fairorfault"],
+   "spec": {"format": "guess_number", "label": "Market", "claim": "More than 15 million people play padel worldwide.",
+            "verdict": "FAIR", "pill": "Even more", "line": "**19.4 million**\nplayers worldwide.",
+            "number": 19.4, "decimals": 1, "marker": 15, "unit": "million players worldwide", "marker_label": "claim",
+            "source": "Global Padel Report 26"}},
+  {"id": "2026-10-29-reel", "slot": "2026-10-29T07:30:00", "pillar": "rules",
+   "topic_key": "rule.serve-diagonal",
+   "fact_source": "FIP Reglamento de Juego, Regla 6.6 / 7.1.c",
+   "caption": "Watch the ball. Make the call. 🎾\n\nYou are allowed to serve straight, not diagonally. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": ["padel", "padelrules", "padelquiz", "padelreels", "padelserve", "padellife", "padelbeginner", "fairorfault"],
+   "spec": {"format": "refs_view", "label": "Rules", "claim": "You are allowed to serve straight, not diagonally.",
+            "verdict": "FAULT", "pill": "Wrong box", "line": "Always serve\n**diagonally**.",
+            "source": "FIP rules · Serve", "diagram": "serve-wrong-box"}}
+ ]
+}
