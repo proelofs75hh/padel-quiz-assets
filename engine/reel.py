@@ -184,6 +184,19 @@ MIDS = {"refs_view": mid_refs_view, "three_second_call": mid_three_second_call, 
 MID_TOP = {"refs_view": (760, 610), "three_second_call": (900, 760), "guess_number": (980, 820), "spec_sheet": (900, 700)}
 
 
+def call_rows(spec):
+    """Optional answer graphic: rows [label, ok] -> check / cross list under the reason."""
+    rows = spec.get("call_rows")
+    if not rows:
+        return ""
+    items = "".join(
+        f'<span style="display:flex;align-items:center;gap:28px;margin-top:22px;font-size:64px">'
+        f'<span style="width:76px;height:76px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;'
+        f'font-size:44px;background:{C["ball"] if ok else C["fault"]};color:{C["night"] if ok else C["paper"]}">{"✓" if ok else "✕"}</span>'
+        f'{fmt(label)}</span>' for label, ok in rows)
+    return f'<span style="display:block;margin-top:36px">{items}</span>'
+
+
 def page(spec):
     fair = spec["verdict"].upper() == "FAIR"
     vcol = C["ball"] if fair else C["fault"]
@@ -222,14 +235,14 @@ body{{width:1080px;height:1920px;overflow:hidden;font-family:'Instrument Sans';c
 {mid_css}
 </style></head><body>
 <div id="bg"></div><div id="night"></div>
-<div id="intro"><div class="t disp"><span class="f">Fair</span> or<br>Fault</div><div class="s mono">Your Daily Padel Quiz</div></div>
+<div id="intro"><div class="t disp"><span class="f">Fair</span> or<br>Fault?</div><div class="s mono">Your Daily Padel Quiz</div></div>
 <div id="top" class="mono"><span class="chip">Padel {fmt(spec['label'])}</span><span>@fairorfault</span></div>
 <div id="q"><h1 id="claim" class="disp">{words(spec['claim'])}</h1><p id="ask" class="disp">Fair or fault?</p></div>
 {mid_html}
 <div id="count" class="disp"></div>
 <div id="call"><span class="pill mono">{'✓' if fair else '✕'} {fmt(spec['pill'])}</span>
   <h1 id="verdict" class="disp">{'FAIR.' if fair else 'FAULT.'}</h1>
-  <p id="why">{fmt(spec['line'])}</p>
+  <p id="why">{fmt(spec['line'])}{call_rows(spec)}</p>
   <p id="cta" class="mono">Got it right? Comment ✓</p></div>
 <script>
 {consts}

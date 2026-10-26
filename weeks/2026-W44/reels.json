@@ -23,7 +23,7 @@
     "claim": "The rules set a maximum weight for padel rackets.",
     "verdict": "FAULT",
     "pill": "No weight limit",
-    "line": "Only length, width and\nthickness are **limited**.",
+    "line": "Everything is limited –\n**except the weight**.",
     "rows": [
      [
       "Max length",
@@ -42,7 +42,25 @@
       "?"
      ]
     ],
-    "source": "FIP rules · Racket"
+    "source": "FIP rules · Racket",
+    "call_rows": [
+     [
+      "Length: max 45.5 cm",
+      true
+     ],
+     [
+      "Width: max 26 cm",
+      true
+     ],
+     [
+      "Thickness: max 38 mm",
+      true
+     ],
+     [
+      "Weight: no limit",
+      false
+     ]
+    ]
    }
   },
   {
