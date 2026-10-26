@@ -33,6 +33,7 @@ FONTS = ENGINE / "fonts"
 FPS = 30
 C = diagrams.C
 INTRO, WORD, CALL_LEN, FADE, ASK_GAP = 2.5, 0.32, 3.4, 0.4, 0.7
+TRANS = 0.5  # extra pause question -> proof and proof -> answer
 MID_LEN = {"refs_view": 2.6, "three_second_call": 3.2, "guess_number": 3.0}
 
 
@@ -51,8 +52,8 @@ def timeline(spec):
     # "Fair or fault?" starts ASK_GAP after the last word is fully visible
     t_ask = INTRO + 0.3 + (nw - 1) * WORD + 0.25 + ASK_GAP
     t_read = t_ask + 0.35 + 1.6
-    t_mid = t_read + 0.4
-    t_call = t_mid + MID_LEN[spec["format"]]
+    t_mid = t_read + 0.4 + TRANS
+    t_call = t_mid + MID_LEN[spec["format"]] + TRANS
     return dict(T_ASK=t_ask, T_READ=t_read, T_MID=t_mid, T_CALL=t_call,
                 T_END=t_call + CALL_LEN + FADE)
 

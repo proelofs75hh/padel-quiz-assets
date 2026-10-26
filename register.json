@@ -182,7 +182,7 @@
    "date": "2026-10-27",
    "pillar": "rules",
    "topic_key": "rule.serve-bounce-then-back-glass",
-   "claim": "Your serve hits the glass after the bounce.",
+   "claim": "Your serve hits the back glass after the bounce.",
    "verdict": "FAIR",
    "format": "reel"
   },
