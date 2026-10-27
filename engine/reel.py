@@ -51,7 +51,7 @@ CHECK_STEP = 1.3  # checklist: seconds between rows
 
 
 def mid_len(spec):
-    if spec["format"] == "checklist":
+    if spec["format"] in ("checklist", "compare"):
         return 0.4 + len(spec["rows"]) * CHECK_STEP + 0.4
     return MID_LEN[spec["format"]]
 
@@ -199,30 +199,41 @@ function mid(t){{
 
 
 def mid_compare(spec):
+    """Side-by-side table; optional 4th value per row (True/False) adds a ✓/✕ badge.
+    Rows appear slowly one after another (CHECK_STEP)."""
     ca, cb = spec["cols"]
+    badges = any(len(r) > 3 for r in spec["rows"])
+    cols = "230px 1fr 1fr" + (" 96px" if badges else "")
     head = (f'<div class="cr ch"><span></span><span class="mono">{fmt(ca)}</span>'
-            f'<span class="mono">{fmt(cb)}</span></div>')
+            f'<span class="mono">{fmt(cb)}</span>{"<span></span>" if badges else ""}</div>')
+    def badge(r):
+        if len(r) < 4:
+            return ""
+        ok = r[3]
+        return (f'<span class="cb" style="background:{C["ball"] if ok else C["fault"]};'
+                f'color:{C["night"] if ok else C["paper"]}">{"✓" if ok else "✕"}</span>')
     body = "".join(
-        f'<div class="cr" id="cr{i}"><span class="mono cl">{fmt(l)}</span>'
-        f'<span class="disp cv">{fmt(a)}</span><span class="disp cv">{fmt(b)}</span></div>'
-        for i, (l, a, b) in enumerate(spec["rows"]))
+        f'<div class="cr" id="cr{i}"><span class="mono cl">{fmt(r[0])}</span>'
+        f'<span class="disp cv">{fmt(r[1])}</span><span class="disp cv">{fmt(r[2])}</span>{badge(r)}</div>'
+        for i, r in enumerate(spec["rows"]))
     html_ = f'<div id="mid">{head}{body}</div>'
     css = f"""#mid{{position:absolute;left:88px;right:88px}}
-.cr{{display:grid;grid-template-columns:250px 1fr 1fr;gap:20px;align-items:end;padding:26px 0;border-bottom:3px solid {T['line']}}}
+.cr{{display:grid;grid-template-columns:{cols};gap:18px;align-items:center;padding:30px 0;border-bottom:3px solid {T['line']}}}
 .ch{{padding-top:0;border-bottom:5px solid {T['acc']}}}
-.ch span{{font-size:44px;color:{T['acc']}}}
-.cl{{font-size:32px;color:{T['muted']};padding-bottom:10px}}
-.cv{{font-size:68px;line-height:1}}
+.ch span{{font-size:46px;color:{T['acc']}}}
+.cl{{font-size:34px;line-height:1.15;color:{T['muted']};white-space:nowrap}}
+.cv{{font-size:58px;line-height:1;white-space:nowrap}}
+.cb{{width:88px;height:88px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:700;transform:scale(0)}}
 .cr:not(.ch){{opacity:0}}"""
     js = f"""
-const NC={len(spec['rows'])};
+const NC={len(spec['rows'])}, STEP={CHECK_STEP};
 function mid(t){{
   const dt=t-T_MID;
-  for(let i=0;i<NC;i++){{ const e=$('cr'+i); const k=clamp((dt-0.2-i*0.8)/0.35);
-    e.style.opacity=k; e.style.transform=`translateY(${{(1-k)*30}}px)`; }}
+  for(let i=0;i<NC;i++){{ const e=$('cr'+i); const k=clamp((dt-0.2-i*STEP)/0.5);
+    e.style.opacity=k; e.style.transform=`translateY(${{(1-k)*30}}px)`;
+    const bb=e.querySelector('.cb'); if(bb){{ const b=clamp((dt-0.2-i*STEP-0.6)/0.35); bb.style.transform=`scale(${{b}})`; }} }}
 }}"""
     return html_, css, js
-
 
 def mid_checklist(spec):
     """Rows appear one after another, each with a check (true) or cross (false) badge."""
