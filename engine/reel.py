@@ -236,7 +236,7 @@ body{{width:1080px;height:1920px;overflow:hidden;font-family:'Instrument Sans';c
 {mid_css}
 </style></head><body>
 <div id="bg"></div><div id="night"></div>
-<div id="intro"><div class="t disp"><span class="f">Fair</span> or<br>Fault?</div><div class="s mono">Your Daily Padel Quiz</div></div>
+<div id="intro"><div class="t disp"><span class="f">Fair</span> or<br>Fault</div><div class="s mono">Your Daily Padel Quiz</div></div>
 <div id="top" class="mono"><span class="chip">Padel {fmt(spec['label'])}</span><span>@fairorfault</span></div>
 <div id="q"><h1 id="claim" class="disp">{words(spec['claim'])}</h1><p id="ask" class="disp">Fair or fault?</p></div>
 {mid_html}
@@ -257,7 +257,7 @@ function coverMode(badge){{
   $('top').style.color=NIGHT; $('claim').style.color=NIGHT; $('ask').style.color=COURT;
   // keep everything inside the 4:5 grid crop (y 285-1635)
   $('top').style.top='380px'; $('q').style.top='500px'; $('q').style.transform='none';
-  $('claim').style.fontSize='124px'; $('ask').style.display='none';  // the question comes later in the video
+  $('claim').style.fontSize='118px'; $('ask').style.fontSize='140px'; $('ask').style.marginTop='44px';
   if(badge){{ const b=document.createElement('div'); b.id='badge';
     b.innerHTML='<span style="display:inline-flex;width:84px;height:84px;border-radius:999px;background:'+COURT+';align-items:center;justify-content:center"><svg width="34" height="38" viewBox="0 0 34 38"><path d="M4 3 L31 19 L4 35 Z" fill="'+BALL+'"/></svg></span><span>Watch &amp; make the call</span>';
     b.style.cssText='position:absolute;left:88px;top:1470px;display:flex;align-items:center;gap:28px;font-family:JetBrains Mono;font-weight:700;text-transform:uppercase;font-size:42px;color:'+NIGHT;
