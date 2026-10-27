@@ -12,6 +12,7 @@ Common fields:
 Format-specific:
   refs_view          diagram: key of engine/diagrams.py LIB
   three_second_call  -
+  checklist          rows: [[label, value, ok], ...] -> rows appear slowly with ✓ (ok) / ✕
   compare            cols: [a, b], rows: [[label, value_a, value_b], ...] (side-by-side table)
   spec_sheet         rows: [[label, value], ...] (value "?" = the open question), racket outline
   guess_number       number (float), marker (the claim's value), decimals (int, default 0),
@@ -34,10 +35,25 @@ import diagrams  # noqa: E402
 FONTS = ENGINE / "fonts"
 FPS = 30
 C = diagrams.C
+# Theme palettes. "light" (white video, default since 27.10.) and "dark" (blue/night, original).
+THEMES = {
+    "light": dict(bg=C["paper"], bg2=C["paper"], fg=C["night"], acc=C["court"], muted=C["muted"],
+                  line="rgba(14,22,48,.18)", fair_word=C["court"], fault_word=C["fault"], intro_f=C["court"]),
+    "dark": dict(bg=C["court"], bg2=C["night"], fg=C["paper"], acc=C["ball"], muted=C["glass"],
+                 line="rgba(244,241,232,.3)", fair_word=C["ball"], fault_word=C["paper"], intro_f=C["ball"]),
+}
+T = THEMES["light"]
 INTRO, WORD, CALL_LEN, FADE, ASK_GAP = 2.5, 0.32, 3.4, 0.4, 0.7
 COVER_BADGE = True  # play badge on the white cover
 TRANS = 0.5  # extra pause question -> proof and proof -> answer
 MID_LEN = {"refs_view": 2.6, "three_second_call": 3.2, "guess_number": 3.0, "spec_sheet": 3.4, "compare": 3.6}
+CHECK_STEP = 1.3  # checklist: seconds between rows
+
+
+def mid_len(spec):
+    if spec["format"] == "checklist":
+        return 0.4 + len(spec["rows"]) * CHECK_STEP + 0.4
+    return MID_LEN[spec["format"]]
 
 
 def fmt(t, cls="hl"):
@@ -56,7 +72,7 @@ def timeline(spec):
     t_ask = INTRO + 0.3 + (nw - 1) * WORD + 0.25 + ASK_GAP
     t_read = t_ask + 0.35 + 1.6
     t_mid = t_read + 0.4 + TRANS
-    t_call = t_mid + MID_LEN[spec["format"]] + TRANS
+    t_call = t_mid + mid_len(spec) + TRANS
     return dict(T_ASK=t_ask, T_READ=t_read, T_MID=t_mid, T_CALL=t_call,
                 T_END=t_call + CALL_LEN + FADE)
 
@@ -99,8 +115,8 @@ def mid_three_second_call(spec):
     R = 230
     circ = 2 * 3.14159 * (R + 34)
     svg = f'''<svg id="mid" viewBox="-300 -300 600 600" width="600" height="600">
-  <circle r="{R+34}" fill="none" stroke="rgba(244,241,232,.25)" stroke-width="22"/>
-  <circle id="arc" r="{R+34}" fill="none" stroke="{C['ball']}" stroke-width="22" stroke-linecap="round"
+  <circle r="{R+34}" fill="none" stroke="{T['line']}" stroke-width="22"/>
+  <circle id="arc" r="{R+34}" fill="none" stroke="{T['acc']}" stroke-width="22" stroke-linecap="round"
           transform="rotate(-90)" stroke-dasharray="{circ:.1f}" stroke-dashoffset="0"/>
   <circle r="{R}" fill="{C['ball']}"/>
   <path d="M{-R*0.92:.0f} {-R*0.38:.0f} C {-R*0.35:.0f} {-R*0.05:.0f}, {-R*0.35:.0f} {R*0.05:.0f}, {-R*0.92:.0f} {R*0.38:.0f}" fill="none" stroke="{C['paper']}" stroke-width="12"/>
@@ -135,11 +151,11 @@ def mid_guess_number(spec):
     <div id="mk" style="left:{mark/scale*100:.1f}%"><span class="mono">{mlabel}: {mark_txt}</span></div></div>
 </div>'''
     css = f"""#mid{{position:absolute;left:88px;right:88px}}
-#gnum{{font-size:230px;line-height:1;color:{C['ball']};white-space:nowrap}}
+#gnum{{font-size:230px;line-height:1;color:{T['acc']};white-space:nowrap}}
 #gunit{{font-size:56px;font-weight:700;margin-top:10px}}
-#bar{{position:relative;height:56px;margin-top:150px;background:rgba(244,241,232,.2);border-radius:999px}}
-#fill{{position:absolute;left:0;top:0;bottom:0;width:0;background:{C['ball']};border-radius:999px}}
-#mk{{position:absolute;top:-30px;bottom:-30px;width:8px;margin-left:-4px;background:{C['paper']}}}
+#bar{{position:relative;height:56px;margin-top:150px;background:{T['line']};border-radius:999px}}
+#fill{{position:absolute;left:0;top:0;bottom:0;width:0;background:{T['acc']};border-radius:999px}}
+#mk{{position:absolute;top:-30px;bottom:-30px;width:8px;margin-left:-4px;background:{T['fg']}}}
 #mk span{{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:34px;padding-bottom:10px}}"""
     js = f"""
 const NUM={num}, SCALE={scale}, DEC={dec};
@@ -156,9 +172,9 @@ def mid_spec_sheet(spec):
     rows = spec["rows"]
     racket = f'''<svg id="rk" viewBox="0 0 260 520" width="250" height="500">
   <path d="M130 8 C 225 8 252 80 252 170 C 252 255 205 300 165 318 L 158 360 L 102 360 L 95 318 C 55 300 8 255 8 170 C 8 80 35 8 130 8 Z"
-        fill="none" stroke="{C['ball']}" stroke-width="10"/>
-  {"".join(f'<circle cx="{x}" cy="{y}" r="7" fill="{C['ball']}" opacity=".7"/>' for x in range(60, 210, 30) for y in range(70, 260, 34) if (x-130)**2/110**2 + (y-165)**2/120**2 < 1)}
-  <rect x="104" y="360" width="52" height="150" rx="14" fill="{C['paper']}"/>
+        fill="none" stroke="{T['acc']}" stroke-width="10"/>
+  {"".join(f'<circle cx="{x}" cy="{y}" r="7" fill="{T['acc']}" opacity=".7"/>' for x in range(60, 210, 30) for y in range(70, 260, 34) if (x-130)**2/110**2 + (y-165)**2/120**2 < 1)}
+  <rect x="104" y="360" width="52" height="150" rx="14" fill="{T['fg']}"/>
 </svg>'''
     items = "".join(
         f'<div class="sr" id="sr{i}"><span class="sl mono">{fmt(l)}</span>'
@@ -166,10 +182,10 @@ def mid_spec_sheet(spec):
     html_ = f'<div id="mid">{racket}<div id="rows">{items}</div></div>'
     css = f"""#mid{{position:absolute;left:88px;right:88px;display:flex;gap:56px;align-items:center}}
 #rows{{flex:1;display:flex;flex-direction:column;gap:34px}}
-.sr{{opacity:0;border-bottom:3px solid rgba(244,241,232,.3);padding-bottom:18px}}
-.sl{{display:block;font-size:34px;color:{C['glass']}}}
+.sr{{opacity:0;border-bottom:3px solid {T['line']};padding-bottom:18px}}
+.sl{{display:block;font-size:34px;color:{T['muted']}}}
 .sv{{display:block;font-size:92px;line-height:1;margin-top:6px}}
-.sv.q{{color:{C['ball']};font-size:150px}}"""
+.sv.q{{color:{T['acc']};font-size:150px}}"""
     js = f"""
 const NR={len(rows)};
 function mid(t){{
@@ -192,10 +208,10 @@ def mid_compare(spec):
         for i, (l, a, b) in enumerate(spec["rows"]))
     html_ = f'<div id="mid">{head}{body}</div>'
     css = f"""#mid{{position:absolute;left:88px;right:88px}}
-.cr{{display:grid;grid-template-columns:250px 1fr 1fr;gap:20px;align-items:end;padding:26px 0;border-bottom:3px solid rgba(244,241,232,.3)}}
-.ch{{padding-top:0;border-bottom:5px solid {C['ball']}}}
-.ch span{{font-size:44px;color:{C['ball']}}}
-.cl{{font-size:32px;color:{C['glass']};padding-bottom:10px}}
+.cr{{display:grid;grid-template-columns:250px 1fr 1fr;gap:20px;align-items:end;padding:26px 0;border-bottom:3px solid {T['line']}}}
+.ch{{padding-top:0;border-bottom:5px solid {T['acc']}}}
+.ch span{{font-size:44px;color:{T['acc']}}}
+.cl{{font-size:32px;color:{T['muted']};padding-bottom:10px}}
 .cv{{font-size:68px;line-height:1}}
 .cr:not(.ch){{opacity:0}}"""
     js = f"""
@@ -208,8 +224,33 @@ function mid(t){{
     return html_, css, js
 
 
-MIDS = {"refs_view": mid_refs_view, "three_second_call": mid_three_second_call, "guess_number": mid_guess_number, "spec_sheet": mid_spec_sheet, "compare": mid_compare}
-MID_TOP = {"refs_view": (760, 610), "three_second_call": (900, 760), "guess_number": (980, 820), "spec_sheet": (900, 700), "compare": (900, 720)}
+def mid_checklist(spec):
+    """Rows appear one after another, each with a check (true) or cross (false) badge."""
+    items = "".join(
+        f'<div class="ck" id="ck{i}"><span class="cb" style="background:{C["ball"] if ok else C["fault"]};'
+        f'color:{C["night"] if ok else C["paper"]}">{"✓" if ok else "✕"}</span>'
+        f'<span><span class="ckl mono">{fmt(l)}</span><span class="ckv disp">{fmt(v)}</span></span></div>'
+        for i, (l, v, ok) in enumerate(spec["rows"]))
+    html_ = f'<div id="mid">{items}</div>'
+    css = f"""#mid{{position:absolute;left:88px;right:88px;display:flex;flex-direction:column;gap:44px}}
+.ck{{display:flex;gap:36px;align-items:center;opacity:0}}
+.cb{{flex:none;width:110px;height:110px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:64px;font-weight:700;transform:scale(0)}}
+.ckl{{display:block;font-size:36px;color:{T['muted']}}}
+.ckv{{display:block;font-size:80px;line-height:1;margin-top:6px}}"""
+    js = f"""
+const NK={len(spec['rows'])}, STEP={CHECK_STEP};
+function mid(t){{
+  const dt=t-T_MID;
+  for(let i=0;i<NK;i++){{ const e=$('ck'+i); const k=clamp((dt-0.2-i*STEP)/0.5);
+    e.style.opacity=k; e.style.transform=`translateY(${{(1-k)*30}}px)`;
+    const b=clamp((dt-0.2-i*STEP-0.45)/0.35); const bb=e.querySelector('.cb');
+    bb.style.transform=`scale(${{b<1? b*1.15 : 1}})`; }}
+}}"""
+    return html_, css, js
+
+
+MIDS = {"refs_view": mid_refs_view, "three_second_call": mid_three_second_call, "guess_number": mid_guess_number, "spec_sheet": mid_spec_sheet, "compare": mid_compare, "checklist": mid_checklist}
+MID_TOP = {"refs_view": (760, 610), "three_second_call": (900, 760), "guess_number": (980, 820), "spec_sheet": (900, 700), "compare": (900, 720), "checklist": (900, 760)}
 
 
 def call_rows(spec):
@@ -226,6 +267,8 @@ def call_rows(spec):
 
 
 def page(spec):
+    global T
+    T = THEMES[spec.get("theme", "light")]
     fair = spec["verdict"].upper() == "FAIR"
     vcol = C["ball"] if fair else C["fault"]
     pill_fg = C["night"] if fair else C["paper"]
@@ -238,9 +281,9 @@ def page(spec):
 @font-face{{font-family:"Instrument Sans";src:url("file://{FONTS}/InstrumentSans.ttf");font-weight:400 700}}
 @font-face{{font-family:"JetBrains Mono";src:url("file://{FONTS}/JetBrainsMono.ttf");font-weight:100 800}}
 *{{margin:0;padding:0;box-sizing:border-box}}
-body{{width:1080px;height:1920px;overflow:hidden;font-family:'Instrument Sans';color:{C['paper']}}}
-#bg{{position:absolute;inset:0;background:{C['court']}}}
-#night{{position:absolute;inset:0;background:{C['night']};opacity:0}}
+body{{width:1080px;height:1920px;overflow:hidden;font-family:'Instrument Sans';color:{T['fg']}}}
+#bg{{position:absolute;inset:0;background:{T['bg']}}}
+#night{{position:absolute;inset:0;background:{T['bg2']};opacity:0}}
 .disp{{font-family:'Bricolage Grotesque';font-weight:800;letter-spacing:-.03em}}
 .mono{{font-family:'JetBrains Mono';font-weight:700;text-transform:uppercase}}
 #top{{position:absolute;left:88px;right:88px;top:250px;display:flex;justify-content:space-between;align-items:center;font-size:40px}}
@@ -248,17 +291,17 @@ body{{width:1080px;height:1920px;overflow:hidden;font-family:'Instrument Sans';c
 #q{{position:absolute;left:88px;right:88px;top:360px;transform-origin:left top}}
 #claim{{font-size:96px;line-height:.98}}
 .w{{opacity:0}}
-#ask{{font-size:120px;line-height:.9;color:{C['ball']};margin-top:28px;opacity:0}}
-#count{{position:absolute;right:88px;top:1040px;font-size:260px;color:{C['ball']};opacity:0}}
+#ask{{font-size:120px;line-height:.9;color:{T['acc']};margin-top:28px;opacity:0}}
+#count{{position:absolute;right:88px;top:1040px;font-size:260px;color:{T['acc']};opacity:0}}
 #call{{position:absolute;left:88px;right:88px;top:560px;opacity:0;transform-origin:left top}}
 .pill{{display:inline-flex;align-items:center;gap:20px;border-radius:999px;padding:18px 40px;font-size:52px;background:{vcol};color:{pill_fg}}}
-#verdict{{font-size:300px;line-height:.88;margin-top:40px;color:{C['ball'] if fair else C['paper']}}}
+#verdict{{font-size:300px;line-height:.88;margin-top:40px;color:{T['fair_word'] if fair else T['fault_word']}}}
 #why{{font-size:76px;line-height:1.1;font-weight:700;margin-top:60px;opacity:0}}
-#cta{{font-size:44px;margin-top:70px;color:{C['ball']};opacity:0}}
-.hl{{color:{C['ball']}}}
+#cta{{font-size:44px;margin-top:70px;color:{T['acc']};opacity:0}}
+.hl{{color:{T['acc']}}}
 #intro{{position:absolute;left:0;right:0;top:700px;text-align:center}}
 #intro .t{{font-size:170px;line-height:.9}}
-#intro .t .f{{color:{C['ball']}}}
+#intro .t .f{{color:{T['intro_f']}}}
 #intro .s{{font-size:44px;margin-top:40px;letter-spacing:.06em}}
 {mid_css}
 </style></head><body>

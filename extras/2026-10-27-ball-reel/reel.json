@@ -15,46 +15,28 @@
   "fairorfault"
  ],
  "spec": {
-  "format": "compare",
+  "format": "checklist",
   "label": "Gear",
   "claim": "Padel balls and tennis balls have the same weight.",
   "verdict": "FAIR",
   "pill": "Same weight",
-  "cols": [
-   "Padel",
-   "Tennis"
-  ],
   "rows": [
    [
-    "Weight (g)",
-    "56–59.4",
-    "56–59.4"
+    "Weight",
+    "Same: 56–59.4 g",
+    true
    ],
    [
-    "Size (cm)",
-    "6.35–6.77",
-    "6.54–6.86"
+    "Size",
+    "Max 6.77 vs 6.86 cm",
+    false
    ],
    [
-    "Bounce (cm)",
-    "135–145",
-    "135–147"
+    "Bounce",
+    "Max 145 vs 147 cm",
+    false
    ]
   ],
-  "line": "Same **weight**.\nSize and bounce sometimes differ.",
-  "call_rows": [
-   [
-    "Weight: identical",
-    "="
-   ],
-   [
-    "Size: max 6.77 vs 6.86 cm",
-    "≠"
-   ],
-   [
-    "Bounce: max 145 vs 147 cm",
-    "≠"
-   ]
-  ]
+  "line": "Same **weight**.\nSize and bounce sometimes differ."
  }
 }
