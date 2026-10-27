@@ -239,6 +239,15 @@
    "claim": "The rules set a maximum weight for padel rackets.",
    "verdict": "FAULT",
    "format": "reel"
+  },
+  {
+   "id": "2026-10-27-ball-reel",
+   "date": "2026-10-27",
+   "pillar": "gear",
+   "topic_key": "gear.padel-vs-tennis-ball",
+   "claim": "Padel balls and tennis balls have the same weight.",
+   "verdict": "FAIR",
+   "format": "reel"
   }
  ]
 }
