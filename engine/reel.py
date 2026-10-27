@@ -12,6 +12,7 @@ Common fields:
 Format-specific:
   refs_view          diagram: key of engine/diagrams.py LIB
   three_second_call  -
+  compare            cols: [a, b], rows: [[label, value_a, value_b], ...] (side-by-side table)
   spec_sheet         rows: [[label, value], ...] (value "?" = the open question), racket outline
   guess_number       number (float), marker (the claim's value), decimals (int, default 0),
                      unit (text under the number), marker_label (default "the claim")
@@ -36,7 +37,7 @@ C = diagrams.C
 INTRO, WORD, CALL_LEN, FADE, ASK_GAP = 2.5, 0.32, 3.4, 0.4, 0.7
 COVER_BADGE = True  # play badge on the white cover
 TRANS = 0.5  # extra pause question -> proof and proof -> answer
-MID_LEN = {"refs_view": 2.6, "three_second_call": 3.2, "guess_number": 3.0, "spec_sheet": 3.4}
+MID_LEN = {"refs_view": 2.6, "three_second_call": 3.2, "guess_number": 3.0, "spec_sheet": 3.4, "compare": 3.6}
 
 
 def fmt(t, cls="hl"):
@@ -181,8 +182,34 @@ function mid(t){{
     return html_, css, js
 
 
-MIDS = {"refs_view": mid_refs_view, "three_second_call": mid_three_second_call, "guess_number": mid_guess_number, "spec_sheet": mid_spec_sheet}
-MID_TOP = {"refs_view": (760, 610), "three_second_call": (900, 760), "guess_number": (980, 820), "spec_sheet": (900, 700)}
+def mid_compare(spec):
+    ca, cb = spec["cols"]
+    head = (f'<div class="cr ch"><span></span><span class="mono">{fmt(ca)}</span>'
+            f'<span class="mono">{fmt(cb)}</span></div>')
+    body = "".join(
+        f'<div class="cr" id="cr{i}"><span class="mono cl">{fmt(l)}</span>'
+        f'<span class="disp cv">{fmt(a)}</span><span class="disp cv">{fmt(b)}</span></div>'
+        for i, (l, a, b) in enumerate(spec["rows"]))
+    html_ = f'<div id="mid">{head}{body}</div>'
+    css = f"""#mid{{position:absolute;left:88px;right:88px}}
+.cr{{display:grid;grid-template-columns:250px 1fr 1fr;gap:20px;align-items:end;padding:26px 0;border-bottom:3px solid rgba(244,241,232,.3)}}
+.ch{{padding-top:0;border-bottom:5px solid {C['ball']}}}
+.ch span{{font-size:44px;color:{C['ball']}}}
+.cl{{font-size:32px;color:{C['glass']};padding-bottom:10px}}
+.cv{{font-size:68px;line-height:1}}
+.cr:not(.ch){{opacity:0}}"""
+    js = f"""
+const NC={len(spec['rows'])};
+function mid(t){{
+  const dt=t-T_MID;
+  for(let i=0;i<NC;i++){{ const e=$('cr'+i); const k=clamp((dt-0.2-i*0.8)/0.35);
+    e.style.opacity=k; e.style.transform=`translateY(${{(1-k)*30}}px)`; }}
+}}"""
+    return html_, css, js
+
+
+MIDS = {"refs_view": mid_refs_view, "three_second_call": mid_three_second_call, "guess_number": mid_guess_number, "spec_sheet": mid_spec_sheet, "compare": mid_compare}
+MID_TOP = {"refs_view": (760, 610), "three_second_call": (900, 760), "guess_number": (980, 820), "spec_sheet": (900, 700), "compare": (900, 720)}
 
 
 def call_rows(spec):
@@ -193,7 +220,7 @@ def call_rows(spec):
     items = "".join(
         f'<span style="display:flex;align-items:center;gap:28px;margin-top:22px;font-size:64px">'
         f'<span style="width:76px;height:76px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;'
-        f'font-size:44px;background:{C["ball"] if ok else C["fault"]};color:{C["night"] if ok else C["paper"]}">{"✓" if ok else "✕"}</span>'
+        f'font-size:44px;background:{C["ball"] if ok is True else (C["fault"] if ok is False else C["glass"])};color:{C["paper"] if ok is False else C["night"]}">{"✓" if ok is True else ("✕" if ok is False else ok)}</span>'
         f'{fmt(label)}</span>' for label, ok in rows)
     return f'<span style="display:block;margin-top:36px">{items}</span>'
 

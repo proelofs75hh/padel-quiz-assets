@@ -1,0 +1,60 @@
+{
+ "id": "2026-10-27-ball-reel",
+ "pillar": "gear",
+ "topic_key": "gear.padel-vs-tennis-ball",
+ "fact_source": "FIP Reglamento de Juego, La pelota (6.35–6.77 cm, 56.0–59.4 g, rebound 135–145 cm from 2.54 m); ITF Rules of Tennis App. I, Type 2 ball (6.54–6.86 cm, 56.0–59.4 g, rebound 135–147 cm)",
+ "caption": "Same ball, different sport? 🎾\n\nPadel balls and tennis balls have the same weight. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.",
+ "hashtags": [
+  "padel",
+  "padelball",
+  "padelgear",
+  "padelquiz",
+  "padelreels",
+  "tennis",
+  "padellife",
+  "fairorfault"
+ ],
+ "spec": {
+  "format": "compare",
+  "label": "Gear",
+  "claim": "Padel balls and tennis balls have the same weight.",
+  "verdict": "FAIR",
+  "pill": "Same weight",
+  "cols": [
+   "Padel",
+   "Tennis"
+  ],
+  "rows": [
+   [
+    "Weight (g)",
+    "56–59.4",
+    "56–59.4"
+   ],
+   [
+    "Size (cm)",
+    "6.35–6.77",
+    "6.54–6.86"
+   ],
+   [
+    "Bounce (cm)",
+    "135–145",
+    "135–147"
+   ]
+  ],
+  "line": "Same **weight**.\nSize and bounce differ.",
+  "call_rows": [
+   [
+    "Weight: identical",
+    "="
+   ],
+   [
+    "Size: padel ball is smaller",
+    "≠"
+   ],
+   [
+    "Bounce: padel ball is lower",
+    "≠"
+   ]
+  ]
+ }
+}
