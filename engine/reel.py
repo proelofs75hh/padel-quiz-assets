@@ -218,7 +218,7 @@ def call_rows(spec):
     if not rows:
         return ""
     items = "".join(
-        f'<span style="display:flex;align-items:center;gap:28px;margin-top:22px;font-size:64px">'
+        f'<span style="display:flex;align-items:center;gap:28px;margin-top:22px;font-size:58px">'
         f'<span style="width:76px;height:76px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;'
         f'font-size:44px;background:{C["ball"] if ok is True else (C["fault"] if ok is False else C["glass"])};color:{C["paper"] if ok is False else C["night"]}">{"✓" if ok is True else ("✕" if ok is False else ok)}</span>'
         f'{fmt(label)}</span>' for label, ok in rows)
