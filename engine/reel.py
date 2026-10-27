@@ -42,7 +42,7 @@ THEMES = {
     "dark": dict(bg=C["court"], bg2=C["night"], fg=C["paper"], acc=C["ball"], muted=C["glass"],
                  line="rgba(244,241,232,.3)", fair_word=C["ball"], fault_word=C["paper"], intro_f=C["ball"]),
 }
-T = THEMES["light"]
+T = THEMES["dark"]  # brand colours; only the intro is white (see #introbg)
 INTRO, WORD, CALL_LEN, FADE, ASK_GAP = 2.5, 0.32, 3.4, 0.4, 0.7
 COVER_BADGE = True  # play badge on the white cover
 TRANS = 0.5  # extra pause question -> proof and proof -> answer
@@ -279,7 +279,7 @@ def call_rows(spec):
 
 def page(spec):
     global T
-    T = THEMES[spec.get("theme", "light")]
+    T = THEMES[spec.get("theme", "dark")]
     fair = spec["verdict"].upper() == "FAIR"
     vcol = C["ball"] if fair else C["fault"]
     pill_fg = C["night"] if fair else C["paper"]
@@ -312,12 +312,14 @@ body{{width:1080px;height:1920px;overflow:hidden;font-family:'Instrument Sans';c
 .hl{{color:{T['acc']}}}
 #intro{{position:absolute;left:0;right:0;top:700px;text-align:center}}
 #intro .t{{font-size:170px;line-height:.9}}
-#intro .t .f{{color:{T['intro_f']}}}
+#intro{{color:{C['night']}}}
+#intro .t .f{{color:{C['court']}}}
+#introbg{{position:absolute;inset:0;background:{C['paper']}}}
 #intro .s{{font-size:44px;margin-top:40px;letter-spacing:.06em}}
 {mid_css}
 </style></head><body>
 <div id="bg"></div><div id="night"></div>
-<div id="intro"><div class="t disp"><span class="f">Fair</span> or<br>Fault</div><div class="s mono">Your Daily Padel Quiz</div></div>
+<div id="introbg"></div><div id="intro"><div class="t disp"><span class="f">Fair</span> or<br>Fault</div><div class="s mono">Your Daily Padel Quiz</div></div>
 <div id="top" class="mono"><span class="chip">Padel {fmt(spec['label'])}</span><span>@fairorfault</span></div>
 <div id="q"><h1 id="claim" class="disp">{words(spec['claim'])}</h1><p id="ask" class="disp">Fair or fault?</p></div>
 {mid_html}
@@ -351,7 +353,7 @@ const WS=[...document.querySelectorAll('.w')];
 {mid_js}
 function setT(t){{
   const it=clamp(t/0.4)*(1-clamp((t-{INTRO}+0.45)/0.4));
-  $('intro').style.opacity=it; $('intro').style.transform=`scale(${{lerp(0.94,1,clamp(t/0.8))}})`;
+  $('introbg').style.opacity=Math.max(1-clamp((t-{INTRO}+0.45)/0.4), clamp((t-(T_END-{FADE}))/0.3)); $('intro').style.opacity=it; $('intro').style.transform=`scale(${{lerp(0.94,1,clamp(t/0.8))}})`;
   $('top').style.opacity=clamp((t-{INTRO}+0.1)/0.3);
   WS.forEach((w,i)=>w.style.opacity=clamp((t-{INTRO}-0.3-i*{WORD})/0.25));
   $('ask').style.opacity=clamp((t-T_ASK)/0.35);
