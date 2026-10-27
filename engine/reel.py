@@ -34,6 +34,7 @@ FONTS = ENGINE / "fonts"
 FPS = 30
 C = diagrams.C
 INTRO, WORD, CALL_LEN, FADE, ASK_GAP = 2.5, 0.32, 3.4, 0.4, 0.7
+COVER_BADGE = True  # play badge on the white cover
 TRANS = 0.5  # extra pause question -> proof and proof -> answer
 MID_LEN = {"refs_view": 2.6, "three_second_call": 3.2, "guess_number": 3.0, "spec_sheet": 3.4}
 
@@ -247,6 +248,22 @@ body{{width:1080px;height:1920px;overflow:hidden;font-family:'Instrument Sans';c
 <script>
 {consts}
 const $=id=>document.getElementById(id);
+const PAPER='{C['paper']}',NIGHT='{C['night']}',COURT='{C['court']}',BALL='{C['ball']}';
+// Cover for the Instagram grid: white tile, dark text, so reels stand out from the blue carousels.
+function coverMode(badge){{
+  setT(T_READ-0.05);
+  $('bg').style.background=PAPER; $('intro').style.opacity=0;
+  document.body.style.color=NIGHT;
+  $('top').style.color=NIGHT; $('claim').style.color=NIGHT; $('ask').style.color=COURT;
+  // keep everything inside the 4:5 grid crop (y 285-1635)
+  $('top').style.top='380px'; $('q').style.top='500px'; $('q').style.transform='none';
+  $('claim').style.fontSize='118px'; $('ask').style.fontSize='140px'; $('ask').style.marginTop='44px';
+  if(badge){{ const b=document.createElement('div'); b.id='badge';
+    b.innerHTML='<span style="display:inline-flex;width:84px;height:84px;border-radius:999px;background:'+COURT+';align-items:center;justify-content:center"><svg width="34" height="38" viewBox="0 0 34 38"><path d="M4 3 L31 19 L4 35 Z" fill="'+BALL+'"/></svg></span><span>Watch &amp; make the call</span>';
+    b.style.cssText='position:absolute;left:88px;top:1470px;display:flex;align-items:center;gap:28px;font-family:JetBrains Mono;font-weight:700;text-transform:uppercase;font-size:42px;color:'+NIGHT;
+    document.body.appendChild(b); }}
+}}
+
 const lerp=(a,b,k)=>a+(b-a)*k, clamp=(x)=>Math.max(0,Math.min(1,x));
 const ease=(k)=>k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
 const WS=[...document.querySelectorAll('.w')];
@@ -272,6 +289,18 @@ function setT(t){{
 </script></body></html>"""
 
 
+async def render_cover(spec, out, badge=COVER_BADGE):
+    """Only the cover PNG (fast preview without rendering the video)."""
+    with tempfile.TemporaryDirectory() as tmp:
+        f = pathlib.Path(tmp) / "reel.html"; f.write_text(page(spec))
+        async with async_playwright() as p:
+            b = await p.chromium.launch()
+            pg = await b.new_page(viewport={"width": 1080, "height": 1920})
+            await pg.goto(f"file://{f}"); await pg.evaluate("document.fonts.ready")
+            await pg.evaluate(f"coverMode({'true' if badge else 'false'})")
+            await pg.screenshot(path=str(out)); await b.close()
+
+
 async def render(spec, out):
     tl = timeline(spec)
     out = pathlib.Path(out)
@@ -287,7 +316,7 @@ async def render(spec, out):
             for f in range(frames):
                 await pg.evaluate(f"setT({f/FPS})")
                 await pg.screenshot(path=str(tmp / f"f{f:04d}.png"))
-            await pg.evaluate("setT(T_READ-0.05)")  # cover: full question visible
+            await pg.evaluate(f"coverMode({'true' if COVER_BADGE else 'false'})")  # white grid cover, full question
             await pg.screenshot(path=str(out.with_suffix(".cover.png")))
             await b.close()
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", str(tmp / "f%04d.png"),
