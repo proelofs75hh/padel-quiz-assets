@@ -41,18 +41,18 @@
     "135–147"
    ]
   ],
-  "line": "Same **weight**.\nSize and bounce differ.",
+  "line": "Same **weight**.\nSize and bounce sometimes differ.",
   "call_rows": [
    [
     "Weight: identical",
     "="
    ],
    [
-    "Size: padel ball is smaller",
+    "Size: padel can be smaller",
     "≠"
    ],
    [
-    "Bounce: padel ball is lower",
+    "Bounce: padel can be lower",
     "≠"
    ]
   ]
