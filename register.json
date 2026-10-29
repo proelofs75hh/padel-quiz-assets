@@ -248,6 +248,168 @@
    "claim": "Padel balls and tennis balls have the same weight.",
    "verdict": "FAIR",
    "format": "reel"
+  },
+  {
+   "id": "2026-11-02-am",
+   "date": "2026-11-02",
+   "pillar": "rules",
+   "topic_key": "rule.own-fence-loses-point",
+   "claim": "Your shot hits your own fence, then goes over the net.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-02-pm",
+   "date": "2026-11-02",
+   "pillar": "gear",
+   "topic_key": "gear.racket-max-thickness",
+   "claim": "Your racket may be up to 38 mm thick.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-03-am",
+   "date": "2026-11-03",
+   "pillar": "rules",
+   "topic_key": "rule.change-ends-odd-games",
+   "claim": "You switch sides after games 1, 3, 5 and so on.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-03-pm",
+   "date": "2026-11-03",
+   "pillar": "pros",
+   "topic_key": "pros.out-over-back-glass-no-save",
+   "claim": "The smash flies over the back glass. A pro runs out and saves it.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-04-am",
+   "date": "2026-11-04",
+   "pillar": "rules",
+   "topic_key": "rule.side-then-back-glass-in-play",
+   "claim": "The ball bounces, hits the side glass, then the back glass. Still in play.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-04-pm",
+   "date": "2026-11-04",
+   "pillar": "market",
+   "topic_key": "market.federated-players",
+   "claim": "More than 850,000 padel players have a federation licence.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-05-am",
+   "date": "2026-11-05",
+   "pillar": "rules",
+   "topic_key": "rule.shot-hits-partner",
+   "claim": "Your shot hits your partner, then goes over the net.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-05-pm",
+   "date": "2026-11-05",
+   "pillar": "gear",
+   "topic_key": "gear.racket-hole-size",
+   "claim": "Holes up to 2 cm wide are allowed.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-06-am",
+   "date": "2026-11-06",
+   "pillar": "rules",
+   "topic_key": "rule.serve-net-then-fence",
+   "claim": "Your serve clips the net, lands in, then hits the fence. You replay it.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-06-pm",
+   "date": "2026-11-06",
+   "pillar": "pros",
+   "topic_key": "pros.no-jump-serve",
+   "claim": "A pro may jump when serving, like in tennis.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-07-am",
+   "date": "2026-11-07",
+   "pillar": "rules",
+   "topic_key": "rule.serve-on-line-good",
+   "claim": "Your serve lands on the line of the service box. It's in.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-07-pm",
+   "date": "2026-11-07",
+   "pillar": "gear",
+   "topic_key": "gear.wrist-cord-max-length",
+   "claim": "A 50 cm wrist cord is allowed.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-08-am",
+   "date": "2026-11-08",
+   "pillar": "rules",
+   "topic_key": "rule.hit-before-net",
+   "claim": "You hit the ball before it crosses the net.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-08-pm",
+   "date": "2026-11-08",
+   "pillar": "market",
+   "topic_key": "market.new-clubs-2025",
+   "claim": "Almost 5,000 new padel clubs opened in 2025.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-02-reel",
+   "date": "2026-11-02",
+   "pillar": "rules",
+   "topic_key": "rule.thrown-racket",
+   "claim": "You throw your racket and hit the ball over the net.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-04-reel",
+   "date": "2026-11-04",
+   "pillar": "gear",
+   "topic_key": "gear.ball-bounce-test",
+   "claim": "Dropped from 2.54 m, a padel ball bounces back over 1.3 m.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-06-reel",
+   "date": "2026-11-06",
+   "pillar": "rules",
+   "topic_key": "rule.double-hit",
+   "claim": "The ball hits your racket twice in one swing. You lose the point.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-08-reel",
+   "date": "2026-11-08",
+   "pillar": "rules",
+   "topic_key": "rule.jump-over-net",
+   "claim": "You are allowed to jump over the net during a rally.",
+   "verdict": "FAULT",
+   "format": "reel"
   }
  ]
 }
