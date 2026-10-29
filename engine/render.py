@@ -7,6 +7,8 @@ Output: weeks/<week>/<post-id>-<n>.png (1080 x 1350) and a contact sheet
 Templates reproduce the Claude Design "Fair or Fault" design system
 (court / night / paper, Bricolage Grotesque, Instrument Sans, JetBrains Mono).
 Text fields accept plain text; "\n" = line break, **word** = highlight colour.
+Posts with a "series" field (settle | gear | pros | number) use the four-series design
+from engine/series.py; posts without it use the original templates below (version 1).
 """
 import asyncio, html, json, pathlib, re, sys
 
@@ -106,6 +108,24 @@ def explainer(s, n, total):
 
 BUILDERS = {"question": question, "verdict": verdict, "explainer": explainer}
 
+import series as _series  # four-series design (29 Oct 2026); used when a post has "series"
+
+# Series slides: shrink .fit headlines until nothing crosses the 80 px safe area (absolute
+# background layers ignored); report text that is wider than its box (e.g. big numbers).
+FIT_SERIES_JS = """() => {
+  const post = document.querySelector('.post');
+  const kids = () => [...post.children].filter(c => getComputedStyle(c).position !== 'absolute');
+  const over = () => kids().some(c => c.getBoundingClientRect().bottom > 1350 - 79) || post.scrollHeight > post.clientHeight;
+  let guard = 0;
+  for (const el of document.querySelectorAll('.fit')) {
+    let size = parseFloat(getComputedStyle(el).fontSize);
+    while (over() && size > 56 && guard++ < 300) { size -= 4; el.style.fontSize = size + 'px'; }
+  }
+  const wide = [...post.querySelectorAll('h1,p,div,span')].some(e => e.scrollWidth > e.clientWidth + 2 && getComputedStyle(e).position !== 'absolute');
+  const right = kids().some(c => c.getBoundingClientRect().right > 1080 - 87);
+  return over() || wide || right;
+}"""
+
 # Shrink any .fit element until the slide no longer overflows (min 56px).
 FIT_JS = """() => {
   const post = document.querySelector('.post');
@@ -130,12 +150,12 @@ async def render_week(week_dir: pathlib.Path):
         for post in spec["posts"]:
             total = len(post["slides"])
             for i, s in enumerate(post["slides"], 1):
-                body = BUILDERS[s["type"]](s, i, total)
+                body = _series.build(post, i - 1) if post.get("series") else BUILDERS[s["type"]](s, i, total)
                 tmp = week_dir / f".tmp-{post['id']}-{i}.html"
                 tmp.write_text(HEAD + body + "</body></html>")
                 await page.goto(f"file://{tmp.resolve()}")
                 await page.evaluate("document.fonts.ready")
-                if await page.evaluate(FIT_JS):
+                if await page.evaluate(FIT_SERIES_JS if post.get("series") else FIT_JS):
                     problems.append(f"{post['id']} slide {i}: text overflows even at minimum size")
                 out = week_dir / f"{post['id']}-{i}.png"
                 await page.screenshot(path=str(out))
