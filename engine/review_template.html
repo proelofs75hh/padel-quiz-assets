@@ -1,0 +1,218 @@
+<title>Fair or Fault Freigabe</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: one phone-first column of posts, grouped by day; a sticky summary bar on top.
+   Brand: Fair or Fault (court blue, night, paper, ball yellow); series colours tag each post. */
+:root{
+  --bg:#F4F1E8; --surface:#FFFFFF; --ink:#0E1630; --muted:#4A5470; --line:#D9D4C6;
+  --brand:#1747B0; --ball:#D7F23A; --ok:#1E6B47; --ok-bg:#DDEFE4; --warn:#B4531A; --warn-bg:#F9E3D3;
+  --live:#1747B0; --live-bg:#DCE5F7; --fault:#C2361F; --on-ok:#FFFFFF;
+  --display:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B1126; --surface:#141C38; --ink:#EEF0F6; --muted:#A6AEC6; --line:#28325A;
+  --brand:#7FA2F0; --ok:#6FD39A; --ok-bg:#163A2A; --warn:#F2A06B; --warn-bg:#3D2414; --live:#9DB8F5; --live-bg:#1B2B57; --fault:#F07A64; --on-ok:#0B1126;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B1126; --surface:#141C38; --ink:#EEF0F6; --muted:#A6AEC6; --line:#28325A;
+  --brand:#7FA2F0; --ok:#6FD39A; --ok-bg:#163A2A; --warn:#F2A06B; --warn-bg:#3D2414; --live:#9DB8F5; --live-bg:#1B2B57; --fault:#F07A64; --on-ok:#0B1126;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.45 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:640px;margin:0 auto}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:14px 10px;border-bottom:1px solid var(--line)}
+.brandline{display:flex;align-items:center;gap:10px}
+.logo{width:34px;height:34px;border-radius:9px;background:#1747B0;display:grid;place-items:center;flex:none}
+.logo i{width:12px;height:12px;border-radius:50%;background:var(--ball);box-shadow:0 0 0 2px #fff inset}
+h1{font:800 22px/1.05 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+.week{font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 11px;font:600 13px var(--body);cursor:pointer;font-variant-numeric:tabular-nums}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.bulk{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.notice{margin-top:10px;font-size:13px;color:var(--muted)}
+.notice.err{color:var(--fault)}
+h2.day{font:800 18px var(--display);margin:26px 0 10px;letter-spacing:-.01em}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:14px}
+.cardhead{display:flex;align-items:center;gap:10px;padding:12px 14px}
+.time{font:800 24px/1 var(--display);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.meta{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.tag{font:700 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:3px 8px;color:#fff}
+.kind{font:500 12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.pill{font:700 12px var(--body);border-radius:999px;padding:4px 10px;white-space:nowrap}
+.pill.pending{background:var(--line);color:var(--ink)}
+.pill.approved{background:var(--ok-bg);color:var(--ok)}
+.pill.redo{background:var(--warn-bg);color:var(--warn)}
+.pill.published{background:var(--live-bg);color:var(--live)}
+.pill.failed{background:var(--warn-bg);color:var(--fault)}
+.slides{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 14px 4px;scrollbar-width:thin}
+.slides img{flex:0 0 82%;max-width:82%;aspect-ratio:4/5;object-fit:cover;border-radius:10px;scroll-snap-align:start;background:var(--line)}
+.reelbox{padding:0 14px;display:flex;justify-content:center}
+.reelbox video{width:min(100%,320px);aspect-ratio:9/16;border-radius:12px;background:#000}
+.hint{font:500 12px var(--mono);color:var(--muted);padding:6px 14px 0}
+.body{padding:10px 14px 0}
+.claim{font:700 16px/1.3 var(--body);margin:0}
+.facts{font-size:13px;color:var(--muted);margin-top:4px}
+details{margin-top:8px}
+summary{cursor:pointer;font:600 13px var(--body);color:var(--brand)}
+.caption{white-space:pre-wrap;font-size:13.5px;background:var(--bg);border-radius:10px;padding:10px;margin-top:6px;overflow-wrap:anywhere}
+.note{margin:10px 14px 0;font-size:13px;background:var(--warn-bg);color:var(--ink);border-radius:10px;padding:8px 10px}
+.actions{display:flex;gap:8px;padding:12px 14px 14px;flex-wrap:wrap}
+button.btn{font:700 15px var(--body);border-radius:12px;padding:12px 16px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;flex:1;min-width:140px}
+button.btn.primary{background:var(--ok);border-color:var(--ok);color:var(--on-ok)}
+button.btn:disabled{opacity:.5;cursor:default}
+button.btn:focus-visible,.chip:focus-visible,summary:focus-visible,textarea:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.redoform{padding:0 14px 14px;display:flex;flex-direction:column;gap:8px}
+textarea{width:100%;min-height:84px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:15px/1.4 var(--body);padding:10px}
+.confirm{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px}
+a{color:var(--brand)}
+.empty{padding:40px 0;text-align:center;color:var(--muted)}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brandline">
+      <div class="logo" aria-hidden="true"><i></i></div>
+      <div><h1>Freigabe</h1><div class="week" id="week">Fair or Fault</div></div>
+    </div>
+    <div class="stats" id="filters" role="group" aria-label="Filter"></div>
+    <div class="bulk" id="bulk"></div>
+    <div class="notice" id="notice"></div>
+  </header>
+  <main id="list"><p class="empty">Lade die Posts der Woche …</p></main>
+</div>
+
+<script>
+const SERIES = {settle:["Settle the Argument","#1E6B47","#fff"], gear:["Gear X-Ray","#1747B0","#fff"],
+  pros:["Pro Move","#D7F23A","#0E1630"], number:["The Number","#E2733C","#0E1630"], lingo:["Padel Lingo","#5B3FD1","#fff"],
+  rules:["Settle the Argument","#1E6B47","#fff"], market:["The Number","#E2733C","#0E1630"]};
+const LABEL = {pending:"Offen", approved:"Freigegeben", redo:"Wird neu gemacht", published:"Online", failed:"Fehler"};
+const DAYS = ["So","Mo","Di","Mi","Do","Fr","Sa"], MONTHS=["Jan","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"];
+let DATA = null, REVIEWS = {}, db = null, filter = "pending", openRedo = null, bulkConfirm = false, busy = new Set();
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function dayLabel(slot){ const d = new Date(slot); return `${DAYS[d.getDay()]} ${d.getDate()}. ${MONTHS[d.getMonth()]}`; }
+function timeLabel(slot){ return slot.slice(11,16); }
+
+/* Effective state: published/failed from the publisher win; otherwise the reviewer's choice for this revision. */
+function stateOf(it){
+  if (it.server_status === "published" || it.server_status === "failed") return it.server_status;
+  const r = REVIEWS[it.id];
+  if (r && r.rev === it.rev && (r.status === "approved" || r.status === "redo")) return r.status;
+  return "pending";
+}
+
+function counts(){
+  const c = {pending:0, approved:0, redo:0, published:0, failed:0};
+  for (const it of DATA.items) c[stateOf(it)]++;
+  return c;
+}
+
+function renderHeader(){
+  const c = counts();
+  $("#week").textContent = DATA.title;
+  const f = [["pending","Offen",c.pending],["approved","Freigegeben",c.approved],["redo","Neu machen",c.redo],["published","Online",c.published+c.failed],["all","Alle",DATA.items.length]];
+  $("#filters").innerHTML = f.map(([k,l,n]) => `<button class="chip" data-filter="${k}" aria-pressed="${filter===k}">${l} · ${n}</button>`).join("");
+  const can = db && c.pending > 0;
+  $("#bulk").innerHTML = !can ? "" : bulkConfirm
+    ? `<div class="confirm">Alle ${c.pending} offenen Posts freigeben? <button class="btn primary" id="bulkyes" style="flex:0;min-width:0">Ja, alle freigeben</button><button class="btn" id="bulkno" style="flex:0;min-width:0">Abbrechen</button></div>`
+    : `<button class="btn" id="bulkask" style="flex:0;min-width:0">Alle offenen freigeben (${c.pending})</button>`;
+}
+
+function card(it){
+  const st = stateOf(it), s = SERIES[it.series] || SERIES[it.pillar] || ["Post","#4A5470","#fff"];
+  const media = it.kind === "reel"
+    ? `<div class="reelbox"><video src="${esc(it.video)}" poster="${esc(it.poster)}" controls playsinline preload="none" muted></video></div>`
+    : `<div class="slides" aria-label="Slides">${it.images.map((src,i)=>`<img src="${esc(src)}" alt="Slide ${i+1}" loading="lazy">`).join("")}</div><div class="hint">${it.images.length} Slides · wischen</div>`;
+  const r = REVIEWS[it.id];
+  let note = "";
+  if (st === "redo" && r?.note) note = `<div class="note"><b>Dein Hinweis:</b> ${esc(r.note)}<br>Claude macht den Post neu. Danach steht er wieder auf „Offen“.</div>`;
+  if (it.server_note) note += `<div class="note">${esc(it.server_note)}</div>`;
+  if (st === "failed" && it.error) note += `<div class="note"><b>Fehler beim Posten:</b> ${esc(it.error)}</div>`;
+  let actions = "";
+  const dis = !db || busy.has(it.id) ? "disabled" : "";
+  if (st === "published") actions = it.permalink ? `<a class="btn" style="text-align:center;text-decoration:none" href="${esc(it.permalink)}" target="_blank" rel="noopener">Auf Instagram ansehen ↗</a>` : "";
+  else if (st === "approved") actions = `<button class="btn" data-act="reset" data-id="${it.id}" ${dis}>Freigabe zurücknehmen</button><button class="btn" data-act="redo" data-id="${it.id}" ${dis}>Neu machen</button>`;
+  else if (st === "redo") actions = `<button class="btn" data-act="reset" data-id="${it.id}" ${dis}>Doch so lassen</button>`;
+  else actions = `<button class="btn primary" data-act="approve" data-id="${it.id}" ${dis}>Freigeben</button><button class="btn" data-act="redo" data-id="${it.id}" ${dis}>Neu machen</button>`;
+  const form = openRedo === it.id ? `<div class="redoform"><label for="note-${it.id}">Was soll anders werden?</label>
+      <textarea id="note-${it.id}" placeholder="z. B. Frage einfacher, anderes Foto, Antwort stimmt nicht …">${esc(r?.status==="redo"?r.note:"")}</textarea>
+      <div class="confirm"><button class="btn primary" data-act="sendredo" data-id="${it.id}" style="flex:0">Neu machen lassen</button><button class="btn" data-act="cancel" style="flex:0">Abbrechen</button></div></div>` : "";
+  return `<article class="card" id="p-${it.id}">
+    <div class="cardhead"><div class="time">${timeLabel(it.slot)}</div>
+      <div class="meta"><div class="tags"><span class="tag" style="background:${s[1]};color:${s[2]}">${esc(s[0])}</span><span class="kind">${it.kind==="reel"?"Reel":"Karussell"}</span></div></div>
+      <span class="pill ${st}">${LABEL[st]}</span></div>
+    ${media}
+    <div class="body"><p class="claim">${esc(it.question || it.claim)}</p>
+      <div class="facts">Antwort: <b>${esc(it.verdict)}</b>${it.fact_source?` · Quelle: ${esc(it.fact_source)}`:""}</div>
+      <details><summary>Text unter dem Post</summary><div class="caption">${esc(it.caption)}</div></details></div>
+    ${note}
+    <div class="actions">${actions}</div>${form}
+  </article>`;
+}
+
+function render(){
+  if (!DATA) return;
+  renderHeader();
+  const items = DATA.items.filter(it => { const st = stateOf(it); return filter==="all" || st===filter || (filter==="published" && st==="failed"); });
+  if (!items.length){ $("#list").innerHTML = `<p class="empty">${filter==="pending"?"Alles erledigt: keine offenen Posts.":"Keine Posts in dieser Ansicht."}</p>`; return; }
+  let html = "", day = "";
+  for (const it of items){ const d = dayLabel(it.slot); if (d !== day){ html += `<h2 class="day">${d}</h2>`; day = d; } html += card(it); }
+  $("#list").innerHTML = html;
+}
+
+async function write(id, status, note){
+  const it = DATA.items.find(i => i.id === id);
+  busy.add(id); render();
+  try {
+    await db.doc("reviews/" + id).set({status, note: note || "", rev: it.rev, at: new Date().toISOString()});
+    REVIEWS[id] = {status, note: note || "", rev: it.rev};
+    $("#notice").textContent = ""; $("#notice").className = "notice";
+  } catch (e) {
+    $("#notice").textContent = "Speichern hat nicht geklappt (" + (e?.code || "Fehler") + "). Bitte noch einmal tippen.";
+    $("#notice").className = "notice err";
+  } finally { busy.delete(id); render(); }
+}
+
+document.addEventListener("click", async ev => {
+  const b = ev.target.closest("button"); if (!b) return;
+  if (b.dataset.filter){ filter = b.dataset.filter; render(); return; }
+  if (b.id === "bulkask"){ bulkConfirm = true; render(); return; }
+  if (b.id === "bulkno"){ bulkConfirm = false; render(); return; }
+  if (b.id === "bulkyes"){ bulkConfirm = false; for (const it of DATA.items.filter(i => stateOf(i)==="pending")) await write(it.id, "approved"); return; }
+  const id = b.dataset.id, act = b.dataset.act;
+  if (act === "approve") write(id, "approved");
+  if (act === "reset") write(id, "pending");
+  if (act === "redo"){ openRedo = id; render(); setTimeout(()=>document.getElementById("note-"+id)?.focus(), 0); }
+  if (act === "cancel"){ openRedo = null; render(); }
+  if (act === "sendredo"){
+    const t = document.getElementById("note-"+id).value.trim();
+    if (!t){ $("#notice").textContent = "Bitte kurz schreiben, was anders werden soll."; $("#notice").className="notice err"; return; }
+    openRedo = null; write(id, "redo", t);
+  }
+});
+
+async function start(){
+  try { DATA = await (await fetch("data/review.json", {cache:"no-store"})).json(); }
+  catch { $("#list").innerHTML = `<p class="empty">Die Posts der Woche konnten nicht geladen werden.</p>`; return; }
+  render();
+  db = await window.claude?.use?.("db") ?? null;
+  if (!db){ $("#notice").textContent = "Freigeben geht nur, wenn du die Seite angemeldet in Claude öffnest."; render(); return; }
+  db.collection("reviews").onSnapshot(snap => {
+    REVIEWS = {}; for (const d of snap.docs) REVIEWS[d.id] = d.data();
+    render();
+  }, e => { $("#notice").textContent = "Verbindung zu den Freigaben unterbrochen. Seite neu laden."; $("#notice").className="notice err"; });
+  render();
+}
+start();
+</script>

@@ -24,7 +24,7 @@ queue.json
 }
 Only items with status "approved" are published (engine/ig_publish.py).
 """
-import json, pathlib, sys
+import hashlib, json, pathlib, sys
 
 from PIL import Image
 
@@ -94,9 +94,16 @@ def build(week_dir):
                 video=rel(mp4), cover=rel(jpeg(cov)),
                 caption=caption(r["caption"], r.get("hashtags", []))))
 
+    for it in items:  # content revision: changes whenever media or caption change (approvals are per revision)
+        h = hashlib.sha1(it["caption"].encode())
+        for f in it.get("images", []) + [it.get("video", ""), it.get("cover", "")]:
+            if f:
+                h.update((ROOT / f).read_bytes())
+        it["rev"] = h.hexdigest()[:10]
     for it in items:  # keep review / publish state
         o = old.get(it["id"], {})
-        it["status"] = o.get("status", "pending")
+        same = o.get("rev") == it["rev"]
+        it["status"] = o.get("status", "pending") if same or o.get("published") else "pending"
         it["note"] = o.get("note", "")
         it["published"] = o.get("published")
         it["error"] = o.get("error", "")
