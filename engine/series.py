@@ -70,11 +70,17 @@ def swipe(col, mt=40):
     return label("Swipe →", col, mt, "right")
 
 
-def tiles(on_yellow=False):
-    t = "flex:1;padding:44px 0;border-radius:20px;text-align:center;font-size:80px;line-height:1;font-weight:700;"
-    fair = f'background:{C["night"]};color:{C["ball"]}' if on_yellow else f'background:{C["ball"]};color:{C["night"]}'
-    return (f'<div style="display:flex;gap:24px;margin-top:auto"><div style="{t}{fair}">Fair</div>'
-            f'<div style="{t}background:{C["paper"]};color:{C["night"]}">Fault</div></div>')
+def tiles(on_yellow=False, fg=None):
+    """Neutral Fair / Fault buttons (same style, no hint at the answer) with an 'OR' disc overlapping both."""
+    fg = fg or (C["night"] if on_yellow else C["paper"])
+    t = (f"flex:1;padding:44px 0;border-radius:20px;text-align:center;font-family:{DISPLAY};font-size:84px;line-height:1;"
+         f"font-weight:800;letter-spacing:-.02em;border:6px solid {fg};color:{fg};background:transparent;")
+    disc_bg, disc_fg = (C["night"], C["ball"]) if on_yellow else (C["ball"], C["night"])
+    disc = (f'<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:128px;height:128px;'
+            f'border-radius:50%;background:{disc_bg};color:{disc_fg};display:flex;align-items:center;justify-content:center;'
+            f'font-family:{MONO};font-size:48px;font-weight:700;letter-spacing:.02em">OR</div>')
+    return (f'<div style="position:relative;display:flex;gap:24px;margin-top:auto"><div style="{t}">Fair</div>'
+            f'<div style="{t}">Fault</div>{disc}</div>')
 
 
 def svgbox(w, h, inner, alt):
@@ -284,10 +290,10 @@ def build(post, i):
     if t == "q":
         q = fmt(s["q"], hl)
         if post["series"] == "settle":
-            pic = (bubble(70, 10, 330, 124, "Right!", 150, 1, C["paper"], C["night"]) +
-                   bubble(504, 10, 330, 124, "Wrong!", 180, -1, C["ball"], C["night"]) +
+            pic = (bubble(70, 10, 330, 124, "Fair!", 150, 1, C["paper"], C["night"]) +
+                   bubble(504, 10, 330, 124, "Fault!", 180, -1, C["paper"], C["night"]) +
                    figure(250, 400, "point", C["paper"], 1.0) + figure(654, 400, "shrug", C["ball"], 1.0, True))
-            vis = svgbox(904, 560, pic, "Two faceless players disagree: one says right, the other says wrong")
+            vis = svgbox(904, 560, pic, "Two faceless players disagree: one says fair, the other says fault")
         elif post["series"] == "gear":
             vis = svgbox(904, 600, racket_outline(452, 310, 1.0, -16), "Blueprint line drawing of a padel racket")
         elif post["series"] == "pros":
