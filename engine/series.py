@@ -306,7 +306,9 @@ def cover(post, s, S, q, fg, hl, top, yellow):
         big = _bleed(mark, 700, 560, 760, 760, "Big question mark")
         return big + top + head(q, 150, fg, 72, 0.92, "position:relative") + '<div style="margin-top:auto"></div>' + swipe(fg)
     if kind == "scene":
-        sc = next(x for x in post["slides"] if x["type"] == "scene")["scene"]
+        # since 31 Oct: the situation drawing sits on slide 1 (s["scene"]) and the separate scene slide is dropped;
+        # the situation sentence moves onto the claim slide as "context"
+        sc = s.get("scene") or next(x for x in post["slides"] if x["type"] == "scene")["scene"]
         svg = scene_svg(sc, S).replace('width="904" height="720"', 'width="904" height="640"')
         return top + head(q, 104, fg) + f'<div style="margin-top:auto">{svg}</div>' + swipe(fg)
     if kind == "versus":
@@ -320,7 +322,7 @@ def cover(post, s, S, q, fg, hl, top, yellow):
         return _bleed(r, 0, 0, 1080, 1350, "Close-up line drawing of a padel racket") + top + \
             head(q, 120, fg, 56, 0.96, "position:relative;max-width:820px") + '<div style="margin-top:auto"></div>' + swipe(fg)
     if kind == "drawing":
-        f = next(x for x in post["slides"] if x["type"] == "fact")
+        f = s if s.get("drawing") else next(x for x in post["slides"] if x["type"] == "fact")
         return top + head(q, 104, fg) + f'<div style="margin-top:auto">{gear_drawing(f["drawing"], f.get("labels", {}))}</div>' + swipe(fg)
     if kind == "digits":
         d = s.get("digits", "?,???")
@@ -375,11 +377,12 @@ def photo_cover(post, s, S, q, fg, top):
     photo_tilt (degrees, e.g. -3)."""
     L, T, W, H = PLACE[s.get("photo_place", "right")]
     f = _photo_file(s["photo"], post["series"], W, H, tuple(s.get("photo_focus", [0.5, 0.5])), s.get("photo_zoom", 1))
-    tilt = s.get("photo_tilt", 0)
+    # always slightly tilted (31 Oct): default by placement, photo_tilt overrides
+    tilt = s.get("photo_tilt", {"right": -3, "left": 3, "wide": -2}[s.get("photo_place", "right")])
     img = (f'<div style="position:absolute;left:0;top:0;width:1080px;height:1350px;overflow:hidden">'
            f'<div style="position:absolute;left:{L}px;top:{T}px;width:{W}px;height:{H}px;'
            f'background:url(\'file://{f}\') center/cover;transform:rotate({tilt}deg);transform-origin:50% 0;'
-           f'box-shadow:0 24px 60px rgba(14,22,48,.35)"></div></div>')
+           f'box-shadow:0 28px 70px rgba(8,12,28,.55),0 6px 18px rgba(8,12,28,.35)"></div></div>')
     sw = swipe(C["paper"])
     return (img + '<div style="position:relative;display:flex;flex-direction:column;flex:1">' + top
             + head(q, 100, fg) + '<div style="margin-top:auto"></div>'
@@ -456,7 +459,8 @@ def build(post, i):
         # so FAIR / FAULT on the last slide always judges this exact sentence
         # no buttons (31 Oct): the statement big and centred, "Fair or fault?" as the clear question below it
         ask = C["ball"] if not yellow else C["court"]
-        body = (top + head(fmt(s["text"], hl), 132, fg, 0, 1.0, "margin-top:auto") +
+        ctx = para(fmt(s["context"], hl), 60, C["glass"] if not yellow else C["night"], 0).replace("margin:0px 0 0", "margin:auto 0 0") if s.get("context") else ""
+        body = (top + ctx + head(fmt(s["text"], hl), 132 if not ctx else 120, fg, 0 if not ctx else 40, 1.0, "" if ctx else "margin-top:auto") +
                 f'<div style="margin-top:56px;height:8px;width:160px;border-radius:999px;background:{ask}"></div>' +
                 head("Fair or fault?", 150, ask, 48, 0.9, "margin-bottom:auto") + swipe(fg))
     elif t == "guess":

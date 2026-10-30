@@ -262,11 +262,7 @@
      "type": "q",
      "q": "Is the ball still in play after two walls?",
      "claim": "It bounces, then hits the side glass and the back glass. You can still return it.",
-     "cover": "type"
-    },
-    {
-     "type": "scene",
-     "text": "It bounces, then hits the side glass and the back glass.",
+     "cover": "scene",
      "scene": {
       "view": "top",
       "path": [
@@ -302,7 +298,8 @@
     },
     {
      "type": "claim",
-     "text": "You can still return it."
+     "text": "You can still return it.",
+     "context": "It bounces, then hits the side glass and the back glass."
     },
     {
      "type": "verdict",
@@ -641,11 +638,7 @@
      "type": "q",
      "q": "Is a serve on the line in?",
      "claim": "Your serve lands right on the service line. It's a good serve.",
-     "cover": "versus"
-    },
-    {
-     "type": "scene",
-     "text": "Your serve lands right on the service line.",
+     "cover": "scene",
      "scene": {
       "view": "top",
       "box": [
@@ -671,7 +664,8 @@
     },
     {
      "type": "claim",
-     "text": "It's a good serve."
+     "text": "It's a good serve.",
+     "context": "Your serve lands right on the service line."
     },
     {
      "type": "verdict",
@@ -705,7 +699,8 @@
      "type": "q",
      "q": "How long can your wrist cord be?",
      "claim": "A 50 cm wrist cord is allowed.",
-     "cover": "type"
+     "cover": "drawing",
+     "drawing": "cord"
     },
     {
      "type": "claim",
