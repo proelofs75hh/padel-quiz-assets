@@ -20,24 +20,29 @@ PILLAR = {"rules": "settle", "gear": "gear", "market": "number", "pros": "pros"}
 
 
 def cover_html(r):
+    """White cover (paper) so reels stand apart from the coloured carousels in the grid; the pillar
+    colour appears only as a reference: filled series tag, colour bar on the left, coloured
+    "Fair or fault?" and play disc. (30 Oct 2026: reels white again, colour only as a hint.)"""
     key = PILLAR.get(r.get("pillar"), "settle")
     ser = S.SERIES[key]
-    yellow = ser["bg"] == S.C["ball"]
-    fg = ser["fg"]
-    hl = S.C["court"] if yellow else S.C["ball"]
-    acc = S.C["night"] if yellow else S.C["ball"]
+    col = ser["bg"] if ser["bg"] != S.C["ball"] else S.C["night"]  # yellow is unreadable on white
+    tagfg = ser["fg"]
+    ink = S.C["night"]
     sp = r["spec"]
+    tag = (f'<div style="display:flex"><span style="font-family:{S.MONO};font-size:40px;font-weight:700;letter-spacing:.02em;'
+           f'text-transform:uppercase;background:{ser["bg"]};color:{tagfg};border-radius:999px;padding:12px 32px">{ser["name"]}</span></div>')
     if r.get("cover_q"):
-        main = S.head(S.fmt(r["cover_q"], hl), 124, fg)
+        main = S.head(S.fmt(r["cover_q"], col), 124, ink)
     else:
-        main = S.head(S.fmt(sp["claim"], hl), 112, fg) + S.head("Fair or fault?", 112, acc, 40, 0.9)
+        main = S.head(S.fmt(sp["claim"], col), 112, ink) + S.head("Fair or fault?", 112, col, 40, 0.9)
     play = (f'<div style="margin-top:auto;display:flex;align-items:center;gap:28px">'
-            f'<div style="width:132px;height:132px;border-radius:50%;background:{acc};display:flex;align-items:center;justify-content:center">'
-            f'<svg width="52" height="60" viewBox="0 0 52 60"><path d="M6 4 L48 30 L6 56 Z" fill="{S.C["ball"] if yellow else S.C["night"]}"/></svg></div>'
-            f'<div style="font-family:{S.MONO};font-size:44px;font-weight:700;text-transform:uppercase;color:{fg}">Watch &amp; call it</div></div>')
-    body = S.tag(ser["name"], fg) + main + play
+            f'<div style="width:132px;height:132px;border-radius:50%;background:{ser["bg"]};display:flex;align-items:center;justify-content:center">'
+            f'<svg width="52" height="60" viewBox="0 0 52 60"><path d="M6 4 L48 30 L6 56 Z" fill="{tagfg}"/></svg></div>'
+            f'<div style="font-family:{S.MONO};font-size:44px;font-weight:700;text-transform:uppercase;color:{ink}">Watch &amp; call it</div></div>')
+    bar = f'<div style="position:absolute;left:0;top:240px;width:28px;height:1440px;background:{ser["bg"]}"></div>'
+    body = bar + tag + main + play
     return (HEAD.replace(".post{width:1080px;height:1350px;", ".post{width:1080px;height:1920px;")
-            + f'<div class="post" style="background:{ser["bg"]};color:{fg};padding:300px 88px 300px">{body}</div></body></html>')
+            + f'<div class="post" style="position:relative;background:{S.C["paper"]};color:{ink};padding:300px 88px 300px">{body}</div></body></html>')
 
 
 async def render(week_dir):
