@@ -1,0 +1,63 @@
+# Publishes approved, due posts from weeks/*/queue.json to Instagram.
+# Runs every 10 minutes (GitHub may start it a few minutes late; due posts are caught up).
+# Manual run: Actions -> "Publish to Instagram" -> Run workflow (mode: publish | check | only + id),
+# or commit ops/run-request.json {"mode": "check"} / {"mode": "only", "id": "<post id>"}.
+name: Publish to Instagram
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "publish | check | only"
+        default: "publish"
+      id:
+        description: "post id for mode 'only'"
+        default: ""
+  push:
+    branches: [main]
+    paths: ["ops/run-request.json"]
+permissions:
+  contents: write
+concurrency:
+  group: instagram-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Decide mode
+        id: mode
+        run: |
+          MODE="${{ github.event.inputs.mode }}"; ID="${{ github.event.inputs.id }}"
+          if [ "${{ github.event_name }}" = "push" ]; then
+            MODE=$(python3 -c "import json;print(json.load(open('ops/run-request.json')).get('mode','publish'))")
+            ID=$(python3 -c "import json;print(json.load(open('ops/run-request.json')).get('id',''))")
+          fi
+          echo "mode=${MODE:-publish}" >> "$GITHUB_OUTPUT"; echo "id=$ID" >> "$GITHUB_OUTPUT"
+      - name: Run
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          MEDIA_BASE: https://cdn.jsdelivr.net/gh/${{ github.repository }}@${{ github.sha }}/
+        run: |
+          if [ -z "$IG_ACCESS_TOKEN" ] || [ -z "$IG_USER_ID" ]; then echo "secrets not set yet - skipping"; exit 0; fi
+          case "${{ steps.mode.outputs.mode }}" in
+            none)  echo "no request" ;;
+            check) python3 engine/ig_publish.py --check ;;
+            only)  python3 engine/ig_publish.py --only "${{ steps.mode.outputs.id }}" ;;
+            *)     python3 engine/ig_publish.py ;;
+          esac
+      - name: Save queue state
+        if: always()
+        run: |
+          git config user.name "fof-publisher"; git config user.email "fof-publisher@users.noreply.github.com"
+          git add weeks/*/queue.json ops/ 2>/dev/null || true
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "publish: queue state $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
