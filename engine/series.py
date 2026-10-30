@@ -465,7 +465,9 @@ def build(post, i):
         else:
             fair = s["verdict"].upper() == "FAIR"
             body = (top + head("FAIR." if fair else "FAULT.", 260, C["ball"] if fair else C["paper"], 0, 0.86, "margin-top:auto") +
-                    para(fmt(s["line"], C["ball"]), 76, fg, 48) + label(s["source"], C["glass"], 40) + end_block())
+                    para(fmt(s["line"], C["ball"]), 76, fg, 48)
+                    + (f'<p style="margin:28px 0 0;font-family:{SANS};font-size:46px;line-height:1.2;font-weight:500;color:{C["glass"]}">{fmt(s["desc"], C["paper"])}</p>' if s.get("desc") else "")
+                    + label(s["source"], C["glass"], 40) + end_block())
     else:
         raise ValueError(f"unknown slide type {t}")
     return wrap(bg, fg, body)
