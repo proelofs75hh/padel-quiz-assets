@@ -403,12 +403,16 @@ def build(post, i):
         # the term itself is the hero: huge, bold, with a yellow "?"; pronunciation/meaning as a dictionary line
         term = html.escape(s["term"])
         say = s.get("say", "")
-        body = (top + '<div style="margin-top:auto"></div>'
-                + f'<h1 style="margin:0;font-family:{DISPLAY};font-size:{min(260, int(904 / (0.5 * (len(s["term"]) + 1))))}px;line-height:.9;'
+        size = min(220, int(904 / (0.5 * (len(s["term"]) + 1))))
+        pic = ""
+        if s.get("scene"):  # the shot drawn small between term and question (slide 1 + 2 merged, 30 Oct)
+            pic = ('<div style="margin-top:auto">' + scene_svg(s["scene"], S).replace('width="904" height="720"', 'width="904" height="430"') + '</div>')
+        body = (top
+                + f'<h1 style="margin:48px 0 0;font-family:{DISPLAY};font-size:{size}px;line-height:.9;'
                   f'font-weight:800;letter-spacing:-.04em;white-space:nowrap;color:{fg}">{term}<span style="color:{C["ball"]}">?</span></h1>'
-                + (label(say, C["glass"], 28) if say else "")
-                + '<div style="margin-top:auto"></div>'
-                + head(fmt(s["q"], hl), 92, fg, 0, 1.0) + swipe(fg))
+                + (label(say, C["glass"], 20) if say else "")
+                + pic
+                + head(fmt(s["q"], hl), 88, fg, 36 if pic else 0, 1.0, "" if pic else "margin-top:auto") + swipe(fg))
         return wrap(bg, fg, body)
     if t == "q":
         q = fmt(s["q"], hl)
@@ -440,6 +444,10 @@ def build(post, i):
         body = top + head(fmt(s["text"], hl), 80, fg, 56, 1.0) + f'<div style="margin-top:auto">{scene_svg(s["scene"], S)}</div>' + swipe(fg)
     elif t == "fact":
         body = top + head(fmt(s["text"], hl), 112, fg) + f'<div style="margin-top:auto">{gear_drawing(s["drawing"], s.get("labels", {}))}</div>' + swipe(fg)
+    elif t == "call" and s.get("q"):  # call slide that repeats the question (lingo), so nobody forgets it
+        body = (top + label("Your answer?", acc if not yellow else C["night"], 0).replace("margin:0px 0 0", "margin:auto 0 0")
+                + head(fmt(s["q"], hl), 150, fg, 24, 0.92) + '<div style="height:110px"></div>'
+                + tiles(yellow).replace("margin-top:auto", "") + swipe(fg))
     elif t == "call":
         body = top + head("Your answer?", 240, acc if not yellow else C["night"], 0, 0.88, "margin-top:auto") + \
                '<div style="height:120px"></div>' + tiles(yellow).replace("margin-top:auto", "") + swipe(fg)
