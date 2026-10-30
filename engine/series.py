@@ -275,6 +275,58 @@ def gear_drawing(kind, labels):
     raise ValueError(kind)
 
 
+# ---------------------------------------------------------------- cover variants (slide 1)
+def _bleed(svg_inner, x, y, w, h, alt):
+    """An SVG placed absolutely on the slide; may run off the edge (graphic cover)."""
+    return (f'<div style="position:absolute;left:0;top:0;width:1080px;height:1350px;overflow:hidden">'
+            f'<svg viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{html.escape(alt)}" '
+            f'style="position:absolute;left:{x}px;top:{y}px;display:block">{svg_inner}</svg></div>')
+
+
+def cover(post, s, S, q, fg, hl, top, yellow):
+    """Optional slide-1 variant via s["cover"]. Returns None for the series default.
+
+    type     giant question, huge "?" running off the right edge          (all series)
+    scene    question + the situation drawing from slide 2               (settle, pros)
+    versus   question + stacked FAIR / OR / FAULT in outline type          (settle, gear)
+    zoom     question + oversized racket head running off the corner      (gear)
+    drawing  question + the fact drawing from slide 2                    (gear)
+    digits   question + a hidden number "?,???"                           (number)
+    """
+    kind = s.get("cover")
+    if not kind:
+        return None
+    acc = C["ball"] if not yellow else C["night"]
+    if kind == "type":
+        mark = (f'<text x="0" y="660" font-family="Bricolage Grotesque" font-size="860" font-weight="800" '
+                f'fill="{acc}" fill-opacity="{1 if not yellow else 0.16}">?</text>')
+        big = _bleed(mark, 700, 560, 760, 760, "Big question mark")
+        return big + top + head(q, 150, fg, 72, 0.92, "position:relative") + '<div style="margin-top:auto"></div>' + swipe(fg)
+    if kind == "scene":
+        sc = next(x for x in post["slides"] if x["type"] == "scene")["scene"]
+        svg = scene_svg(sc, S).replace('width="904" height="720"', 'width="904" height="640"')
+        return top + head(q, 104, fg) + f'<div style="margin-top:auto">{svg}</div>' + swipe(fg)
+    if kind == "versus":
+        st = (f"margin:0;font-family:{DISPLAY};font-size:230px;line-height:.86;font-weight:800;letter-spacing:-.04em;")
+        words = (f'<p style="{st}color:{fg}">FAIR</p>'
+                 f'<p style="margin:6px 0 6px 8px;font-family:{MONO};font-size:56px;font-weight:700;color:{acc}">— OR —</p>'
+                 f'<p style="{st}color:{fg}">FAULT</p>')
+        return top + head(q, 104, fg) + f'<div style="margin-top:auto">{words}</div>' + swipe(fg)
+    if kind == "zoom":
+        r = racket_outline(720, 1000, 1.9, -62, True, C["paper"], 5)
+        return _bleed(r, 0, 0, 1080, 1350, "Close-up line drawing of a padel racket") + top + \
+            head(q, 120, fg, 56, 0.96, "position:relative;max-width:820px") + '<div style="margin-top:auto"></div>' + swipe(fg)
+    if kind == "drawing":
+        f = next(x for x in post["slides"] if x["type"] == "fact")
+        return top + head(q, 104, fg) + f'<div style="margin-top:auto">{gear_drawing(f["drawing"], f.get("labels", {}))}</div>' + swipe(fg)
+    if kind == "digits":
+        d = s.get("digits", "?,???")
+        return (top + head(q, 104, fg) +
+                f'<div style="margin-top:auto;font-family:{DISPLAY};font-size:330px;line-height:.84;font-weight:800;'
+                f'letter-spacing:-.05em;white-space:nowrap;color:{C["night"]}">{html.escape(d)}</div>' + swipe(fg))
+    raise ValueError(f"unknown cover {kind}")
+
+
 # ---------------------------------------------------------------- slide builders
 def build(post, i):
     S = SERIES[post["series"]]
@@ -313,6 +365,7 @@ def build(post, i):
             mc += f'<circle cx="368" cy="270" r="24" fill="{C["ball"]}" stroke="{C["night"]}" stroke-width="6"/>'
             vis = svgbox(904, 620, mc, "Grid of padel courts seen from above")
         body = top + head(q, 112, fg) + f'<div style="margin-top:auto">{vis}</div>' + swipe(fg)
+        body = cover(post, s, S, q, fg, hl, top, yellow) or body
     elif t == "scene":
         body = top + head(fmt(s["text"], hl), 80, fg, 56, 1.0) + f'<div style="margin-top:auto">{scene_svg(s["scene"], S)}</div>' + swipe(fg)
     elif t == "fact":
