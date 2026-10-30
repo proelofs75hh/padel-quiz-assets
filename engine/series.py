@@ -4,7 +4,7 @@ Four series, one per pillar, each with its own ground colour; the last slide is 
 night blue with the logo signature. One statement and at most one picture per slide.
 
   settle  Settle the Argument  rules   turf green   question+arguing figures / scene / your call / answer
-  gear    Gear X-Ray           gear    court blue   question+racket / fact drawing / statement+tiles / answer
+  gear    Gear X-Ray           gear    court blue (plain, no grid)   question+racket / fact drawing / statement+tiles / answer
   pros    Pro Move             pros    ball yellow  question+figure / scene / your call / answer
   number  The Number           market  clay         question+courts / guess bars / reveal / twist (night)
 
@@ -12,7 +12,7 @@ Used by engine/render.py for every post that has a "series" field. Slide types:
   q        {"q": headline, "claim": register claim, optional "figure": pose for pros}
   scene    {"text": one line, "scene": {...}}            (settle, pros)
   fact     {"text": headline, "drawing": "dims"|"holes"|"cord", optional "labels"}  (gear)
-  call     {}                                            (settle, pros: "Your call?" + tiles)
+  call     {}                                            (settle, pros: "Your answer?" + tiles)
   claim    {"text": statement}                           (gear: statement + "Fair or fault?" + tiles)
   guess    {"bars": ["15,000", "35,000", "58,000"]}      (number)
   reveal   {"big": "58,000+", "text": "...", "source": "..."}  (number, series colour)
@@ -275,7 +275,7 @@ def build(post, i):
     last = i == len(post["slides"]) - 1
     t, bg, fg, acc = s["type"], S["bg"], S["fg"], S["acc"]
     yellow = bg == C["ball"]
-    blue = BLUEPRINT if post["series"] == "gear" and not last else ""
+    blue = ""  # no blueprint grid (removed 30 Oct 2026)
     if last:
         bg, fg = C["night"], C["paper"]
     top = blue + tag(S["name"], fg)
@@ -311,7 +311,7 @@ def build(post, i):
     elif t == "fact":
         body = top + head(fmt(s["text"], hl), 112, fg) + f'<div style="margin-top:auto">{gear_drawing(s["drawing"], s.get("labels", {}))}</div>' + swipe(fg)
     elif t == "call":
-        body = top + head("Your call?", 240, acc if not yellow else C["night"], 0, 0.88, "margin-top:auto") + \
+        body = top + head("Your answer?", 240, acc if not yellow else C["night"], 0, 0.88, "margin-top:auto") + \
                '<div style="height:120px"></div>' + tiles(yellow).replace("margin-top:auto", "") + swipe(fg)
     elif t == "claim":
         body = (top + head(fmt(s["text"], hl), 112, fg) + head("Fair or fault?", 112, C["ball"], 48, 0.9) +

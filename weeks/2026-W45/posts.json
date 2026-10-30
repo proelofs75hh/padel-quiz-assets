@@ -13,7 +13,7 @@
    "slides": [
     {
      "type": "q",
-     "q": "Hit your own fence to get it over?",
+     "q": "Can you hit the ball into your own fence?",
      "claim": "Your shot hits your own fence, then goes over the net."
     },
     {
@@ -128,12 +128,12 @@
    "slides": [
     {
      "type": "q",
-     "q": "Switch sides after games 1, 3, 5 …?",
+     "q": "When do you switch sides?",
      "claim": "You switch sides after games 1, 3, 5 and so on."
     },
     {
      "type": "scene",
-     "text": "Game 1 is over. Time to switch?",
+     "text": "After games 1, 3, 5 and so on.",
      "scene": {
       "view": "top",
       "arrows": [
@@ -186,7 +186,7 @@
    "slides": [
     {
      "type": "q",
-     "q": "Smash over the back glass. Can a pro run out and save it?",
+     "q": "Can a pro save a smash over the back glass?",
      "claim": "The smash flies over the back glass. A pro runs out and saves it.",
      "figure": "smash"
     },
@@ -253,7 +253,7 @@
    "slides": [
     {
      "type": "q",
-     "q": "Side glass, then back glass. Still in play?",
+     "q": "Is the ball still in play after two walls?",
      "claim": "The ball bounces, hits the side glass, then the back glass. Still in play."
     },
     {
@@ -373,7 +373,7 @@
    "slides": [
     {
      "type": "q",
-     "q": "Your shot hits your partner first. Still OK?",
+     "q": "Is it OK if your shot hits your partner?",
      "claim": "Your shot hits your partner, then goes over the net."
     },
     {
@@ -480,7 +480,7 @@
    "slides": [
     {
      "type": "q",
-     "q": "Net, in the box, then the fence. Replay the serve?",
+     "q": "Do you replay this net serve?",
      "claim": "Your serve clips the net, lands in, then hits the fence. You replay it."
     },
     {
@@ -612,7 +612,7 @@
    "slides": [
     {
      "type": "q",
-     "q": "Your serve lands on the line. In?",
+     "q": "Is a serve on the line in?",
      "claim": "Your serve lands on the line of the service box. It's in."
     },
     {
@@ -716,7 +716,7 @@
    "slides": [
     {
      "type": "q",
-     "q": "Hit the ball before it crosses the net?",
+     "q": "Can you hit the ball before it crosses the net?",
      "claim": "You hit the ball before it crosses the net."
     },
     {
