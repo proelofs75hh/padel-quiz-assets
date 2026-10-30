@@ -71,10 +71,17 @@ def swipe(col, mt=40):
 
 
 def tiles(on_yellow=False):
-    t = "flex:1;padding:44px 0;border-radius:20px;text-align:center;font-size:80px;line-height:1;font-weight:700;"
-    fair = f'background:{C["night"]};color:{C["ball"]}' if on_yellow else f'background:{C["ball"]};color:{C["night"]}'
-    return (f'<div style="display:flex;gap:24px;margin-top:auto"><div style="{t}{fair}">Fair</div>'
-            f'<div style="{t}background:{C["paper"]};color:{C["night"]}">Fault</div></div>')
+    """Neutral Fair / Fault buttons: both white, same style (no hint at the answer), with an 'OR' disc overlapping both."""
+    t = (f"flex:1;padding:44px 0;border-radius:20px;text-align:center;font-family:{DISPLAY};font-size:84px;line-height:1;"
+         f"font-weight:800;letter-spacing:-.02em;background:#FFFFFF;color:{C['night']};"
+         + (f"border:6px solid {C['night']};" if on_yellow else ""))
+    disc_bg, disc_fg = (C["night"], C["ball"]) if on_yellow else (C["ball"], C["night"])
+    disc = (f'<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:128px;height:128px;'
+            f'border-radius:50%;background:{disc_bg};color:{disc_fg};border:8px solid {C["night"]};box-sizing:border-box;'
+            f'display:flex;align-items:center;justify-content:center;'
+            f'font-family:{MONO};font-size:48px;font-weight:700;letter-spacing:.02em">OR</div>')
+    return (f'<div style="position:relative;display:flex;gap:24px;margin-top:auto"><div style="{t}">Fair</div>'
+            f'<div style="{t}">Fault</div>{disc}</div>')
 
 
 def svgbox(w, h, inner, alt):
@@ -268,6 +275,115 @@ def gear_drawing(kind, labels):
     raise ValueError(kind)
 
 
+# ---------------------------------------------------------------- cover variants (slide 1)
+def _bleed(svg_inner, x, y, w, h, alt):
+    """An SVG placed absolutely on the slide; may run off the edge (graphic cover)."""
+    return (f'<div style="position:absolute;left:0;top:0;width:1080px;height:1350px;overflow:hidden">'
+            f'<svg viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{html.escape(alt)}" '
+            f'style="position:absolute;left:{x}px;top:{y}px;display:block">{svg_inner}</svg></div>')
+
+
+def cover(post, s, S, q, fg, hl, top, yellow):
+    """Optional slide-1 variant via s["cover"]. Returns None for the series default.
+
+    type     giant question, huge "?" running off the right edge          (all series)
+    scene    question + the situation drawing from slide 2               (settle, pros)
+    versus   question + stacked FAIR / OR / FAULT in outline type          (settle, gear)
+    zoom     question + oversized racket head running off the corner      (gear)
+    drawing  question + the fact drawing from slide 2                    (gear)
+    digits   question + a hidden number "?,???"                           (number)
+    """
+    kind = s.get("cover")
+    if not kind:
+        return None
+    if kind == "photo":
+        return photo_cover(post, s, S, q, fg, top)
+    acc = C["ball"] if not yellow else C["night"]
+    if kind == "type":
+        mark = (f'<text x="0" y="660" font-family="Bricolage Grotesque" font-size="860" font-weight="800" '
+                f'fill="{acc}" fill-opacity="{1 if not yellow else 0.16}">?</text>')
+        big = _bleed(mark, 700, 560, 760, 760, "Big question mark")
+        return big + top + head(q, 150, fg, 72, 0.92, "position:relative") + '<div style="margin-top:auto"></div>' + swipe(fg)
+    if kind == "scene":
+        sc = next(x for x in post["slides"] if x["type"] == "scene")["scene"]
+        svg = scene_svg(sc, S).replace('width="904" height="720"', 'width="904" height="640"')
+        return top + head(q, 104, fg) + f'<div style="margin-top:auto">{svg}</div>' + swipe(fg)
+    if kind == "versus":
+        st = (f"margin:0;font-family:{DISPLAY};font-size:230px;line-height:.86;font-weight:800;letter-spacing:-.04em;")
+        words = (f'<p style="{st}color:{fg}">FAIR</p>'
+                 f'<p style="margin:6px 0 6px 8px;font-family:{MONO};font-size:56px;font-weight:700;color:{acc}">— OR —</p>'
+                 f'<p style="{st}color:{fg}">FAULT</p>')
+        return top + head(q, 104, fg) + f'<div style="margin-top:auto">{words}</div>' + swipe(fg)
+    if kind == "zoom":
+        r = racket_outline(720, 1000, 1.9, -62, True, C["paper"], 5)
+        return _bleed(r, 0, 0, 1080, 1350, "Close-up line drawing of a padel racket") + top + \
+            head(q, 120, fg, 56, 0.96, "position:relative;max-width:820px") + '<div style="margin-top:auto"></div>' + swipe(fg)
+    if kind == "drawing":
+        f = next(x for x in post["slides"] if x["type"] == "fact")
+        return top + head(q, 104, fg) + f'<div style="margin-top:auto">{gear_drawing(f["drawing"], f.get("labels", {}))}</div>' + swipe(fg)
+    if kind == "digits":
+        d = s.get("digits", "?,???")
+        return (top + head(q, 104, fg) +
+                f'<div style="margin-top:auto;font-family:{DISPLAY};font-size:330px;line-height:.84;font-weight:800;'
+                f'letter-spacing:-.05em;white-space:nowrap;color:{C["night"]}">{html.escape(d)}</div>' + swipe(fg))
+    raise ValueError(f"unknown cover {kind}")
+
+
+# ---------------------------------------------------------------- photo covers
+import pathlib
+PHOTOS = pathlib.Path(__file__).resolve().parent.parent / "assets" / "photos"
+DUO = {  # shadow, mid, highlight per series
+    "settle": ("#04170D", "#2F8A5E", "#E8F6EC"),
+    "gear": ("#050F33", "#3767D6", "#E3ECFA"),
+    "pros": ("#0E1630", "#7E8F1A", "#F7FDD2"),
+    "number": ("#2A0E04", "#B85A2C", "#FCE9DC"),
+}
+
+
+def _photo_file(pid, series, w, h, focus, zoom):
+    """Crop a w x h window (zoom >= 1 = tighter detail) around focus=(fx, fy) and tint it in the series
+    duotone. Returns the path of a cached JPEG."""
+    from PIL import Image, ImageOps
+    out = pathlib.Path("/tmp/fof_photo_cache") / f"{pid}-{series}-{w}x{h}-{focus[0]}-{focus[1]}-{zoom}.jpg"
+    if out.exists():
+        return out
+    out.parent.mkdir(exist_ok=True)
+    im = Image.open(PHOTOS / f"{pid}.jpg").convert("RGB")
+    sc = max(w / im.width, h / im.height) * zoom
+    im = im.resize((round(im.width * sc), round(im.height * sc)), Image.LANCZOS)
+    x = min(max(0, round(im.width * focus[0] - w / 2)), im.width - w)
+    y = min(max(0, round(im.height * focus[1] - h / 2)), im.height - h)
+    g = ImageOps.autocontrast(ImageOps.grayscale(im.crop((x, y, x + w, y + h))), cutoff=1)
+    d, m, l = DUO[series]
+    ImageOps.colorize(g, black=d, white=l, mid=m).save(out, quality=90)
+    return out
+
+
+PLACE = {  # photo block on the slide: left, top, width, height (may run off the edge)
+    "right": (180, 600, 980, 830),
+    "left": (-80, 600, 960, 830),
+    "wide": (0, 600, 1080, 750),
+}
+
+
+def photo_cover(post, s, S, q, fg, top):
+    """Photo cover: series-colour band with the question, below it a photo tinted in the series duotone.
+    s: photo (id in assets/photos), photo_focus [fx, fy] (crop centre, 0..1), photo_zoom (1 = whole
+    photo, 2 = detail), photo_place "right" | "left" | "wide" (block shifted / running off the edge),
+    photo_tilt (degrees, e.g. -3)."""
+    L, T, W, H = PLACE[s.get("photo_place", "right")]
+    f = _photo_file(s["photo"], post["series"], W, H, tuple(s.get("photo_focus", [0.5, 0.5])), s.get("photo_zoom", 1))
+    tilt = s.get("photo_tilt", 0)
+    img = (f'<div style="position:absolute;left:0;top:0;width:1080px;height:1350px;overflow:hidden">'
+           f'<div style="position:absolute;left:{L}px;top:{T}px;width:{W}px;height:{H}px;'
+           f'background:url(\'file://{f}\') center/cover;transform:rotate({tilt}deg);transform-origin:50% 0;'
+           f'box-shadow:0 24px 60px rgba(14,22,48,.35)"></div></div>')
+    sw = swipe(C["paper"])
+    return (img + '<div style="position:relative;display:flex;flex-direction:column;flex:1">' + top
+            + head(q, 100, fg) + '<div style="margin-top:auto"></div>'
+            + f'<div style="text-shadow:0 2px 14px rgba(14,22,48,.9)">{sw}</div></div>')
+
+
 # ---------------------------------------------------------------- slide builders
 def build(post, i):
     S = SERIES[post["series"]]
@@ -284,10 +400,10 @@ def build(post, i):
     if t == "q":
         q = fmt(s["q"], hl)
         if post["series"] == "settle":
-            pic = (bubble(70, 10, 330, 124, "Right!", 150, 1, C["paper"], C["night"]) +
-                   bubble(504, 10, 330, 124, "Wrong!", 180, -1, C["ball"], C["night"]) +
+            pic = (bubble(70, 10, 330, 124, "Fair!", 150, 1, C["paper"], C["night"]) +
+                   bubble(504, 10, 330, 124, "Fault!", 180, -1, C["paper"], C["night"]) +
                    figure(250, 400, "point", C["paper"], 1.0) + figure(654, 400, "shrug", C["ball"], 1.0, True))
-            vis = svgbox(904, 560, pic, "Two faceless players disagree: one says right, the other says wrong")
+            vis = svgbox(904, 560, pic, "Two faceless players disagree: one says fair, the other says fault")
         elif post["series"] == "gear":
             vis = svgbox(904, 600, racket_outline(452, 310, 1.0, -16), "Blueprint line drawing of a padel racket")
         elif post["series"] == "pros":
@@ -306,6 +422,7 @@ def build(post, i):
             mc += f'<circle cx="368" cy="270" r="24" fill="{C["ball"]}" stroke="{C["night"]}" stroke-width="6"/>'
             vis = svgbox(904, 620, mc, "Grid of padel courts seen from above")
         body = top + head(q, 112, fg) + f'<div style="margin-top:auto">{vis}</div>' + swipe(fg)
+        body = cover(post, s, S, q, fg, hl, top, yellow) or body
     elif t == "scene":
         body = top + head(fmt(s["text"], hl), 80, fg, 56, 1.0) + f'<div style="margin-top:auto">{scene_svg(s["scene"], S)}</div>' + swipe(fg)
     elif t == "fact":

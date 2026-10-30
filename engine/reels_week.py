@@ -50,6 +50,8 @@ def main(week_dir):
             f.unlink()
     sheet.save(out / "_frames.png")
     print("check:", out / "_frames.png")
+    import reel_cover  # series-style covers (replace the cream covers from reel.py)
+    asyncio.run(reel_cover.render(wd))
 
 
 if __name__ == "__main__":
