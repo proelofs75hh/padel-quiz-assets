@@ -333,54 +333,55 @@ def cover(post, s, S, q, fg, hl, top, yellow):
 import pathlib
 PHOTOS = pathlib.Path(__file__).resolve().parent.parent / "assets" / "photos"
 DUO = {  # shadow, mid, highlight per series
-    "settle": ("#0A2A1B", "#1E6B47", "#DCEFE2"),
-    "gear": ("#081B4D", "#1747B0", "#DCE8F7"),
-    "pros": ("#1E2400", "#8FA414", "#F4FBC8"),
-    "number": ("#3A1608", "#E2733C", "#FBE3D3"),
+    "settle": ("#04170D", "#2F8A5E", "#E8F6EC"),
+    "gear": ("#050F33", "#3767D6", "#E3ECFA"),
+    "pros": ("#0E1630", "#7E8F1A", "#F7FDD2"),
+    "number": ("#2A0E04", "#B85A2C", "#FCE9DC"),
 }
 
 
-def _photo_file(pid, series, style, focus):
-    """Crop to 1080x1350 (or band area) around focus=(fx,fy) and optionally duotone. Returns file path."""
+def _photo_file(pid, series, w, h, focus, zoom):
+    """Crop a w x h window (zoom >= 1 = tighter detail) around focus=(fx, fy) and tint it in the series
+    duotone. Returns the path of a cached JPEG."""
     from PIL import Image, ImageOps
-    src = PHOTOS / f"{pid}.jpg"
-    w, h = (1080, 1350) if style == "duo" else (1080, 1350)
-    out = pathlib.Path("/tmp/fof_photo_cache") / f"{pid}-{series}-{style}-{focus[0]}-{focus[1]}.jpg"
+    out = pathlib.Path("/tmp/fof_photo_cache") / f"{pid}-{series}-{w}x{h}-{focus[0]}-{focus[1]}-{zoom}.jpg"
     if out.exists():
         return out
     out.parent.mkdir(exist_ok=True)
-    im = Image.open(src).convert("RGB")
-    sc = max(w / im.width, h / im.height)
+    im = Image.open(PHOTOS / f"{pid}.jpg").convert("RGB")
+    sc = max(w / im.width, h / im.height) * zoom
     im = im.resize((round(im.width * sc), round(im.height * sc)), Image.LANCZOS)
     x = min(max(0, round(im.width * focus[0] - w / 2)), im.width - w)
     y = min(max(0, round(im.height * focus[1] - h / 2)), im.height - h)
-    im = im.crop((x, y, x + w, y + h))
-    if style == "duo":
-        g = ImageOps.autocontrast(ImageOps.grayscale(im), cutoff=1)
-        d, m, l = DUO[series]
-        im = ImageOps.colorize(g, black=d, mid=m, white=l)
-    im.save(out, quality=90)
+    g = ImageOps.autocontrast(ImageOps.grayscale(im.crop((x, y, x + w, y + h))), cutoff=1)
+    d, m, l = DUO[series]
+    ImageOps.colorize(g, black=d, white=l, mid=m).save(out, quality=90)
     return out
 
 
+PLACE = {  # photo block on the slide: left, top, width, height (may run off the edge)
+    "right": (180, 600, 980, 830),
+    "left": (-80, 600, 960, 830),
+    "wide": (0, 600, 1080, 750),
+}
+
+
 def photo_cover(post, s, S, q, fg, top):
-    """s: photo (id in assets/photos), photo_style "duo" (full-bleed duotone) | "band" (colour photo below
-    a series-colour band with the question), photo_focus [fx, fy] (0..1, crop centre)."""
-    style = s.get("photo_style", "duo")
-    f = _photo_file(s["photo"], post["series"], style, tuple(s.get("photo_focus", [0.5, 0.5])))
-    if style == "duo":
-        bg = (f'<div style="position:absolute;inset:0;background:url(\'file://{f}\') center/cover"></div>'
-              f'<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,22,48,.72) 0%,rgba(14,22,48,.35) 42%,rgba(14,22,48,0) 60%,rgba(14,22,48,.45) 100%)"></div>')
-        return (bg + f'<div style="position:relative;display:flex;flex-direction:column;flex:1">'
-                + tag(S["name"], C["paper"]) + head(q, 116, C["paper"]) + '<div style="margin-top:auto"></div>'
-                + swipe(C["paper"]) + '</div>')
-    # band: series colour block on top, colour photo fills the rest edge to edge
-    yellow = S["bg"] == C["ball"]
-    return (f'<div style="position:absolute;left:0;right:0;bottom:0;top:560px;background:url(\'file://{f}\') center/cover"></div>'
-            f'<div style="position:absolute;left:0;right:0;bottom:0;height:260px;background:linear-gradient(180deg,rgba(14,22,48,0),rgba(14,22,48,.55))"></div>'
-            + f'<div style="position:relative;display:flex;flex-direction:column;flex:1">' + top
-            + f'<div style="height:400px;display:flex;align-items:flex-start">{head(q, 104, fg)}</div>'
-            + '<div style="margin-top:auto"></div>' + '<div style="text-shadow:0 2px 14px rgba(14,22,48,.9)">' + swipe(C["paper"]) + '</div></div>')
+    """Photo cover: series-colour band with the question, below it a photo tinted in the series duotone.
+    s: photo (id in assets/photos), photo_focus [fx, fy] (crop centre, 0..1), photo_zoom (1 = whole
+    photo, 2 = detail), photo_place "right" | "left" | "wide" (block shifted / running off the edge),
+    photo_tilt (degrees, e.g. -3)."""
+    L, T, W, H = PLACE[s.get("photo_place", "right")]
+    f = _photo_file(s["photo"], post["series"], W, H, tuple(s.get("photo_focus", [0.5, 0.5])), s.get("photo_zoom", 1))
+    tilt = s.get("photo_tilt", 0)
+    img = (f'<div style="position:absolute;left:0;top:0;width:1080px;height:1350px;overflow:hidden">'
+           f'<div style="position:absolute;left:{L}px;top:{T}px;width:{W}px;height:{H}px;'
+           f'background:url(\'file://{f}\') center/cover;transform:rotate({tilt}deg);transform-origin:50% 0;'
+           f'box-shadow:0 24px 60px rgba(14,22,48,.35)"></div></div>')
+    sw = swipe(C["paper"])
+    return (img + '<div style="position:relative;display:flex;flex-direction:column;flex:1">' + top
+            + head(q, 100, fg) + '<div style="margin-top:auto"></div>'
+            + f'<div style="text-shadow:0 2px 14px rgba(14,22,48,.9)">{sw}</div></div>')
 
 
 # ---------------------------------------------------------------- slide builders
