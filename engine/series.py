@@ -33,6 +33,7 @@ SERIES = {
     "gear": dict(name="Gear X-Ray", bg=C["court"], fg=C["paper"], acc=C["ball"], line=C["paper"]),
     "pros": dict(name="Pro move", bg=C["ball"], fg=C["night"], acc=C["night"], line=C["night"]),
     "number": dict(name="The number", bg=C["clay"], fg=C["night"], acc=C["night"], line=C["night"]),
+    "lingo": dict(name="Padel lingo", bg="#5B3FD1", fg=C["paper"], acc=C["ball"], line=C["paper"]),
 }
 
 
@@ -337,6 +338,7 @@ DUO = {  # shadow, mid, highlight per series
     "gear": ("#050F33", "#3767D6", "#E3ECFA"),
     "pros": ("#0E1630", "#7E8F1A", "#F7FDD2"),
     "number": ("#2A0E04", "#B85A2C", "#FCE9DC"),
+    "lingo": ("#140A3D", "#5B3FD1", "#ECE6FF"),
 }
 
 
@@ -397,6 +399,17 @@ def build(post, i):
     top = blue + tag(S["name"], fg)
     hl = C["ball"] if not yellow else C["court"]
 
+    if t == "q" and post["series"] == "lingo" and not s.get("cover"):
+        # the term itself is the hero: huge, bold, with a yellow "?"; pronunciation/meaning as a dictionary line
+        term = html.escape(s["term"])
+        say = s.get("say", "")
+        body = (top + '<div style="margin-top:auto"></div>'
+                + f'<h1 style="margin:0;font-family:{DISPLAY};font-size:{min(260, int(904 / (0.5 * (len(s["term"]) + 1))))}px;line-height:.9;'
+                  f'font-weight:800;letter-spacing:-.04em;white-space:nowrap;color:{fg}">{term}<span style="color:{C["ball"]}">?</span></h1>'
+                + (label(say, C["glass"], 28) if say else "")
+                + '<div style="margin-top:auto"></div>'
+                + head(fmt(s["q"], hl), 92, fg, 0, 1.0) + swipe(fg))
+        return wrap(bg, fg, body)
     if t == "q":
         q = fmt(s["q"], hl)
         if post["series"] == "settle":
