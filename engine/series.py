@@ -452,7 +452,10 @@ def build(post, i):
         body = top + head("Your answer?", 240, acc if not yellow else C["night"], 0, 0.88, "margin-top:auto") + \
                '<div style="height:120px"></div>' + tiles(yellow).replace("margin-top:auto", "") + swipe(fg)
     elif t == "claim":
-        body = (top + head(fmt(s["text"], hl), 112, fg) + head("Fair or fault?", 112, C["ball"], 48, 0.9) +
+        # the statement people vote on (since 31 Oct 2026 for every series with a vote): never a question,
+        # so FAIR / FAULT on the last slide always judges this exact sentence
+        ask = C["ball"] if not yellow else C["court"]
+        body = (top + head(fmt(s["text"], hl), 112, fg) + head("Fair or fault?", 112, ask, 48, 0.9) +
                 tiles(yellow) + swipe(fg))
     elif t == "guess":
         bars = s["bars"]
