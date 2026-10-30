@@ -54,7 +54,8 @@
      }
     },
     {
-     "type": "call"
+     "type": "call",
+     "q": "Can you hit the ball into your own fence?"
     },
     {
      "type": "verdict",
@@ -163,7 +164,8 @@
      }
     },
     {
-     "type": "call"
+     "type": "call",
+     "q": "When do you switch sides?"
     },
     {
      "type": "verdict",
@@ -230,7 +232,8 @@
      }
     },
     {
-     "type": "call"
+     "type": "call",
+     "q": "Can a pro save a smash over the back glass?"
     },
     {
      "type": "verdict",
@@ -303,7 +306,8 @@
      }
     },
     {
-     "type": "call"
+     "type": "call",
+     "q": "Is the ball still in play after two walls?"
     },
     {
      "type": "verdict",
@@ -426,7 +430,8 @@
      }
     },
     {
-     "type": "call"
+     "type": "call",
+     "q": "Is it OK if your shot hits your partner?"
     },
     {
      "type": "verdict",
@@ -541,7 +546,8 @@
      }
     },
     {
-     "type": "call"
+     "type": "call",
+     "q": "Do you replay this net serve?"
     },
     {
      "type": "verdict",
@@ -610,7 +616,8 @@
      }
     },
     {
-     "type": "call"
+     "type": "call",
+     "q": "Can a pro serve with a jump, like in tennis?"
     },
     {
      "type": "verdict",
@@ -673,7 +680,8 @@
      }
     },
     {
-     "type": "call"
+     "type": "call",
+     "q": "Is a serve on the line in?"
     },
     {
      "type": "verdict",
@@ -775,7 +783,8 @@
      }
     },
     {
-     "type": "call"
+     "type": "call",
+     "q": "Can you hit the ball before it crosses the net?"
     },
     {
      "type": "verdict",
