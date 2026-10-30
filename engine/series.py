@@ -454,9 +454,11 @@ def build(post, i):
     elif t == "claim":
         # the statement people vote on (since 31 Oct 2026 for every series with a vote): never a question,
         # so FAIR / FAULT on the last slide always judges this exact sentence
+        # no buttons (31 Oct): the statement big and centred, "Fair or fault?" as the clear question below it
         ask = C["ball"] if not yellow else C["court"]
-        body = (top + head(fmt(s["text"], hl), 112, fg) + head("Fair or fault?", 112, ask, 48, 0.9) +
-                tiles(yellow) + swipe(fg))
+        body = (top + head(fmt(s["text"], hl), 132, fg, 0, 1.0, "margin-top:auto") +
+                f'<div style="margin-top:56px;height:8px;width:160px;border-radius:999px;background:{ask}"></div>' +
+                head("Fair or fault?", 150, ask, 48, 0.9, "margin-bottom:auto") + swipe(fg))
     elif t == "guess":
         bars = s["bars"]
         vals = [float(re.sub(r"[^0-9.]", "", b)) for b in bars]
