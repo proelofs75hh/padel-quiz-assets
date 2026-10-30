@@ -70,14 +70,15 @@ def swipe(col, mt=40):
     return label("Swipe →", col, mt, "right")
 
 
-def tiles(on_yellow=False, fg=None):
-    """Neutral Fair / Fault buttons (same style, no hint at the answer) with an 'OR' disc overlapping both."""
-    fg = fg or (C["night"] if on_yellow else C["paper"])
+def tiles(on_yellow=False):
+    """Neutral Fair / Fault buttons: both white, same style (no hint at the answer), with an 'OR' disc overlapping both."""
     t = (f"flex:1;padding:44px 0;border-radius:20px;text-align:center;font-family:{DISPLAY};font-size:84px;line-height:1;"
-         f"font-weight:800;letter-spacing:-.02em;border:6px solid {fg};color:{fg};background:transparent;")
+         f"font-weight:800;letter-spacing:-.02em;background:#FFFFFF;color:{C['night']};"
+         + (f"border:6px solid {C['night']};" if on_yellow else ""))
     disc_bg, disc_fg = (C["night"], C["ball"]) if on_yellow else (C["ball"], C["night"])
     disc = (f'<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:128px;height:128px;'
-            f'border-radius:50%;background:{disc_bg};color:{disc_fg};display:flex;align-items:center;justify-content:center;'
+            f'border-radius:50%;background:{disc_bg};color:{disc_fg};border:8px solid {C["night"]};box-sizing:border-box;'
+            f'display:flex;align-items:center;justify-content:center;'
             f'font-family:{MONO};font-size:48px;font-weight:700;letter-spacing:.02em">OR</div>')
     return (f'<div style="position:relative;display:flex;gap:24px;margin-top:auto"><div style="{t}">Fair</div>'
             f'<div style="{t}">Fault</div>{disc}</div>')
