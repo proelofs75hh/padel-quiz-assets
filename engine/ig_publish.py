@@ -118,6 +118,18 @@ def ig_user_id():
 
 
 def check():
+    try:
+        _check()
+    except Exception as e:  # write the reason so it is visible without the Actions log (no token in it)
+        msg = str(e).replace(os.environ.get("IG_ACCESS_TOKEN", "") or "\0", "***")
+        p = ROOT / "ops" / "check-result.json"
+        p.parent.mkdir(exist_ok=True)
+        p.write_text(json.dumps({"error": msg, "api": API, "checked_at": dt.datetime.now(TZ).isoformat(timespec="seconds")}, indent=1) + "\n")
+        print("CHECK FAILED:", msg)
+        sys.exit(1)
+
+
+def _check():
     uid = ig_user_id()
     me = call("GET", uid, fields="id,username,media_count")
     lim = call("GET", f"{uid}/content_publishing_limit", fields="config,quota_usage")

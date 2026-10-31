@@ -46,7 +46,11 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           MEDIA_BASE: https://cdn.jsdelivr.net/gh/${{ github.repository }}@${{ github.sha }}/
         run: |
-          if [ -z "$IG_ACCESS_TOKEN" ]; then echo "secrets not set yet - skipping"; exit 0; fi
+          if [ -z "$IG_ACCESS_TOKEN" ]; then
+            echo "secrets not set yet - skipping"
+            if [ "${{ steps.mode.outputs.mode }}" = "check" ]; then mkdir -p ops; echo "{\"error\": \"IG_ACCESS_TOKEN secret is empty or missing\", \"checked_at\": \"$(date -u +%FT%TZ)\"}" > ops/check-result.json; fi
+            exit 0
+          fi
           case "${{ steps.mode.outputs.mode }}" in
             none)  echo "no request" ;;
             check) python3 engine/ig_publish.py --check ;;
