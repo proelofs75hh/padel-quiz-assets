@@ -22,10 +22,11 @@ permissions:
 concurrency:
   group: instagram-publish
   cancel-in-progress: false
+# a newer queued run waits until the running loop ends (at most one pending run is kept)
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 58
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -44,24 +45,35 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN || secrets.INST_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          MEDIA_BASE: https://cdn.jsdelivr.net/gh/${{ github.repository }}@${{ github.sha }}/
+          REPO: ${{ github.repository }}
         run: |
+          git config user.name "fof-publisher"; git config user.email "fof-publisher@users.noreply.github.com"
+          save() {
+            git add weeks/*/queue.json ops/ 2>/dev/null || true
+            if git diff --cached --quiet; then return 0; fi
+            git commit -q -m "publish: queue state $(date -u +%FT%TZ)"
+            for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && return 0; sleep 5; done
+          }
+          media() { export MEDIA_BASE="https://cdn.jsdelivr.net/gh/$REPO@$(git rev-parse HEAD)/"; }
           if [ -z "$IG_ACCESS_TOKEN" ]; then
             echo "secrets not set yet - skipping"
-            if [ "${{ steps.mode.outputs.mode }}" = "check" ]; then mkdir -p ops; echo "{\"error\": \"IG_ACCESS_TOKEN secret is empty or missing\", \"checked_at\": \"$(date -u +%FT%TZ)\"}" > ops/check-result.json; fi
+            if [ "${{ steps.mode.outputs.mode }}" = "check" ]; then mkdir -p ops; echo "{\"error\": \"IG_ACCESS_TOKEN secret is empty or missing\", \"checked_at\": \"$(date -u +%FT%TZ)\"}" > ops/check-result.json; save; fi
             exit 0
           fi
           case "${{ steps.mode.outputs.mode }}" in
             none)  echo "no request" ;;
-            check) python3 engine/ig_publish.py --check ;;
-            only)  python3 engine/ig_publish.py --only "${{ steps.mode.outputs.id }}" ;;
-            *)     python3 engine/ig_publish.py ;;
+            check) media; python3 engine/ig_publish.py --check || true; save ;;
+            only)  media; python3 engine/ig_publish.py --only "${{ steps.mode.outputs.id }}" || FAIL=1; save ;;
+            *)
+              # GitHub starts scheduled runs irregularly (sometimes 30-60 min apart), so one run keeps
+              # watching for ~50 minutes: every 60 s pull the latest queue (new approvals), post what is due, commit.
+              END=$(( $(date +%s) + 50*60 ))
+              while [ "$(date +%s)" -lt "$END" ]; do
+                git pull --rebase -q || true
+                media
+                python3 engine/ig_publish.py || FAIL=1
+                save
+                sleep 60
+              done ;;
           esac
-      - name: Save queue state
-        if: always()
-        run: |
-          git config user.name "fof-publisher"; git config user.email "fof-publisher@users.noreply.github.com"
-          git add weeks/*/queue.json ops/ 2>/dev/null || true
-          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
-          git commit -m "publish: queue state $(date -u +%FT%TZ)"
-          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          [ -z "$FAIL" ]
