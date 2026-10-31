@@ -1,0 +1,708 @@
+{
+ "posts": [
+  {
+   "id": "2026-10-31-01",
+   "slot": "2026-10-31T11:00:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.racket-max-thickness",
+   "fact_source": "FIP Reglamento, La Pala: cabeza grosor máximo 38 mm, largo total máx. 45,5 cm, ancho máx. 26 cm",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How thick can a padel racket be?",
+     "claim": "A racket can be up to 38 mm thick.",
+     "cover": "zoom"
+    },
+    {
+     "type": "claim",
+     "text": "A racket can be up to 38 mm thick."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Max **38 mm** thick.\nAnd max 45.5 cm long.",
+     "source": "FIP rules · Racket"
+    }
+   ],
+   "caption": "Thick, thin, teardrop, round – rackets look very different. But the rules set hard limits. 📏\n\nLength, width and thickness are all capped.\n\nDid you know the number? Comment ✓ or ✕ 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "difficulty": "easy",
+   "moved_from": "2026-11-02-pm"
+  },
+  {
+   "id": "2026-10-31-02",
+   "slot": "2026-10-31T11:15:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.change-ends-odd-games",
+   "fact_source": "FIP Reglamento de Juego, Regla 5.1 (cambio de campo cuando la suma de juegos es impar)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "When do you switch sides?",
+     "claim": "You switch sides after games 1, 3, 5 and so on.",
+     "cover": "photo",
+     "photo": "Ku_sKE4hMcE",
+     "photo_focus": [
+      0.5,
+      0.62
+     ],
+     "photo_zoom": 1.3,
+     "photo_place": "right"
+    },
+    {
+     "type": "scene",
+     "text": "Game 1 is over. The score is 1–0.",
+     "scene": {
+      "view": "top",
+      "arrows": [
+       [
+        352,
+        600,
+        352,
+        130
+       ],
+       [
+        552,
+        130,
+        552,
+        600
+       ]
+      ],
+      "alt": "Court from above with arrows showing both pairs changing ends"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "You switch after games 1, 3, 5 and so on."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Switch when the games\nadd up to an **odd** number.",
+     "source": "FIP rules · Rule 5"
+    }
+   ],
+   "caption": "Quick one for your next match ⏱️\n\nWhen do you change ends in padel? After every game, every two games – or after the odd ones?\n\nComment FAIR or FAULT before you swipe 👇\nFollow @fairorfault – your daily padel quiz.\n\nPhoto: Bruno Vaccaro Vercellino / Unsplash",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padeltips",
+    "padelbeginner",
+    "fairorfault"
+   ],
+   "difficulty": "easy",
+   "moved_from": "2026-11-03-am"
+  },
+  {
+   "id": "2026-10-31-03",
+   "slot": "2026-10-31T11:30:00",
+   "pillar": "market",
+   "series": "number",
+   "topic_key": "market.federated-players",
+   "fact_source": "Global Padel Report 2026 (Playtomic/PwC): >850,000 federated; FIP World Padel Report 2026: 1.11 million",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How many padel players have a federation licence?",
+     "claim": "More than 850,000 padel players have a federation licence.",
+     "cover": "digits",
+     "digits": "???,???"
+    },
+    {
+     "type": "guess",
+     "bars": [
+      "600,000",
+      "850,000",
+      "1,100,000"
+     ]
+    },
+    {
+     "type": "reveal",
+     "big": "850,000+",
+     "text": "players with a federation licence.",
+     "source": "Global Padel Report 2026"
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pre": "The FIP’s new count:",
+     "big": "1.11 M",
+     "source": "FIP World Padel Report 2026"
+    }
+   ],
+   "caption": "Millions play padel. But how many have an official federation licence? 🏅\n\nGuess first, then swipe. Two reports, two numbers – both say the same thing: padel keeps growing.\n\nComment your guess 👇\n\nSources: Global Padel Report 2026 (Playtomic/PwC), FIP World Padel Report 2026\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelworld",
+    "padelquiz",
+    "padelgrowth",
+    "padelclub",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "difficulty": "medium",
+   "moved_from": "2026-11-04-pm"
+  },
+  {
+   "id": "2026-10-31-05",
+   "slot": "2026-10-31T12:00:00",
+   "pillar": "pros",
+   "series": "pros",
+   "topic_key": "pros.out-over-back-glass-no-save",
+   "fact_source": "FIP Reglamento de Juego, Regla 13.1.e + Regla 16 (juego exterior: solo por lateral o puerta)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Can a pro save a smash that flies over the back glass?",
+     "claim": "One bounce, then over the back glass. The pro runs out and keeps the point alive.",
+     "figure": "smash"
+    },
+    {
+     "type": "scene",
+     "text": "One bounce, then over the back glass.",
+     "scene": {
+      "view": "side",
+      "glass": [
+       [
+        760,
+        260
+       ]
+      ],
+      "net": 200,
+      "figures": [
+       {
+        "x": 470,
+        "y": 528,
+        "pose": "run",
+        "color": "night"
+       }
+      ],
+      "path": [
+       "M60 140 L600 694 Q 760 60, 900 20"
+      ],
+      "ball": [
+       600,
+       670
+      ],
+      "alt": "Side view: the smash bounces once and flies over the opponents' back glass while a player runs"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "The pro runs out and keeps the point alive."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Over the back glass,\nthe point is **over**.",
+     "source": "FIP rules · Rules 13 + 16"
+    }
+   ],
+   "caption": "You've seen pros sprint out of the court to save a smash. Unbelievable. 🤯\n\nBut can they do it when the ball flies over the BACK glass?\n\nMake your call in the comments 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "premierpadel",
+    "padelpro",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "difficulty": "tricky",
+   "moved_from": "2026-11-03-pm"
+  },
+  {
+   "id": "2026-10-31-06",
+   "slot": "2026-10-31T12:15:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.side-then-back-glass-in-play",
+   "fact_source": "FIP Reglamento de Juego, Regla 12.3 (tras el bote, los elementos de la pista mantienen la pelota en juego)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Is the ball still in play after two walls?",
+     "claim": "It bounces, then hits the side glass and the back glass. You can still return it.",
+     "cover": "scene",
+     "scene": {
+      "view": "top",
+      "path": [
+       [
+        560,
+        120
+       ],
+       [
+        400,
+        520
+       ],
+       [
+        258,
+        640
+       ],
+       [
+        360,
+        704
+       ]
+      ],
+      "marks": [
+       [
+        400,
+        520
+       ]
+      ],
+      "ball": [
+       360,
+       690
+      ],
+      "alt": "Court from above: the ball bounces, hits the side glass, then the back glass"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "You can still return it.",
+     "context": "It bounces, then hits the side glass and the back glass."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Walls after the bounce\nkeep the ball **in play**.",
+     "source": "FIP rules · Rule 12"
+    }
+   ],
+   "caption": "Two walls in a row. Your partner already stopped running. 😅\n\nIs the ball still alive after side glass AND back glass?\n\nComment FAIR or FAULT 👇 Send it to your partner.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padeltips",
+    "padelbeginner",
+    "fairorfault"
+   ],
+   "difficulty": "medium",
+   "moved_from": "2026-11-04-am"
+  },
+  {
+   "id": "2026-10-31-07",
+   "slot": "2026-10-31T12:30:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.racket-hole-size",
+   "fact_source": "FIP Reglamento, La Pala: agujeros cilíndricos de 9 a 13 mm de diámetro",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How big can the holes in a racket be?",
+     "claim": "The holes can be up to 2 cm wide.",
+     "cover": "zoom"
+    },
+    {
+     "type": "claim",
+     "text": "The holes can be up to 2 cm wide."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Holes: **9 to 13 mm**.\nNo bigger.",
+     "source": "FIP rules · Racket"
+    }
+   ],
+   "caption": "Every padel racket has them. Nobody ever measures them. 🔍\n\nThe holes in your racket have an official size range.\n\nFair or fault? Comment before you swipe 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "difficulty": "medium",
+   "moved_from": "2026-11-05-pm"
+  },
+  {
+   "id": "2026-10-31-09",
+   "slot": "2026-10-31T13:00:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.shot-hits-partner",
+   "fact_source": "FIP Reglamento de Juego, Regla 13.1.j (la pelota toca al propio jugador o a su compañero)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "What happens if your shot hits your partner?",
+     "claim": "Your shot touches your partner, then goes over the net. It counts as a good shot.",
+     "cover": "photo",
+     "photo": "Stb4Tx7YqXI",
+     "photo_focus": [
+      0.4,
+      0.55
+     ],
+     "photo_zoom": 1.7,
+     "photo_place": "left"
+    },
+    {
+     "type": "scene",
+     "text": "Your shot touches your partner, then goes over the net.",
+     "scene": {
+      "view": "side",
+      "net": 700,
+      "figures": [
+       {
+        "x": 230,
+        "y": 528,
+        "pose": "forehand"
+       },
+       {
+        "x": 500,
+        "y": 528,
+        "pose": "point",
+        "racket": true
+       }
+      ],
+      "path": [
+       "M370 430 L462 352 Q 650 40, 880 640"
+      ],
+      "ball": [
+       462,
+       352
+      ],
+      "alt": "Side view: the ball hits the partner's back and then flies over the net"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "It counts as a good shot."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "The ball touched your team.\nPoint **lost**.",
+     "source": "FIP rules · Rule 13"
+    }
+   ],
+   "caption": "It happens to everyone: you hit your partner with your own shot. 😬\n\nBut if the ball still goes over – does the point go on?\n\nComment FAIR or FAULT 👇 Tag the partner who got hit.\nFollow @fairorfault – your daily padel quiz.\n\nPhoto: Ashford Marx / Unsplash",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padeltips",
+    "padelbeginner",
+    "fairorfault"
+   ],
+   "difficulty": "easy",
+   "moved_from": "2026-11-05-am"
+  },
+  {
+   "id": "2026-10-31-10",
+   "slot": "2026-10-31T13:15:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.wrist-cord-max-length",
+   "fact_source": "FIP Reglamento, La Pala: cordón no elástico, longitud máxima 35 cm",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How long can your wrist cord be?",
+     "claim": "A 50 cm wrist cord is allowed.",
+     "cover": "drawing",
+     "drawing": "cord"
+    },
+    {
+     "type": "claim",
+     "text": "A 50 cm wrist cord is allowed."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Max **35 cm**,\nand not elastic.",
+     "source": "FIP rules · Racket"
+    }
+   ],
+   "caption": "That little strap on your handle has its own rules. 🧵\n\nIt must not stretch – and it has a maximum length.\n\nFair or fault? Comment before you swipe 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "difficulty": "medium",
+   "moved_from": "2026-11-07-pm"
+  },
+  {
+   "id": "2026-10-31-11",
+   "slot": "2026-10-31T13:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.serve-on-line-good",
+   "fact_source": "FIP Reglamento de Juego, Regla 7.1.c (las líneas son buenas)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Is a serve on the line in?",
+     "claim": "Your serve lands right on the service line. It's a good serve.",
+     "cover": "scene",
+     "scene": {
+      "view": "top",
+      "box": [
+       252,
+       117
+      ],
+      "path": [
+       [
+        560,
+        700
+       ],
+       [
+        340,
+        117
+       ]
+      ],
+      "ball": [
+       340,
+       117
+      ],
+      "alt": "Court from above: the serve lands exactly on the service line"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "It's a good serve.",
+     "context": "Your serve lands right on the service line."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Lines are **in**.\nOn the line = good serve.",
+     "source": "FIP rules · Rule 7"
+    }
+   ],
+   "caption": "The ball lands right ON the line. Your opponents shout “out!” 📢\n\nWho's right?\n\nComment FAIR or FAULT 👇 Send it to your Saturday group.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padeltips",
+    "padelbeginner",
+    "fairorfault"
+   ],
+   "difficulty": "medium",
+   "moved_from": "2026-11-07-am"
+  },
+  {
+   "id": "2026-10-31-12",
+   "slot": "2026-10-31T13:45:00",
+   "pillar": "pros",
+   "series": "pros",
+   "topic_key": "pros.no-jump-serve",
+   "fact_source": "FIP Reglamento de Juego, Regla 6.5 (al golpear, al menos un pie en contacto con el suelo, altura de la cintura)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Can you jump when you serve?",
+     "claim": "Both feet are off the ground when you hit. That's a valid serve.",
+     "figure": "jump",
+     "cover": "photo",
+     "photo": "OjbTWGZGX28",
+     "photo_focus": [
+      0.5,
+      0.4
+     ],
+     "photo_zoom": 1.2,
+     "photo_place": "right",
+     "photo_tilt": 3
+    },
+    {
+     "type": "scene",
+     "text": "Both feet are off the ground when you hit.",
+     "scene": {
+      "view": "side",
+      "figures": [
+       {
+        "x": 420,
+        "y": 380,
+        "pose": "jump",
+        "color": "night"
+       }
+      ],
+      "ball": [
+       528,
+       330
+      ],
+      "shadow": [
+       420
+      ],
+      "alt": "Side view: a player serves while jumping, both feet off the ground"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "That's a valid serve."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "One foot must stay\non the **ground**.",
+     "source": "FIP rules · Rule 6"
+    }
+   ],
+   "caption": "Tennis players jump into their serve. Padel pros never do. 👀\n\nIs it just style – or is it the rules?\n\nMake your call in the comments 👇\nFollow @fairorfault – your daily padel quiz.\n\nPhoto: erjola qerimi / Unsplash",
+   "hashtags": [
+    "padel",
+    "premierpadel",
+    "padelpro",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "difficulty": "easy",
+   "moved_from": "2026-11-06-pm"
+  },
+  {
+   "id": "2026-10-31-14",
+   "slot": "2026-10-31T14:15:00",
+   "pillar": "market",
+   "series": "number",
+   "topic_key": "market.new-clubs-2025",
+   "fact_source": "Global Padel Report 2026 (Playtomic/PwC): 4,969 new clubs opened in 2025 (no FIP club count available)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How many new padel clubs opened in 2025?",
+     "claim": "Almost 5,000 new padel clubs opened in 2025.",
+     "cover": "photo",
+     "photo": "a4SslXtr1TE",
+     "photo_focus": [
+      0.6,
+      0.5
+     ],
+     "photo_zoom": 1.0,
+     "photo_place": "wide"
+    },
+    {
+     "type": "guess",
+     "bars": [
+      "2,500",
+      "3,800",
+      "5,000"
+     ]
+    },
+    {
+     "type": "reveal",
+     "big": "4,969",
+     "text": "new padel clubs in 2025.",
+     "source": "Global Padel Report 2026"
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pre": "That’s about",
+     "big": "13 a day",
+     "source": "Global Padel Report 2026"
+    }
+   ],
+   "caption": "New clubs keep popping up everywhere. But how many in one year? 🏗️\n\nGuess first, then swipe.\n\nComment your guess 👇\n\nSource: Global Padel Report 2026 (Playtomic/PwC)\nFollow @fairorfault – your daily padel quiz.\n\nPhoto: Bruno Vaccaro Vercellino / Unsplash",
+   "hashtags": [
+    "padel",
+    "padelworld",
+    "padelquiz",
+    "padelgrowth",
+    "padelclub",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "difficulty": "medium",
+   "moved_from": "2026-11-08-pm"
+  },
+  {
+   "id": "2026-10-31-15",
+   "slot": "2026-10-31T14:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.hit-before-net",
+   "fact_source": "FIP Reglamento de Juego, Regla 13.1.f (devolver la pelota antes de que haya sobrepasado la red)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Can you hit the ball before it crosses the net?",
+     "claim": "You reach over the net and hit it first. That's allowed."
+    },
+    {
+     "type": "scene",
+     "text": "You reach over the net and hit it first.",
+     "scene": {
+      "view": "side",
+      "net": 520,
+      "figures": [
+       {
+        "x": 330,
+        "y": 528,
+        "pose": "reach"
+       }
+      ],
+      "path": [
+       "M880 250 L600 440"
+      ],
+      "ball": [
+       598,
+       442
+      ],
+      "alt": "Side view: a player reaches over the net and hits the ball on the opponents' side"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "That's allowed."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Wait until it's\non **your** side.",
+     "source": "FIP rules · Rule 13"
+    }
+   ],
+   "caption": "The ball is floating right above the net. So tempting. 😈\n\nCan you reach over and hit it before it crosses?\n\nComment FAIR or FAULT 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padeltips",
+    "padelbeginner",
+    "fairorfault"
+   ],
+   "difficulty": "medium",
+   "moved_from": "2026-11-08-am"
+  }
+ ]
+}

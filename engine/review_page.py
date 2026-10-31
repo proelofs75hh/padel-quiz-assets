@@ -53,7 +53,7 @@ def build(week_dirs):
             items.append(d)
     items.sort(key=lambda i: i["slot"])
     first, last = dt.date.fromisoformat(items[0]["slot"][:10]), dt.date.fromisoformat(items[-1]["slot"][:10])
-    title = f"{', '.join('KW ' + w.split('-W')[1] for w in weeks)} · {first:%d.%m.}–{last:%d.%m.%Y}"
+    title = f"{', '.join(('KW ' + w.split('-W')[1]) if '-W' in w else 'Start' for w in weeks)} · {first:%d.%m.}–{last:%d.%m.%Y}"
     (OUT / "data" / "review.json").write_text(json.dumps({"title": title, "weeks": weeks, "items": items},
                                                           ensure_ascii=False, indent=1))
     shutil.copy(ROOT / "engine" / "review_template.html", OUT / "index.html")
