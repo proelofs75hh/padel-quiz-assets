@@ -428,6 +428,87 @@
    "claim": "Tie-break: the first serve comes from the left side.",
    "verdict": "FAULT",
    "format": "reel"
+  },
+  {
+   "id": "2026-11-01-01",
+   "date": "2026-11-01",
+   "pillar": "pros",
+   "topic_key": "pros.smash-at-body",
+   "claim": "The smash flies over the net and hits the opponent before it bounces. The smasher wins the point.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-01-02",
+   "date": "2026-11-01",
+   "pillar": "rules",
+   "topic_key": "rule.serve-hits-own-partner",
+   "claim": "Your first serve hits your partner at the net. You lose the point.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-01-03",
+   "date": "2026-11-01",
+   "pillar": "market",
+   "topic_key": "market.fip-member-federations",
+   "claim": "More than 100 countries are members of the world padel federation (FIP).",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-01-05",
+   "date": "2026-11-01",
+   "pillar": "lingo",
+   "topic_key": "lingo.bandeja",
+   "claim": "Its main goal is to win the point.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-01-06",
+   "date": "2026-11-01",
+   "pillar": "gear",
+   "topic_key": "gear.racket-handle-max-length",
+   "claim": "A racket handle can be up to 20 cm long.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-01-07",
+   "date": "2026-11-01",
+   "pillar": "rules",
+   "topic_key": "rule.ball-stuck-in-fence",
+   "claim": "Your shot bounces on their side, then gets stuck in their fence. You win the point.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-01-08",
+   "date": "2026-11-01",
+   "pillar": "gear",
+   "topic_key": "gear.ball-max-diameter",
+   "claim": "A padel ball can be up to 7 cm wide.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-01-04",
+   "date": "2026-11-01",
+   "pillar": "gear",
+   "topic_key": "gear.net-height-vs-tennis",
+   "claim": "The padel net is higher than the tennis net.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-01-09",
+   "date": "2026-11-01",
+   "pillar": "rules",
+   "topic_key": "rule.serve-foot-on-line",
+   "claim": "You serve with one foot on the service line.",
+   "verdict": "FAULT",
+   "format": "reel"
   }
  ]
 }
