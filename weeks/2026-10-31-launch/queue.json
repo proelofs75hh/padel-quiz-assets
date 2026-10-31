@@ -231,10 +231,14 @@
    ],
    "caption": "It happens to everyone: you hit your partner with your own shot. 😬\n\nBut if the ball still goes over – does the point go on?\n\nComment FAIR or FAULT 👇 Tag the partner who got hit.\nFollow @fairorfault – your daily padel quiz.\n\nPhoto: Ashford Marx / Unsplash\n\n#padel #padelrules #padelquiz #padellife #padelplayer #padeltips #padelbeginner #fairorfault",
    "rev": "dd9cc0b8be",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18036417020668986",
+    "permalink": "https://www.instagram.com/p/DfKHFR2EfaC/",
+    "at": "2026-10-31T13:02:33+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
