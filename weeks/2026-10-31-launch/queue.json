@@ -366,10 +366,14 @@
    ],
    "caption": "New clubs keep popping up everywhere. But how many in one year? 🏗️\n\nGuess first, then swipe.\n\nComment your guess 👇\n\nSource: Global Padel Report 2026 (Playtomic/PwC)\nFollow @fairorfault – your daily padel quiz.\n\nPhoto: Bruno Vaccaro Vercellino / Unsplash\n\n#padel #padelworld #padelquiz #padelgrowth #padelclub #padellife #padelplayer #fairorfault",
    "rev": "9201e25a36",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "17991924756025699",
+    "permalink": "https://www.instagram.com/p/DfKPnTcICbk/",
+    "at": "2026-10-31T14:16:54+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
