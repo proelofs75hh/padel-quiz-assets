@@ -2,9 +2,9 @@
 # and stores the new one in the IG_ACCESS_TOKEN secret (needs GH_SECRETS_TOKEN:
 # fine-grained PAT, this repo only, "Secrets: read and write").
 name: Refresh Instagram token
+# Not scheduled since 31 Oct 2026: we publish via Facebook Login with a non-expiring Page token.
+# Only needed again if we ever go back to an Instagram-login token (graph.instagram.com).
 on:
-  schedule:
-    - cron: "17 3 * * 1"
   workflow_dispatch:
 jobs:
   refresh:

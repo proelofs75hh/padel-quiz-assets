@@ -1,4 +1,8 @@
-"""Publish due, approved posts from weeks/*/queue.json to Instagram (Instagram API with Instagram Login).
+"""Publish due, approved posts from weeks/*/queue.json to Instagram.
+
+Since 31 Oct 2026: Instagram API with Facebook Login (graph.facebook.com). New Meta apps no longer get
+"API setup with Instagram login"; IG_ACCESS_TOKEN is a non-expiring Page access token of the Facebook
+Page linked to @fairorfault, IG_USER_ID the Instagram business account id (instagram_business_account).
 
 Runs in GitHub Actions every 10 minutes (.github/workflows/publish.yml).
 Env: IG_ACCESS_TOKEN, IG_USER_ID, MEDIA_BASE (public base URL of the repo at the
@@ -19,7 +23,7 @@ import datetime as dt, glob, json, os, pathlib, sys, time, urllib.error, urllib.
 from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-API = "https://graph.instagram.com/" + os.environ.get("IG_API_VERSION", "v23.0")
+API = os.environ.get("IG_API_HOST", "https://graph.facebook.com") + "/" + os.environ.get("IG_API_VERSION", "v23.0")
 TZ = ZoneInfo("Europe/Berlin")
 MAX_LATE = 6        # hours
 MAX_PER_RUN = 3
@@ -91,10 +95,10 @@ def publish_item(it, base):
 
 
 def check():
-    me = call("GET", "me", fields="user_id,username,account_type,media_count")
+    me = call("GET", os.environ["IG_USER_ID"], fields="id,username,media_count")
     lim = call("GET", f"{os.environ['IG_USER_ID']}/content_publishing_limit", fields="config,quota_usage")
-    out = {"username": me.get("username"), "account_type": me.get("account_type"),
-           "media_count": me.get("media_count"), "user_id_matches": str(me.get("user_id")) == os.environ["IG_USER_ID"],
+    out = {"username": me.get("username"), "api": API,
+           "media_count": me.get("media_count"), "user_id_matches": str(me.get("id")) == os.environ["IG_USER_ID"],
            "publishing_limit": lim.get("data", [{}])[0],
            "checked_at": dt.datetime.now(TZ).isoformat(timespec="seconds")}
     p = ROOT / "ops" / "check-result.json"
