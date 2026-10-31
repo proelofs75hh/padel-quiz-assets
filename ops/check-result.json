@@ -1,1 +1,15 @@
-{"error": "IG_ACCESS_TOKEN secret is empty or missing", "checked_at": "2026-10-31T09:11:27Z"}
+{
+ "username": "fairorfault",
+ "api": "https://graph.facebook.com/v23.0",
+ "media_count": 18,
+ "ig_user_id": "17841415471891360",
+ "ig_user_id_from_secret": false,
+ "publishing_limit": {
+  "quota_usage": 0,
+  "config": {
+   "quota_total": 100,
+   "quota_duration": 86400
+  }
+ },
+ "checked_at": "2026-10-31T10:12:52+01:00"
+}
