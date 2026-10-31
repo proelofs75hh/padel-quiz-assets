@@ -337,10 +337,14 @@
    "cover": "weeks/2026-10-31-launch/reels/2026-10-31-13.cover.jpg",
    "caption": "Hero move or rule break? 🦸\n\nYou are allowed to jump over the net during a rally. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padelreels #padelfun #padellife #padelplayer #fairorfault",
    "rev": "ad4ff8c682",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "container 18153408880515730 status ERROR",
+   "published": {
+    "media_id": "18102177482556386",
+    "permalink": "https://www.instagram.com/reel/DfKN3MWDPTU/",
+    "at": "2026-10-31T14:01:58+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
