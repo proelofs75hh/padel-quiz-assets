@@ -2,7 +2,8 @@
 
 Since 31 Oct 2026: Instagram API with Facebook Login (graph.facebook.com). New Meta apps no longer get
 "API setup with Instagram login"; IG_ACCESS_TOKEN is a non-expiring Page access token of the Facebook
-Page linked to @fairorfault, IG_USER_ID the Instagram business account id (instagram_business_account).
+Page linked to @fairorfault (or a never-expiring system-user token), IG_USER_ID the Instagram business account
+id (instagram_business_account). IG_USER_ID is optional: if empty it is looked up via me/accounts.
 
 Runs in GitHub Actions every 10 minutes (.github/workflows/publish.yml).
 Env: IG_ACCESS_TOKEN, IG_USER_ID, MEDIA_BASE (public base URL of the repo at the
@@ -72,7 +73,7 @@ def url(base, path):
 
 
 def publish_item(it, base):
-    uid = os.environ["IG_USER_ID"]
+    uid = ig_user_id()
     if it["kind"] == "carousel":
         children = []
         for img in it["images"]:
@@ -94,11 +95,34 @@ def publish_item(it, base):
             "at": dt.datetime.now(TZ).isoformat(timespec="seconds")}
 
 
+_UID = None
+
+
+def ig_user_id():
+    """IG_USER_ID from the environment, otherwise the Instagram account linked to the token's Page(s)."""
+    global _UID
+    if _UID:
+        return _UID
+    _UID = os.environ.get("IG_USER_ID", "").strip()
+    if not _UID:
+        try:
+            pages = call("GET", "me/accounts", fields="name,instagram_business_account{id,username}").get("data", [])
+        except IGError:  # a Page token: the token itself is the Page
+            pages = [call("GET", "me", fields="name,instagram_business_account{id,username}")]
+        ig = [p["instagram_business_account"] for p in pages if p.get("instagram_business_account")]
+        want = [a for a in ig if a.get("username") == "fairorfault"] or ig
+        if not want:
+            raise IGError("no Instagram account linked to the token's Facebook Page")
+        _UID = want[0]["id"]
+    return _UID
+
+
 def check():
-    me = call("GET", os.environ["IG_USER_ID"], fields="id,username,media_count")
-    lim = call("GET", f"{os.environ['IG_USER_ID']}/content_publishing_limit", fields="config,quota_usage")
+    uid = ig_user_id()
+    me = call("GET", uid, fields="id,username,media_count")
+    lim = call("GET", f"{uid}/content_publishing_limit", fields="config,quota_usage")
     out = {"username": me.get("username"), "api": API,
-           "media_count": me.get("media_count"), "user_id_matches": str(me.get("id")) == os.environ["IG_USER_ID"],
+           "media_count": me.get("media_count"), "ig_user_id": uid, "ig_user_id_from_secret": bool(os.environ.get("IG_USER_ID")),
            "publishing_limit": lim.get("data", [{}])[0],
            "checked_at": dt.datetime.now(TZ).isoformat(timespec="seconds")}
     p = ROOT / "ops" / "check-result.json"
