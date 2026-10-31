@@ -512,33 +512,28 @@
    "slot": "2026-11-05T18:30:00",
    "pillar": "gear",
    "series": "gear",
-   "topic_key": "gear.racket-max-width",
-   "fact_source": "FIP Reglamento, La Pala: cabeza ancho máximo 26 cm, largo total máx. 45,5 cm",
+   "topic_key": "gear.racket-unlimited-holes",
+   "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), La pala, punto 6: perforada por un número no limitado de agujeros cilíndricos de 9 a 13 mm de diámetro",
    "difficulty": "medium",
    "slides": [
     {
      "type": "q",
-     "q": "How wide can a padel racket be?",
-     "claim": "A racket can be up to 30 cm wide.",
-     "cover": "drawing",
-     "drawing": "dims",
-     "labels": {
-      "length": "45.5<br>cm",
-      "width": "? cm"
-     }
+     "q": "How many holes can a padel racket have?",
+     "claim": "A padel racket can have as many holes as you like.",
+     "cover": "zoom"
     },
     {
      "type": "claim",
-     "text": "A racket can be up to 30 cm wide."
+     "text": "A racket can have as many holes as you like."
     },
     {
      "type": "verdict",
-     "verdict": "FAULT",
-     "line": "Max **26 cm** wide.",
+     "verdict": "FAIR",
+     "line": "**No limit** on the number.\nOnly their size is limited.",
      "source": "FIP rules · Racket"
     }
    ],
-   "caption": "Bigger face, bigger sweet spot? Not so fast. 📏\n\nA racket can be up to 30 cm wide. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Some rackets have 20 holes, some have 70. Is there a maximum? 🕳️\n\nA racket can have as many holes as you like. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelracket",
