@@ -369,7 +369,8 @@
    "status": "approved",
    "note": "",
    "published": null,
-   "error": ""
+   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "attempts": 1
   },
   {
    "id": "2026-10-31-15",
