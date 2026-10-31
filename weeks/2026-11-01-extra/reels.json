@@ -1,0 +1,76 @@
+{
+ "reels": [
+  {
+   "id": "2026-11-01-04",
+   "slot": "2026-11-01T12:30:00",
+   "pillar": "gear",
+   "topic_key": "gear.net-height-vs-tennis",
+   "fact_source": "FIP Reglas del Pádel (12/2025), La pista – La red: 0,88 m en el centro, máx. 0,92 m en los extremos; ITF Rules of Tennis 2026, Rule 1: 0.914 m centre, 1.07 m at the posts",
+   "caption": "Tennis players switching to padel, this one is for you 🎾\n\nThe padel net is higher than the tennis net. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padelreels",
+    "tennis",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "spec": {
+    "format": "compare",
+    "label": "Gear",
+    "claim": "The padel net is higher than the tennis net.",
+    "verdict": "FAULT",
+    "pill": "It's lower",
+    "cols": [
+     "Padel",
+     "Tennis"
+    ],
+    "rows": [
+     [
+      "Posts\ncm",
+      "92",
+      "107",
+      false
+     ],
+     [
+      "Centre\ncm",
+      "88",
+      "91.4",
+      false
+     ]
+    ],
+    "line": "Padel net: **88 cm** in the centre.\nTennis: 91.4 cm.",
+    "source": "FIP rules · ITF rules"
+   }
+  },
+  {
+   "id": "2026-11-01-09",
+   "slot": "2026-11-01T20:00:00",
+   "pillar": "rules",
+   "topic_key": "rule.serve-foot-on-line",
+   "fact_source": "FIP Reglas del Pádel (12/2025), Regla 6.1 (un pie detrás de la línea de saque) + 6.3 (no tocar con los pies la línea de saque)",
+   "caption": "Tiny step, big discussion 👟\n\nYou serve with one foot on the service line. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padelreels",
+    "padelserve",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Rules",
+    "claim": "You serve with one foot on the service line.",
+    "verdict": "FAULT",
+    "pill": "Missed serve",
+    "line": "Your feet must stay\n**behind** the service line.",
+    "source": "FIP rules · Rule 6"
+   }
+  }
+ ]
+}

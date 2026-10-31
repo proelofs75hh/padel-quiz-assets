@@ -1,0 +1,401 @@
+{
+ "week": "2026-11-01-extra",
+ "note": "Extra run Sunday 1 Nov 2026: 7 carousels + 2 reels, every 90 min 08:00–20:00",
+ "timezone": "Europe/Berlin",
+ "posts": [
+  {
+   "id": "2026-11-01-01",
+   "slot": "2026-11-01T08:00:00",
+   "pillar": "pros",
+   "series": "pros",
+   "topic_key": "pros.smash-at-body",
+   "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), Regla 14.1 a (devolución correcta si la pelota golpea a un contrario) + Regla 13.1 j (pierde el tanto quien es tocado por la pelota)",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "q": "What happens if a smash hits the opponent?",
+     "claim": "The smash flies over the net and hits the opponent before it bounces. The smasher wins the point.",
+     "figure": "smash"
+    },
+    {
+     "type": "scene",
+     "text": "The smash flies over the net and hits the opponent.",
+     "scene": {
+      "view": "side",
+      "net": 470,
+      "figures": [
+       {
+        "x": 190,
+        "y": 528,
+        "pose": "smash"
+       },
+       {
+        "x": 730,
+        "y": 528,
+        "pose": "run",
+        "mirror": true,
+        "racket": false
+       }
+      ],
+      "path": [
+       "M262 190 Q 500 210, 702 420"
+      ],
+      "ball": [
+       702,
+       420
+      ],
+      "alt": "Side view: a smash flies over the net and hits the opponent's body"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "The smasher wins the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Hit by the ball?\nThat player **loses the point**.",
+     "source": "FIP rules · Rule 13 + 14"
+    }
+   ],
+   "caption": "Pros aim at the body on purpose – it's a real tactic. 🎯\n\nThe smash hits the opponent before it bounces. The smasher wins the point. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "premierpadel",
+    "padelpro",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-01-02",
+   "slot": "2026-11-01T09:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.serve-hits-own-partner",
+   "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), Regla 7.1 d (falta de saque: la pelota golpea al servidor, a su compañero …)",
+   "difficulty": "tricky",
+   "slides": [
+    {
+     "type": "q",
+     "q": "What happens if your serve hits your partner?",
+     "claim": "Your first serve hits your partner at the net. You lose the point."
+    },
+    {
+     "type": "scene",
+     "text": "Your first serve hits your partner at the net.",
+     "scene": {
+      "view": "side",
+      "net": 720,
+      "figures": [
+       {
+        "x": 150,
+        "y": 528,
+        "pose": "swing"
+       },
+       {
+        "x": 520,
+        "y": 528,
+        "pose": "reach"
+       }
+      ],
+      "path": [
+       "M230 540 Q 370 360, 490 420"
+      ],
+      "ball": [
+       490,
+       420
+      ],
+      "alt": "Side view: the server's ball hits the partner standing at the net in the back"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "You lose the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Just a missed serve.\nYou get a **second serve**.",
+     "source": "FIP rules · Rule 7"
+    }
+   ],
+   "caption": "Your partner waits at the net. Your first serve flies straight into their back. 😬\n\nDo you lose the point right away? Fair or fault?\n\nComment your call 👇 Send it to the partner who stands too close.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padelbeginner",
+    "padelclub",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-01-03",
+   "slot": "2026-11-01T11:00:00",
+   "pillar": "market",
+   "series": "number",
+   "topic_key": "market.fip-member-federations",
+   "fact_source": "FIP, 13 Oct 2026: General Assembly – membership reaches 115 national federations, 15 new members (padelfip.com)",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How many countries are in the world padel federation?",
+     "claim": "More than 100 countries are members of the world padel federation (FIP).",
+     "cover": "photo",
+     "photo": "CA3laY8sok0",
+     "photo_focus": [
+      0.62,
+      0.42
+     ],
+     "photo_zoom": 1.5,
+     "photo_place": "right"
+    },
+    {
+     "type": "guess",
+     "bars": [
+      "85",
+      "100",
+      "115"
+     ]
+    },
+    {
+     "type": "reveal",
+     "big": "115",
+     "text": "national federations in the FIP (Oct 2026).",
+     "source": "FIP, Oct 2026"
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pre": "New members in 2026:",
+     "big": "+15",
+     "source": "FIP General Assembly 2026"
+    }
+   ],
+   "caption": "Padel is going global – but how global? 🌍\n\nGuess first, then swipe: how many countries are members of the FIP, the world padel federation?\n\nComment your guess 👇\n\nSource: FIP General Assembly, Oct 2026\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelworld",
+    "padelquiz",
+    "padelgrowth",
+    "padelclub",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-01-05",
+   "slot": "2026-11-01T14:00:00",
+   "pillar": "lingo",
+   "series": "lingo",
+   "topic_key": "lingo.bandeja",
+   "fact_source": "LTA Padel – Overheads, bandeja & the smash (defensive shot, goal: retain net position); The Padel School – Padel objectives during a point (hit the bandeja and get back to the net)",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "term": "Bandeja",
+     "say": "[ban-DEH-ha] · “tray”",
+     "q": "What is the main goal of a bandeja?",
+     "claim": "Its main goal is to win the point.",
+     "scene": {
+      "view": "side",
+      "net": 700,
+      "figures": [
+       {
+        "x": 420,
+        "y": 528,
+        "pose": "smash"
+       }
+      ],
+      "path": [
+       "M760 60 Q 600 0, 480 120"
+      ],
+      "ball": [
+       480,
+       120
+      ],
+      "alt": "Side view: a player near the net hits a lob above the head"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "Its main goal is to win the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Main goal: **keep the net**.",
+     "desc": "A controlled overhead with slice. You stay at the net, ready for the next ball.",
+     "source": "LTA Padel · The Padel School"
+    }
+   ],
+   "caption": "Every club player has a bandeja. But do you know what it's really for? 🍽️\n\nIts main goal is to win the point. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "bandeja",
+    "padeltips",
+    "padelquiz",
+    "padeltactics",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-01-06",
+   "slot": "2026-11-01T15:30:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.racket-handle-max-length",
+   "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), La pala, punto 2: puño longitud máxima 20 cm; pala longitud máxima 45,5 cm",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How long can a racket handle be?",
+     "claim": "A racket handle can be up to 20 cm long."
+    },
+    {
+     "type": "claim",
+     "text": "A racket handle can be up to 20 cm long."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Max **20 cm**.\nThe whole racket: max 45.5 cm.",
+     "source": "FIP rules · Racket"
+    }
+   ],
+   "caption": "Short grip, long grip – is there a limit? 📏\n\nA racket handle can be up to 20 cm long. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-01-07",
+   "slot": "2026-11-01T17:00:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.ball-stuck-in-fence",
+   "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), Regla 15.1 a (tras botar en el campo contrario la pelota se queda enganchada en la malla: tanto ganado)",
+   "difficulty": "easy",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Who wins the point if the ball gets stuck in the fence?",
+     "claim": "Your shot bounces on their side, then gets stuck in their fence. You win the point.",
+     "cover": "scene",
+     "scene": {
+      "view": "side",
+      "net": 330,
+      "glass": [
+       [
+        864,
+        360
+       ]
+      ],
+      "fence": [
+       [
+        864,
+        110,
+        360
+       ]
+      ],
+      "figures": [
+       {
+        "x": 120,
+        "y": 528,
+        "pose": "swing"
+       }
+      ],
+      "path": [
+       "M190 470 Q 360 220, 620 700 Q 780 420, 850 240"
+      ],
+      "ball": [
+       850,
+       240
+      ],
+      "alt": "Side view: the ball bounces on the other side and gets stuck in the fence above the back glass"
+     }
+    },
+    {
+     "type": "claim",
+     "context": "Your shot bounces on their side, then gets stuck in their fence.",
+     "text": "You win the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Stuck after the bounce:\n**your point**.",
+     "source": "FIP rules · Rule 15"
+    }
+   ],
+   "caption": "It happens once a season – and then everyone argues. 🤷\n\nYour shot bounces on their side and gets stuck in their fence. You win the point. Fair or fault?\n\nComment your call 👇 Send it to your Sunday group.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padelbeginner",
+    "padelclub",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-01-08",
+   "slot": "2026-11-01T18:30:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.ball-max-diameter",
+   "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), La pelota, punto 1: diámetro 6,35–6,77 cm, peso 56,0–59,4 g",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How big can a padel ball be?",
+     "claim": "A padel ball can be up to 7 cm wide.",
+     "cover": "versus"
+    },
+    {
+     "type": "claim",
+     "text": "A padel ball can be up to 7 cm wide."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Max **6.77 cm**.\n7 cm is too big.",
+     "source": "FIP rules · Ball"
+    }
+   ],
+   "caption": "Looks like a tennis ball, feels like a tennis ball. But how big can it be? 🎾\n\nA padel ball can be up to 7 cm wide. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelball",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  }
+ ]
+}
