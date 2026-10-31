@@ -410,6 +410,24 @@
    "claim": "You are allowed to jump over the net during a rally.",
    "verdict": "FAULT",
    "format": "reel"
+  },
+  {
+   "id": "2026-11-02-am2",
+   "date": "2026-11-02",
+   "pillar": "rules",
+   "topic_key": "rule.own-back-glass-then-over",
+   "claim": "You hit the ball into your own back glass and it flies over the net. The rally goes on.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-02-reelb",
+   "date": "2026-11-02",
+   "pillar": "rules",
+   "topic_key": "rule.tiebreak-first-serve-side",
+   "claim": "Tie-break: the first serve comes from the left side.",
+   "verdict": "FAULT",
+   "format": "reel"
   }
  ]
 }
