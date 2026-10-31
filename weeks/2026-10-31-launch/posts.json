@@ -10,7 +10,7 @@
    "slides": [
     {
      "type": "q",
-     "q": "How thick can a padel racket be?",
+     "q": "How thick is a padel racket allowed to be?",
      "claim": "A racket can be up to 38 mm thick.",
      "cover": "zoom"
     },
@@ -117,7 +117,7 @@
    "slides": [
     {
      "type": "q",
-     "q": "How many padel players have a federation licence?",
+     "q": "How many padel players worldwide have a federation licence?",
      "claim": "More than 850,000 padel players have a federation licence.",
      "cover": "digits",
      "digits": "???,???"

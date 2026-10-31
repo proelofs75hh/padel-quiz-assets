@@ -9,7 +9,7 @@
    "pillar": "gear",
    "difficulty": "easy",
    "claim": "A racket can be up to 38 mm thick.",
-   "question": "How thick can a padel racket be?",
+   "question": "How thick is a padel racket allowed to be?",
    "verdict": "FAIR",
    "fact_source": "FIP Reglamento, La Pala: cabeza grosor máximo 38 mm, largo total máx. 45,5 cm, ancho máx. 26 cm",
    "images": [
@@ -18,8 +18,8 @@
     "weeks/2026-10-31-launch/2026-10-31-01-3.jpg"
    ],
    "caption": "Thick, thin, teardrop, round – rackets look very different. But the rules set hard limits. 📏\n\nLength, width and thickness are all capped.\n\nDid you know the number? Comment ✓ or ✕ 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelquiz #padelrules #padellife #padelplayer #fairorfault",
-   "rev": "17387d3b08",
-   "status": "redo",
+   "rev": "0d39b59b51",
+   "status": "pending",
    "note": "How thick is a padel racket allowed to be?",
    "published": null,
    "error": ""
@@ -56,7 +56,7 @@
    "pillar": "market",
    "difficulty": "medium",
    "claim": "More than 850,000 padel players have a federation licence.",
-   "question": "How many padel players have a federation licence?",
+   "question": "How many padel players worldwide have a federation licence?",
    "verdict": "FAIR",
    "fact_source": "Global Padel Report 2026 (Playtomic/PwC): >850,000 federated; FIP World Padel Report 2026: 1.11 million",
    "images": [
@@ -66,8 +66,8 @@
     "weeks/2026-10-31-launch/2026-10-31-03-4.jpg"
    ],
    "caption": "Millions play padel. But how many have an official federation licence? 🏅\n\nGuess first, then swipe. Two reports, two numbers – both say the same thing: padel keeps growing.\n\nComment your guess 👇\n\nSources: Global Padel Report 2026 (Playtomic/PwC), FIP World Padel Report 2026\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelworld #padelquiz #padelgrowth #padelclub #padellife #padelplayer #fairorfault",
-   "rev": "214f245e43",
-   "status": "redo",
+   "rev": "f6532e9efa",
+   "status": "pending",
    "note": "How many padel players worldwide have a...",
    "published": null,
    "error": ""
