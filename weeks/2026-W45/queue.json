@@ -38,7 +38,7 @@
    "cover": "weeks/2026-W45/reels/2026-11-02-reelb.cover.jpg",
    "caption": "Tie-break discussion on your court again? Settle it here 🎾\n\nIn the tie-break, the first serve comes from the left side. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padelreels #tiebreak #padellife #padelplayer #fairorfault",
    "rev": "f11eeb31fd",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -90,7 +90,7 @@
    ],
    "caption": "Your own back glass is a weapon, not a mistake. 🧱\n\nBall into your own glass, then over the net – does the rally go on? Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padellife #padelplayer #padelbeginner #padelclub #fairorfault",
    "rev": "ec2680efed",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -101,20 +101,20 @@
    "slot": "2026-11-02T18:30:00",
    "series": "gear",
    "pillar": "gear",
-   "difficulty": "easy",
-   "claim": "A padel racket has strings.",
-   "question": "Does a padel racket have strings?",
+   "difficulty": "medium",
+   "claim": "A padel racket can be up to 30 cm wide.",
+   "question": "How wide can a padel racket be?",
    "verdict": "FAULT",
-   "fact_source": "FIP Reglamento, La Pala: superficie de golpeo perforada por agujeros cilíndricos de 9–13 mm (no strings)",
+   "fact_source": "FIP Reglamento de Juego, La Pala: max width 26 cm (also 45.5 cm length, 38 mm thickness) – as verified for W44",
    "images": [
     "weeks/2026-W45/2026-11-02-pm-1.jpg",
     "weeks/2026-W45/2026-11-02-pm-2.jpg",
     "weeks/2026-W45/2026-11-02-pm-3.jpg"
    ],
-   "caption": "Tennis has strings. Squash has strings. Padel? 🤔\n\nA padel racket has strings. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelquiz #padelrules #padellife #padelplayer #fairorfault",
-   "rev": "dc974dacac",
+   "caption": "Bigger face, bigger sweet spot? Not so fast. 📏\n\nA padel racket can be up to 30 cm wide. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelquiz #padelrules #padellife #padelplayer #fairorfault",
+   "rev": "917b818226",
    "status": "pending",
-   "note": "",
+   "note": "Zu basic und strings wird im deutschen sicher als schlaufe missverstanden",
    "published": null,
    "error": ""
   },
@@ -126,7 +126,7 @@
    "pillar": "rules",
    "difficulty": "easy",
    "claim": "During the rally your racket touches the net. You lose the point.",
-   "question": "What happens if your racket touches the net?",
+   "question": "Can your racket touch the net during a rally?",
    "verdict": "FAIR",
    "fact_source": "FIP Reglamento de Juego, Regla 13.1.a (tocar la red con la pala o el cuerpo)",
    "images": [
@@ -135,10 +135,10 @@
     "weeks/2026-W45/2026-11-03-am-3.jpg",
     "weeks/2026-W45/2026-11-03-am-4.jpg"
    ],
-   "caption": "Great volley. Tiny touch of the net. Big problem? 😬\n\nYour racket touches the net during the rally – you lose the point. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\nPhoto: cal gao / Unsplash\n\n#padel #padelrules #padelquiz #padellife #padelplayer #padelbeginner #padelclub #fairorfault",
-   "rev": "0b20f86ae9",
+   "caption": "Great volley. Tiny touch of the net. Big problem? 😬\n\nYour racket touches the net during the rally – you lose the point. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padellife #padelplayer #padelbeginner #padelclub #fairorfault",
+   "rev": "d86e156fca",
    "status": "pending",
-   "note": "",
+   "note": "Bild passt nicht",
    "published": null,
    "error": ""
   },
@@ -161,7 +161,7 @@
    ],
    "caption": "Courts are popping up everywhere. But how many are there in total? 🌍\n\nGuess first, then swipe. Two reports, two counts – both say padel keeps growing.\n\nComment your guess 👇\n\nSources: Global Padel Report 2026 (Playtomic/PwC), FIP World Padel Report 2026\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelworld #padelquiz #padelgrowth #padelclub #padellife #padelplayer #fairorfault",
    "rev": "d93ed1e561",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -180,7 +180,7 @@
    "cover": "weeks/2026-W45/reels/2026-11-04-reel.cover.jpg",
    "caption": "Heavy racket, light racket – is there a limit? 🤔\n\nThe rules set a maximum weight for padel rackets. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelquiz #padelreels #padellife #padelplayer #fairorfault",
    "rev": "5a3a3ce6ee",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -203,7 +203,7 @@
    ],
    "caption": "Crack. Your racket just broke mid-rally. 😱\n\nYour partner throws you a new one – can you keep playing with it? Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padellife #padelplayer #padelbeginner #padelclub #fairorfault",
    "rev": "1a50c5c5c9",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -227,8 +227,8 @@
    ],
    "caption": "Pros sprinting out of the court – you've seen it on TV. 🏃\n\nOver the side fence, the pro runs out and plays it back. Fair or fault? (Over the back glass it's a different story…)\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #premierpadel #padelpro #padelquiz #padelrules #padellife #padelplayer #fairorfault",
    "rev": "bb5dde44de",
-   "status": "pending",
-   "note": "",
+   "status": "redo",
+   "note": "Sieht man bei jedem Padel Match im TV. Muss differenzierter sein.",
    "published": null,
    "error": ""
   },
@@ -274,7 +274,7 @@
    ],
    "caption": "Bigger face, bigger sweet spot? Not so fast. 📏\n\nA racket can be up to 30 cm wide. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelquiz #padelrules #padellife #padelplayer #fairorfault",
    "rev": "9c1a756dbd",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""

@@ -149,28 +149,33 @@
    "slot": "2026-11-02T18:30:00",
    "pillar": "gear",
    "series": "gear",
-   "topic_key": "gear.racket-no-strings",
-   "fact_source": "FIP Reglamento, La Pala: superficie de golpeo perforada por agujeros cilíndricos de 9–13 mm (no strings)",
-   "difficulty": "easy",
+   "topic_key": "gear.racket-max-width",
+   "fact_source": "FIP Reglamento de Juego, La Pala: max width 26 cm (also 45.5 cm length, 38 mm thickness) – as verified for W44",
+   "difficulty": "medium",
    "slides": [
     {
      "type": "q",
-     "q": "Does a padel racket have strings?",
-     "claim": "A padel racket has strings.",
-     "cover": "zoom"
+     "q": "How wide can a padel racket be?",
+     "claim": "A padel racket can be up to 30 cm wide.",
+     "cover": "drawing",
+     "drawing": "dims",
+     "labels": {
+      "width": "?? cm",
+      "length": ""
+     }
     },
     {
      "type": "claim",
-     "text": "A padel racket has strings."
+     "text": "A padel racket can be up to 30 cm wide."
     },
     {
      "type": "verdict",
      "verdict": "FAULT",
-     "line": "No strings: a **solid face**\nwith holes.",
+     "line": "Max **26 cm** wide.\n30 cm is too wide.",
      "source": "FIP rules · Racket"
     }
    ],
-   "caption": "Tennis has strings. Squash has strings. Padel? 🤔\n\nA padel racket has strings. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Bigger face, bigger sweet spot? Not so fast. 📏\n\nA padel racket can be up to 30 cm wide. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelracket",
@@ -193,16 +198,9 @@
    "slides": [
     {
      "type": "q",
-     "q": "What happens if your racket touches the net?",
+     "q": "Can your racket touch the net during a rally?",
      "claim": "During the rally your racket touches the net. You lose the point.",
-     "cover": "photo",
-     "photo": "CA3laY8sok0",
-     "photo_focus": [
-      0.5,
-      0.5
-     ],
-     "photo_zoom": 1.3,
-     "photo_place": "right"
+     "cover": "versus"
     },
     {
      "type": "scene",
