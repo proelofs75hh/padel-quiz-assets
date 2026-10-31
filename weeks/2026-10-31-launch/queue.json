@@ -340,7 +340,8 @@
    "status": "approved",
    "note": "",
    "published": null,
-   "error": ""
+   "error": "container 18153408880515730 status ERROR",
+   "attempts": 1
   },
   {
    "id": "2026-10-31-14",
