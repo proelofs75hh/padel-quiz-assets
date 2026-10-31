@@ -42,7 +42,7 @@ jobs:
           echo "mode=${MODE:-publish}" >> "$GITHUB_OUTPUT"; echo "id=$ID" >> "$GITHUB_OUTPUT"
       - name: Run
         env:
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN || secrets.INST_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           MEDIA_BASE: https://cdn.jsdelivr.net/gh/${{ github.repository }}@${{ github.sha }}/
         run: |
