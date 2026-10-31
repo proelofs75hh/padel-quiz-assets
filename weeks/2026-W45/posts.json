@@ -363,19 +363,19 @@
    "slot": "2026-11-04T18:30:00",
    "pillar": "pros",
    "series": "pros",
-   "topic_key": "pros.play-outside-side-fence",
-   "fact_source": "FIP Reglamento de Juego, Regla 16 (juego exterior por las aberturas laterales) + Regla 13.1.e (sobre la pared de fondo: punto perdido)",
-   "difficulty": "medium",
+   "topic_key": "pros.outside-second-bounce",
+   "fact_source": "FIP Rules of Padel (2026), Rule 13.1.e (out-of-court play: point lost when the ball bounces a second time or touches an element not related to the court) + Rule 16",
+   "difficulty": "tricky",
    "slides": [
     {
      "type": "q",
-     "q": "Can a pro leave the court to save a ball?",
-     "claim": "The smash bounces and flies over the side fence. The pro runs out and plays it back.",
+     "q": "Can a pro let the ball bounce outside the court?",
+     "claim": "The ball bounces, flies out the side exit and bounces again outside. The pro plays it back after that bounce.",
      "figure": "run"
     },
     {
      "type": "scene",
-     "text": "The smash bounces, then flies over the side fence.",
+     "text": "It bounces, flies out the side exit, then bounces again outside.",
      "scene": {
       "view": "top",
       "path": [
@@ -384,39 +384,47 @@
         150
        ],
        [
-        520,
-        520
+        580,
+        540
        ],
        [
-        720,
-        600
+        760,
+        470
+       ],
+       [
+        860,
+        440
        ]
       ],
       "marks": [
        [
-        520,
-        520
+        580,
+        540
+       ],
+       [
+        760,
+        470
        ]
       ],
       "ball": [
-       712,
-       598
+       860,
+       440
       ],
-      "alt": "Court from above: the ball bounces and leaves the court over the side fence"
+      "alt": "Court from above: the ball bounces in the court, leaves through the side exit and bounces a second time outside"
      }
     },
     {
      "type": "claim",
-     "text": "The pro runs out and plays it back."
+     "text": "The pro plays it back after that bounce."
     },
     {
      "type": "verdict",
-     "verdict": "FAIR",
-     "line": "Allowed – if the court\nhas **exits**.",
-     "source": "FIP rules · Rule 16"
+     "verdict": "FAULT",
+     "line": "Outside too, the\n**second bounce** ends it.",
+     "source": "FIP rules · Rule 13.1e"
     }
    ],
-   "caption": "Pros sprinting out of the court – you've seen it on TV. 🏃\n\nOver the side fence, the pro runs out and plays it back. Fair or fault? (Over the back glass it's a different story…)\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Running out of the court is allowed – you see it on TV all the time. 🏃\n\nBut the ball already bounced once in the court, then bounces again outside. The pro still plays it back. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "premierpadel",
@@ -810,17 +818,17 @@
    "pillar": "rules",
    "series": "settle",
    "topic_key": "rule.server-bounces-ball-first",
-   "fact_source": "FIP Reglamento de Juego, Regla 6.3 (botar la pelota antes del saque) + 6 (golpe a la altura o por debajo de la cintura)",
+   "fact_source": "FIP Rules of Padel (2026), Rule 6.2 (server must bounce the ball) + 6.4 (at or below waist level) + 7.1.a",
    "difficulty": "easy",
    "slides": [
     {
      "type": "q",
-     "q": "Do you have to bounce the ball before you serve?",
-     "claim": "You toss the ball up and serve it like in tennis. That's a valid serve."
+     "q": "Can you serve overhead like in tennis?",
+     "claim": "You toss the ball up and hit it overhead. That's a valid serve."
     },
     {
      "type": "scene",
-     "text": "You toss the ball up and serve it like in tennis.",
+     "text": "You toss the ball up and hit it overhead.",
      "scene": {
       "view": "side",
       "figures": [
@@ -847,11 +855,11 @@
     {
      "type": "verdict",
      "verdict": "FAULT",
-     "line": "You must **bounce it first**.\nThen hit it at waist height or lower.",
+     "line": "**Bounce it first.**\nHit at or below the waist.",
      "source": "FIP rules · Rule 6"
     }
    ],
-   "caption": "Tennis habits die hard. 😅\n\nToss up, overhead serve, just like on the tennis court. Valid serve? Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Tennis habits die hard. 😅\n\nToss up, hit it overhead, just like on the tennis court. Valid serve? Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",
