@@ -26,6 +26,180 @@
     "line": "Throwing your racket\nat the ball **loses** the point.",
     "source": "FIP rules · Rule 13"
    }
+  },
+  {
+   "id": "2026-11-02-reelb",
+   "slot": "2026-11-02T07:30:00",
+   "pillar": "rules",
+   "topic_key": "rule.tiebreak-first-serve-side",
+   "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), Regla 1 – tie-break, punto 3",
+   "caption": "Tie-break discussion on your court again? Settle it here 🎾\n\nIn the tie-break, the first serve comes from the left side. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padelreels",
+    "tiebreak",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "spec": {
+    "format": "refs_view",
+    "label": "Rules",
+    "claim": "Tie-break: the first serve comes from the left side.",
+    "verdict": "FAULT",
+    "pill": "Not left",
+    "line": "Point 1: one serve\nfrom the **right**.\nThen 2 each, left first.",
+    "source": "FIP rules · Rule 1",
+    "diagram": "tiebreak-first-serve",
+    "ring": "neutral"
+   }
+  },
+  {
+   "id": "2026-11-04-reel",
+   "slot": "2026-11-04T07:30:00",
+   "pillar": "gear",
+   "topic_key": "gear.no-weight-limit",
+   "fact_source": "FIP Reglamento de Juego, Anexo/La Pala: max length 45.5 cm, width 26 cm, thickness 38 mm; no weight limit",
+   "caption": "Heavy racket, light racket – is there a limit? 🤔\n\nThe rules set a maximum weight for padel rackets. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelreels",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ],
+   "spec": {
+    "format": "spec_sheet",
+    "label": "Gear",
+    "claim": "The rules set a maximum weight for padel rackets.",
+    "verdict": "FAULT",
+    "pill": "No weight limit",
+    "line": "Everything is limited –\n**except the weight**.",
+    "rows": [
+     [
+      "Max length",
+      "45.5 cm"
+     ],
+     [
+      "Max width",
+      "26 cm"
+     ],
+     [
+      "Max thickness",
+      "38 mm"
+     ],
+     [
+      "Max weight",
+      "?"
+     ]
+    ],
+    "source": "FIP rules · Racket",
+    "call_rows": [
+     [
+      "Length: max 45.5 cm",
+      true
+     ],
+     [
+      "Width: max 26 cm",
+      true
+     ],
+     [
+      "Thickness: max 38 mm",
+      true
+     ],
+     [
+      "Weight: no limit",
+      false
+     ]
+    ]
+   }
+  },
+  {
+   "id": "2026-11-06-reel",
+   "slot": "2026-11-06T07:30:00",
+   "pillar": "market",
+   "topic_key": "market.players-worldwide",
+   "fact_source": "Global Padel Report 2026 (Playtomic): 19.4 million players",
+   "caption": "Guess the number before it stops 🌍\n\nMore than 15 million people play padel worldwide. Fair or fault?\n\nComment your guess 👇\nFollow @fairorfault – your daily padel quiz.\n\nSource: Global Padel Report 2026",
+   "hashtags": [
+    "padel",
+    "padelworld",
+    "padelquiz",
+    "padelreels",
+    "padelgrowth",
+    "padellife",
+    "padelclub",
+    "fairorfault"
+   ],
+   "spec": {
+    "format": "guess_number",
+    "label": "Market",
+    "claim": "More than 15 million people play padel worldwide.",
+    "verdict": "FAIR",
+    "pill": "Even more",
+    "line": "**19.4 million**\nplayers worldwide.",
+    "number": 19.4,
+    "decimals": 1,
+    "marker": 15,
+    "unit": "million players worldwide",
+    "marker_label": "claim",
+    "source": "Global Padel Report 26"
+   }
+  },
+  {
+   "id": "2026-11-08-reel",
+   "pillar": "gear",
+   "topic_key": "gear.padel-vs-tennis-ball",
+   "fact_source": "FIP Reglamento de Juego, La pelota (6.35–6.77 cm, 56.0–59.4 g, rebound 135–145 cm from 2.54 m); ITF Rules of Tennis App. I, Type 2 ball (6.54–6.86 cm, 56.0–59.4 g, rebound 135–147 cm)",
+   "caption": "Same ball, different sport? 🎾\n\nPadel balls and tennis balls have the same weight. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelball",
+    "padelgear",
+    "padelquiz",
+    "padelreels",
+    "tennis",
+    "padellife",
+    "fairorfault"
+   ],
+   "spec": {
+    "format": "compare",
+    "label": "Gear",
+    "claim": "Padel balls and tennis balls have the same weight.",
+    "verdict": "FAIR",
+    "pill": "Same weight",
+    "rows": [
+     [
+      "Max size\ncm",
+      "6.77",
+      "6.86",
+      false
+     ],
+     [
+      "Max bounce\ncm",
+      "145",
+      "147",
+      false
+     ],
+     [
+      "Weight\ng",
+      "56–59.4",
+      "56–59.4",
+      true
+     ]
+    ],
+    "line": "Same **weight**.\nSize and bounce sometimes differ.",
+    "cols": [
+     "Padel",
+     "Tennis"
+    ]
+   },
+   "slot": "2026-11-08T07:30:00"
   }
  ]
 }
