@@ -485,6 +485,40 @@ def build(post, i):
                     para(fmt(s["line"], C["ball"]), 76, fg, 48)
                     + (f'<p style="margin:28px 0 0;font-family:{SANS};font-size:46px;line-height:1.2;font-weight:500;color:{C["glass"]}">{fmt(s["desc"], C["paper"])}</p>' if s.get("desc") else "")
                     + label(s["source"], C["glass"], 40) + end_block())
+    # ---- test formats (1 Nov 2026): multi-call quiz and cheat sheet --------------------------------
+    elif t == "item":  # one call inside a multi-call quiz: "Call 2 of 5" + situation + statement
+        ask = C["ball"] if not yellow else C["court"]
+        ctx = para(fmt(s.get("context", ""), hl), 66, C["glass"] if not yellow else C["night"], 32) if s.get("context") else ""
+        body = (top + '<div style="height:150px;flex:none"></div>' + label(s["label"], ask, 0)
+                + ctx + head(fmt(s["text"], hl), 140, fg, 44, 1.0)
+                + f'<div style="margin-top:56px;height:8px;width:160px;border-radius:999px;background:{ask}"></div>'
+                + head("Fair or fault?", 130, ask, 44, 0.9) + '<div style="margin-top:auto"></div>' + swipe(fg))
+    elif t == "key":  # answer key for the multi-call quiz
+        rows = ""
+        for n, (v, why) in enumerate(s["rows"], 1):
+            col = C["ball"] if v.upper() == "FAIR" else C["paper"]
+            rows += (f'<div style="display:flex;align-items:baseline;gap:28px;margin-top:34px">'
+                     f'<div style="flex:none;width:64px;font-family:{MONO};font-size:48px;font-weight:700;color:{C["glass"]}">{n}</div>'
+                     f'<div style="flex:none;width:250px;font-family:{DISPLAY};font-size:76px;line-height:.95;font-weight:800;letter-spacing:-.02em;color:{col}">{v.upper()}</div>'
+                     f'<div style="font-family:{SANS};font-size:44px;line-height:1.15;font-weight:600;color:{C["paper"]}">{fmt(why, C["ball"])}</div></div>')
+        body = top + head(fmt(s.get("title", "The answers"), C["ball"]), 120, C["paper"], 56, 0.95) + f'<div style="margin-top:auto">{rows}</div>' + label(s.get("source", ""), C["glass"], 44) + '<div style="margin-top:auto"></div>' + swipe(C["paper"], 0)
+    elif t == "score":  # last slide of the quiz: score scale + logo signature
+        rows = "".join(f'<div style="display:flex;gap:28px;align-items:baseline;margin-top:26px"><div style="flex:none;width:200px;font-family:{DISPLAY};font-size:84px;font-weight:800;color:{C["ball"]}">{html.escape(a)}</div>'
+                       f'<div style="font-family:{SANS};font-size:52px;font-weight:700;color:{C["paper"]}">{fmt(b, C["ball"])}</div></div>' for a, b in s["rows"])
+        body = top + head(fmt(s.get("title", "Your score?"), C["ball"]), 150, C["paper"], 56, 0.92) + f'<div style="margin-top:40px">{rows}</div>' + end_block()
+    elif t in ("sheet", "sheetend"):  # cheat-sheet card: heading + rows with check / cross
+        def row(text, ok, big):
+            mark = (f'<svg width="{56 if big else 44}" height="{56 if big else 44}" viewBox="0 0 22 22" style="flex:none">'
+                    + (f'<circle cx="11" cy="11" r="11" fill="{C["ball"]}"/><path d="M5.5 11.5 L9.5 15.5 L16.5 6.5" stroke="{C["night"]}" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>' if ok else
+                       f'<circle cx="11" cy="11" r="11" fill="{C["fault"]}"/><path d="M7 7 L15 15 M15 7 L7 15" stroke="{C["paper"]}" stroke-width="2.8" stroke-linecap="round"/>') + '</svg>')
+            return (f'<div style="display:flex;align-items:center;gap:28px;margin-top:{36 if big else 18}px">{mark}'
+                    f'<div style="font-family:{SANS};font-size:{60 if big else 44}px;line-height:1.12;font-weight:700">{fmt(text, C["ball"])}</div></div>')
+        if t == "sheet":
+            groups = f'<div style="margin-top:auto">' + "".join(row(a, b, True) for a, b in s["rows"]) + '</div>'
+            body = top + (label(s["kicker"], C["ball"] if not yellow else C["court"], 56) if s.get("kicker") else "") + head(fmt(s["title"], hl), 112, fg, 20, 0.98) + groups + '<div style="margin-top:auto"></div>' + swipe(fg, 0)
+        else:
+            groups = "".join(label(g, C["glass"], 34) + "".join(row(a, b, False) for a, b in rr) for g, rr in s["groups"])
+            body = top + head(fmt(s["title"], C["ball"]), 96, C["paper"], 40, 0.95) + groups + label(s.get("source", ""), C["glass"], 30) + end_block()
     else:
         raise ValueError(f"unknown slide type {t}")
     return wrap(bg, fg, body)

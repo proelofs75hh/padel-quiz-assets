@@ -1,0 +1,246 @@
+{
+ "week": "format-test",
+ "note": "Format test 1 Nov 2026: multi-call quiz (8 slides) and cheat sheet (6 slides). Not in register until approved.",
+ "posts": [
+  {
+   "id": "test-quiz-serve",
+   "slot": "TBD",
+   "pillar": "rules",
+   "series": "settle",
+   "difficulty": "medium",
+   "format": "quiz",
+   "topic_key": "quiz.serve-5-calls",
+   "fact_source": "FIP Reglas del Padel (padelfip.com, 12/2025): 6.4 (contact at or below waist, one foot on the ground), 7.1.d (ball hits server's partner = fault), 7.1.e (fence before second bounce = fault), 9.1.a (net + box counts as net only without fence contact)",
+   "caption": "Padel serve rules: 5 quick calls. 🎾\n\nMost players get at least one wrong – how many do you get right?\n\nSend this to your doubles partner and compare scores.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padeltips"
+   ],
+   "slides": [
+    {
+     "type": "q",
+     "cover": "versus",
+     "q": "Padel serve: how many of these **5 calls** do you get right?",
+     "claim": "Five serve calls: waist height, fence after the bounce, net then fence, partner hit, both feet in the air."
+    },
+    {
+     "type": "item",
+     "label": "Call 1 of 5",
+     "context": "You hit your serve at waist height.",
+     "text": "That's allowed."
+    },
+    {
+     "type": "item",
+     "label": "Call 2 of 5",
+     "context": "Your serve bounces in the box, then hits the fence.",
+     "text": "It's a good serve."
+    },
+    {
+     "type": "item",
+     "label": "Call 3 of 5",
+     "context": "Your serve clips the net, lands in the box, then hits the fence.",
+     "text": "You serve again."
+    },
+    {
+     "type": "item",
+     "label": "Call 4 of 5",
+     "context": "Your serve hits your partner at the net.",
+     "text": "It counts as a fault."
+    },
+    {
+     "type": "item",
+     "label": "Call 5 of 5",
+     "context": "Both your feet are in the air when you hit the serve.",
+     "text": "That's allowed."
+    },
+    {
+     "type": "key",
+     "title": "The answers",
+     "rows": [
+      [
+       "FAIR",
+       "At or **below the waist** is fine."
+      ],
+      [
+       "FAULT",
+       "Bounce, then **fence** = fault."
+      ],
+      [
+       "FAULT",
+       "Net + fence = **fault**, no replay."
+      ],
+      [
+       "FAIR",
+       "Yes – partner hit = **fault**."
+      ],
+      [
+       "FAULT",
+       "One foot must stay **on the ground**."
+      ]
+     ],
+     "source": "FIP rules · 6.4 · 7.1 · 9.1"
+    },
+    {
+     "type": "score",
+     "title": "Your score?",
+     "rows": [
+      [
+       "5/5",
+       "Referee level."
+      ],
+      [
+       "3–4",
+       "Solid club player."
+      ],
+      [
+       "0–2",
+       "Send this to your **partner**."
+      ]
+     ],
+     "verdict": "FAIR"
+    }
+   ]
+  },
+  {
+   "id": "test-sheet-walls",
+   "slot": "TBD",
+   "pillar": "rules",
+   "series": "settle",
+   "difficulty": "easy",
+   "format": "cheatsheet",
+   "topic_key": "sheet.glass-or-fence",
+   "fact_source": "FIP Reglas del Padel (padelfip.com, 12/2025): 12.3 (return before the second bounce), 13.g (opponent's walls/fence before the bounce = point lost), 13.l (own fence = point lost), 14.c (bounce, then fence or walls = correct return), 7.1.e (serve: bounce, then fence = fault)",
+   "caption": "Padel rules cheat sheet: glass or fence – when is the ball still in play? 🧱\n\nSave it for your next match. And send it to the friend who always argues about the fence.\nPhoto: Bruno Vaccaro Vercellino / Unsplash\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padeltips",
+    "padelbeginner"
+   ],
+   "slides": [
+    {
+     "type": "q",
+     "cover": "photo",
+     "q": "Glass or fence: **when** is the ball still in play?",
+     "claim": "Cheat sheet: glass and fence rules for rally and serve.",
+     "photo": "a4SslXtr1TE",
+     "photo_focus": [
+      0.55,
+      0.5
+     ],
+     "photo_zoom": 1.4,
+     "photo_place": "right"
+    },
+    {
+     "type": "sheet",
+     "kicker": "Their shot",
+     "title": "It bounces on your side first.",
+     "rows": [
+      [
+       "Then it hits the **glass**: play on.",
+       true
+      ],
+      [
+       "Then it hits the **fence**: play on.",
+       true
+      ]
+     ]
+    },
+    {
+     "type": "sheet",
+     "kicker": "Their shot",
+     "title": "It hits your glass **before** the bounce.",
+     "rows": [
+      [
+       "Their **mistake**. Your point.",
+       true
+      ],
+      [
+       "Same for your **fence**.",
+       true
+      ]
+     ]
+    },
+    {
+     "type": "sheet",
+     "kicker": "Your shot",
+     "title": "You use the walls on **your** side.",
+     "rows": [
+      [
+       "Off your own **glass**, then over: allowed.",
+       true
+      ],
+      [
+       "Into your own **fence**: point lost.",
+       false
+      ]
+     ]
+    },
+    {
+     "type": "sheet",
+     "kicker": "Serve",
+     "title": "The serve bounces in the box.",
+     "rows": [
+      [
+       "Then it hits the **glass**: good serve.",
+       true
+      ],
+      [
+       "Then it hits the **fence**: fault.",
+       false
+      ]
+     ]
+    },
+    {
+     "type": "sheetend",
+     "title": "Save this for your next match.",
+     "groups": [
+      [
+       "Their shot",
+       [
+        [
+         "Bounce, then glass or fence: play on.",
+         true
+        ],
+        [
+         "Your glass or fence first: your point.",
+         true
+        ]
+       ]
+      ],
+      [
+       "Your shot",
+       [
+        [
+         "Off your own glass: allowed.",
+         true
+        ],
+        [
+         "Into your own fence: point lost.",
+         false
+        ]
+       ]
+      ],
+      [
+       "Serve",
+       [
+        [
+         "Bounce, then glass: good.",
+         true
+        ],
+        [
+         "Bounce, then fence: fault.",
+         false
+        ]
+       ]
+      ]
+     ],
+     "source": "FIP rules · 7.1 · 12.3 · 13 · 14",
+     "verdict": "FAIR"
+    }
+   ]
+  }
+ ]
+}
