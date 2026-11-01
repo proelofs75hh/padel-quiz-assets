@@ -149,14 +149,8 @@
      "type": "q",
      "q": "How many countries are in the world padel federation?",
      "claim": "More than 100 countries are members of the world padel federation (FIP).",
-     "cover": "photo",
-     "photo": "CA3laY8sok0",
-     "photo_focus": [
-      0.62,
-      0.42
-     ],
-     "photo_zoom": 1.5,
-     "photo_place": "right"
+     "cover": "digits",
+     "digits": "???"
     },
     {
      "type": "guess",
