@@ -188,6 +188,62 @@
    ]
   },
   {
+   "id": "2026-11-06-pm",
+   "slot": "2026-11-02T21:30:00",
+   "pillar": "market",
+   "series": "number",
+   "topic_key": "market.new-courts-2025",
+   "fact_source": "Global Padel Report 2026 (Playtomic/PwC): 7,898 new courts in 2025 (≈21.6 per day)",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How many new padel courts were built in 2025?",
+     "claim": "Almost 8,000 new padel courts were built in 2025.",
+     "cover": "photo",
+     "photo": "wLAtpQ53Pfw",
+     "photo_focus": [
+      0.5,
+      0.5
+     ],
+     "photo_zoom": 1.1,
+     "photo_place": "wide"
+    },
+    {
+     "type": "guess",
+     "bars": [
+      "6,200",
+      "7,900",
+      "9,200"
+     ]
+    },
+    {
+     "type": "reveal",
+     "big": "7,898",
+     "text": "new padel courts in 2025.",
+     "source": "Global Padel Report 2026"
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pre": "That's more than",
+     "big": "21 a day",
+     "source": "Global Padel Report 2026"
+    }
+   ],
+   "caption": "Another new court in your town? You're not imagining it. 🏗️\n\nGuess first, then swipe: how many new padel courts were built worldwide in 2025?\n\nComment your guess 👇\n\nSource: Global Padel Report 2026 (Playtomic/PwC)\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelworld",
+    "padelquiz",
+    "padelgrowth",
+    "padelclub",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
    "id": "2026-11-03-am",
    "slot": "2026-11-03T07:30:00",
    "pillar": "rules",
@@ -293,6 +349,44 @@
     "padelquiz",
     "padelgrowth",
     "padelclub",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-05-pm",
+   "slot": "2026-11-03T17:30:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.racket-unlimited-holes",
+   "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), La pala, punto 6: perforada por un número no limitado de agujeros cilíndricos de 9 a 13 mm de diámetro",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How many holes can a padel racket have?",
+     "claim": "A padel racket can have as many holes as you like.",
+     "cover": "zoom"
+    },
+    {
+     "type": "claim",
+     "text": "A racket can have as many holes as you like."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "**No limit** on the number.\nOnly their size is limited.",
+     "source": "FIP rules · Racket"
+    }
+   ],
+   "caption": "Some rackets have 20 holes, some have 70. Is there a maximum? 🕳️\n\nA racket can have as many holes as you like. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
     "padellife",
     "padelplayer",
     "fairorfault"
@@ -437,6 +531,51 @@
    ]
   },
   {
+   "id": "2026-11-08-pm",
+   "slot": "2026-11-04T17:30:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.carbon-k-number",
+   "fact_source": "Carbon fibre: 12K = 12,000 filaments per tow (industry standard designation)",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "q": "What does 12K mean on a padel racket?",
+     "claim": "12K means 12 kg of carbon.",
+     "cover": "photo",
+     "photo": "zTwzxr4BbTA",
+     "photo_focus": [
+      0.5,
+      0.5
+     ],
+     "photo_zoom": 1.4,
+     "photo_place": "right"
+    },
+    {
+     "type": "claim",
+     "text": "12K means 12 kg of carbon."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "**12K** = 12,000 carbon\nfilaments per thread.",
+     "source": "Carbon fibre basics"
+    }
+   ],
+   "caption": "3K, 12K, 18K – rackets love big numbers on the frame. But what do they mean? 🔍\n\n12K means 12 kg of carbon. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
    "id": "2026-11-05-am",
    "slot": "2026-11-05T07:30:00",
    "pillar": "rules",
@@ -496,238 +635,6 @@
     }
    ],
    "caption": "Tennis players love to chip and charge. In padel? 🎾\n\nYou volley the serve before it bounces – allowed? Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
-   "hashtags": [
-    "padel",
-    "padelrules",
-    "padelquiz",
-    "padellife",
-    "padelplayer",
-    "padelbeginner",
-    "padelclub",
-    "fairorfault"
-   ]
-  },
-  {
-   "id": "2026-11-05-pm",
-   "slot": "2026-11-03T17:30:00",
-   "pillar": "gear",
-   "series": "gear",
-   "topic_key": "gear.racket-unlimited-holes",
-   "fact_source": "FIP Reglas del Pádel (padelfip.com, 12/2025), La pala, punto 6: perforada por un número no limitado de agujeros cilíndricos de 9 a 13 mm de diámetro",
-   "difficulty": "medium",
-   "slides": [
-    {
-     "type": "q",
-     "q": "How many holes can a padel racket have?",
-     "claim": "A padel racket can have as many holes as you like.",
-     "cover": "zoom"
-    },
-    {
-     "type": "claim",
-     "text": "A racket can have as many holes as you like."
-    },
-    {
-     "type": "verdict",
-     "verdict": "FAIR",
-     "line": "**No limit** on the number.\nOnly their size is limited.",
-     "source": "FIP rules · Racket"
-    }
-   ],
-   "caption": "Some rackets have 20 holes, some have 70. Is there a maximum? 🕳️\n\nA racket can have as many holes as you like. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
-   "hashtags": [
-    "padel",
-    "padelracket",
-    "padelgear",
-    "padelquiz",
-    "padelrules",
-    "padellife",
-    "padelplayer",
-    "fairorfault"
-   ]
-  },
-  {
-   "id": "2026-11-06-am",
-   "slot": "2026-11-05T17:30:00",
-   "pillar": "rules",
-   "series": "settle",
-   "topic_key": "rule.serve-net-then-fence",
-   "fact_source": "FIP Reglamento de Juego, Regla 7.1.e + Regla 9.1.a (red: solo si no toca la malla antes del segundo bote)",
-   "difficulty": "tricky",
-   "slides": [
-    {
-     "type": "q",
-     "q": "Is a serve that touches the net always replayed?",
-     "claim": "Your serve clips the net, lands in the box, then hits the fence. You serve again.",
-     "cover": "scene",
-     "scene": {
-      "view": "side",
-      "net": 450,
-      "fence": [
-       [
-        864,
-        260,
-        700
-       ]
-      ],
-      "figures": [
-       {
-        "x": 170,
-        "y": 528,
-        "pose": "forehand"
-       }
-      ],
-      "path": [
-       "M300 470 L450 566 L650 696 L864 480"
-      ],
-      "marks": [
-       [
-        650,
-        696
-       ]
-      ],
-      "ball": [
-       846,
-       490
-      ],
-      "alt": "Side view: the serve clips the net, bounces in the box and hits the fence"
-     }
-    },
-    {
-     "type": "claim",
-     "context": "Your serve clips the net, lands in the box, then hits the fence.",
-     "text": "You serve again."
-    },
-    {
-     "type": "verdict",
-     "verdict": "FAULT",
-     "line": "It's a **fault**.\nOnly net + box is replayed.",
-     "source": "FIP rules · Rules 7 + 9"
-    }
-   ],
-   "caption": "Net cord on the serve – everyone shouts \"again!\". But what if it hits the fence after that? 🤔\n\nNet, box, then fence. You serve again. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
-   "hashtags": [
-    "padel",
-    "padelrules",
-    "padelquiz",
-    "padellife",
-    "padelplayer",
-    "padelbeginner",
-    "padelclub",
-    "fairorfault"
-   ]
-  },
-  {
-   "id": "2026-11-06-pm",
-   "slot": "2026-11-02T21:30:00",
-   "pillar": "market",
-   "series": "number",
-   "topic_key": "market.new-courts-2025",
-   "fact_source": "Global Padel Report 2026 (Playtomic/PwC): 7,898 new courts in 2025 (≈21.6 per day)",
-   "difficulty": "medium",
-   "slides": [
-    {
-     "type": "q",
-     "q": "How many new padel courts were built in 2025?",
-     "claim": "Almost 8,000 new padel courts were built in 2025.",
-     "cover": "photo",
-     "photo": "wLAtpQ53Pfw",
-     "photo_focus": [
-      0.5,
-      0.5
-     ],
-     "photo_zoom": 1.1,
-     "photo_place": "wide"
-    },
-    {
-     "type": "guess",
-     "bars": [
-      "6,200",
-      "7,900",
-      "9,200"
-     ]
-    },
-    {
-     "type": "reveal",
-     "big": "7,898",
-     "text": "new padel courts in 2025.",
-     "source": "Global Padel Report 2026"
-    },
-    {
-     "type": "verdict",
-     "verdict": "FAIR",
-     "pre": "That's more than",
-     "big": "21 a day",
-     "source": "Global Padel Report 2026"
-    }
-   ],
-   "caption": "Another new court in your town? You're not imagining it. 🏗️\n\nGuess first, then swipe: how many new padel courts were built worldwide in 2025?\n\nComment your guess 👇\n\nSource: Global Padel Report 2026 (Playtomic/PwC)\nFollow @fairorfault – your daily padel quiz.",
-   "hashtags": [
-    "padel",
-    "padelworld",
-    "padelquiz",
-    "padelgrowth",
-    "padelclub",
-    "padellife",
-    "padelplayer",
-    "fairorfault"
-   ]
-  },
-  {
-   "id": "2026-11-07-am",
-   "slot": "2026-11-06T07:30:00",
-   "pillar": "rules",
-   "series": "settle",
-   "topic_key": "rule.direct-opponent-glass",
-   "fact_source": "FIP Reglamento de Juego, Regla 13.1.g (golpear las paredes del campo contrario sin botar)",
-   "difficulty": "medium",
-   "slides": [
-    {
-     "type": "q",
-     "q": "Can your shot hit their back glass before it bounces?",
-     "claim": "Your shot flies over the net and hits their back glass directly. The rally goes on.",
-     "cover": "versus"
-    },
-    {
-     "type": "scene",
-     "text": "Your shot flies over the net and hits their back glass directly.",
-     "scene": {
-      "view": "side",
-      "net": 300,
-      "glass": [
-       [
-        864,
-        300
-       ]
-      ],
-      "figures": [
-       {
-        "x": 150,
-        "y": 528,
-        "pose": "forehand"
-       }
-      ],
-      "path": [
-       "M250 450 Q 560 100, 862 420"
-      ],
-      "ball": [
-       846,
-       420
-      ],
-      "alt": "Side view: the ball flies over the net and hits the opponents' back glass without bouncing"
-     }
-    },
-    {
-     "type": "claim",
-     "text": "The rally goes on."
-    },
-    {
-     "type": "verdict",
-     "verdict": "FAULT",
-     "line": "It must **bounce first**.\nOtherwise you lose the point.",
-     "source": "FIP rules · Rule 13"
-    }
-   ],
-   "caption": "Hard and flat into their back glass – looks great. Is it legal? 💥\n\nNo bounce, straight into their glass. The rally goes on. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",
@@ -808,6 +715,272 @@
    ]
   },
   {
+   "id": "2026-11-06-am",
+   "slot": "2026-11-05T17:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.serve-net-then-fence",
+   "fact_source": "FIP Reglamento de Juego, Regla 7.1.e + Regla 9.1.a (red: solo si no toca la malla antes del segundo bote)",
+   "difficulty": "tricky",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Is a serve that touches the net always replayed?",
+     "claim": "Your serve clips the net, lands in the box, then hits the fence. You serve again.",
+     "cover": "scene",
+     "scene": {
+      "view": "side",
+      "net": 450,
+      "fence": [
+       [
+        864,
+        260,
+        700
+       ]
+      ],
+      "figures": [
+       {
+        "x": 170,
+        "y": 528,
+        "pose": "forehand"
+       }
+      ],
+      "path": [
+       "M300 470 L450 566 L650 696 L864 480"
+      ],
+      "marks": [
+       [
+        650,
+        696
+       ]
+      ],
+      "ball": [
+       846,
+       490
+      ],
+      "alt": "Side view: the serve clips the net, bounces in the box and hits the fence"
+     }
+    },
+    {
+     "type": "claim",
+     "context": "Your serve clips the net, lands in the box, then hits the fence.",
+     "text": "You serve again."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "It's a **fault**.\nOnly net + box is replayed.",
+     "source": "FIP rules · Rules 7 + 9"
+    }
+   ],
+   "caption": "Net cord on the serve – everyone shouts \"again!\". But what if it hits the fence after that? 🤔\n\nNet, box, then fence. You serve again. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padelbeginner",
+    "padelclub",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-07-am",
+   "slot": "2026-11-06T07:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.direct-opponent-glass",
+   "fact_source": "FIP Reglamento de Juego, Regla 13.1.g (golpear las paredes del campo contrario sin botar)",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Can your shot hit their back glass before it bounces?",
+     "claim": "Your shot flies over the net and hits their back glass directly. The rally goes on.",
+     "cover": "versus"
+    },
+    {
+     "type": "scene",
+     "text": "Your shot flies over the net and hits their back glass directly.",
+     "scene": {
+      "view": "side",
+      "net": 300,
+      "glass": [
+       [
+        864,
+        300
+       ]
+      ],
+      "figures": [
+       {
+        "x": 150,
+        "y": 528,
+        "pose": "forehand"
+       }
+      ],
+      "path": [
+       "M250 450 Q 560 100, 862 420"
+      ],
+      "ball": [
+       846,
+       420
+      ],
+      "alt": "Side view: the ball flies over the net and hits the opponents' back glass without bouncing"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "The rally goes on."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "It must **bounce first**.\nOtherwise you lose the point.",
+     "source": "FIP rules · Rule 13"
+    }
+   ],
+   "caption": "Hard and flat into their back glass – looks great. Is it legal? 💥\n\nNo bounce, straight into their glass. The rally goes on. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padelbeginner",
+    "padelclub",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-06-lob",
+   "slot": "2026-11-06T12:30:00",
+   "pillar": "lingo",
+   "series": "lingo",
+   "topic_key": "lingo.lob",
+   "fact_source": "The Padel School – Why is the lob so important (\"most effective way to take the net position\"); LTA Padel – Lobs (tactical shot to control space and time)",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "term": "Globo",
+     "say": "[GLOH-bo] · “balloon”",
+     "q": "What is the main goal of a lob?",
+     "claim": "Its main goal is to win the point directly.",
+     "scene": {
+      "view": "side",
+      "net": 450,
+      "figures": [
+       {
+        "x": 150,
+        "y": 528,
+        "pose": "swing"
+       },
+       {
+        "x": 560,
+        "y": 528,
+        "pose": "reach",
+        "mirror": true
+       }
+      ],
+      "path": [
+       "M230 470 Q 520 -60, 820 660"
+      ],
+      "ball": [
+       522,
+       252
+      ],
+      "alt": "Side view: a high lob flies over the player at the net"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "Its main goal is to win the point directly."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Main goal: **take the net**.",
+     "desc": "A high ball over the players at the net. They must run back – you move forward.",
+     "source": "The Padel School · LTA Padel"
+    }
+   ],
+   "caption": "The most underrated shot in padel? Probably the lob. 🎈\n\nIts main goal is to win the point directly. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padeltips",
+    "padeltactics",
+    "padelquiz",
+    "padellob",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-06-serves",
+   "slot": "2026-11-06T17:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.two-serves",
+   "fact_source": "FIP Reglamento de Juego, Regla 6.1 (\"Si el primer saque es fallido se dispondrá de una segunda oportunidad\") + Regla 13 (falta en el segundo saque: punto perdido)",
+   "difficulty": "easy",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How many tries do you get for a serve?",
+     "claim": "Your first serve is a fault. You get a second try."
+    },
+    {
+     "type": "scene",
+     "text": "Your first serve lands outside the box.",
+     "scene": {
+      "view": "top",
+      "box": [
+       252,
+       117
+      ],
+      "path": [
+       [
+        560,
+        690
+       ],
+       [
+        480,
+        80
+       ]
+      ],
+      "ball": [
+       480,
+       80
+      ],
+      "alt": "Court from above: the first serve lands outside the service box"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "You get a second try."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Two tries. A fault on the\n**second** loses the point.",
+     "source": "FIP rules · Rule 6"
+    }
+   ],
+   "caption": "Some groups play \"one serve only\". The rules don't. 🎾\n\nFirst serve is a fault – you get a second try. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padelbeginner",
+    "padelclub",
+    "fairorfault"
+   ]
+  },
+  {
    "id": "2026-11-08-am",
    "slot": "2026-11-07T07:30:00",
    "pillar": "rules",
@@ -867,39 +1040,33 @@
    ]
   },
   {
-   "id": "2026-11-08-pm",
-   "slot": "2026-11-04T17:30:00",
+   "id": "2026-11-07-cord",
+   "slot": "2026-11-07T12:30:00",
    "pillar": "gear",
    "series": "gear",
-   "topic_key": "gear.carbon-k-number",
-   "fact_source": "Carbon fibre: 12K = 12,000 filaments per tow (industry standard designation)",
-   "difficulty": "medium",
+   "topic_key": "gear.wrist-cord-mandatory",
+   "fact_source": "FIP Reglamento, La Pala, punto 10: cordón de seguridad – \"Su uso será obligatorio\"",
+   "difficulty": "easy",
    "slides": [
     {
      "type": "q",
-     "q": "What does 12K mean on a padel racket?",
-     "claim": "12K means 12 kg of carbon.",
-     "cover": "photo",
-     "photo": "zTwzxr4BbTA",
-     "photo_focus": [
-      0.5,
-      0.5
-     ],
-     "photo_zoom": 1.4,
-     "photo_place": "right"
+     "q": "Do you have to wear the wrist cord?",
+     "claim": "The wrist cord is optional.",
+     "cover": "drawing",
+     "drawing": "cord"
     },
     {
      "type": "claim",
-     "text": "12K means 12 kg of carbon."
+     "text": "The wrist cord is optional."
     },
     {
      "type": "verdict",
      "verdict": "FAULT",
-     "line": "**12K** = 12,000 carbon\nfilaments per thread.",
-     "source": "Carbon fibre basics"
+     "line": "You **must** wear it.\nIt's a safety rule.",
+     "source": "FIP rules · Racket"
     }
    ],
-   "caption": "3K, 12K, 18K – rackets love big numbers on the frame. But what do they mean? 🔍\n\n12K means 12 kg of carbon. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "That little strap isn't decoration. 🧵\n\nThe wrist cord is optional. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelracket",
@@ -908,6 +1075,249 @@
     "padelrules",
     "padellife",
     "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-07-height",
+   "slot": "2026-11-07T17:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.serve-waist-height",
+   "fact_source": "FIP Reglamento de Juego, Regla 6 (golpear la pelota a la altura o por debajo de la cintura; al menos un pie en el suelo)",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How high can you hit your serve?",
+     "claim": "You hit your serve at shoulder height. That's a valid serve."
+    },
+    {
+     "type": "scene",
+     "text": "You bounce the ball and hit it at shoulder height.",
+     "scene": {
+      "view": "side",
+      "figures": [
+       {
+        "x": 380,
+        "y": 528,
+        "pose": "forehand"
+       }
+      ],
+      "path": [
+       "M470 690 L470 330"
+      ],
+      "ball": [
+       470,
+       330
+      ],
+      "alt": "Side view: a player hits the serve at shoulder height"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "That's a valid serve."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Hit it at **waist height**\nor lower.",
+     "source": "FIP rules · Rule 6"
+    }
+   ],
+   "caption": "Higher contact, harder serve? Not in padel. 📏\n\nYou serve at shoulder height. Valid serve? Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padelbeginner",
+    "padelclub",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-08-stuck",
+   "slot": "2026-11-08T07:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.ball-stuck-in-fence",
+   "fact_source": "FIP Reglamento de Juego, Regla 15.1.a (tras botar en el campo contrario la pelota se queda enganchada en la malla: tanto ganado)",
+   "difficulty": "easy",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Who wins the point if the ball gets stuck in the fence?",
+     "claim": "Your shot bounces on their side, then gets stuck in their fence. You win the point.",
+     "cover": "scene",
+     "scene": {
+      "view": "side",
+      "net": 330,
+      "glass": [
+       [
+        864,
+        360
+       ]
+      ],
+      "fence": [
+       [
+        864,
+        110,
+        360
+       ]
+      ],
+      "figures": [
+       {
+        "x": 120,
+        "y": 528,
+        "pose": "swing"
+       }
+      ],
+      "path": [
+       "M190 470 Q 360 220, 620 700 Q 780 420, 850 240"
+      ],
+      "ball": [
+       850,
+       240
+      ],
+      "alt": "Side view: the ball bounces on the other side and gets stuck in the fence above the back glass"
+     }
+    },
+    {
+     "type": "claim",
+     "context": "Your shot bounces on their side, then gets stuck in their fence.",
+     "text": "You win the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Stuck after the bounce:\n**your point**.",
+     "source": "FIP rules · Rule 15"
+    }
+   ],
+   "caption": "It happens once a season – and then everyone argues. 🤷\n\nYour shot bounces on their side and gets stuck in their fence. You win the point. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padelbeginner",
+    "padelclub",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-08-length",
+   "slot": "2026-11-08T12:30:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.racket-max-length",
+   "fact_source": "FIP Reglamento, La Pala: largo total (cabeza + puño) máx. 45,5 cm",
+   "difficulty": "medium",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How long can a padel racket be?",
+     "claim": "A racket can be up to 50 cm long.",
+     "cover": "drawing",
+     "drawing": "dims",
+     "labels": {
+      "length": "?<br>cm",
+      "width": "26 cm"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "A racket can be up to 50 cm long."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Max **45.5 cm**,\nhead and handle together.",
+     "source": "FIP rules · Racket"
+    }
+   ],
+   "caption": "Longer racket, more reach? The rules say stop. 📏\n\nA racket can be up to 50 cm long. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelracket",
+    "padelgear",
+    "padelquiz",
+    "padelrules",
+    "padellife",
+    "padelplayer",
+    "fairorfault"
+   ]
+  },
+  {
+   "id": "2026-11-08-double",
+   "slot": "2026-11-08T17:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.double-bounce",
+   "fact_source": "FIP Reglamento de Juego, Regla 13.1.c (\"Si la pelota bota por segunda vez antes de ser devuelta\")",
+   "difficulty": "easy",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Can you let the ball bounce twice?",
+     "claim": "The ball bounces twice on your side before you hit it. The rally goes on."
+    },
+    {
+     "type": "scene",
+     "text": "The ball bounces twice on your side. Then you hit it.",
+     "scene": {
+      "view": "side",
+      "net": 800,
+      "figures": [
+       {
+        "x": 200,
+        "y": 528,
+        "pose": "reach"
+       }
+      ],
+      "path": [
+       "M760 300 Q 640 200, 560 696 Q 480 560, 400 696 Q 340 600, 300 620"
+      ],
+      "marks": [
+       [
+        560,
+        696
+       ],
+       [
+        400,
+        696
+       ]
+      ],
+      "ball": [
+       300,
+       620
+      ],
+      "alt": "Side view: the ball bounces twice before the player hits it"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "The rally goes on."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Two bounces:\n**you lose the point**.",
+     "source": "FIP rules · Rule 13"
+    }
+   ],
+   "caption": "Easy one? Then share it with the friend who always waits too long. 😅\n\nTwo bounces on your side, then you hit it. The rally goes on. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife",
+    "padelplayer",
+    "padelbeginner",
+    "padelclub",
     "fairorfault"
    ]
   }
