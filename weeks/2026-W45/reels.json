@@ -121,7 +121,7 @@
   },
   {
    "id": "2026-11-06-reel",
-   "slot": "2026-11-03T20:00:00",
+   "slot": "2026-11-02T20:00:00",
    "pillar": "market",
    "topic_key": "market.players-worldwide",
    "fact_source": "Global Padel Report 2026 (Playtomic): 19.4 million players",
@@ -203,7 +203,7 @@
   },
   {
    "id": "2026-11-05-court",
-   "slot": "2026-11-05T20:00:00",
+   "slot": "2026-11-03T20:00:00",
    "pillar": "gear",
    "topic_key": "gear.court-dimensions",
    "fact_source": "FIP Reglamento, La Pista: área de juego 10 x 20 m; red 0,88 m en el centro, máx. 0,92 m en los extremos; fondos 3 m pared + 1 m malla",
