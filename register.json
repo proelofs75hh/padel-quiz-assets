@@ -644,6 +644,105 @@
    "claim": "Padel balls and tennis balls have the same weight.",
    "verdict": "FAIR",
    "format": "reel"
+  },
+  {
+   "id": "2026-11-06-lob",
+   "date": "2026-11-06",
+   "pillar": "lingo",
+   "topic_key": "lingo.lob",
+   "claim": "Its main goal is to win the point directly.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-06-serves",
+   "date": "2026-11-06",
+   "pillar": "rules",
+   "topic_key": "rule.two-serves",
+   "claim": "Your first serve is a fault. You get a second try.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-07-cord",
+   "date": "2026-11-07",
+   "pillar": "gear",
+   "topic_key": "gear.wrist-cord-mandatory",
+   "claim": "The wrist cord is optional.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-07-height",
+   "date": "2026-11-07",
+   "pillar": "rules",
+   "topic_key": "rule.serve-waist-height",
+   "claim": "You hit your serve at shoulder height. That's a valid serve.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-08-stuck",
+   "date": "2026-11-08",
+   "pillar": "rules",
+   "topic_key": "rule.ball-stuck-in-fence",
+   "claim": "Your shot bounces on their side, then gets stuck in their fence. You win the point.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-08-length",
+   "date": "2026-11-08",
+   "pillar": "gear",
+   "topic_key": "gear.racket-max-length",
+   "claim": "A racket can be up to 50 cm long.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-08-double",
+   "date": "2026-11-08",
+   "pillar": "rules",
+   "topic_key": "rule.double-bounce",
+   "claim": "The ball bounces twice on your side before you hit it. The rally goes on.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-05-court",
+   "date": "2026-11-05",
+   "pillar": "gear",
+   "topic_key": "gear.court-dimensions",
+   "claim": "A padel court is 20 m long and 10 m wide.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-06-reel2",
+   "date": "2026-11-06",
+   "pillar": "rules",
+   "topic_key": "rule.serve-diagonal",
+   "claim": "You are allowed to serve straight, not diagonally.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-07-italy",
+   "date": "2026-11-07",
+   "pillar": "market",
+   "topic_key": "market.italy-courts",
+   "claim": "Italy has more than 10,000 padel courts.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-08-reel2",
+   "date": "2026-11-08",
+   "pillar": "rules",
+   "topic_key": "rule.serve-bounce-then-back-glass",
+   "claim": "Your serve hits the back glass after the bounce.",
+   "verdict": "FAIR",
+   "format": "reel"
   }
  ]
 }
