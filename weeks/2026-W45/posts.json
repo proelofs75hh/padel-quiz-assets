@@ -250,7 +250,7 @@
   },
   {
    "id": "2026-11-03-pm",
-   "slot": "2026-11-03T18:30:00",
+   "slot": "2026-11-03T12:30:00",
    "pillar": "market",
    "series": "number",
    "topic_key": "market.courts-worldwide",
@@ -300,7 +300,7 @@
   },
   {
    "id": "2026-11-04-am",
-   "slot": "2026-11-04T08:00:00",
+   "slot": "2026-11-04T07:30:00",
    "pillar": "rules",
    "series": "settle",
    "topic_key": "rule.second-racket-during-point",
@@ -360,7 +360,7 @@
   },
   {
    "id": "2026-11-04-pm",
-   "slot": "2026-11-04T18:30:00",
+   "slot": "2026-11-04T12:30:00",
    "pillar": "pros",
    "series": "pros",
    "topic_key": "pros.outside-second-bounce",
@@ -509,7 +509,7 @@
   },
   {
    "id": "2026-11-05-pm",
-   "slot": "2026-11-05T18:30:00",
+   "slot": "2026-11-03T17:30:00",
    "pillar": "gear",
    "series": "gear",
    "topic_key": "gear.racket-unlimited-holes",
@@ -547,7 +547,7 @@
   },
   {
    "id": "2026-11-06-am",
-   "slot": "2026-11-06T08:00:00",
+   "slot": "2026-11-05T17:30:00",
    "pillar": "rules",
    "series": "settle",
    "topic_key": "rule.serve-net-then-fence",
@@ -618,7 +618,7 @@
   },
   {
    "id": "2026-11-06-pm",
-   "slot": "2026-11-06T18:30:00",
+   "slot": "2026-11-02T21:30:00",
    "pillar": "market",
    "series": "number",
    "topic_key": "market.new-courts-2025",
@@ -674,7 +674,7 @@
   },
   {
    "id": "2026-11-07-am",
-   "slot": "2026-11-07T07:30:00",
+   "slot": "2026-11-06T07:30:00",
    "pillar": "rules",
    "series": "settle",
    "topic_key": "rule.direct-opponent-glass",
@@ -741,7 +741,7 @@
   },
   {
    "id": "2026-11-07-pm",
-   "slot": "2026-11-07T18:30:00",
+   "slot": "2026-11-05T12:30:00",
    "pillar": "pros",
    "series": "pros",
    "topic_key": "pros.net-post-counts",
@@ -809,7 +809,7 @@
   },
   {
    "id": "2026-11-08-am",
-   "slot": "2026-11-08T08:00:00",
+   "slot": "2026-11-07T07:30:00",
    "pillar": "rules",
    "series": "settle",
    "topic_key": "rule.server-bounces-ball-first",
@@ -868,7 +868,7 @@
   },
   {
    "id": "2026-11-08-pm",
-   "slot": "2026-11-08T18:30:00",
+   "slot": "2026-11-04T17:30:00",
    "pillar": "gear",
    "series": "gear",
    "topic_key": "gear.carbon-k-number",

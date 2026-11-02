@@ -58,7 +58,7 @@
   },
   {
    "id": "2026-11-04-reel",
-   "slot": "2026-11-04T07:30:00",
+   "slot": "2026-11-02T20:00:00",
    "pillar": "gear",
    "topic_key": "gear.no-weight-limit",
    "fact_source": "FIP Reglamento de Juego, Anexo/La Pala: max length 45.5 cm, width 26 cm, thickness 38 mm; no weight limit",
@@ -121,7 +121,7 @@
   },
   {
    "id": "2026-11-06-reel",
-   "slot": "2026-11-06T07:30:00",
+   "slot": "2026-11-03T20:00:00",
    "pillar": "market",
    "topic_key": "market.players-worldwide",
    "fact_source": "Global Padel Report 2026 (Playtomic): 19.4 million players",
@@ -199,7 +199,7 @@
      "Tennis"
     ]
    },
-   "slot": "2026-11-08T07:30:00"
+   "slot": "2026-11-04T20:00:00"
   }
  ]
 }
