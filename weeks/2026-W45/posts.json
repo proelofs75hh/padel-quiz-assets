@@ -923,17 +923,17 @@
    "pillar": "rules",
    "series": "settle",
    "topic_key": "rule.two-serves",
-   "fact_source": "FIP Reglamento de Juego, Regla 6.1 (\"Si el primer saque es fallido se dispondrá de una segunda oportunidad\") + Regla 13 (falta en el segundo saque: punto perdido)",
-   "difficulty": "easy",
+   "fact_source": "FIP Reglamento de Juego, Regla 6.1 (segunda oportunidad tras el primer saque fallido) + Regla 6.3 (pisar la línea de saque = falta) + Regla 7.1.e (solo la malla tras el bote es falta; el cristal no)",
+   "difficulty": "tricky",
    "slides": [
     {
      "type": "q",
      "q": "How many tries do you get for a serve?",
-     "claim": "Your first serve is a fault. You get a second try."
+     "claim": "Your first serve: foot on the line. Your second bounces in the box, then hits the side glass. You lose the point."
     },
     {
      "type": "scene",
-     "text": "Your first serve lands outside the box.",
+     "text": "1st serve: foot on the line.\n2nd serve: bounce, then side glass.",
      "scene": {
       "view": "top",
       "box": [
@@ -946,37 +946,44 @@
         690
        ],
        [
-        480,
-        80
+        370,
+        230
+       ],
+       [
+        262,
+        130
+       ]
+      ],
+      "marks": [
+       [
+        370,
+        230
        ]
       ],
       "ball": [
-       480,
-       80
+       276,
+       130
       ],
-      "alt": "Court from above: the first serve lands outside the service box"
+      "alt": "Court from above: the second serve bounces in the box, then hits the side glass"
      }
     },
     {
      "type": "claim",
-     "text": "You get a second try."
+     "text": "You lose the point."
     },
     {
      "type": "verdict",
-     "verdict": "FAIR",
-     "line": "Two tries. A fault on the\n**second** loses the point.",
-     "source": "FIP rules · Rule 6"
+     "verdict": "FAULT",
+     "line": "1st serve: fault.\n2nd serve: **good**. Play on.",
+     "source": "FIP rules · Rules 6 + 7"
     }
    ],
-   "caption": "Some groups play \"one serve only\". The rules don't. 🎾\n\nFirst serve is a fault – you get a second try. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Padel serve rule: two tries – but what counts as a miss? 🤔\n\nFirst serve: foot on the line. Second serve: bounce in the box, then side glass. You lose the point. Fair or fault?\n\nWhat's your call – and why? Send this to the partner who always calls the glass.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",
     "padelquiz",
-    "padellife",
-    "padelplayer",
-    "padelbeginner",
-    "padelclub",
+    "padeltips",
     "fairorfault"
    ]
   },
