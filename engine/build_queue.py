@@ -15,7 +15,7 @@ queue.json
    "series": "settle", "claim": "...", "verdict": "FAULT",
    "images": ["weeks/2026-W45/2026-11-02-am-1.jpg", ...],
    "caption": "full text incl. photo credit and hashtags",
-   "status": "pending" | "approved" | "redo" | "published" | "failed",
+   "status": "pending" | "approved" | "redo" | "published" | "failed" | "removed",
    "note": "", "published": null | {"media_id": "...", "permalink": "...", "at": "..."},
    "error": ""}
   {"id": "2026-11-02-reel", "kind": "reel", "video": "weeks/.../reels/x.mp4",

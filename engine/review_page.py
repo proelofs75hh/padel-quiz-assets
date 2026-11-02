@@ -33,6 +33,8 @@ def build(week_dirs):
         q = json.loads((wd / "queue.json").read_text())
         weeks.append(q["week"])
         for it in q["items"]:
+            if it.get("status") == "removed":   # taken out of the queue, not shown for review
+                continue
             d = {k: it.get(k, "") for k in ("id", "kind", "slot", "series", "pillar", "claim", "question",
                                              "verdict", "fact_source", "caption", "rev", "error")}
             d["server_status"] = it.get("status") if it.get("status") in ("published", "failed") else ""

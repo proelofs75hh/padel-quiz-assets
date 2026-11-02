@@ -24,9 +24,12 @@ def load_reviews(d):
     return out
 
 
+MAX_ATTEMPTS = 3   # same limit as engine/ig_publish.py
+
+
 def main(review_dir):
     reviews = load_reviews(review_dir)
-    summary = {"changed": [], "redo": [], "published": [], "failed": []}
+    summary = {"changed": [], "redo": [], "published": [], "failed": [], "removed": []}
     for qf in sorted(glob.glob(str(ROOT / "weeks" / "*" / "queue.json"))):
         path = pathlib.Path(qf)
         q = json.loads(path.read_text())
@@ -34,6 +37,14 @@ def main(review_dir):
         for it in q["items"]:
             if it.get("status") == "published":
                 summary["published"].append({"id": it["id"], "permalink": (it.get("published") or {}).get("permalink", "")})
+                continue
+            if it.get("status") == "removed":   # given up for good, never published or reset
+                continue
+            if it.get("status") == "failed" and it.get("attempts", 0) >= MAX_ATTEMPTS:
+                # Patrick, 2 Nov 2026: a post that failed 3 times is taken out of the queue
+                it["status"] = "removed"
+                dirty = True
+                summary["removed"].append({"id": it["id"], "error": it.get("error", "")})
                 continue
             if it.get("status") == "failed":
                 summary["failed"].append({"id": it["id"], "error": it.get("error", "")})
