@@ -404,10 +404,14 @@
    ],
    "caption": "3K, 12K, 18K – rackets love big numbers on the frame. But what do they mean? 🔍\n\n12K means 12 kg of carbon. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\nPhoto: Manuel Pappacena / Unsplash\n\n#padel #padelracket #padelgear #padelquiz #padelrules #padellife #padelplayer #fairorfault",
    "rev": "3ed1edeb62",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18131029813884417",
+    "permalink": "https://www.instagram.com/p/DfU5FM-jDxT/",
+    "at": "2026-11-04T17:31:49+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
