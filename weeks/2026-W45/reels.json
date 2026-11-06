@@ -254,28 +254,25 @@
    "id": "2026-11-06-reel2",
    "slot": "2026-11-06T20:00:00",
    "pillar": "rules",
-   "topic_key": "rule.serve-diagonal",
-   "fact_source": "FIP Reglamento de Juego, Regla 6.6 (en línea diagonal hacia el recuadro de recepción)",
-   "caption": "Watch the ball. Make the call. 🎾\n\nYou are allowed to serve straight, not diagonally. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.",
+   "topic_key": "rule.bounce-then-fence-in-rally",
+   "fact_source": "FIP Reglamento de Juego, Regla 14.1.c (pelota en juego tras el bote, aunque toque la malla) vs. Regla 7.1.e (en el saque, malla tras el bote = falta)",
+   "caption": "Padel fence rule: on the serve, the fence after the bounce is a fault. But during a rally? 🎾\n\nIn a rally, the ball can hit the fence after the bounce. Fair or fault?\n\nSend this to the partner who stops playing too early.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",
     "padelquiz",
-    "padelreels",
-    "padellife",
-    "padelplayer",
-    "padelclub",
+    "padeltips",
     "fairorfault"
    ],
    "spec": {
     "format": "refs_view",
     "label": "Rules",
-    "claim": "You are allowed to serve straight, not diagonally.",
-    "verdict": "FAULT",
-    "pill": "Wrong box",
-    "line": "Always serve\n**diagonally**.",
-    "source": "FIP rules · Rule 6",
-    "diagram": "serve-wrong-box"
+    "claim": "In a rally, the ball can hit the fence after the bounce.",
+    "verdict": "FAIR",
+    "pill": "Play on",
+    "line": "In a rally: **play on**.\nOnly on the serve\nit's a fault.",
+    "source": "FIP rules · Rules 7 + 14",
+    "diagram": "bounce-then-fence"
    }
   },
   {

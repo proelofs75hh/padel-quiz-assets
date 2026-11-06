@@ -222,8 +222,7 @@
     "permalink": "https://www.instagram.com/p/DfQLJYYmsI-/",
     "at": "2026-11-02T21:33:17+01:00"
    },
-   "error": "",
-   "attempts": 2
+   "error": ""
   },
   {
    "id": "2026-11-03-am",
@@ -411,8 +410,7 @@
     "permalink": "https://www.instagram.com/p/DfU5FM-jDxT/",
     "at": "2026-11-04T17:31:49+01:00"
    },
-   "error": "",
-   "attempts": 1
+   "error": ""
   },
   {
    "id": "2026-11-08-reel",
@@ -555,7 +553,7 @@
    "pillar": "rules",
    "difficulty": "tricky",
    "claim": "Your first serve: foot on the line. Your second bounces in the box, then hits the side glass. You lose the point.",
-   "question": "How many tries do you get for a serve?",
+   "question": "Can your second serve hit the side glass?",
    "verdict": "FAULT",
    "fact_source": "FIP Reglamento de Juego, Regla 6.1 (segunda oportunidad tras el primer saque fallido) + Regla 6.3 (pisar la línea de saque = falta) + Regla 7.1.e (solo la malla tras el bote es falta; el cristal no)",
    "images": [
@@ -564,10 +562,10 @@
     "weeks/2026-W45/2026-11-06-serves-3.jpg",
     "weeks/2026-W45/2026-11-06-serves-4.jpg"
    ],
-   "caption": "Padel serve rule: two tries – but what counts as a miss? 🤔\n\nFirst serve: foot on the line. Second serve: bounce in the box, then side glass. You lose the point. Fair or fault?\n\nWhat's your call – and why? Send this to the partner who always calls the glass.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips #fairorfault",
-   "rev": "c6e9c9a3b4",
+   "caption": "Padel serve rule: your first serve is gone – can the second one touch the side glass? 🤔\n\nFirst serve: foot on the line. Second serve: bounce in the box, then side glass. You lose the point. Fair or fault?\n\nWhat's your call – and why? Send this to the partner who always calls the glass.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips #fairorfault",
+   "rev": "b23a17df28",
    "status": "pending",
-   "note": "Zu basic",
+   "note": "Zu basic die frage",
    "published": null,
    "error": ""
   },
@@ -577,16 +575,16 @@
    "slot": "2026-11-06T20:00:00",
    "series": "rules",
    "pillar": "rules",
-   "claim": "You are allowed to serve straight, not diagonally.",
+   "claim": "In a rally, the ball can hit the fence after the bounce.",
    "question": "",
-   "verdict": "FAULT",
-   "fact_source": "FIP Reglamento de Juego, Regla 6.6 (en línea diagonal hacia el recuadro de recepción)",
+   "verdict": "FAIR",
+   "fact_source": "FIP Reglamento de Juego, Regla 14.1.c (pelota en juego tras el bote, aunque toque la malla) vs. Regla 7.1.e (en el saque, malla tras el bote = falta)",
    "video": "weeks/2026-W45/reels/2026-11-06-reel2.mp4",
    "cover": "weeks/2026-W45/reels/2026-11-06-reel2.cover.jpg",
-   "caption": "Watch the ball. Make the call. 🎾\n\nYou are allowed to serve straight, not diagonally. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padelreels #padellife #padelplayer #padelclub #fairorfault",
-   "rev": "f8384a8a70",
+   "caption": "Padel fence rule: on the serve, the fence after the bounce is a fault. But during a rally? 🎾\n\nIn a rally, the ball can hit the fence after the bounce. Fair or fault?\n\nSend this to the partner who stops playing too early.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips #fairorfault",
+   "rev": "ff17d1e088",
    "status": "pending",
-   "note": "",
+   "note": "Zu basic die frage",
    "published": null,
    "error": ""
   },
@@ -656,7 +654,7 @@
    ],
    "caption": "Higher contact, harder serve? Not in padel. 📏\n\nYou serve at shoulder height. Valid serve? Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padellife #padelplayer #padelbeginner #padelclub #fairorfault",
    "rev": "43540915d8",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -675,7 +673,7 @@
    "cover": "weeks/2026-W45/reels/2026-11-07-italy.cover.jpg",
    "caption": "Spain is the home of padel. But who comes next? 🇮🇹\n\nItaly has more than 10,000 padel courts. Fair or fault?\n\nComment your guess 👇\nFollow @fairorfault – your daily padel quiz.\n\nSource: FIP World Padel Report 2025\n\n#padel #padelitalia #padelworld #padelquiz #padelreels #padelgrowth #padellife #fairorfault",
    "rev": "78d2e8e985",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -698,7 +696,7 @@
    ],
    "caption": "It happens once a season – and then everyone argues. 🤷\n\nYour shot bounces on their side and gets stuck in their fence. You win the point. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padellife #padelplayer #padelbeginner #padelclub #fairorfault",
    "rev": "c1f5d09f15",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -719,10 +717,10 @@
     "weeks/2026-W45/2026-11-08-length-2.jpg",
     "weeks/2026-W45/2026-11-08-length-3.jpg"
    ],
-   "caption": "Longer racket, more reach? The rules say stop. 📏\n\nA racket can be up to 50 cm long. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelquiz #padelrules #padellife #padelplayer #fairorfault",
-   "rev": "ae909284ca",
+   "caption": "Padel racket rules: how long can a padel racket be? Longer racket, more reach – but the rules say stop. 📏\n\nA racket can be up to 50 cm long. Fair or fault?\n\nSend this to the friend who always shops for new gear.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelrules #padelquiz",
+   "rev": "0edd871da7",
    "status": "pending",
-   "note": "",
+   "note": "Brauchen mal eim anderes racket design",
    "published": null,
    "error": ""
   },
@@ -745,7 +743,7 @@
    ],
    "caption": "Easy one? Then share it with the friend who always waits too long. 😅\n\nTwo bounces on your side, then you hit it. The rally goes on. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padellife #padelplayer #padelbeginner #padelclub #fairorfault",
    "rev": "24880f5e89",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -764,7 +762,7 @@
    "cover": "weeks/2026-W45/reels/2026-11-08-reel2.cover.jpg",
    "caption": "Watch the ball. Make the call. 🎾\n\nYour serve hits the back glass after the bounce. Fair or fault?\n\nComment your call before the answer 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padelreels #padellife #padelplayer #padelclub #fairorfault",
    "rev": "a2bc428396",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""

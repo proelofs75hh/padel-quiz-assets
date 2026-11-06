@@ -229,18 +229,44 @@ def scene_svg(sc, S):
 
 
 # ---------------------------------------------------------------- gear drawings
-def racket_outline(cx, cy, s, ang=0, holes=True, col=C["paper"], w=6):
-    hp = ("M0 -260 C 120 -260, 160 -170, 160 -90 C 160 -10, 110 40, 50 62 L 26 110 L -26 110 L -50 62 "
-          "C -110 40, -160 -10, -160 -90 C -160 -170, -120 -260, 0 -260 Z")
+RACKET_HEADS = {  # head outlines in a 320 x 372 box (centre x=0, throat at y=62..110)
+    "classic": ("M0 -260 C 120 -260, 160 -170, 160 -90 C 160 -10, 110 40, 50 62 L 26 110 L -26 110 L -50 62 "
+                "C -110 40, -160 -10, -160 -90 C -160 -170, -120 -260, 0 -260 Z"),
+    # diamond: flat-ish top, widest point high up, long straight taper to the throat
+    "diamond": ("M0 -262 C 70 -262, 128 -236, 152 -186 C 166 -158, 162 -128, 150 -96 L 64 52 L 30 110 L -30 110 "
+                "L -64 52 L -150 -96 C -162 -128, -166 -158, -152 -186 C -128 -236, -70 -262, 0 -262 Z"),
+    # round: near-circular head
+    "round": ("M0 -262 C 98 -262, 160 -196, 160 -110 C 160 -30, 110 30, 56 58 L 28 110 L -28 110 L -56 58 "
+              "C -110 30, -160 -30, -160 -110 C -160 -196, -98 -262, 0 -262 Z"),
+}
+HOLE_FIELD = {"classic": lambda xx, yy: (xx / 135) ** 2 + ((yy + 95) / 150) ** 2 < 1,
+              "round": lambda xx, yy: (xx / 132) ** 2 + ((yy + 112) / 132) ** 2 < 1,
+              "diamond": lambda xx, yy: yy < 10 and yy > -228 and abs(xx) < (110 if yy < -100 else 110 - (yy + 100) * 0.72)
+                                        and not (yy < -190 and abs(xx) > 90)}
+
+
+def racket_outline(cx, cy, s, ang=0, holes=True, col=C["paper"], w=6, shape="classic"):
+    shape = shape or "classic"
+    hp = RACKET_HEADS[shape]
     hl = ""
     if holes:
         for yy in range(-210, 20, 42):
-            for xx in range(-112, 113, 42):
-                if (xx / 135) ** 2 + ((yy + 95) / 150) ** 2 < 1:
+            for xx in (range(-112, 113, 42) if shape == "classic" else range(-105, 106, 42)):  # non-classic: symmetric grid
+                if HOLE_FIELD[shape](xx, yy):
                     hl += f'<circle cx="{xx}" cy="{yy}" r="9" fill="none" stroke="{col}" stroke-width="{w*0.6:.1f}"/>'
+    frame = ""
+    if shape != "classic":  # visible frame thickness (inner contour) + bumper band on top
+        frame = (f'<path d="{hp}" fill="none" stroke="{col}" stroke-width="{w*0.6:.1f}" stroke-opacity="0.55" '
+                 f'transform="translate(0 -8) scale(0.9)"/>'
+                 f'<path d="M-90 -250 Q 0 -278, 90 -250" fill="none" stroke="{col}" stroke-width="{w*2.2:.1f}" stroke-linecap="round"/>')
+    grip = ""
+    if shape != "classic":  # grip tape stripes + butt cap
+        grip = "".join(f'<line x1="-24" y1="{yy}" x2="24" y2="{yy-14}" stroke="{col}" stroke-width="{w*0.5:.1f}" stroke-opacity="0.6"/>'
+                       for yy in range(150, 250, 24)) + \
+               f'<rect x="-30" y="246" width="60" height="22" rx="8" fill="none" stroke="{col}" stroke-width="{w}"/>'
     return (f'<g transform="translate({cx} {cy}) rotate({ang}) scale({s})">'
-            f'<path d="{hp}" fill="none" stroke="{col}" stroke-width="{w}" stroke-linejoin="round"/>'
-            f'<path d="M-24 110 L-24 250 Q -24 262 -12 262 L 12 262 Q 24 262 24 250 L 24 110" fill="none" stroke="{col}" stroke-width="{w}"/>'
+            f'<path d="{hp}" fill="none" stroke="{col}" stroke-width="{w}" stroke-linejoin="round"/>{frame}'
+            f'<path d="M-24 110 L-24 250 Q -24 262 -12 262 L 12 262 Q 24 262 24 250 L 24 110" fill="none" stroke="{col}" stroke-width="{w}"/>{grip}'
             f'<path d="M0 30 L 22 70 L -22 70 Z" fill="none" stroke="{col}" stroke-width="{w*0.7:.1f}"/>{hl}</g>')
 
 
@@ -249,11 +275,11 @@ GRID = "".join(f'<line x1="{x}" y1="0" x2="{x}" y2="1350" stroke="{C["paper"]}" 
 BLUEPRINT = f'<svg viewBox="0 0 1080 1350" width="1080" height="1350" aria-hidden="true" style="position:absolute;top:0;left:0">{GRID}</svg>'
 
 
-def gear_drawing(kind, labels):
+def gear_drawing(kind, labels, shape=None):
     P, B = C["paper"], C["ball"]
     num = lambda x, y, t: f'<div style="position:absolute;left:{x}px;top:{y}px;font-family:{MONO};font-size:60px;line-height:1.05;font-weight:700;color:{B}">{t}</div>'
     if kind == "dims":
-        d = (racket_outline(452, 330, 1.05, 0, False) +
+        d = (racket_outline(452, 330, 1.05, 0, bool(shape), shape=shape) +
              f'<line x1="190" y1="58" x2="190" y2="608" stroke="{B}" stroke-width="6"/>'
              f'<path d="M174 76 L190 58 L206 76 M174 590 L190 608 L206 590" fill="none" stroke="{B}" stroke-width="6"/>'
              f'<line x1="284" y1="20" x2="620" y2="20" stroke="{B}" stroke-width="6"/>'
@@ -261,7 +287,7 @@ def gear_drawing(kind, labels):
         return (f'<div style="position:relative">{svgbox(904, 640, d, "Racket with length and width dimension lines")}'
                 + num(0, 270, labels.get("length", "45.5<br>cm")) + num(650, -20, labels.get("width", "26 cm")) + '</div>')
     if kind == "holes":
-        d = (racket_outline(300, 340, 1.0, -10, True) +
+        d = (racket_outline(300, 340, 1.0, -10, True, shape=shape) +
              f'<circle cx="300" cy="230" r="70" fill="none" stroke="{B}" stroke-width="8"/>'
              f'<line x1="352" y1="280" x2="560" y2="430" stroke="{B}" stroke-width="8"/>'
              f'<circle cx="700" cy="470" r="190" fill="none" stroke="{B}" stroke-width="10"/>'
@@ -270,7 +296,7 @@ def gear_drawing(kind, labels):
              f'<circle cx="705" cy="540" r="52" fill="none" stroke="{P}" stroke-width="8"/>')
         return f'<div style="position:relative">{svgbox(904, 680, d, "Racket with a magnifier on its holes")}</div>'
     if kind == "cord":
-        d = (racket_outline(330, 300, 0.95, 0, True) +
+        d = (racket_outline(330, 300, 0.95, 0, True, shape=shape) +
              f'<path d="M330 548 C 330 640, 520 680, 600 600 C 680 520, 560 470, 500 520 C 450 560, 420 600, 334 560" fill="none" stroke="{B}" stroke-width="10" stroke-linecap="round"/>')
         return f'<div style="position:relative">{svgbox(904, 680, d, "Racket with its wrist cord")}</div>'
     raise ValueError(kind)
@@ -323,7 +349,7 @@ def cover(post, s, S, q, fg, hl, top, yellow):
             head(q, 120, fg, 56, 0.96, "position:relative;max-width:820px") + '<div style="margin-top:auto"></div>' + swipe(fg)
     if kind == "drawing":
         f = s if s.get("drawing") else next(x for x in post["slides"] if x["type"] == "fact")
-        return top + head(q, 104, fg) + f'<div style="margin-top:auto">{gear_drawing(f["drawing"], f.get("labels", {}))}</div>' + swipe(fg)
+        return top + head(q, 104, fg) + f'<div style="margin-top:auto">{gear_drawing(f["drawing"], f.get("labels", {}), f.get("racket"))}</div>' + swipe(fg)
     if kind == "digits":
         d = s.get("digits", "?,???")
         return (top + head(q, 104, fg) +
@@ -446,7 +472,7 @@ def build(post, i):
     elif t == "scene":
         body = top + head(fmt(s["text"], hl), 80, fg, 56, 1.0) + f'<div style="margin-top:auto">{scene_svg(s["scene"], S)}</div>' + swipe(fg)
     elif t == "fact":
-        body = top + head(fmt(s["text"], hl), 112, fg) + f'<div style="margin-top:auto">{gear_drawing(s["drawing"], s.get("labels", {}))}</div>' + swipe(fg)
+        body = top + head(fmt(s["text"], hl), 112, fg) + f'<div style="margin-top:auto">{gear_drawing(s["drawing"], s.get("labels", {}), s.get("racket"))}</div>' + swipe(fg)
     elif t == "call" and s.get("q"):  # call slide that repeats the question (lingo), so nobody forgets it
         body = (top + label("Your answer?", acc if not yellow else C["night"], 0).replace("margin:0px 0 0", "margin:auto 0 0")
                 + head(fmt(s["q"], hl), 150, fg, 24, 0.92) + '<div style="height:110px"></div>'

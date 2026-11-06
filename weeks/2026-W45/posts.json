@@ -928,7 +928,7 @@
    "slides": [
     {
      "type": "q",
-     "q": "How many tries do you get for a serve?",
+     "q": "Can your second serve hit the side glass?",
      "claim": "Your first serve: foot on the line. Your second bounces in the box, then hits the side glass. You lose the point."
     },
     {
@@ -978,7 +978,7 @@
      "source": "FIP rules · Rules 6 + 7"
     }
    ],
-   "caption": "Padel serve rule: two tries – but what counts as a miss? 🤔\n\nFirst serve: foot on the line. Second serve: bounce in the box, then side glass. You lose the point. Fair or fault?\n\nWhat's your call – and why? Send this to the partner who always calls the glass.\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Padel serve rule: your first serve is gone – can the second one touch the side glass? 🤔\n\nFirst serve: foot on the line. Second serve: bounce in the box, then side glass. You lose the point. Fair or fault?\n\nWhat's your call – and why? Send this to the partner who always calls the glass.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",
@@ -1233,7 +1233,8 @@
      "labels": {
       "length": "?<br>cm",
       "width": "26 cm"
-     }
+     },
+     "racket": "diamond"
     },
     {
      "type": "claim",
@@ -1246,16 +1247,13 @@
      "source": "FIP rules · Racket"
     }
    ],
-   "caption": "Longer racket, more reach? The rules say stop. 📏\n\nA racket can be up to 50 cm long. Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Padel racket rules: how long can a padel racket be? Longer racket, more reach – but the rules say stop. 📏\n\nA racket can be up to 50 cm long. Fair or fault?\n\nSend this to the friend who always shops for new gear.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelracket",
     "padelgear",
-    "padelquiz",
     "padelrules",
-    "padellife",
-    "padelplayer",
-    "fairorfault"
+    "padelquiz"
    ]
   },
   {
