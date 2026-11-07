@@ -615,10 +615,14 @@
    ],
    "caption": "Tennis habits die hard. 😅\n\nToss up, hit it overhead, just like on the tennis court. Valid serve? Fair or fault?\n\nComment your call 👇\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padellife #padelplayer #padelbeginner #padelclub #fairorfault",
    "rev": "7986e56fc2",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18106605032561466",
+    "permalink": "https://www.instagram.com/p/Dfbi5eLl8IU/",
+    "at": "2026-11-07T07:32:29+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
