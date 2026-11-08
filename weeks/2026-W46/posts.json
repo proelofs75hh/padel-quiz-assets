@@ -69,28 +69,28 @@
    "slot": "2026-11-09T12:30:00",
    "pillar": "gear",
    "series": "gear",
-   "topic_key": "gear.racket-surface-rough",
+   "topic_key": "gear.racket-faces-equal",
    "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pala, punto 7: la superficie de golpeo, igual en sus dos caras, podrá ser lisa o rugosa",
-   "difficulty": "medium",
+   "difficulty": "tricky",
    "slides": [
     {
      "type": "q",
-     "q": "Can a racket face be rough?",
-     "claim": "A racket face must be smooth.",
+     "q": "Can both racket faces differ?",
+     "claim": "A racket can be rough on one face only.",
      "cover": "zoom"
     },
     {
      "type": "claim",
-     "text": "A racket face must be smooth."
+     "text": "A racket can be rough on one face only."
     },
     {
      "type": "verdict",
      "verdict": "FAULT",
-     "line": "Smooth **or rough** –\nboth are allowed.",
+     "line": "Smooth or rough –\n**but both faces the same**.",
      "source": "FIP rules · Racket"
     }
    ],
-   "caption": "Padel racket rules: that sandpaper feel on some rackets – legal or a trick? 🖐️\n\nA racket face must be smooth. Fair or fault? Swipe for the rule.\n\nSend it to the friend who just bought a rough-face racket.\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Padel racket rules: rough faces are legal – but what about a racket with two different sides? 🖐️\n\nA racket can be rough on one face only. Fair or fault? Swipe for the rule.\n\nSend it to the friend who just bought a rough-face racket.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelracket",
@@ -184,8 +184,8 @@
     {
      "type": "guess",
      "bars": [
-      "€64",
-      "€78",
+      "Same as Germany: €45",
+      "€70",
       "€92"
      ]
     },
@@ -455,19 +455,20 @@
       ],
       "figures": [
        {
-        "x": 330,
+        "x": 430,
         "y": 528,
         "pose": "smash"
        }
       ],
       "path": [
-       "M880 120 Q 300 -60, 44 420 Q 250 200, 390 250"
+       "M890 120 Q 380 -160, 190 700 Q 120 560, 44 440 Q 260 270, 492 236"
       ],
       "ball": [
-       390,
-       250
+       492,
+       236
       ],
-      "alt": "Side view: a lob bounces off the back glass and the player hits it overhead"
+      "alt": "Side view: a lob bounces, hits the back glass and comes out; the player hits it overhead",
+      "net": 860
      }
     },
     {
@@ -858,22 +859,28 @@
      "claim": "Its main goal is to slow the game down.",
      "scene": {
       "view": "side",
-      "net": 620,
+      "net": 452,
       "figures": [
        {
-        "x": 360,
+        "x": 200,
         "y": 528,
         "pose": "smash"
        }
       ],
       "path": [
-       "M420 240 Q 640 260, 820 690"
+       "M268 214 Q 660 150, 800 700 Q 830 650, 864 600"
       ],
       "ball": [
-       820,
-       690
+       800,
+       676
       ],
-      "alt": "Side view: a player hits an overhead with slice that dives down on the other side"
+      "alt": "Side view: a player hits an overhead with slice; the ball dives down deep near the opponents' back glass",
+      "glass": [
+       [
+        864,
+        420
+       ]
+      ]
      }
     },
     {

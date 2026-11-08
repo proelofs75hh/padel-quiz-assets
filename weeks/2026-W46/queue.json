@@ -20,7 +20,7 @@
    ],
    "caption": "Padel doubles rule: only one of you gets the ball. 🙅\n\nYou touch it, your partner finishes it over the net. Teamwork – or a lost point?\n\nSend this to the partner who always \"helps\" with your shots.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "eb09db614e",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -31,9 +31,9 @@
    "slot": "2026-11-09T12:30:00",
    "series": "gear",
    "pillar": "gear",
-   "difficulty": "medium",
-   "claim": "A racket face must be smooth.",
-   "question": "Can a racket face be rough?",
+   "difficulty": "tricky",
+   "claim": "A racket can be rough on one face only.",
+   "question": "Can both racket faces differ?",
    "verdict": "FAULT",
    "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pala, punto 7: la superficie de golpeo, igual en sus dos caras, podrá ser lisa o rugosa",
    "images": [
@@ -41,10 +41,10 @@
     "weeks/2026-W46/2026-11-09-noon-2.jpg",
     "weeks/2026-W46/2026-11-09-noon-3.jpg"
    ],
-   "caption": "Padel racket rules: that sandpaper feel on some rackets – legal or a trick? 🖐️\n\nA racket face must be smooth. Fair or fault? Swipe for the rule.\n\nSend it to the friend who just bought a rough-face racket.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelrules",
-   "rev": "d373236610",
+   "caption": "Padel racket rules: rough faces are legal – but what about a racket with two different sides? 🖐️\n\nA racket can be rough on one face only. Fair or fault? Swipe for the rule.\n\nSend it to the friend who just bought a rough-face racket.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelrules",
+   "rev": "384e4040be",
    "status": "pending",
-   "note": "",
+   "note": "Weiss jeder",
    "published": null,
    "error": ""
   },
@@ -66,7 +66,7 @@
    ],
    "caption": "Chiquita in padel: the little shot with a big plan. 🤏\n\nIts main goal is to make the players at the net hit the ball up. Fair or fault?\n\nSend this to your partner before your next match.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
    "rev": "ea7c3dafb3",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -85,7 +85,7 @@
    "cover": "weeks/2026-W46/reels/2026-11-09-reel.cover.jpg",
    "caption": "Padel ball rules: does it have to be yellow? 🎾\n\nWatch, make your call – then send it to the friend who brings the weird balls.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelgear #padelquiz",
    "rev": "7e96b88db2",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -108,9 +108,9 @@
     "weeks/2026-W46/2026-11-10-am-4.jpg"
    ],
    "caption": "Padel prices: think your club is expensive? Look at the USA. 💸\n\nGuess first, then swipe – what does an average booking cost there?\n\nSend it to the friend who complains about court prices.\n\nSource: Global Padel Report 2026 (Playtomic)\n\nPhoto: P-squared Padel / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelclub",
-   "rev": "3d9032fe7f",
+   "rev": "827ddfe5ba",
    "status": "pending",
-   "note": "",
+   "note": "Eine option soll sein: same as in germany (45 €)",
    "published": null,
    "error": ""
   },
@@ -132,7 +132,7 @@
    ],
    "caption": "Padel serve rule: the air shot nobody talks about. 😅\n\nYou swing, you miss the ball completely. Do you get a free redo?\n\nSend this to the partner who \"never\" misses a serve.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelserve #padelquiz",
    "rev": "61694394af",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -156,7 +156,7 @@
    ],
    "caption": "Padel outside play: the most spectacular rule in the game. 🏃‍♂️\n\nSmash out over the fence – the pro sprints out the door and plays it back. Legal?\n\nEver tried it at your club? Send this to your Saturday group.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelpro #padelquiz",
    "rev": "bb469610b3",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -175,7 +175,7 @@
    "cover": "weeks/2026-W46/reels/2026-11-10-reel.cover.jpg",
    "caption": "Padel gear market: all those new rackets add up. 💰\n\nGuess the number before it stops – and send it to the friend with five rackets in the bag.\n\nSource: Global Padel Report 2026 (Playtomic)\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelgear #padelracket #padelquiz",
    "rev": "606790bb44",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -198,7 +198,7 @@
    ],
    "caption": "Padel court rules: lobs need space. 🏟️\n\nA roof 5 m above the court is allowed. Fair or fault?\n\nSend this to the friend who keeps hitting the lights with his lob.\n\nPhoto: Oskar Hagberg / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelcourt #padelquiz",
    "rev": "1f9fd61cea",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -222,7 +222,7 @@
    ],
    "caption": "Padel serve rule: the sneaky quick serve. ⚡\n\nThe receiver isn't ready and doesn't move. Is that your point?\n\nSend this to the friend who serves before you've even turned around.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelserve #padelquiz",
    "rev": "38e743870b",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -244,9 +244,9 @@
     "weeks/2026-W46/2026-11-11-pm-3.jpg"
    ],
    "caption": "Bajada in padel: when their lob becomes your weapon. 💥\n\nIts main goal is to play a safe lob back. Fair or fault?\n\nSend this to the partner who always lobs back.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
-   "rev": "d5b964b22a",
+   "rev": "eadadac7b9",
    "status": "pending",
-   "note": "",
+   "note": "Bild nicht gut",
    "published": null,
    "error": ""
   },
@@ -264,7 +264,7 @@
    "cover": "weeks/2026-W46/reels/2026-11-11-reel.cover.jpg",
    "caption": "Padel break rules: how long can you sip your water? ⏱️\n\nWatch and make your call. Send it to the partner who needs three minutes at every switch.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "2943880485",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -288,7 +288,7 @@
    ],
    "caption": "Padel in France: not Spain, not Italy – France built the most new courts in 2025. 🇫🇷\n\nGuess first, then swipe.\n\nSend it to your friend who says padel is just a Spanish thing.\n\nSources: Global Padel Report 2026 (Playtomic), FIP World Padel Report 2026\n\nPhoto: Bruno Vaccaro Vercellino / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padelfrance #padellife",
    "rev": "8d4725066c",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -312,7 +312,7 @@
    ],
    "caption": "Padel indoor rule: the smash that hits the roof. 🏢\n\nIt bounces on their side, then hits the ceiling. Whose point is it?\n\nWhat's your call – and why? Send it to your indoor crew.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "83bed675ae",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -335,7 +335,7 @@
    ],
    "caption": "Padel racket rules: the wrist cord has rules too. 🧵\n\nThe wrist cord must not stretch. Fair or fault?\n\nSend this to the friend who swapped theirs for a bungee.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelrules",
    "rev": "537c6fa4fd",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -354,7 +354,7 @@
    "cover": "weeks/2026-W46/reels/2026-11-12-reel.cover.jpg",
    "caption": "Padel court lines: how far back is the service line? 📏\n\nGuess before the bar stops – then send it to the friend who always serves from too far back.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelcourt #padelquiz",
    "rev": "471d9e0f08",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -378,7 +378,7 @@
    ],
    "caption": "Padel net rule: timing is everything. ⏱️\n\nWinning smash, two bounces on their side – then the pro crashes into the net. Point lost?\n\nSend this to the partner who always ends up in the net.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelpro #padelquiz",
    "rev": "8583b97dc3",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -402,7 +402,7 @@
    ],
    "caption": "Padel serve rule: the one that surprises everybody. 😳\n\nYour serve hits the receiver's partner at the net before the bounce. Whose point?\n\nSend this to the partner who stands way too close to the net.\n\nPhoto: cal gao / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelserve #padelquiz",
    "rev": "513cff422b",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -426,7 +426,7 @@
    ],
    "caption": "Padel growth: the 2028 forecast is already here? 📈\n\nGuess first, then swipe. Two reports, two ways of counting – both say padel keeps growing.\n\nSend it to the friend who still can't get a court on Sunday.\n\nSources: Global Padel Report 2026 (Playtomic), FIP World Padel Report 2026\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelclub",
    "rev": "c648c1096f",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -445,7 +445,7 @@
    "cover": "weeks/2026-W46/reels/2026-11-13-reel.cover.jpg",
    "caption": "Padel in Europe: who has more courts – Sweden or the Netherlands? 🇸🇪🇳🇱\n\nMake your call, then send it to your friends up north.\n\nSource: FIP World Padel Report 2025\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelclub",
    "rev": "ea6a3c39b4",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -468,7 +468,7 @@
    ],
    "caption": "Padel net rules: aim for the middle – there's a reason. 🎯\n\nThe net is higher at the ends than in the middle. Fair or fault?\n\nSend this to the partner who always goes down the line.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelgear #padeltips",
    "rev": "1986ab4f8d",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -490,9 +490,9 @@
     "weeks/2026-W46/2026-11-14-noon-3.jpg"
    ],
    "caption": "Víbora in padel: the bandeja's more dangerous cousin. 🐍\n\nIts main goal is to slow the game down. Fair or fault?\n\nSend this to the friend who calls every overhead a víbora.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
-   "rev": "c08b245fdd",
+   "rev": "1b3324f279",
    "status": "pending",
-   "note": "",
+   "note": "Bild passt nicht. Viborabgeht ans ende des platzes nicht hinters netz",
    "published": null,
    "error": ""
   },
@@ -515,7 +515,7 @@
    ],
    "caption": "Padel return rule: left or right – and for how long? 🔁\n\nYou can only switch receiving sides at the start of a new set. Fair or fault?\n\nSend this to the partner who wants to swap after every lost game.\n\nPhoto: Bruno Vaccaro Vercellino / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "2f787cd1c4",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -534,7 +534,7 @@
    "cover": "weeks/2026-W46/reels/2026-11-14-reel.cover.jpg",
    "caption": "Padel serve rule: where does the server's partner have to stand? 🧍\n\nWatch and make your call – then send it to your doubles partner.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelserve #padelquiz",
    "rev": "a025f6a781",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -557,7 +557,7 @@
    ],
    "caption": "Padel net rule: the backspin that comes back. 🌀\n\nThe ball bounces and spins back to the other side. Can the pro reach over the net and play it?\n\nEver seen this in your club? Send it to the partner who loves backspin.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelpro #padelquiz",
    "rev": "1f272b7729",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -580,7 +580,7 @@
    ],
    "caption": "Padel racket rules: even the grip has limits. ✋\n\nA handle can be up to 5 cm thick. Fair or fault?\n\nSend it to the friend with three overgrips on their racket.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelrules",
    "rev": "8c9a817f7f",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -604,7 +604,7 @@
    ],
    "caption": "Padel serve order: \"wait – whose serve is it?\" 🤷\n\nTwo points in, you notice the wrong player is serving. Replay or keep the score?\n\nSend this to your Sunday doubles group.\n\nPhoto: Bruno Vaccaro Vercellino / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelserve #padelquiz",
    "rev": "8b5ebc3e16",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -623,7 +623,7 @@
    "cover": "weeks/2026-W46/reels/2026-11-15-reel.cover.jpg",
    "caption": "Padel court lines: thinner than you think? 📐\n\nWatch and make your call. Send it to the friend who swears the ball was on the line.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelcourt #padelquiz",
    "rev": "d9f535a3dd",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
