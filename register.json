@@ -743,6 +743,258 @@
    "claim": "Your serve hits the back glass after the bounce.",
    "verdict": "FAIR",
    "format": "reel"
+  },
+  {
+   "id": "2026-11-09-am",
+   "date": "2026-11-09",
+   "pillar": "rules",
+   "topic_key": "rule.both-partners-hit",
+   "claim": "You touch the ball, then your partner hits it over the net. The rally goes on.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-09-noon",
+   "date": "2026-11-09",
+   "pillar": "gear",
+   "topic_key": "gear.racket-surface-rough",
+   "claim": "A racket face must be smooth.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-09-pm",
+   "date": "2026-11-09",
+   "pillar": "lingo",
+   "topic_key": "lingo.chiquita",
+   "claim": "Its main goal is to make the players at the net hit the ball up.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-10-am",
+   "date": "2026-11-10",
+   "pillar": "market",
+   "topic_key": "market.usa-booking-price",
+   "claim": "An average padel booking in the USA costs €92.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-10-noon",
+   "date": "2026-11-10",
+   "pillar": "rules",
+   "topic_key": "rule.serve-swing-and-miss",
+   "claim": "You swing at your serve and miss the ball. You get the same serve again.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-10-pm",
+   "date": "2026-11-10",
+   "pillar": "pros",
+   "topic_key": "pros.play-outside-safety-zone",
+   "claim": "The smash bounces, then flies out over the side fence. The pro may run out and play it back.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-11-am",
+   "date": "2026-11-11",
+   "pillar": "gear",
+   "topic_key": "gear.min-ceiling-height",
+   "claim": "A roof 5 m above the court is allowed.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-11-noon",
+   "date": "2026-11-11",
+   "pillar": "rules",
+   "topic_key": "rule.receiver-not-ready",
+   "claim": "You serve while the receiver isn't ready and doesn't try to return it. You win the point.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-11-pm",
+   "date": "2026-11-11",
+   "pillar": "lingo",
+   "topic_key": "lingo.bajada",
+   "claim": "Its main goal is to play a safe lob back.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-12-am",
+   "date": "2026-11-12",
+   "pillar": "market",
+   "topic_key": "market.france-new-courts-2025",
+   "claim": "France built 1,142 new padel courts in 2025.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-12-noon",
+   "date": "2026-11-12",
+   "pillar": "rules",
+   "topic_key": "rule.ceiling-after-bounce",
+   "claim": "Your shot bounces on their side, then hits the ceiling. You win the point.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-12-pm",
+   "date": "2026-11-12",
+   "pillar": "gear",
+   "topic_key": "gear.wrist-cord-non-elastic",
+   "claim": "The wrist cord must not stretch.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-13-am",
+   "date": "2026-11-13",
+   "pillar": "pros",
+   "topic_key": "pros.net-touch-after-point",
+   "claim": "The smash bounces twice on their side. Then the pro touches the net. He loses the point.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-13-noon",
+   "date": "2026-11-13",
+   "pillar": "rules",
+   "topic_key": "rule.serve-hits-receiver-partner",
+   "claim": "Your serve flies over the net and hits the receiver's partner. You win the point.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-13-pm",
+   "date": "2026-11-13",
+   "pillar": "market",
+   "topic_key": "market.courts-2028-forecast",
+   "claim": "About 91,000 padel courts are expected worldwide by 2028.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-14-am",
+   "date": "2026-11-14",
+   "pillar": "gear",
+   "topic_key": "gear.net-height-ends",
+   "claim": "The net is higher at the ends than in the middle.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-14-noon",
+   "date": "2026-11-14",
+   "pillar": "lingo",
+   "topic_key": "lingo.vibora",
+   "claim": "Its main goal is to slow the game down.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-14-pm",
+   "date": "2026-11-14",
+   "pillar": "rules",
+   "topic_key": "rule.receiving-order-per-set",
+   "claim": "You can only switch receiving sides at the start of a new set.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-15-am",
+   "date": "2026-11-15",
+   "pillar": "pros",
+   "topic_key": "pros.reach-over-net-spin-back",
+   "claim": "The drop shot bounces on his side and spins back over the net. He reaches over and hits it without touching the net. That's allowed.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-15-noon",
+   "date": "2026-11-15",
+   "pillar": "gear",
+   "topic_key": "gear.handle-max-thickness",
+   "claim": "A handle can be up to 5 cm thick.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-15-pm",
+   "date": "2026-11-15",
+   "pillar": "rules",
+   "topic_key": "rule.wrong-server-points-count",
+   "claim": "After two points you notice the wrong player is serving. Those two points are replayed.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-09-reel",
+   "date": "2026-11-09",
+   "pillar": "gear",
+   "topic_key": "gear.ball-colour",
+   "claim": "A padel ball must be yellow.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-10-reel",
+   "date": "2026-11-10",
+   "pillar": "market",
+   "topic_key": "market.gear-market-2025",
+   "claim": "Padel gear sold for more than €500 million in 2025.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-11-reel",
+   "date": "2026-11-11",
+   "pillar": "rules",
+   "topic_key": "rule.change-ends-break-times",
+   "claim": "You get 90 seconds every time you switch sides.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-12-reel",
+   "date": "2026-11-12",
+   "pillar": "gear",
+   "topic_key": "gear.service-line-distance",
+   "claim": "The service line is more than 7 m from the net.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-13-reel",
+   "date": "2026-11-13",
+   "pillar": "market",
+   "topic_key": "market.sweden-vs-netherlands-courts",
+   "claim": "Sweden has more padel courts than the Netherlands.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-14-reel",
+   "date": "2026-11-14",
+   "pillar": "rules",
+   "topic_key": "rule.partners-stand-anywhere",
+   "claim": "The server's partner can stand anywhere on their side.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-15-reel",
+   "date": "2026-11-15",
+   "pillar": "gear",
+   "topic_key": "gear.line-width",
+   "claim": "The lines on a padel court are 10 cm wide.",
+   "verdict": "FAULT",
+   "format": "reel"
   }
  ]
 }
