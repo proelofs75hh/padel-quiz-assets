@@ -748,10 +748,14 @@
    ],
    "caption": "Padel racket rules: how long can a padel racket be? Longer racket, more reach – but the rules say stop. 📏\n\nA racket can be up to 50 cm long. Fair or fault?\n\nSend this to the friend who always shops for new gear.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelracket #padelgear #padelrules #padelquiz",
    "rev": "0edd871da7",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "17997250761112591",
+    "permalink": "https://www.instagram.com/p/DfeqCaYl8e0/",
+    "at": "2026-11-08T12:32:44+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
