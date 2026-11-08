@@ -170,7 +170,7 @@ def bubble(x, y, w, h, text, tail_x, tail_dir, bg, fg, size=64):
 def scene_svg(sc, S):
     """Side view ("side") or top view ("top"). Coordinates are in the 904 x 720 box.
 
-    side: ground (y), glass [[x, top]], fence [[x, top, bottom]], net x, figures [{x, y, pose, mirror, scale, color}],
+    side: ground (y), ceiling (y, optional roof line), glass [[x, top]], fence [[x, top, bottom]], net x, figures [{x, y, pose, mirror, scale, color}],
           path [[x,y], ...] or quad ["M..."], ball [x,y], bounce [x]
     top:  court box, net, glass on back walls; path points, ball, marks [[x,y]], box (highlight service box)
     """
@@ -186,6 +186,10 @@ def scene_svg(sc, S):
             o += f'<rect x="{x}" y="{top}" width="40" height="{bot-top}" fill="none" stroke="{fg}" stroke-width="5"/>'
             o += "".join(f'<line x1="{x}" y1="{yy}" x2="{x+40}" y2="{yy+20}" stroke="{fg}" stroke-width="3"/>' for yy in range(top, bot - 10, 20))
         o += f'<line x1="0" y1="{g}" x2="904" y2="{g}" stroke="{fg}" stroke-width="8"/>'
+        if "ceiling" in sc:  # optional roof line (indoor court), y of the ceiling
+            cy = sc["ceiling"]
+            o += f'<line x1="0" y1="{cy}" x2="904" y2="{cy}" stroke="{fg}" stroke-width="8"/>'
+            o += "".join(f'<line x1="{xx}" y1="{cy}" x2="{xx+24}" y2="{cy-24}" stroke="{fg}" stroke-width="4"/>' for xx in range(0, 904, 36))
         if "net" in sc:
             nx = sc["net"]
             o += f'<rect x="{nx-5}" y="{g-128}" width="10" height="128" fill="{fg if S["bg"] == C["ball"] else C["chalk"]}"/>'

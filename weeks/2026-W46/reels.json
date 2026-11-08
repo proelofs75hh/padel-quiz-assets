@@ -1,0 +1,214 @@
+{
+ "reels": [
+  {
+   "id": "2026-11-09-reel",
+   "slot": "2026-11-09T20:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.ball-colour",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pelota, punto 1: de color blanco, amarillo o cualquier otro color que ofrezca un contraste apropiado",
+   "caption": "Padel ball rules: does it have to be yellow? 🎾\n\nWatch, make your call – then send it to the friend who brings the weird balls.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelgear",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Gear",
+    "claim": "A padel ball must be yellow.",
+    "verdict": "FAULT",
+    "pill": "White is fine too",
+    "line": "**White or yellow** – or any\ncolour that stands out\non the court.",
+    "source": "FIP rules · Ball"
+   }
+  },
+  {
+   "id": "2026-11-10-reel",
+   "slot": "2026-11-10T20:00:00",
+   "pillar": "market",
+   "topic_key": "market.gear-market-2025",
+   "fact_source": "Global Padel Report 2026 (Playtomic + Strategy&/PwC, press release 28 May 2026): equipment market €598M in 2025, 34% CAGR since 2019",
+   "caption": "Padel gear market: all those new rackets add up. 💰\n\nGuess the number before it stops – and send it to the friend with five rackets in the bag.\n\nSource: Global Padel Report 2026 (Playtomic)\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelgear",
+    "padelracket",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "guess_number",
+    "label": "Market",
+    "claim": "Padel gear sold for more than €500 million in 2025.",
+    "verdict": "FAIR",
+    "pill": "Even more",
+    "line": "**€598 million**\nfor rackets, balls & more.",
+    "number": 598,
+    "decimals": 0,
+    "marker": 500,
+    "unit": "million € padel gear (2025)",
+    "marker_label": "claim",
+    "source": "Global Padel Report 26"
+   }
+  },
+  {
+   "id": "2026-11-11-reel",
+   "slot": "2026-11-11T20:00:00",
+   "pillar": "rules",
+   "topic_key": "rule.change-ends-break-times",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 2.4 (20 s entre puntos), 2.5 (90 s al cambiar de lado; después del primer juego de cada set y durante un tie-break sin descanso), 2.6 (120 s al final de cada set)",
+   "caption": "Padel break rules: how long can you sip your water? ⏱️\n\nWatch and make your call. Send it to the partner who needs three minutes at every switch.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padeltips"
+   ],
+   "spec": {
+    "format": "checklist",
+    "label": "Rules",
+    "claim": "You get 90 seconds every time you switch sides.",
+    "verdict": "FAULT",
+    "pill": "Not always",
+    "line": "After game 1 there is\n**no break** – play on.",
+    "source": "FIP rules · Rule 2",
+    "rows": [
+     [
+      "Between points",
+      "20 s",
+      true
+     ],
+     [
+      "Switch sides",
+      "90 s",
+      true
+     ],
+     [
+      "End of a set",
+      "120 s",
+      true
+     ],
+     [
+      "After game 1",
+      "No break",
+      false
+     ]
+    ]
+   }
+  },
+  {
+   "id": "2026-11-12-reel",
+   "slot": "2026-11-12T20:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.service-line-distance",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pista: a una distancia de 6,95 m [de la red] están las líneas de servicio",
+   "caption": "Padel court lines: how far back is the service line? 📏\n\nGuess before the bar stops – then send it to the friend who always serves from too far back.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelcourt",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "guess_number",
+    "label": "Gear",
+    "claim": "The service line is more than 7 m from the net.",
+    "verdict": "FAULT",
+    "pill": "Just under",
+    "line": "**6.95 m** – just\nshort of 7.",
+    "number": 6.95,
+    "decimals": 2,
+    "marker": 7,
+    "unit": "metres from the net",
+    "marker_label": "claim",
+    "source": "FIP rules · Court"
+   }
+  },
+  {
+   "id": "2026-11-13-reel",
+   "slot": "2026-11-13T20:00:00",
+   "pillar": "market",
+   "topic_key": "market.sweden-vs-netherlands-courts",
+   "fact_source": "FIP World Padel Report 2025 (mid-2025, via sgbonline.com + studypadel.com): Sweden 4,220 courts / 1,200 clubs; Netherlands 3,570 courts / 766 clubs",
+   "caption": "Padel in Europe: who has more courts – Sweden or the Netherlands? 🇸🇪🇳🇱\n\nMake your call, then send it to your friends up north.\n\nSource: FIP World Padel Report 2025\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelquiz",
+    "padellife",
+    "padelclub"
+   ],
+   "spec": {
+    "format": "compare",
+    "label": "Market",
+    "claim": "Sweden has more padel courts than the Netherlands.",
+    "verdict": "FAIR",
+    "pill": "Sweden leads",
+    "cols": [
+     "Sweden",
+     "Netherl."
+    ],
+    "rows": [
+     [
+      "Clubs",
+      "1,200",
+      "766"
+     ],
+     [
+      "Courts",
+      "4,220",
+      "3,570",
+      true
+     ]
+    ],
+    "line": "**4,220** vs 3,570 courts\n(FIP, mid-2025).",
+    "source": "FIP World Padel Report 2025"
+   }
+  },
+  {
+   "id": "2026-11-14-reel",
+   "slot": "2026-11-14T20:00:00",
+   "pillar": "rules",
+   "topic_key": "rule.partners-stand-anywhere",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 3.2: el jugador que recibe puede colocarse en cualquier lugar de su campo, al igual que su compañero y el compañero del servidor",
+   "caption": "Padel serve rule: where does the server's partner have to stand? 🧍\n\nWatch and make your call – then send it to your doubles partner.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelserve",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Rules",
+    "claim": "The server's partner can stand anywhere on their side.",
+    "verdict": "FAIR",
+    "pill": "Anywhere",
+    "line": "Server's partner, receiver\nand receiver's partner:\n**anywhere** on their side.",
+    "source": "FIP rules · Rule 3"
+   }
+  },
+  {
+   "id": "2026-11-15-reel",
+   "slot": "2026-11-15T20:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.line-width",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pista: todas las líneas tienen un ancho de 5 cm",
+   "caption": "Padel court lines: thinner than you think? 📐\n\nWatch and make your call. Send it to the friend who swears the ball was on the line.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelcourt",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Gear",
+    "claim": "The lines on a padel court are 10 cm wide.",
+    "verdict": "FAULT",
+    "pill": "Only 5 cm",
+    "line": "All lines are\n**5 cm** wide.",
+    "source": "FIP rules · Court"
+   }
+  }
+ ]
+}
