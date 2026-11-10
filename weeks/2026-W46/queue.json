@@ -152,10 +152,14 @@
    ],
    "caption": "Padel serve rule: the air shot nobody talks about. 😅\n\nYou swing, you miss the ball completely. Do you get a free redo?\n\nSend this to the partner who \"never\" misses a serve.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelserve #padelquiz",
    "rev": "61694394af",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18097593350147571",
+    "permalink": "https://www.instagram.com/p/DfjzjUZl10l/",
+    "at": "2026-11-10T12:32:06+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
