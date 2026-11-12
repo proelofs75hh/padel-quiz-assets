@@ -415,10 +415,14 @@
    "cover": "weeks/2026-W46/reels/2026-11-12-reel.cover.jpg",
    "caption": "Padel court lines: how far back is the service line? 📏\n\nGuess before the bar stops – then send it to the friend who always serves from too far back.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelcourt #padelquiz",
    "rev": "471d9e0f08",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "container 18157099714515730 status ERROR",
+   "published": {
+    "media_id": "18079102886764146",
+    "permalink": "https://www.instagram.com/reel/DfpwvEAEycX/",
+    "at": "2026-11-12T20:03:04+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
