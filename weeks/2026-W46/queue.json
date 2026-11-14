@@ -603,10 +603,14 @@
    ],
    "caption": "Padel return rule: left or right – and for how long? 🔁\n\nYou can only switch receiving sides at the start of a new set. Fair or fault?\n\nSend this to the partner who wants to swap after every lost game.\n\nPhoto: Bruno Vaccaro Vercellino / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "2f787cd1c4",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "17957439027038588",
+    "permalink": "https://www.instagram.com/p/DfupC6Nlz52/",
+    "at": "2026-11-14T17:31:45+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
