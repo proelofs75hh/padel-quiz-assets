@@ -574,10 +574,14 @@
    ],
    "caption": "Víbora in padel: the bandeja's more dangerous cousin. 🐍\n\nIts main goal is to slow the game down. Fair or fault?\n\nSend this to the friend who calls every overhead a víbora.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
    "rev": "1b3324f279",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "17907614079356791",
+    "permalink": "https://www.instagram.com/p/DfuGuvaIH-h/",
+    "at": "2026-11-14T12:32:04+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
