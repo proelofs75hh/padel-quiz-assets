@@ -1,0 +1,180 @@
+{
+ "reels": [
+  {
+   "id": "2026-11-16-reel",
+   "slot": "2026-11-16T20:00:00",
+   "pillar": "rules",
+   "topic_key": "rule.warmup-length",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 2.2: el peloteo de cortesía con los contrarios, será de 3 minutos y obligatorio (hasta 2025: 5 minutos)",
+   "caption": "Padel warm-up rule: shorter than you think. ⏱️\n\nGuess the number before it stops – then send it to the partner who needs ages to warm up.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padeltips"
+   ],
+   "spec": {
+    "format": "guess_number",
+    "label": "Rules",
+    "claim": "The warm-up before a match lasts 5 minutes.",
+    "verdict": "FAULT",
+    "pill": "Only 3 min",
+    "line": "Since 2026: **3 minutes**\nof warm-up.",
+    "number": 3,
+    "decimals": 0,
+    "marker": 5,
+    "unit": "minutes of warm-up",
+    "marker_label": "claim",
+    "source": "FIP rules · Rule 2"
+   }
+  },
+  {
+   "id": "2026-11-17-reel",
+   "slot": "2026-11-17T20:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.net-length",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La red, punto 1: la red tiene una longitud de 10 metros y una altura de 0,88 metros en su centro",
+   "caption": "Padel net size: how long is it? 🥅\n\nWatch and make your call – then send it to the friend who always hits the net.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelcourt",
+    "padelgear",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Gear",
+    "claim": "The padel net is exactly 10 m long.",
+    "verdict": "FAIR",
+    "pill": "10 m",
+    "line": "**10 m** long,\n88 cm high in the middle.",
+    "source": "FIP rules · Net"
+   }
+  },
+  {
+   "id": "2026-11-18-reel",
+   "slot": "2026-11-18T20:00:00",
+   "pillar": "market",
+   "topic_key": "market.fip-tournaments-2026",
+   "fact_source": "FIP World Padel Report 2026 (Oct 2026, via padelspeak.com): '434 FIP tournaments are confirmed in 2026 across 62 countries, up from 290 tournaments in 50 countries in 2025'; FIP World Padel Report 2025: 182 (2024) → 290 (2025)",
+   "caption": "Padel tournaments worldwide: how busy is the FIP calendar? 🏆\n\nGuess the number before it stops – and send it to the friend who follows every tour.\n\nSource: FIP World Padel Report 2026\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelquiz",
+    "padellife",
+    "padelworld"
+   ],
+   "spec": {
+    "format": "guess_number",
+    "label": "Market",
+    "claim": "More than 400 FIP tournaments are on the 2026 calendar.",
+    "verdict": "FAIR",
+    "pill": "434",
+    "line": "**434** FIP tournaments\nin 62 countries.",
+    "number": 434,
+    "decimals": 0,
+    "marker": 400,
+    "unit": "FIP tournaments in 2026",
+    "marker_label": "claim",
+    "source": "FIP World Padel Report 2026"
+   }
+  },
+  {
+   "id": "2026-11-19-reel",
+   "slot": "2026-11-19T20:00:00",
+   "pillar": "rules",
+   "topic_key": "rule.no-drinks-between-points",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 2.5: … No se podrá ingerir líquidos ni alimentos entre puntos; Regla 2.4: entre puntos el tiempo máximo permitido es de veinte (20) segundos",
+   "caption": "Padel break rule: thirsty between points? 🥤\n\nWatch and make your call – then send it to the partner with the bottle always in hand.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padeltips"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Rules",
+    "claim": "You may drink between points.",
+    "verdict": "FAULT",
+    "pill": "Not allowed",
+    "line": "No drinks or food\n**between points**.",
+    "source": "FIP rules · Rule 2"
+   }
+  },
+  {
+   "id": "2026-11-20-reel",
+   "slot": "2026-11-20T20:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.fence-mesh-square",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Cerramientos – malla metálica: deberá será cuadrada y electrosoldada (hasta 2025 también romboidal), apertura entre 5 y 7,08 cm",
+   "caption": "Padel court fence: what shape are the holes? 🔲\n\nWatch and make your call – then send it to the friend who has stared at that fence a lot.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelcourt",
+    "padelgear",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Gear",
+    "claim": "The fence holes on a padel court must be square.",
+    "verdict": "FAIR",
+    "pill": "Square",
+    "line": "Since 2026: **square**\nand welded – 5 to 7 cm.",
+    "source": "FIP rules · Court"
+   }
+  },
+  {
+   "id": "2026-11-21-reel",
+   "slot": "2026-11-21T20:00:00",
+   "pillar": "market",
+   "topic_key": "market.uk-growth-rate",
+   "fact_source": "Global Padel Report 2026 (Playtomic + Strategy&/PwC, press release May 2026): 'The UK has grown at an 86% compound annual growth rate since 2021'. FIP World Padel Report 2026 only gives Google search growth (UK +90%) – different measure, no conflict",
+   "caption": "Padel in the UK: the fastest climb in Europe? 📈\n\nGuess the number before it stops – then send it to your British padel friends.\n\nSource: Global Padel Report 2026 (Playtomic)\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelquiz",
+    "padellife",
+    "padelclub"
+   ],
+   "spec": {
+    "format": "guess_number",
+    "label": "Market",
+    "claim": "UK padel has grown more than 50% a year since 2021.",
+    "verdict": "FAIR",
+    "pill": "86% a year",
+    "line": "**86%** growth per year\nsince 2021.",
+    "number": 86,
+    "decimals": 0,
+    "marker": 50,
+    "unit": "% growth per year (UK)",
+    "marker_label": "claim",
+    "source": "Global Padel Report 26"
+   }
+  },
+  {
+   "id": "2026-11-22-reel",
+   "slot": "2026-11-22T20:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.balls-per-match",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 17.1: el número de pelotas a utilizar en el juego (2 o 3)",
+   "caption": "Padel match rules: how many balls are in play? 🎾\n\nWatch and make your call – then send it to the partner who always grabs a fresh can.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelball",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Gear",
+    "claim": "An official match is played with 4 balls.",
+    "verdict": "FAULT",
+    "pill": "2 or 3",
+    "line": "The rules say\n**2 or 3** balls.",
+    "source": "FIP rules · Rule 17"
+   }
+  }
+ ]
+}
