@@ -1037,7 +1037,7 @@
    "date": "2026-11-17",
    "pillar": "gear",
    "topic_key": "gear.ball-high-altitude",
-   "claim": "Above 1,000 m, the rules allow balls that bounce lower.",
+   "claim": "Above 1,000 m, the rules allow a ball with less bounce.",
    "verdict": "FAIR",
    "format": "carousel"
   },
@@ -1072,8 +1072,8 @@
    "id": "2026-11-18-pm",
    "date": "2026-11-18",
    "pillar": "pros",
-   "topic_key": "pros.volley-into-their-fence",
-   "claim": "The pro's volley hits their fence before it bounces. The pro wins the point.",
+   "topic_key": "pros.own-glass-then-own-fence",
+   "claim": "His shot hits his own back glass, then his own fence, then goes over the net. The rally goes on.",
    "verdict": "FAULT",
    "format": "carousel"
   },
@@ -1126,8 +1126,8 @@
    "id": "2026-11-20-pm",
    "date": "2026-11-20",
    "pillar": "pros",
-   "topic_key": "pros.own-side-glass-escape",
-   "claim": "In the corner, the pro hits the ball into his own side glass and it flies over the net. The rally goes on.",
+   "topic_key": "pros.return-off-fence-after-bounce",
+   "claim": "The smash bounces on his side, then hits his fence. He can still return it.",
    "verdict": "FAIR",
    "format": "carousel"
   },
@@ -1135,8 +1135,8 @@
    "id": "2026-11-21-am",
    "date": "2026-11-21",
    "pillar": "rules",
-   "topic_key": "rule.own-floor-then-over",
-   "claim": "Your shot hits the floor on your side, then bounces over the net. The rally goes on.",
+   "topic_key": "rule.ball-hits-hand-on-grip",
+   "claim": "Their shot hits your hand on the grip, then goes back over the net. The rally goes on.",
    "verdict": "FAULT",
    "format": "carousel"
   },

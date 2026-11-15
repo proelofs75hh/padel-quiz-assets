@@ -244,13 +244,13 @@
    "slides": [
     {
      "type": "q",
-     "q": "Do padel balls change high in the mountains?",
-     "claim": "Above 1,000 m, the rules allow balls that bounce lower.",
+     "q": "Is there a special padel ball for the mountains?",
+     "claim": "Above 1,000 m, the rules allow a ball with less bounce.",
      "cover": "versus"
     },
     {
      "type": "claim",
-     "text": "Above 1,000 m, the rules allow balls that bounce lower."
+     "text": "Above 1,000 m, the rules allow a ball with less bounce."
     },
     {
      "type": "verdict",
@@ -259,7 +259,7 @@
      "source": "FIP rules · Ball"
     }
    ],
-   "caption": "Padel ball rules for the mountains: thin air, fast balls. 🏔️\n\nAbove 1,000 m the rules allow a ball with less bounce. Fair or fault?\n\nSend this to the friend planning a padel ski trip.\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Padel ball rules at altitude: thin air, fast balls. 🏔️\n\nHigh in the mountains, do you play with a different ball? Make your call before you swipe.\n\nSend this to the friend planning a padel ski trip.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelball",
@@ -447,58 +447,58 @@
    "slot": "2026-11-18T17:30:00",
    "pillar": "pros",
    "series": "pros",
-   "topic_key": "pros.volley-into-their-fence",
-   "difficulty": "easy",
-   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.g: devolver la pelota sin bote previo y que golpee cualquiera de las paredes del campo contrario, la malla metálica … – punto perdido",
+   "topic_key": "pros.own-glass-then-own-fence",
+   "difficulty": "tricky",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.l: perderá el punto la pareja cuyo jugador … la pelota toca alguna de las mallas metálicas o terreno de su propio campo (las paredes de cristal propias no figuran)",
    "slides": [
     {
      "type": "q",
-     "q": "Can a pro volley the ball straight into their fence?",
-     "claim": "The pro's volley hits their fence before it bounces. The pro wins the point.",
-     "figure": "reach"
+     "q": "Can a pro play it off his glass, then his fence?",
+     "claim": "His shot hits his own back glass, then his own fence, then goes over the net. The rally goes on.",
+     "figure": "run"
     },
     {
      "type": "scene",
-     "text": "The pro's volley hits their fence before it bounces.",
+     "text": "His shot hits his back glass, then his fence – then goes over.",
      "scene": {
-      "view": "side",
-      "net": 300,
-      "fence": [
+      "view": "top",
+      "path": [
        [
-        850,
-        140,
-        700
+        500,
+        630
+       ],
+       [
+        560,
+        704
+       ],
+       [
+        646,
+        500
+       ],
+       [
+        430,
+        190
        ]
       ],
-      "figures": [
-       {
-        "x": 200,
-        "y": 528,
-        "pose": "reach"
-       }
-      ],
-      "path": [
-       "M280 420 Q 560 260, 846 400"
-      ],
       "ball": [
-       826,
-       400
+       430,
+       190
       ],
-      "alt": "Side view: a volley flies over the net and straight into the fence on the other side"
+      "alt": "Court from above: the player's shot hits his own back glass, then his own side fence, then flies over the net"
      }
     },
     {
      "type": "claim",
-     "text": "The pro wins the point."
+     "text": "The rally goes on."
     },
     {
      "type": "verdict",
      "verdict": "FAULT",
-     "line": "Their fence before the bounce:\n**point lost**.",
+     "line": "Own glass is fine –\n**own fence** loses the point.",
      "source": "FIP rules · Rule 13"
     }
    ],
-   "caption": "Padel volley rule: power isn't everything. 💪\n\nA pro volley flies straight into their fence – no bounce. Winner?\n\nSend this to the partner who volleys everything at full power.\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Padel wall rule: glass yes, fence no. 🧱\n\nUnder pressure, the pro plays it off his back glass – it clips his own fence and still goes over. Play on?\n\nSend this to the partner who uses every wall.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",
@@ -782,54 +782,59 @@
    "slot": "2026-11-20T17:30:00",
    "pillar": "pros",
    "series": "pros",
-   "topic_key": "pros.own-side-glass-escape",
+   "topic_key": "pros.return-off-fence-after-bounce",
    "difficulty": "medium",
-   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.l: solo pierde el punto si la pelota toca la malla metálica o el terreno de su propio campo (las paredes de cristal propias no figuran); Regla 12.3",
+   "fact_source": "FIP Reglamento de Juego, Regla 14.1.c (pelota en juego tras el bote, aunque toque la malla) vs. Regla 7.1.e (en el saque, malla tras el bote = falta)",
    "slides": [
     {
      "type": "q",
-     "q": "Can a pro play the ball off his own side glass?",
-     "claim": "In the corner, the pro hits the ball into his own side glass and it flies over the net. The rally goes on.",
-     "figure": "run"
+     "q": "Can a pro return a ball that hit his fence?",
+     "claim": "The smash bounces on his side, then hits his fence. He can still return it.",
+     "figure": "reach"
     },
     {
      "type": "scene",
-     "text": "He plays it off his own side glass – over the net.",
+     "text": "The smash bounces on his side, then hits his fence.",
      "scene": {
-      "view": "top",
-      "path": [
+      "view": "side",
+      "net": 120,
+      "fence": [
        [
-        540,
-        680
-       ],
-       [
-        648,
-        600
-       ],
-       [
-        400,
-        200
+        850,
+        140,
+        700
        ]
       ],
-      "ball": [
-       400,
-       200
+      "figures": [
+       {
+        "x": 640,
+        "y": 528,
+        "pose": "reach",
+        "mirror": true
+       }
       ],
-      "alt": "Court from above: the player in the corner plays the ball into his own side glass and it flies over the net"
+      "path": [
+       "M40 260 Q 300 300, 440 690 Q 640 300, 846 420 Q 760 420, 700 460"
+      ],
+      "ball": [
+       700,
+       460
+      ],
+      "alt": "Side view: the smash bounces, hits the fence and comes back to the player"
      }
     },
     {
      "type": "claim",
-     "text": "The rally goes on."
+     "text": "He can still return it."
     },
     {
      "type": "verdict",
      "verdict": "FAIR",
-     "line": "Own glass is fine.\nOnly **own fence or floor** loses.",
-     "source": "FIP rules · Rule 13"
+     "line": "Bounce, then fence:\n**still in play**.",
+     "source": "FIP rules · Rule 14"
     }
    ],
-   "caption": "Padel defence: the pros' corner escape. 🧊\n\nTrapped in the corner, the pro plays the ball into his own side glass – and it goes over. Legal?\n\nSend it to the partner who never uses the glass.\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Padel fence rule: serve vs. rally. 🕸️\n\nOn the serve, bounce + fence is a fault. But what about a smash in the rally that bounces into the pro's fence?\n\nSend it to the partner who stops playing when the ball hits the fence.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",
@@ -842,36 +847,37 @@
    "slot": "2026-11-21T07:30:00",
    "pillar": "rules",
    "series": "settle",
-   "topic_key": "rule.own-floor-then-over",
+   "topic_key": "rule.ball-hits-hand-on-grip",
    "difficulty": "medium",
-   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.l: perderá el punto la pareja cuyo jugador … la pelota toca alguna de las mallas metálicas o terreno de su propio campo",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.k: punto perdido si la pelota impacta en cualquiera de los componentes de la pareja o de su equipación, excepto la pala",
    "slides": [
     {
      "type": "q",
-     "q": "Can your shot bounce on your own side first?",
-     "claim": "Your shot hits the floor on your side, then bounces over the net. The rally goes on."
+     "q": "What if the ball hits your hand, not your racket?",
+     "claim": "Their shot hits your hand on the grip, then goes back over the net. The rally goes on."
     },
     {
      "type": "scene",
-     "text": "Your shot hits the floor on your side, then bounces over the net.",
+     "text": "Their shot hits your hand on the grip – and goes back over.",
      "scene": {
       "view": "side",
-      "net": 600,
+      "net": 300,
       "figures": [
        {
-        "x": 200,
+        "x": 600,
         "y": 528,
-        "pose": "swing"
+        "pose": "reach",
+        "mirror": true
        }
       ],
       "path": [
-       "M290 470 Q 360 560, 420 690 Q 560 330, 780 690"
+       "M40 330 Q 260 200, 520 430 Q 380 300, 180 690"
       ],
       "ball": [
-       780,
+       180,
        690
       ],
-      "alt": "Side view: the shot bounces on the player's own side first, then goes over the net"
+      "alt": "Side view: the ball hits the player's hand on the racket grip and flies back over the net"
      }
     },
     {
@@ -881,11 +887,11 @@
     {
      "type": "verdict",
      "verdict": "FAULT",
-     "line": "Your own floor first:\n**point lost**.",
+     "line": "Your hand isn't the racket:\n**point lost**.",
      "source": "FIP rules · Rule 13"
     }
    ],
-   "caption": "Padel rule: the bounce on your own side. ⬇️\n\nYou hit it down, it bounces on your side and still makes it over the net. Lucky – or lost?\n\nWhat's your call – and why? Send it to your Saturday group.\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Padel rule: the ball that hits your hand. 🖐️\n\nTheir shot hits your hand on the grip – and still goes back over the net. Lucky save or lost point?\n\nWhat's your call – and why? Send it to your Saturday group.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",

@@ -19,7 +19,7 @@
    ],
    "caption": "Contrapared in padel: the shot for when nothing else works. 🆘\n\nIts main goal is to attack. Fair or fault?\n\nSend it to the partner who saves every lost ball off the back glass.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
    "rev": "25d9112171",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -42,7 +42,7 @@
    ],
    "caption": "Padel ball rules: every gram is in the rulebook. ⚖️\n\nA padel ball can weigh up to 60 g. Fair or fault?\n\nSend it to the friend who says old balls feel heavier.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelgear #padelball #padelrules",
    "rev": "1d89b81039",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -66,7 +66,7 @@
    ],
    "caption": "Padel smash rule: racket or body – big difference. 🛡️\n\nThe smash hits the defender's racket and drops back over the net. Still alive?\n\nSend this to the partner who hides behind the racket at the net.\n\nPhoto: erjola qerimi / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "81b8da4c08",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -85,7 +85,7 @@
    "cover": "weeks/2026-W47/reels/2026-11-16-reel.cover.jpg",
    "caption": "Padel warm-up rule: shorter than you think. ⏱️\n\nGuess the number before it stops – then send it to the partner who needs ages to warm up.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "dc02e4f506",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -109,7 +109,7 @@
    ],
    "caption": "Padel rule: \"It was going out!\" doesn't save you. 🙌\n\nTheir shot is flying long, so you catch it before it bounces. Whose point is it?\n\nSend this to the friend who catches every ball that looks out.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "6b11bd56b5",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -121,8 +121,8 @@
    "series": "gear",
    "pillar": "gear",
    "difficulty": "tricky",
-   "claim": "Above 1,000 m, the rules allow balls that bounce lower.",
-   "question": "Do padel balls change high in the mountains?",
+   "claim": "Above 1,000 m, the rules allow a ball with less bounce.",
+   "question": "Is there a special padel ball for the mountains?",
    "verdict": "FAIR",
    "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pelota, punto 4: cuando se juegue a más de 1000 m de altitud sobre el nivel del mar … rebote de más de 121,92 cm y de menos de 135 cm (normal: 135–145 cm, punto 2)",
    "images": [
@@ -130,10 +130,10 @@
     "weeks/2026-W47/2026-11-17-noon-2.jpg",
     "weeks/2026-W47/2026-11-17-noon-3.jpg"
    ],
-   "caption": "Padel ball rules for the mountains: thin air, fast balls. 🏔️\n\nAbove 1,000 m the rules allow a ball with less bounce. Fair or fault?\n\nSend this to the friend planning a padel ski trip.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelball #padelgear #padelrules",
-   "rev": "9e43b082b1",
+   "caption": "Padel ball rules at altitude: thin air, fast balls. 🏔️\n\nHigh in the mountains, do you play with a different ball? Make your call before you swipe.\n\nSend this to the friend planning a padel ski trip.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelball #padelgear #padelrules",
+   "rev": "a2354beffc",
    "status": "pending",
-   "note": "",
+   "note": "Komische formulierung",
    "published": null,
    "error": ""
   },
@@ -155,7 +155,7 @@
    ],
    "caption": "Por tres in padel: the smash that leaves the court. 🚀\n\nIts main goal is to win the point outright. Fair or fault?\n\nSend this to the partner who tries it on every lob.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
    "rev": "4015edae20",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -174,7 +174,7 @@
    "cover": "weeks/2026-W47/reels/2026-11-17-reel.cover.jpg",
    "caption": "Padel net size: how long is it? 🥅\n\nWatch and make your call – then send it to the friend who always hits the net.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelgear #padelquiz",
    "rev": "45f4c2b520",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -198,7 +198,7 @@
    ],
    "caption": "Padel ball rule: when the ball gives up first. 🎾\n\nMid-rally the ball breaks. Does the point still count – or do you play it again?\n\nSend it to the friend who plays with the same can for months.\n\nPhoto: Oskar Hagberg / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padelball",
    "rev": "046e7fcd8d",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -222,7 +222,7 @@
    ],
    "caption": "Padel around the world: how far has it spread? 🌍\n\nIn how many countries and territories is padel played? Guess first, then swipe.\n\nSend it to the friend who brings a racket on every holiday.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelworld",
    "rev": "2eaa9d342a",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -233,21 +233,21 @@
    "slot": "2026-11-18T17:30:00",
    "series": "pros",
    "pillar": "pros",
-   "difficulty": "easy",
-   "claim": "The pro's volley hits their fence before it bounces. The pro wins the point.",
-   "question": "Can a pro volley the ball straight into their fence?",
+   "difficulty": "tricky",
+   "claim": "His shot hits his own back glass, then his own fence, then goes over the net. The rally goes on.",
+   "question": "Can a pro play it off his glass, then his fence?",
    "verdict": "FAULT",
-   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.g: devolver la pelota sin bote previo y que golpee cualquiera de las paredes del campo contrario, la malla metálica … – punto perdido",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.l: perderá el punto la pareja cuyo jugador … la pelota toca alguna de las mallas metálicas o terreno de su propio campo (las paredes de cristal propias no figuran)",
    "images": [
     "weeks/2026-W47/2026-11-18-pm-1.jpg",
     "weeks/2026-W47/2026-11-18-pm-2.jpg",
     "weeks/2026-W47/2026-11-18-pm-3.jpg",
     "weeks/2026-W47/2026-11-18-pm-4.jpg"
    ],
-   "caption": "Padel volley rule: power isn't everything. 💪\n\nA pro volley flies straight into their fence – no bounce. Winner?\n\nSend this to the partner who volleys everything at full power.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
-   "rev": "c3f7472b82",
+   "caption": "Padel wall rule: glass yes, fence no. 🧱\n\nUnder pressure, the pro plays it off his back glass – it clips his own fence and still goes over. Play on?\n\nSend this to the partner who uses every wall.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
+   "rev": "aaab15b630",
    "status": "pending",
-   "note": "",
+   "note": "Offensichtlich",
    "published": null,
    "error": ""
   },
@@ -265,7 +265,7 @@
    "cover": "weeks/2026-W47/reels/2026-11-18-reel.cover.jpg",
    "caption": "Padel tournaments worldwide: how busy is the FIP calendar? 🏆\n\nGuess the number before it stops – and send it to the friend who follows every tour.\n\nSource: FIP World Padel Report 2026\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelworld",
    "rev": "1c08b8a00a",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -289,7 +289,7 @@
    ],
    "caption": "Padel net rule: the post counts too. 🥅\n\nYour racket clips the net post during the rally. Just part of the furniture – or point lost?\n\nSend this to the partner who loves living at the net.\n\nPhoto: Jorgen Hendriksen / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz",
    "rev": "6ecf477dbe",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -312,7 +312,7 @@
    ],
    "caption": "Dejada in padel: the softest way to win a point. 🪶\n\nIts main goal is to push the opponents back. Fair or fault?\n\nSend this to the partner who never sees the drop shot coming.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
    "rev": "4850768ed5",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -336,7 +336,7 @@
    ],
    "caption": "Padel in the Middle East: the desert is building courts. 🏜️\n\nHow many padel courts does Saudi Arabia have? Guess, then swipe.\n\nSend this to the friend who wants a padel trip in the sun.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelworld",
    "rev": "1e494117e2",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -355,7 +355,7 @@
    "cover": "weeks/2026-W47/reels/2026-11-19-reel.cover.jpg",
    "caption": "Padel break rule: thirsty between points? 🥤\n\nWatch and make your call – then send it to the partner with the bottle always in hand.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "4d52eb5a99",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -378,7 +378,7 @@
    ],
    "caption": "Padel net rule: the lucky net cord that isn't lucky. 🍀\n\nYour shot clips the net and flies straight into their back glass. Play on?\n\nSend this to the partner who celebrates every net cord.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "4f3dbc83e8",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -401,7 +401,7 @@
    ],
    "caption": "Padel court surface: is grass a must? 🌱\n\nA padel court must have artificial grass. Fair or fault?\n\nSend it to the friend who only plays on the blue courts.\n\nPhoto: Camille Mallet / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelgear #padelquiz",
    "rev": "7a90da8a0c",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -413,20 +413,20 @@
    "series": "pros",
    "pillar": "pros",
    "difficulty": "medium",
-   "claim": "In the corner, the pro hits the ball into his own side glass and it flies over the net. The rally goes on.",
-   "question": "Can a pro play the ball off his own side glass?",
+   "claim": "The smash bounces on his side, then hits his fence. He can still return it.",
+   "question": "Can a pro return a ball that hit his fence?",
    "verdict": "FAIR",
-   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.l: solo pierde el punto si la pelota toca la malla metálica o el terreno de su propio campo (las paredes de cristal propias no figuran); Regla 12.3",
+   "fact_source": "FIP Reglamento de Juego, Regla 14.1.c (pelota en juego tras el bote, aunque toque la malla) vs. Regla 7.1.e (en el saque, malla tras el bote = falta)",
    "images": [
     "weeks/2026-W47/2026-11-20-pm-1.jpg",
     "weeks/2026-W47/2026-11-20-pm-2.jpg",
     "weeks/2026-W47/2026-11-20-pm-3.jpg",
     "weeks/2026-W47/2026-11-20-pm-4.jpg"
    ],
-   "caption": "Padel defence: the pros' corner escape. 🧊\n\nTrapped in the corner, the pro plays the ball into his own side glass – and it goes over. Legal?\n\nSend it to the partner who never uses the glass.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padeltips #padelquiz",
-   "rev": "76beb5cc2d",
+   "caption": "Padel fence rule: serve vs. rally. 🕸️\n\nOn the serve, bounce + fence is a fault. But what about a smash in the rally that bounces into the pro's fence?\n\nSend it to the partner who stops playing when the ball hits the fence.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padeltips #padelquiz",
+   "rev": "269d042c0f",
    "status": "pending",
-   "note": "",
+   "note": "Keine gute frage",
    "published": null,
    "error": ""
   },
@@ -444,7 +444,7 @@
    "cover": "weeks/2026-W47/reels/2026-11-20-reel.cover.jpg",
    "caption": "Padel court fence: what shape are the holes? 🔲\n\nWatch and make your call – then send it to the friend who has stared at that fence a lot.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelgear #padelquiz",
    "rev": "68fe7d7911",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -456,20 +456,20 @@
    "series": "settle",
    "pillar": "rules",
    "difficulty": "medium",
-   "claim": "Your shot hits the floor on your side, then bounces over the net. The rally goes on.",
-   "question": "Can your shot bounce on your own side first?",
+   "claim": "Their shot hits your hand on the grip, then goes back over the net. The rally goes on.",
+   "question": "What if the ball hits your hand, not your racket?",
    "verdict": "FAULT",
-   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.l: perderá el punto la pareja cuyo jugador … la pelota toca alguna de las mallas metálicas o terreno de su propio campo",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.k: punto perdido si la pelota impacta en cualquiera de los componentes de la pareja o de su equipación, excepto la pala",
    "images": [
     "weeks/2026-W47/2026-11-21-am-1.jpg",
     "weeks/2026-W47/2026-11-21-am-2.jpg",
     "weeks/2026-W47/2026-11-21-am-3.jpg",
     "weeks/2026-W47/2026-11-21-am-4.jpg"
    ],
-   "caption": "Padel rule: the bounce on your own side. ⬇️\n\nYou hit it down, it bounces on your side and still makes it over the net. Lucky – or lost?\n\nWhat's your call – and why? Send it to your Saturday group.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz",
-   "rev": "8233f9534c",
+   "caption": "Padel rule: the ball that hits your hand. 🖐️\n\nTheir shot hits your hand on the grip – and still goes back over the net. Lucky save or lost point?\n\nWhat's your call – and why? Send it to your Saturday group.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz",
+   "rev": "8c158c1558",
    "status": "pending",
-   "note": "",
+   "note": "Keine gute frage, zunoffensichtlicj",
    "published": null,
    "error": ""
   },
@@ -491,7 +491,7 @@
    ],
    "caption": "Padel court size: how high is the back wall? 🧱\n\nThe back wall is 4 m high in total. Fair or fault?\n\nSend this to the friend whose lobs always hit the top fence.\n\nPhoto: Bruno Vaccaro Vercellino / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelgear #padelquiz",
    "rev": "ce0018c4bd",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -515,7 +515,7 @@
    ],
    "caption": "Padel in the UK: good luck booking a court after work. 📅\n\nHow full are British courts at peak time? Make your guess before you swipe.\n\nSend this to the friend who books courts two weeks ahead.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelclub",
    "rev": "9c55b77573",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -534,7 +534,7 @@
    "cover": "weeks/2026-W47/reels/2026-11-21-reel.cover.jpg",
    "caption": "Padel in the UK: the fastest climb in Europe? 📈\n\nGuess the number before it stops – then send it to your British padel friends.\n\nSource: Global Padel Report 2026 (Playtomic)\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelclub",
    "rev": "565cfda888",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -558,7 +558,7 @@
    ],
    "caption": "Padel serve rule: glass or fence – it matters. 🪟\n\nYour serve bounces in the box and hits the side glass. Good serve or fault?\n\nSend this to the partner who always argues about serves.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelserve #padelquiz",
    "rev": "b038acacc5",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -581,7 +581,7 @@
    ],
    "caption": "Padel net rules: how tall are the posts? 📏\n\nThe net posts can be 1.2 m high. Fair or fault?\n\nSend it to the club member who builds courts in their head.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelgear #padelquiz",
    "rev": "25038b11e9",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -605,7 +605,7 @@
    ],
    "caption": "Padel racket rule, new in 2026: hold on tight. 🫣\n\nMid-rally your racket slips out of your hand. Quick, pick it up and play on?\n\nSend this to the partner whose racket always goes flying.\n\nPhoto: SideSpin Padel / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "6be4db1da8",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -624,7 +624,7 @@
    "cover": "weeks/2026-W47/reels/2026-11-22-reel.cover.jpg",
    "caption": "Padel match rules: how many balls are in play? 🎾\n\nWatch and make your call – then send it to the partner who always grabs a fresh can.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelball #padelquiz",
    "rev": "0ae45a88e9",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
