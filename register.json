@@ -995,6 +995,258 @@
    "claim": "The lines on a padel court are 10 cm wide.",
    "verdict": "FAULT",
    "format": "reel"
+  },
+  {
+   "id": "2026-11-16-am",
+   "date": "2026-11-16",
+   "pillar": "lingo",
+   "topic_key": "lingo.contrapared",
+   "claim": "Its main goal is to attack.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-16-noon",
+   "date": "2026-11-16",
+   "pillar": "gear",
+   "topic_key": "gear.ball-max-weight",
+   "claim": "A padel ball can weigh up to 60 g.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-16-pm",
+   "date": "2026-11-16",
+   "pillar": "pros",
+   "topic_key": "pros.smash-hits-defender-racket",
+   "claim": "The smash hits the defender's racket and drops over the net. The rally goes on.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-17-am",
+   "date": "2026-11-17",
+   "pillar": "rules",
+   "topic_key": "rule.catch-ball-going-out",
+   "claim": "Their shot flies towards your back fence. You catch it before it bounces. You lose the point.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-17-noon",
+   "date": "2026-11-17",
+   "pillar": "gear",
+   "topic_key": "gear.ball-high-altitude",
+   "claim": "Above 1,000 m, the rules allow balls that bounce lower.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-17-pm",
+   "date": "2026-11-17",
+   "pillar": "lingo",
+   "topic_key": "lingo.por-tres",
+   "claim": "Its main goal is to win the point outright.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-18-am",
+   "date": "2026-11-18",
+   "pillar": "rules",
+   "topic_key": "rule.ball-breaks-replay",
+   "claim": "The ball breaks during the rally. The point is replayed.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-18-noon",
+   "date": "2026-11-18",
+   "pillar": "market",
+   "topic_key": "market.countries-playing",
+   "claim": "Padel is played in 191 countries and territories.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-18-pm",
+   "date": "2026-11-18",
+   "pillar": "pros",
+   "topic_key": "pros.volley-into-their-fence",
+   "claim": "The pro's volley hits their fence before it bounces. The pro wins the point.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-19-am",
+   "date": "2026-11-19",
+   "pillar": "rules",
+   "topic_key": "rule.touch-net-post",
+   "claim": "During the rally your racket hits the net post. You lose the point.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-19-noon",
+   "date": "2026-11-19",
+   "pillar": "lingo",
+   "topic_key": "lingo.dejada",
+   "claim": "Its main goal is to push the opponents back.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-19-pm",
+   "date": "2026-11-19",
+   "pillar": "market",
+   "topic_key": "market.saudi-courts",
+   "claim": "Saudi Arabia has more than 1,000 padel courts.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-20-am",
+   "date": "2026-11-20",
+   "pillar": "rules",
+   "topic_key": "rule.net-then-opponent-glass",
+   "claim": "Your shot clips the net, then hits their back glass directly. The rally goes on.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-20-noon",
+   "date": "2026-11-20",
+   "pillar": "gear",
+   "topic_key": "gear.court-surface",
+   "claim": "A padel court must have artificial grass.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-20-pm",
+   "date": "2026-11-20",
+   "pillar": "pros",
+   "topic_key": "pros.own-side-glass-escape",
+   "claim": "In the corner, the pro hits the ball into his own side glass and it flies over the net. The rally goes on.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-21-am",
+   "date": "2026-11-21",
+   "pillar": "rules",
+   "topic_key": "rule.own-floor-then-over",
+   "claim": "Your shot hits the floor on your side, then bounces over the net. The rally goes on.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-21-noon",
+   "date": "2026-11-21",
+   "pillar": "gear",
+   "topic_key": "gear.back-wall-height",
+   "claim": "The back wall is 4 m high in total.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-21-pm",
+   "date": "2026-11-21",
+   "pillar": "market",
+   "topic_key": "market.uk-peak-occupancy",
+   "claim": "UK padel courts are about 85% full at peak time.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-22-am",
+   "date": "2026-11-22",
+   "pillar": "rules",
+   "topic_key": "rule.serve-bounce-then-side-glass",
+   "claim": "Your serve bounces in the box, then hits the side glass. It's a good serve.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-22-noon",
+   "date": "2026-11-22",
+   "pillar": "gear",
+   "topic_key": "gear.net-post-height",
+   "claim": "The net posts can be 1.2 m high.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-22-pm",
+   "date": "2026-11-22",
+   "pillar": "rules",
+   "topic_key": "rule.racket-slips-from-hand",
+   "claim": "During the rally your racket slips out of your hand. You pick it up and play on.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-16-reel",
+   "date": "2026-11-16",
+   "pillar": "rules",
+   "topic_key": "rule.warmup-length",
+   "claim": "The warm-up before a match lasts 5 minutes.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-17-reel",
+   "date": "2026-11-17",
+   "pillar": "gear",
+   "topic_key": "gear.net-length",
+   "claim": "The padel net is exactly 10 m long.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-18-reel",
+   "date": "2026-11-18",
+   "pillar": "market",
+   "topic_key": "market.fip-tournaments-2026",
+   "claim": "More than 400 FIP tournaments are on the 2026 calendar.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-19-reel",
+   "date": "2026-11-19",
+   "pillar": "rules",
+   "topic_key": "rule.no-drinks-between-points",
+   "claim": "You may drink between points.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-20-reel",
+   "date": "2026-11-20",
+   "pillar": "gear",
+   "topic_key": "gear.fence-mesh-square",
+   "claim": "The fence holes on a padel court must be square.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-21-reel",
+   "date": "2026-11-21",
+   "pillar": "market",
+   "topic_key": "market.uk-growth-rate",
+   "claim": "UK padel has grown more than 50% a year since 2021.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-22-reel",
+   "date": "2026-11-22",
+   "pillar": "gear",
+   "topic_key": "gear.balls-per-match",
+   "claim": "An official match is played with 4 balls.",
+   "verdict": "FAULT",
+   "format": "reel"
   }
  ]
 }
