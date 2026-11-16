@@ -76,10 +76,14 @@
    ],
    "caption": "Padel smash rule: racket or body – big difference. 🛡️\n\nThe smash hits the defender's racket and drops back over the net. Still alive?\n\nSend this to the partner who hides behind the racket at the net.\n\nPhoto: erjola qerimi / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "81b8da4c08",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18180056116452848",
+    "permalink": "https://www.instagram.com/p/Dfzy1bOF1cr/",
+    "at": "2026-11-16T17:33:29+01:00"
+   },
+   "error": "",
    "attempts": 2
   },
   {
