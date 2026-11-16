@@ -47,10 +47,14 @@
    ],
    "caption": "Padel ball rules: every gram is in the rulebook. ⚖️\n\nA padel ball can weigh up to 60 g. Fair or fault?\n\nSend it to the friend who says old balls feel heavier.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelgear #padelball #padelrules",
    "rev": "1d89b81039",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18117542801028979",
+    "permalink": "https://www.instagram.com/p/DfzSQdWFxbn/",
+    "at": "2026-11-16T12:48:59+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
