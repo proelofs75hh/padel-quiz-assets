@@ -100,11 +100,11 @@
    "cover": "weeks/2026-W47/reels/2026-11-16-reel.cover.jpg",
    "caption": "Padel warm-up rule: shorter than you think. ⏱️\n\nGuess the number before it stops – then send it to the partner who needs ages to warm up.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "dc02e4f506",
-   "status": "approved",
+   "status": "failed",
    "note": "",
    "published": null,
-   "error": "container 18158246176515730 status ERROR",
-   "attempts": 2
+   "error": "container 18158246449515730 status ERROR",
+   "attempts": 3
   },
   {
    "id": "2026-11-17-am",
