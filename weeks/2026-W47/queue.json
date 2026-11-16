@@ -19,10 +19,14 @@
    ],
    "caption": "Contrapared in padel: the shot for when nothing else works. 🆘\n\nIts main goal is to attack. Fair or fault?\n\nSend it to the partner who saves every lost ball off the back glass.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
    "rev": "25d9112171",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "17914022829573818",
+    "permalink": "https://www.instagram.com/p/DfyuBflm7Vi/",
+    "at": "2026-11-16T07:32:13+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
