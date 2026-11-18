@@ -287,10 +287,14 @@
    ],
    "caption": "Padel wall rule: glass yes, fence no. 🧱\n\nUnder pressure, the pro plays it off his back glass – it clips his own fence and still goes over. Play on?\n\nSend this to the partner who uses every wall.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "aaab15b630",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "17913088395583548",
+    "permalink": "https://www.instagram.com/p/Df48UM7F07B/",
+    "at": "2026-11-18T17:32:43+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
