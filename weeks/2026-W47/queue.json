@@ -258,10 +258,14 @@
    ],
    "caption": "Padel around the world: how far has it spread? 🌍\n\nIn how many countries and territories is padel played? Guess first, then swipe.\n\nSend it to the friend who brings a racket on every holiday.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelworld",
    "rev": "2eaa9d342a",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18129808057669050",
+    "permalink": "https://www.instagram.com/p/Df4Z_S6lwMo/",
+    "at": "2026-11-18T12:32:46+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
