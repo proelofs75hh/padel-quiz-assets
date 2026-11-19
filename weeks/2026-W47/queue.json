@@ -394,10 +394,14 @@
    ],
    "caption": "Padel in the Middle East: the desert is building courts. 🏜️\n\nHow many padel courts does Saudi Arabia have? Guess, then swipe.\n\nSend this to the friend who wants a padel trip in the sun.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelworld",
    "rev": "1e494117e2",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18080585708451025",
+    "permalink": "https://www.instagram.com/p/Df7hQpFk6oq/",
+    "at": "2026-11-19T17:34:03+01:00"
+   },
+   "error": "",
    "attempts": 2
   },
   {
