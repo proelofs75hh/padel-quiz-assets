@@ -418,10 +418,14 @@
    "cover": "weeks/2026-W47/reels/2026-11-19-reel.cover.jpg",
    "caption": "Padel break rule: thirsty between points? 🥤\n\nWatch and make your call – then send it to the partner with the bottle always in hand.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "4d52eb5a99",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "container 18158984869515730 status ERROR",
+   "published": {
+    "media_id": "18429680143154115",
+    "permalink": "https://www.instagram.com/reel/Df7yQcZAR-d/",
+    "at": "2026-11-19T20:02:50+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
