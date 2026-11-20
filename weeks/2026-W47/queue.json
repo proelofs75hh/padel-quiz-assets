@@ -502,10 +502,14 @@
    ],
    "caption": "Padel fence rule: serve vs. rally. 🕸️\n\nOn the serve, bounce + fence is a fault. But what about a smash in the rally that bounces into the pro's fence?\n\nSend it to the partner who stops playing when the ball hits the fence.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padeltips #padelquiz",
    "rev": "269d042c0f",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18143038021548885",
+    "permalink": "https://www.instagram.com/p/Df-HXUlGLu9/",
+    "at": "2026-11-20T17:45:29+01:00"
+   },
+   "error": "",
    "attempts": 2
   },
   {
