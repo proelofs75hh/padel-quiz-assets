@@ -473,10 +473,14 @@
    ],
    "caption": "Padel court surface: is grass a must? 🌱\n\nA padel court must have artificial grass. Fair or fault?\n\nSend it to the friend who only plays on the blue courts.\n\nPhoto: Camille Mallet / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelgear #padelquiz",
    "rev": "7a90da8a0c",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18162198745565362",
+    "permalink": "https://www.instagram.com/p/Df9jsi7FzVJ/",
+    "at": "2026-11-20T12:33:37+01:00"
+   },
+   "error": "",
    "attempts": 2
   },
   {
