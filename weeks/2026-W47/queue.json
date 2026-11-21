@@ -610,10 +610,14 @@
    ],
    "caption": "Padel in the UK: good luck booking a court after work. 📅\n\nHow full are British courts at peak time? Make your guess before you swipe.\n\nSend this to the friend who books courts two weeks ahead.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelclub",
    "rev": "9c55b77573",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18127785925927208",
+    "permalink": "https://www.instagram.com/p/DgAqnsGAfHd/",
+    "at": "2026-11-21T17:31:53+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
