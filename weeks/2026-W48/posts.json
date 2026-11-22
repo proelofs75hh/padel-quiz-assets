@@ -1,0 +1,776 @@
+{
+ "week": "2026-W48",
+ "note": "Built by the Sunday run 22 Nov 2026 – 3 posts a day (14 carousels + 7 reels)",
+ "timezone": "Europe/Berlin",
+ "posts": [
+  {
+   "id": "2026-11-23-am",
+   "slot": "2026-11-23T07:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.direct-opponent-fence",
+   "difficulty": "easy",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.g: perderá el punto la pareja cuyo jugador … sin botar previamente, golpee cualquiera de las paredes del campo contrario, la malla metálica …; vgl. Regla 14.c (erst Bote, dann Malla = buena devolución)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Can your shot hit their fence before it bounces?",
+     "claim": "Your shot hits their fence before it bounces. You lose the point."
+    },
+    {
+     "type": "scene",
+     "text": "Your shot flies over the net and hits their fence. No bounce.",
+     "scene": {
+      "view": "side",
+      "net": 360,
+      "fence": [
+       [
+        840,
+        140,
+        700
+       ]
+      ],
+      "figures": [
+       {
+        "x": 150,
+        "y": 528,
+        "pose": "swing"
+       }
+      ],
+      "path": [
+       "M230 430 Q 560 120, 836 380"
+      ],
+      "ball": [
+       820,
+       380
+      ],
+      "alt": "Side view: the ball flies over the net and hits the fence on the other side without bouncing"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "You lose the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Their fence before the bounce:\n**point lost**.",
+     "source": "FIP rules · Rule 13"
+    }
+   ],
+   "caption": "Padel fence rule: bounce first, then the fence. 🧱\n\nYour shot flies over the net and smacks their fence – no bounce. Whose point is it?\n\nSend this to the partner who hits every ball as hard as possible.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padeltips"
+   ]
+  },
+  {
+   "id": "2026-11-23-pm",
+   "slot": "2026-11-23T17:30:00",
+   "pillar": "lingo",
+   "series": "lingo",
+   "topic_key": "lingo.remate",
+   "difficulty": "easy",
+   "fact_source": "Padel Browser – How to hit a smash ('The smash is your outright winner … aiming to end the point'); Babolat – Padel shots ('The smash is the spectacular shot that finishes points'); HEAD – Beginner's guide ('the smash is often an attacking shot')",
+   "slides": [
+    {
+     "type": "q",
+     "term": "Remate",
+     "say": "[re-MA-teh] · “finishing shot”",
+     "q": "What is the main goal of a remate?",
+     "claim": "Its main goal is to win the point.",
+     "scene": {
+      "view": "side",
+      "net": 560,
+      "figures": [
+       {
+        "x": 300,
+        "y": 528,
+        "pose": "smash"
+       }
+      ],
+      "path": [
+       "M330 230 Q 470 300, 760 690"
+      ],
+      "ball": [
+       330,
+       230
+      ],
+      "alt": "Side view: a player hits a high ball from above his head down over the net"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "Its main goal is to win the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Main goal: **finish the point**.",
+     "source": "Padel Browser · Babolat",
+     "desc": "The smash: you hit a high ball hard and down from above your head."
+    }
+   ],
+   "caption": "Remate in padel: the shot everybody wants to hit. 💥\n\nIts main goal is to win the point. Fair or fault?\n\nSend it to the partner who smashes every lob – even the bad ones.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padeltips",
+    "padelquiz",
+    "padelsmash"
+   ]
+  },
+  {
+   "id": "2026-11-24-am",
+   "slot": "2026-11-24T07:30:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.line-colour",
+   "difficulty": "easy",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pista, líneas: Todas las líneas tienen un ancho de 5 cm … color preferencialmente blanco o negro, en contraste evidente con el color del suelo",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Do padel court lines have to be white?",
+     "claim": "Court lines can also be black.",
+     "cover": "photo",
+     "photo": "NtiZoP2CKOs",
+     "photo_focus": [
+      0.55,
+      0.62
+     ],
+     "photo_zoom": 1.5,
+     "photo_place": "right"
+    },
+    {
+     "type": "claim",
+     "text": "Court lines can also be black."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "White **or black** –\nit must contrast with the floor.",
+     "source": "FIP rules · Court"
+    }
+   ],
+   "caption": "Padel court lines: is white the only option? 🎨\n\nCourt lines can also be black. Fair or fault?\n\nSend it to the friend who only plays on blue courts with white lines.\n\nPhoto: José Alejandro Cuffia / Unsplash\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelcourt",
+    "padelrules",
+    "padelquiz"
+   ]
+  },
+  {
+   "id": "2026-11-24-pm",
+   "slot": "2026-11-24T17:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.touch-own-glass",
+   "difficulty": "medium",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.a: perderá el punto … si toca alguna parte de la red, incluidos los postes, o el terreno de la parte del campo contrario, incluida la malla metálica, mientras la pelota esté en juego (die eigenen Wände sind nicht aufgeführt)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Can you touch your own glass during a rally?",
+     "claim": "During the rally you touch your own back glass with your hand. The rally goes on.",
+     "cover": "scene",
+     "scene": {
+      "view": "side",
+      "net": 700,
+      "glass": [
+       [
+        20,
+        300
+       ]
+      ],
+      "figures": [
+       {
+        "x": 150,
+        "y": 528,
+        "pose": "reach",
+        "mirror": true
+       }
+      ],
+      "path": [
+       "M880 380 Q 600 180, 300 470"
+      ],
+      "ball": [
+       300,
+       470
+      ],
+      "alt": "Side view: a player near his own back glass leans on it with his hand while the ball comes towards him"
+     }
+    },
+    {
+     "type": "claim",
+     "context": "During the rally you touch your own back glass with your hand.",
+     "text": "The rally goes on."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Your own glass: **no problem**.\nThe net or their side: point lost.",
+     "source": "FIP rules · Rule 13"
+    }
+   ],
+   "caption": "Padel wall rule: can you lean on your own glass? 🖐️\n\nMid-rally you put your hand on your own back glass to keep your balance. Play on?\n\nSend this to the partner who hugs the back glass every rally.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padeltips"
+   ]
+  },
+  {
+   "id": "2026-11-25-am",
+   "slot": "2026-11-25T07:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.serve-net-then-receiver",
+   "difficulty": "tricky",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 9.1.b (net): el servicio es net si la pelota toca la red o los postes … y golpea a cualquier oponente o artículo que porten o lleven puesto → se repite el saque",
+   "slides": [
+    {
+     "type": "q",
+     "q": "What if your serve clips the net and hits the receiver?",
+     "claim": "Your serve clips the net, then hits the receiver before it bounces. You win the point."
+    },
+    {
+     "type": "scene",
+     "text": "Your serve clips the net, then hits the receiver. No bounce.",
+     "scene": {
+      "view": "side",
+      "net": 452,
+      "figures": [
+       {
+        "x": 150,
+        "y": 528,
+        "pose": "swing"
+       },
+       {
+        "x": 720,
+        "y": 528,
+        "pose": "shrug",
+        "mirror": true
+       }
+      ],
+      "path": [
+       "M230 470 Q 350 420, 452 568 Q 560 470, 690 430"
+      ],
+      "ball": [
+       690,
+       430
+      ],
+      "alt": "Side view: the serve touches the net and then hits the receiver in the air"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "You win the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Net, then the receiver:\n**serve again**.",
+     "source": "FIP rules · Rule 9"
+    }
+   ],
+   "caption": "Padel serve rule: the net cord that hits a player. 🎯\n\nYour serve clips the net and hits the receiver before it bounces. Your point?\n\nSend this to the partner who always stands too close to the net when receiving.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelserve",
+    "padelquiz"
+   ]
+  },
+  {
+   "id": "2026-11-25-pm",
+   "slot": "2026-11-25T17:30:00",
+   "pillar": "market",
+   "series": "number",
+   "topic_key": "market.clubs-worldwide",
+   "difficulty": "medium",
+   "fact_source": "Global Padel Report 2026 (Playtomic + Strategy&/PwC, via clubandresortbusiness.com): 'more than 20,900 clubs, 58,300 courts and 19.4 million padel players'; Gegencheck FIP World Padel Report 2025 (Dez. 2025): 'clubs have increased by 4,775 units, surpassing 24,600'; FIP 2026: +3,890 Clubs ggü. 2025 (keine Gesamtzahl genannt) – Behauptung '> 20,000' stimmt mit beiden",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How many padel clubs are there worldwide?",
+     "claim": "There are more than 20,000 padel clubs worldwide.",
+     "cover": "digits",
+     "digits": "??,???"
+    },
+    {
+     "type": "guess",
+     "bars": [
+      "14,000",
+      "17,000",
+      "20,000+"
+     ]
+    },
+    {
+     "type": "reveal",
+     "big": "20,900+",
+     "text": "padel clubs worldwide.",
+     "source": "Global Padel Report 2026"
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pre": "The FIP even counts more than",
+     "big": "24,600",
+     "source": "FIP World Padel Report 2025"
+    }
+   ],
+   "caption": "Padel clubs worldwide: how many are there? 🏟️\n\nHow many padel clubs are there in the world? Guess first, then swipe.\n\nSend it to the friend who wants to open a padel club one day.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelquiz",
+    "padelclub",
+    "padelworld"
+   ]
+  },
+  {
+   "id": "2026-11-26-am",
+   "slot": "2026-11-26T07:30:00",
+   "pillar": "lingo",
+   "series": "lingo",
+   "topic_key": "lingo.salida-de-pared",
+   "difficulty": "medium",
+   "fact_source": "HEAD – Beginner's guide ('Off the wall shots … looking to play a defensive or neutral shot rather than attempting a high-risk, attacking shot'); Padel Browser – How to use the glass walls ('Do not try to win the point here … lift the ball back cross-court, high and deep, and reset the rally'); NOX – Salida de pared ('always made from a defensive position')",
+   "slides": [
+    {
+     "type": "q",
+     "term": "Salida de pared",
+     "say": "[sa-LEE-da de pa-RED] · “exit from the wall”",
+     "q": "What is the main goal of a salida de pared?",
+     "claim": "Its main goal is to attack.",
+     "scene": {
+      "view": "side",
+      "net": 860,
+      "glass": [
+       [
+        0,
+        300
+       ]
+      ],
+      "figures": [
+       {
+        "x": 240,
+        "y": 528,
+        "pose": "forehand"
+       }
+      ],
+      "path": [
+       "M880 300 Q 300 380, 260 700 Q 140 420, 44 470 Q 120 500, 300 470"
+      ],
+      "ball": [
+       300,
+       470
+      ],
+      "alt": "Side view: the ball bounces, comes off the back glass and the player waits to hit it"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "Its main goal is to attack."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Main goal: **get the ball back** safely.",
+     "source": "HEAD · Padel Browser",
+     "desc": "You let the ball come off your back glass, then play it back over the net."
+    }
+   ],
+   "caption": "Salida de pared in padel: let the glass work for you. 🪟\n\nIts main goal is to attack. Fair or fault?\n\nSend it to the partner who panics every time the ball goes past them.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padeltips",
+    "padelquiz",
+    "padellife"
+   ]
+  },
+  {
+   "id": "2026-11-26-pm",
+   "slot": "2026-11-26T17:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.serve-bounce-in-own-box",
+   "difficulty": "medium",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 6.2: El servidor deberá botar la pelota en el suelo para efectuar el saque, dentro del recuadro correspondiente en el que le corresponda servir; Regla 6.1: Recuadro de Saque = entre la prolongación imaginaria de la línea central y la pared lateral",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Where must you bounce the ball before you serve?",
+     "claim": "You bounce the ball on your partner's side of the centre line, then serve. That's a valid serve.",
+     "cover": "photo",
+     "photo": "zrGW5BHTfl8",
+     "photo_focus": [
+      0.5,
+      0.55
+     ],
+     "photo_zoom": 1.35,
+     "photo_place": "left"
+    },
+    {
+     "type": "scene",
+     "text": "You bounce the ball on your partner's side of the centre line.",
+     "scene": {
+      "view": "top",
+      "marks": [
+       [
+        350,
+        660
+       ]
+      ],
+      "path": [
+       [
+        350,
+        660
+       ],
+       [
+        560,
+        665
+       ]
+      ],
+      "ball": [
+       560,
+       665
+      ],
+      "alt": "Court from above: the server bounces the ball in the other half, left of the centre line, before serving from the right"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "That's a valid serve."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Bounce it in your\n**own serving half** first.",
+     "source": "FIP rules · Rule 6"
+    }
+   ],
+   "caption": "Padel serve rule: where does the bounce go? 🏓\n\nBefore your serve you bounce the ball on your partner's side of the centre line. Still a valid serve?\n\nSend this to the partner whose serve routine takes forever.\n\nPhoto: Filipp Romanovski / Unsplash\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelserve",
+    "padelquiz"
+   ]
+  },
+  {
+   "id": "2026-11-27-am",
+   "slot": "2026-11-27T07:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.tiebreak-serve-rotation",
+   "difficulty": "medium",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 1 (muerte súbita): el primer jugador sacará desde el lado derecho, jugándose un solo punto; a continuación … se jugarán dos puntos, empezando a hacerlo desde el lado izquierdo, y así sucesivamente",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Who serves after the first point of a tie-break?",
+     "claim": "Tie-break: you serve the first point. You also serve the next point.",
+     "cover": "photo",
+     "photo": "aVNyXCpeS-0",
+     "photo_focus": [
+      0.32,
+      0.62
+     ],
+     "photo_zoom": 1.6,
+     "photo_place": "wide"
+    },
+    {
+     "type": "scene",
+     "text": "Tie-break. You serve the first point.",
+     "scene": {
+      "view": "top",
+      "box": [
+       252,
+       117
+      ],
+      "path": [
+       [
+        560,
+        665
+       ],
+       [
+        350,
+        230
+       ]
+      ],
+      "ball": [
+       560,
+       665
+      ],
+      "alt": "Court from above: the first serve of the tie-break goes from the right side diagonally"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "You also serve the next point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "Next, the other pair\nserves **two points**.",
+     "source": "FIP rules · Rule 1"
+    }
+   ],
+   "caption": "Padel tie-break rule: who serves when? 🔁\n\nTie-break: you serve the first point. Do you serve the next one too?\n\nSend this to the group that argues at 6–6 every single time.\n\nPhoto: Bruno Vaccaro Vercellino / Unsplash\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padeltips"
+   ]
+  },
+  {
+   "id": "2026-11-27-pm",
+   "slot": "2026-11-27T17:30:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.centre-line-extension",
+   "difficulty": "medium",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pista, líneas: la línea central de saque … se prolongará un mínimo 20 cm más allá de la línea de servicio",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Where does the centre line end?",
+     "claim": "The centre line stops exactly at the service line.",
+     "cover": "versus"
+    },
+    {
+     "type": "claim",
+     "text": "The centre line stops exactly at the service line."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "It goes on at least\n**20 cm** past it.",
+     "source": "FIP rules · Court"
+    }
+   ],
+   "caption": "Padel court lines: where does the centre line stop? 📏\n\nThe centre line stops exactly at the service line. Fair or fault?\n\nSend it to the friend who knows every line on the court – or thinks so.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelcourt",
+    "padelrules",
+    "padelquiz"
+   ]
+  },
+  {
+   "id": "2026-11-28-am",
+   "slot": "2026-11-28T07:30:00",
+   "pillar": "pros",
+   "series": "pros",
+   "topic_key": "pros.volley-ball-heading-to-glass",
+   "difficulty": "medium",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 14.a: es buena devolución si la pelota … es voleada por cualquiera de los jugadores de la pareja contraria; Regla 12.2: la pelota está en juego … hasta que el tanto quede decidido (Fehler durch direkten Glas-Treffer entsteht erst beim Aufprall)",
+   "slides": [
+    {
+     "type": "q",
+     "q": "Can a pro volley a ball that would hit his glass?",
+     "claim": "Their lob flies straight at his back glass. He volleys it first. He loses the point.",
+     "figure": "reach"
+    },
+    {
+     "type": "scene",
+     "text": "Their lob flies straight at his back glass. He volleys it first.",
+     "scene": {
+      "view": "side",
+      "net": 120,
+      "glass": [
+       [
+        860,
+        300
+       ]
+      ],
+      "figures": [
+       {
+        "x": 700,
+        "y": 528,
+        "pose": "reach",
+        "mirror": true
+       }
+      ],
+      "path": [
+       "M60 520 Q 400 40, 690 300"
+      ],
+      "ball": [
+       690,
+       300
+      ],
+      "alt": "Side view: a lob flies towards the back glass and the player hits it in the air before it reaches the glass"
+     }
+    },
+    {
+     "type": "claim",
+     "text": "He loses the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "He volleys it: **play on**.\nOnly the glass hit would lose.",
+     "source": "FIP rules · Rule 14"
+    }
+   ],
+   "caption": "Padel pro move: saving a ball that was already lost. 🧤\n\nThe lob is flying straight into his back glass – their mistake. But he volleys it anyway. Point lost?\n\nSend it to the partner who volleys everything out of habit.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padeltips"
+   ]
+  },
+  {
+   "id": "2026-11-28-pm",
+   "slot": "2026-11-28T17:30:00",
+   "pillar": "rules",
+   "series": "settle",
+   "topic_key": "rule.ball-stops-on-wall-top",
+   "difficulty": "tricky",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 15.b: (tanto ganado) si la pelota, tras botar en el campo contrario, se quedara inmóvil en la superficie horizontal plana de un muro",
+   "slides": [
+    {
+     "type": "q",
+     "q": "What if the ball stops on top of their wall?",
+     "claim": "Your shot bounces on their side, then stops on top of their wall. You win the point.",
+     "cover": "scene",
+     "scene": {
+      "view": "side",
+      "net": 300,
+      "glass": [
+       [
+        840,
+        300
+       ]
+      ],
+      "figures": [
+       {
+        "x": 130,
+        "y": 528,
+        "pose": "swing"
+       }
+      ],
+      "path": [
+       "M200 430 Q 470 120, 680 700 Q 760 420, 856 278"
+      ],
+      "ball": [
+       860,
+       276
+      ],
+      "alt": "Side view: the ball bounces on the other side and then lies still on top of the back wall"
+     }
+    },
+    {
+     "type": "claim",
+     "context": "Your shot bounces on their side, then stops on top of their wall.",
+     "text": "You win the point."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "line": "Ball stays on top:\n**your point**.",
+     "source": "FIP rules · Rule 15"
+    }
+   ],
+   "caption": "Padel rule for lucky shots: the ball stays on top of the wall. 🤯\n\nYour shot bounces on their side and comes to rest on top of their wall. Whose point?\n\nSend this to the friend who always has the luckiest shots.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padellife"
+   ]
+  },
+  {
+   "id": "2026-11-29-am",
+   "slot": "2026-11-29T07:30:00",
+   "pillar": "market",
+   "series": "number",
+   "topic_key": "market.annual-spending",
+   "difficulty": "medium",
+   "fact_source": "FIP World Padel Report 2026 (14.10.2026, padelfip.com): 'Annual expenditure generated by the global padel industry amounts to €6.84 billion, with €13.07 billion in economic output and more than 235,000 jobs'. Gegencheck Global Padel Report 2026 (Playtomic): nennt keinen Gesamtumsatz in €, nur Wachstum des Ausrüstungsmarkts (34 % p. a. seit 2019) – kein Widerspruch",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How much is spent on padel each year?",
+     "claim": "Almost €7 billion is spent on padel every year.",
+     "cover": "photo",
+     "photo": "XCAbydHHV3Q",
+     "photo_focus": [
+      0.55,
+      0.45
+     ],
+     "photo_zoom": 1.4,
+     "photo_place": "right"
+    },
+    {
+     "type": "guess",
+     "bars": [
+      "€5bn",
+      "€6bn",
+      "€7bn"
+     ]
+    },
+    {
+     "type": "reveal",
+     "big": "€6.84bn",
+     "text": "spent on padel every year.",
+     "source": "FIP World Padel Report 2026"
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAIR",
+     "pre": "Total economic output:",
+     "big": "€13bn",
+     "source": "FIP World Padel Report 2026"
+    }
+   ],
+   "caption": "Padel economy: how big is the business? 💶\n\nHow much money goes into padel every year – courts, gear, bookings? Guess, then swipe.\n\nSend it to the friend who says padel is just a trend.\n\nPhoto: P-squared Padel / Unsplash\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelquiz",
+    "padelbusiness",
+    "padelworld"
+   ]
+  },
+  {
+   "id": "2026-11-29-pm",
+   "slot": "2026-11-29T17:30:00",
+   "pillar": "gear",
+   "series": "gear",
+   "topic_key": "gear.tv-lighting",
+   "difficulty": "tricky",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pista, iluminación: para retransmisiones de TV y grabaciones … al menos 1000 lux",
+   "slides": [
+    {
+     "type": "q",
+     "q": "How bright must a court be for TV?",
+     "claim": "TV matches need at least 500 lux.",
+     "cover": "versus"
+    },
+    {
+     "type": "claim",
+     "text": "TV matches need at least 500 lux."
+    },
+    {
+     "type": "verdict",
+     "verdict": "FAULT",
+     "line": "For TV: at least\n**1,000 lux**.",
+     "source": "FIP rules · Court"
+    }
+   ],
+   "caption": "Padel court lighting: how bright for TV? 💡\n\nFor TV matches, a padel court needs at least 500 lux. Fair or fault?\n\nSend it to the friend who blames the lights for every missed smash.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelcourt",
+    "padelgear",
+    "padelquiz"
+   ]
+  }
+ ]
+}

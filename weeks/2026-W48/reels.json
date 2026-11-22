@@ -1,0 +1,194 @@
+{
+ "reels": [
+  {
+   "id": "2026-11-23-reel",
+   "slot": "2026-11-23T20:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.court-vs-tennis-size",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pista: rectángulo de 10 m de ancho por 20 m de largo; ITF Rules of Tennis 2026, Rule 1: court 23.77 m long, 10.97 m wide (doubles)",
+   "caption": "Padel vs tennis court size: how much bigger is tennis? 🎾\n\nWatch and make your call – then send it to your tennis friend who says padel is 'mini tennis'.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelcourt",
+    "padelgear",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "compare",
+    "label": "Gear",
+    "claim": "A tennis court is twice as big as a padel court.",
+    "verdict": "FAULT",
+    "pill": "Only 1.3×",
+    "cols": [
+     "Padel",
+     "Tennis"
+    ],
+    "rows": [
+     [
+      "Length\nm",
+      "20",
+      "23.77",
+      false
+     ],
+     [
+      "Width\nm",
+      "10",
+      "10.97",
+      false
+     ],
+     [
+      "Area\nm²",
+      "200",
+      "261",
+      false
+     ]
+    ],
+    "line": "Tennis (doubles): **261 m²**.\nPadel: 200 m² – only 1.3×.",
+    "source": "FIP rules · ITF rules"
+   }
+  },
+  {
+   "id": "2026-11-24-reel",
+   "slot": "2026-11-24T20:00:00",
+   "pillar": "rules",
+   "topic_key": "rule.only-one-ball-left",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 17.1.e: el juego no continuará con solo una (1) pelota disponible para los jugadores",
+   "caption": "Padel ball rule: down to your last ball? 🎾\n\nWatch and make your call – then send it to the group that always loses balls over the fence.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelball",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Rules",
+    "claim": "You can keep playing with just one ball.",
+    "verdict": "FAULT",
+    "pill": "Not allowed",
+    "line": "Only one ball left:\n**play stops**.",
+    "source": "FIP rules · Rule 17"
+   }
+  },
+  {
+   "id": "2026-11-25-reel",
+   "slot": "2026-11-25T20:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.court-openings",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pista, accesos: un acceso a cada lado (mín. 1,05 × 2,00 m, máx. 2,20 × 2,20 m) o dos accesos a cada lado (mín. 0,72 × 2,00 m, máx. 1,10 × 2,20 m)",
+   "caption": "Padel court doors: how many ways out? 🚪\n\nWatch and make your call – then send it to the partner who always runs out to save the ball.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelcourt",
+    "padelgear",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Gear",
+    "claim": "A padel court can have two doors on each side.",
+    "verdict": "FAIR",
+    "pill": "1 or 2",
+    "line": "One or **two** openings\non each side.",
+    "source": "FIP rules · Court"
+   }
+  },
+  {
+   "id": "2026-11-26-reel",
+   "slot": "2026-11-26T20:00:00",
+   "pillar": "rules",
+   "topic_key": "rule.serve-net-post",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 9.1.a: net – la pelota toca la red o los postes que la sujetan y luego cae en el área de servicio del restador → se repite el saque",
+   "caption": "Padel serve rule: net cord or net post – same thing? 🥅\n\nWatch and make your call – then send it to the partner who argues about every serve.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelserve",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Rules",
+    "claim": "Your serve hits the net post, then lands in the box. You serve again.",
+    "verdict": "FAIR",
+    "pill": "Serve again",
+    "line": "Net **or post**, then in:\nserve again.",
+    "source": "FIP rules · Rule 9"
+   }
+  },
+  {
+   "id": "2026-11-27-reel",
+   "slot": "2026-11-27T20:00:00",
+   "pillar": "market",
+   "topic_key": "market.chile-courts",
+   "fact_source": "Global Padel Report 2026 (Playtomic + Strategy&/PwC, via padel1969.com): Chile 620+ clubs, about 2,300 courts. FIP World Padel Report 2026: keine Chile-Zahl veröffentlicht – kein Widerspruch",
+   "caption": "Padel in Chile: South America's hidden hotspot? 🇨🇱\n\nGuess the number before it stops – then send it to the friend who dreams of a padel trip to South America.\n\nSource: Global Padel Report 2026 (Playtomic)\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelquiz",
+    "padellife",
+    "padelworld"
+   ],
+   "spec": {
+    "format": "guess_number",
+    "label": "Market",
+    "claim": "Chile has more than 2,000 padel courts.",
+    "verdict": "FAIR",
+    "pill": "About 2,300",
+    "line": "About **2,300** courts\nin 620+ clubs.",
+    "number": 2300,
+    "decimals": 0,
+    "marker": 2000,
+    "unit": "padel courts in Chile",
+    "marker_label": "claim",
+    "source": "Global Padel Report 26"
+   }
+  },
+  {
+   "id": "2026-11-28-reel",
+   "slot": "2026-11-28T20:00:00",
+   "pillar": "gear",
+   "topic_key": "gear.floor-level",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), La pista, suelo: diferencias de nivel interiores inferiores a 3 mm medidos con regla de 3 m",
+   "caption": "Padel court floor: how flat is flat? 🪜\n\nWatch and make your call – then send it to the friend who blames the bounce for every miss.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelcourt",
+    "padelgear",
+    "padelquiz"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Gear",
+    "claim": "The court floor may have bumps of up to 1 cm.",
+    "verdict": "FAULT",
+    "pill": "Max 3 mm",
+    "line": "Max **3 mm** difference,\nmeasured with a 3 m ruler.",
+    "source": "FIP rules · Court"
+   }
+  },
+  {
+   "id": "2026-11-29-reel",
+   "slot": "2026-11-29T20:00:00",
+   "pillar": "rules",
+   "topic_key": "rule.tiebreak-change-ends",
+   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 5.2: en la muerte súbita (tie-break) los jugadores cambian de lado cada 6 tantos; Regla 2.10: 20 s",
+   "caption": "Padel tie-break rule: when do you switch sides? 🔄\n\nWatch and make your call – then send it to the partner who walks the wrong way at 3–3.\nFollow @fairorfault – your daily padel quiz.",
+   "hashtags": [
+    "padel",
+    "padelrules",
+    "padelquiz",
+    "padeltips"
+   ],
+   "spec": {
+    "format": "three_second_call",
+    "label": "Rules",
+    "claim": "In a tie-break, you switch sides every 6 points.",
+    "verdict": "FAIR",
+    "pill": "Every 6",
+    "line": "Switch sides after\n**every 6 points**.",
+    "source": "FIP rules · Rule 5"
+   }
+  }
+ ]
+}
