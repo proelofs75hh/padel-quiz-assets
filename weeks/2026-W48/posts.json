@@ -8,43 +8,49 @@
    "slot": "2026-11-23T07:30:00",
    "pillar": "rules",
    "series": "settle",
-   "topic_key": "rule.direct-opponent-fence",
-   "difficulty": "easy",
-   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.g: perderá el punto la pareja cuyo jugador … sin botar previamente, golpee cualquiera de las paredes del campo contrario, la malla metálica …; vgl. Regla 14.c (erst Bote, dann Malla = buena devolución)",
+   "topic_key": "rule.own-glass-then-opponent-fence",
+   "difficulty": "tricky",
+   "fact_source": "FIP Reglamento de Juego (fmpadel.com), Regla 13.1.g: perderá el punto la pareja cuyo jugador … sin botar previamente, golpee cualquiera de las paredes del campo contrario, la malla metálica …; Regla 14: Pelota darf über die eigenen Wände ins gegnerische Feld gespielt werden, muss dort aber zuerst aufspringen (14.1.c: erst Bote, dann Malla = buena devolución)",
    "slides": [
     {
      "type": "q",
-     "q": "Can your shot hit their fence before it bounces?",
-     "claim": "Your shot hits their fence before it bounces. You lose the point."
+     "q": "Can your back-glass shot hit their fence directly?",
+     "claim": "You play it off your own back glass and it hits their fence before it bounces. You lose the point."
     },
     {
      "type": "scene",
-     "text": "Your shot flies over the net and hits their fence. No bounce.",
+     "text": "Off your own back glass, then straight into their fence.",
      "scene": {
       "view": "side",
-      "net": 360,
+      "net": 460,
+      "glass": [
+       [
+        40,
+        200
+       ]
+      ],
       "fence": [
        [
-        840,
+        860,
         140,
         700
        ]
       ],
       "figures": [
        {
-        "x": 150,
+        "x": 200,
         "y": 528,
         "pose": "swing"
        }
       ],
       "path": [
-       "M230 430 Q 560 120, 836 380"
+       "M260 420 L 48 330 Q 460 40, 856 380"
       ],
       "ball": [
-       820,
+       840,
        380
       ],
-      "alt": "Side view: the ball flies over the net and hits the fence on the other side without bouncing"
+      "alt": "Side view: a player hits the ball against his own back glass, it flies over the net and hits the fence on the other side without bouncing"
      }
     },
     {
@@ -54,11 +60,11 @@
     {
      "type": "verdict",
      "verdict": "FAIR",
-     "line": "Their fence before the bounce:\n**point lost**.",
+     "line": "Own glass: fine.\nTheir fence first: **point lost**.",
      "source": "FIP rules · Rule 13"
     }
    ],
-   "caption": "Padel fence rule: bounce first, then the fence. 🧱\n\nYour shot flies over the net and smacks their fence – no bounce. Whose point is it?\n\nSend this to the partner who hits every ball as hard as possible.\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Padel fence rule: your own back glass doesn't save you. 🧱\n\nYou play the ball off your own back glass. It flies over the net and hits their fence – no bounce. Fair or fault?\n\nSend this to the partner who loves the back-glass trick shot.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padelrules",
@@ -71,34 +77,40 @@
    "slot": "2026-11-23T17:30:00",
    "pillar": "lingo",
    "series": "lingo",
-   "topic_key": "lingo.remate",
-   "difficulty": "easy",
-   "fact_source": "Padel Browser – How to hit a smash ('The smash is your outright winner … aiming to end the point'); Babolat – Padel shots ('The smash is the spectacular shot that finishes points'); HEAD – Beginner's guide ('the smash is often an attacking shot')",
+   "topic_key": "lingo.resto",
+   "difficulty": "medium",
+   "fact_source": "The Padel School – The perfect padel return ('The main objective of the return is to keep you in the point.'); Padel Browser – How to return serve in padel (2026: return should force the serving team to defend the back wall and buy time to get to the net; 'Block, place, advance.')",
    "slides": [
     {
      "type": "q",
-     "term": "Remate",
-     "say": "[re-MA-teh] · “finishing shot”",
-     "q": "What is the main goal of a remate?",
+     "term": "Resto",
+     "say": "[RES-toh] · “return of serve”",
+     "q": "What is the main goal of a resto?",
      "claim": "Its main goal is to win the point.",
      "scene": {
       "view": "side",
       "net": 560,
+      "glass": [
+       [
+        40,
+        220
+       ]
+      ],
       "figures": [
        {
-        "x": 300,
+        "x": 220,
         "y": 528,
-        "pose": "smash"
+        "pose": "forehand"
        }
       ],
       "path": [
-       "M330 230 Q 470 300, 760 690"
+       "M860 300 Q 560 200, 400 690 Q 340 520, 290 440"
       ],
       "ball": [
-       330,
-       230
+       290,
+       440
       ],
-      "alt": "Side view: a player hits a high ball from above his head down over the net"
+      "alt": "Side view: the serve bounces in front of a player near the back glass, who gets ready to hit it back"
      }
     },
     {
@@ -107,18 +119,18 @@
     },
     {
      "type": "verdict",
-     "verdict": "FAIR",
-     "line": "Main goal: **finish the point**.",
-     "source": "Padel Browser · Babolat",
-     "desc": "The smash: you hit a high ball hard and down from above your head."
+     "verdict": "FAULT",
+     "line": "Main goal: **stay in the point** and win the net.",
+     "source": "The Padel School · Padel Browser",
+     "desc": "The return of serve: block, lob or play it low – safe first."
     }
    ],
-   "caption": "Remate in padel: the shot everybody wants to hit. 💥\n\nIts main goal is to win the point. Fair or fault?\n\nSend it to the partner who smashes every lob – even the bad ones.\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Resto in padel: the return of serve that starts every rally. 🎾\n\nIts main goal is to win the point. Fair or fault?\n\nSend it to the partner who tries to kill every return.\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padeltips",
     "padelquiz",
-    "padelsmash"
+    "padellife"
    ]
   },
   {

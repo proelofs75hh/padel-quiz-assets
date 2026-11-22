@@ -7,21 +7,21 @@
    "slot": "2026-11-23T07:30:00",
    "series": "settle",
    "pillar": "rules",
-   "difficulty": "easy",
-   "claim": "Your shot hits their fence before it bounces. You lose the point.",
-   "question": "Can your shot hit their fence before it bounces?",
+   "difficulty": "tricky",
+   "claim": "You play it off your own back glass and it hits their fence before it bounces. You lose the point.",
+   "question": "Can your back-glass shot hit their fence directly?",
    "verdict": "FAIR",
-   "fact_source": "FIP Reglas del Pádel (rev. 01.01.2026), Regla 13.1.g: perderá el punto la pareja cuyo jugador … sin botar previamente, golpee cualquiera de las paredes del campo contrario, la malla metálica …; vgl. Regla 14.c (erst Bote, dann Malla = buena devolución)",
+   "fact_source": "FIP Reglamento de Juego (fmpadel.com), Regla 13.1.g: perderá el punto la pareja cuyo jugador … sin botar previamente, golpee cualquiera de las paredes del campo contrario, la malla metálica …; Regla 14: Pelota darf über die eigenen Wände ins gegnerische Feld gespielt werden, muss dort aber zuerst aufspringen (14.1.c: erst Bote, dann Malla = buena devolución)",
    "images": [
     "weeks/2026-W48/2026-11-23-am-1.jpg",
     "weeks/2026-W48/2026-11-23-am-2.jpg",
     "weeks/2026-W48/2026-11-23-am-3.jpg",
     "weeks/2026-W48/2026-11-23-am-4.jpg"
    ],
-   "caption": "Padel fence rule: bounce first, then the fence. 🧱\n\nYour shot flies over the net and smacks their fence – no bounce. Whose point is it?\n\nSend this to the partner who hits every ball as hard as possible.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
-   "rev": "a864cc734e",
+   "caption": "Padel fence rule: your own back glass doesn't save you. 🧱\n\nYou play the ball off your own back glass. It flies over the net and hits their fence – no bounce. Fair or fault?\n\nSend this to the partner who loves the back-glass trick shot.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
+   "rev": "5be1935b61",
    "status": "pending",
-   "note": "",
+   "note": "Zu einfach",
    "published": null,
    "error": ""
   },
@@ -31,20 +31,20 @@
    "slot": "2026-11-23T17:30:00",
    "series": "lingo",
    "pillar": "lingo",
-   "difficulty": "easy",
+   "difficulty": "medium",
    "claim": "Its main goal is to win the point.",
-   "question": "What is the main goal of a remate?",
-   "verdict": "FAIR",
-   "fact_source": "Padel Browser – How to hit a smash ('The smash is your outright winner … aiming to end the point'); Babolat – Padel shots ('The smash is the spectacular shot that finishes points'); HEAD – Beginner's guide ('the smash is often an attacking shot')",
+   "question": "What is the main goal of a resto?",
+   "verdict": "FAULT",
+   "fact_source": "The Padel School – The perfect padel return ('The main objective of the return is to keep you in the point.'); Padel Browser – How to return serve in padel (2026: return should force the serving team to defend the back wall and buy time to get to the net; 'Block, place, advance.')",
    "images": [
     "weeks/2026-W48/2026-11-23-pm-1.jpg",
     "weeks/2026-W48/2026-11-23-pm-2.jpg",
     "weeks/2026-W48/2026-11-23-pm-3.jpg"
    ],
-   "caption": "Remate in padel: the shot everybody wants to hit. 💥\n\nIts main goal is to win the point. Fair or fault?\n\nSend it to the partner who smashes every lob – even the bad ones.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padelsmash",
-   "rev": "fbe0c95fb2",
+   "caption": "Resto in padel: the return of serve that starts every rally. 🎾\n\nIts main goal is to win the point. Fair or fault?\n\nSend it to the partner who tries to kill every return.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
+   "rev": "fbdb0a8aae",
    "status": "pending",
-   "note": "",
+   "note": "Zu eindeutig",
    "published": null,
    "error": ""
   },
@@ -62,7 +62,7 @@
    "cover": "weeks/2026-W48/reels/2026-11-23-reel.cover.jpg",
    "caption": "Padel vs tennis court size: how much bigger is tennis? 🎾\n\nWatch and make your call – then send it to your tennis friend who says padel is 'mini tennis'.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelgear #padelquiz",
    "rev": "30c0ce6414",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -85,7 +85,7 @@
    ],
    "caption": "Padel court lines: is white the only option? 🎨\n\nCourt lines can also be black. Fair or fault?\n\nSend it to the friend who only plays on blue courts with white lines.\n\nPhoto: José Alejandro Cuffia / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelrules #padelquiz",
    "rev": "7987654059",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -108,7 +108,7 @@
    ],
    "caption": "Padel wall rule: can you lean on your own glass? 🖐️\n\nMid-rally you put your hand on your own back glass to keep your balance. Play on?\n\nSend this to the partner who hugs the back glass every rally.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "8b230f0d72",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -127,7 +127,7 @@
    "cover": "weeks/2026-W48/reels/2026-11-24-reel.cover.jpg",
    "caption": "Padel ball rule: down to your last ball? 🎾\n\nWatch and make your call – then send it to the group that always loses balls over the fence.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelball #padelquiz",
    "rev": "9b6cfdd8f0",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -151,7 +151,7 @@
    ],
    "caption": "Padel serve rule: the net cord that hits a player. 🎯\n\nYour serve clips the net and hits the receiver before it bounces. Your point?\n\nSend this to the partner who always stands too close to the net when receiving.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelserve #padelquiz",
    "rev": "2538b10f34",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -175,7 +175,7 @@
    ],
    "caption": "Padel clubs worldwide: how many are there? 🏟️\n\nHow many padel clubs are there in the world? Guess first, then swipe.\n\nSend it to the friend who wants to open a padel club one day.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padelclub #padelworld",
    "rev": "25f9eeb222",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -194,7 +194,7 @@
    "cover": "weeks/2026-W48/reels/2026-11-25-reel.cover.jpg",
    "caption": "Padel court doors: how many ways out? 🚪\n\nWatch and make your call – then send it to the partner who always runs out to save the ball.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelgear #padelquiz",
    "rev": "ab8f5fb8cf",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -217,7 +217,7 @@
    ],
    "caption": "Salida de pared in padel: let the glass work for you. 🪟\n\nIts main goal is to attack. Fair or fault?\n\nSend it to the partner who panics every time the ball goes past them.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
    "rev": "a23f5e7bd7",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -241,7 +241,7 @@
    ],
    "caption": "Padel serve rule: where does the bounce go? 🏓\n\nBefore your serve you bounce the ball on your partner's side of the centre line. Still a valid serve?\n\nSend this to the partner whose serve routine takes forever.\n\nPhoto: Filipp Romanovski / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelserve #padelquiz",
    "rev": "bc788283f1",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -260,7 +260,7 @@
    "cover": "weeks/2026-W48/reels/2026-11-26-reel.cover.jpg",
    "caption": "Padel serve rule: net cord or net post – same thing? 🥅\n\nWatch and make your call – then send it to the partner who argues about every serve.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelserve #padelquiz",
    "rev": "2966a7c0ca",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -284,7 +284,7 @@
    ],
    "caption": "Padel tie-break rule: who serves when? 🔁\n\nTie-break: you serve the first point. Do you serve the next one too?\n\nSend this to the group that argues at 6–6 every single time.\n\nPhoto: Bruno Vaccaro Vercellino / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "3948e5de6f",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -307,7 +307,7 @@
    ],
    "caption": "Padel court lines: where does the centre line stop? 📏\n\nThe centre line stops exactly at the service line. Fair or fault?\n\nSend it to the friend who knows every line on the court – or thinks so.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelrules #padelquiz",
    "rev": "eb88d62a0f",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -326,7 +326,7 @@
    "cover": "weeks/2026-W48/reels/2026-11-27-reel.cover.jpg",
    "caption": "Padel in Chile: South America's hidden hotspot? 🇨🇱\n\nGuess the number before it stops – then send it to the friend who dreams of a padel trip to South America.\n\nSource: Global Padel Report 2026 (Playtomic)\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelworld",
    "rev": "d927934160",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -350,7 +350,7 @@
    ],
    "caption": "Padel pro move: saving a ball that was already lost. 🧤\n\nThe lob is flying straight into his back glass – their mistake. But he volleys it anyway. Point lost?\n\nSend it to the partner who volleys everything out of habit.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "69c83ceab4",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -373,7 +373,7 @@
    ],
    "caption": "Padel rule for lucky shots: the ball stays on top of the wall. 🤯\n\nYour shot bounces on their side and comes to rest on top of their wall. Whose point?\n\nSend this to the friend who always has the luckiest shots.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padellife",
    "rev": "4904bcb532",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -392,7 +392,7 @@
    "cover": "weeks/2026-W48/reels/2026-11-28-reel.cover.jpg",
    "caption": "Padel court floor: how flat is flat? 🪜\n\nWatch and make your call – then send it to the friend who blames the bounce for every miss.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelgear #padelquiz",
    "rev": "015daa6dc9",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -416,7 +416,7 @@
    ],
    "caption": "Padel economy: how big is the business? 💶\n\nHow much money goes into padel every year – courts, gear, bookings? Guess, then swipe.\n\nSend it to the friend who says padel is just a trend.\n\nPhoto: P-squared Padel / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padelbusiness #padelworld",
    "rev": "dde5e73375",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -439,7 +439,7 @@
    ],
    "caption": "Padel court lighting: how bright for TV? 💡\n\nFor TV matches, a padel court needs at least 500 lux. Fair or fault?\n\nSend it to the friend who blames the lights for every missed smash.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelgear #padelquiz",
    "rev": "3859fce564",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
@@ -458,7 +458,7 @@
    "cover": "weeks/2026-W48/reels/2026-11-29-reel.cover.jpg",
    "caption": "Padel tie-break rule: when do you switch sides? 🔄\n\nWatch and make your call – then send it to the partner who walks the wrong way at 3–3.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "272bbd59d9",
-   "status": "pending",
+   "status": "approved",
    "note": "",
    "published": null,
    "error": ""
