@@ -740,9 +740,13 @@
    "cover": "weeks/2026-W47/reels/2026-11-22-reel.cover.jpg",
    "caption": "Padel match rules: how many balls are in play? 🎾\n\nWatch and make your call – then send it to the partner who always grabs a fresh can.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelball #padelquiz",
    "rev": "0ae45a88e9",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
+   "published": {
+    "media_id": "18083188070718981",
+    "permalink": "https://www.instagram.com/reel/DgDgfyAG6PB/",
+    "at": "2026-11-22T20:01:38+01:00"
+   },
    "error": ""
   }
  ]
