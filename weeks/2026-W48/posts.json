@@ -86,10 +86,10 @@
      "term": "Volea",
      "say": "[vo-LEH-ah] · “volley”",
      "q": "What is the main goal of a volea?",
-     "claim": "Its main goal is to win the point.",
+     "claim": "Its main goal is to hit the ball hard.",
      "scene": {
       "view": "side",
-      "net": 560,
+      "net": 680,
       "figures": [
        {
         "x": 400,
@@ -98,28 +98,28 @@
        }
       ],
       "path": [
-       "M860 330 Q 640 250, 470 400"
+       "M890 280 Q 760 230, 615 400"
       ],
       "ball": [
-       470,
+       615,
        400
       ],
-      "alt": "Side view: a player close to the net is about to hit the ball before it bounces"
+      "alt": "Side view: a player close to the net meets the ball with the racket before it bounces"
      }
     },
     {
      "type": "claim",
-     "text": "Its main goal is to win the point."
+     "text": "Its main goal is to hit the ball hard."
     },
     {
      "type": "verdict",
      "verdict": "FAULT",
-     "line": "Main goal: **keep the net** and build pressure.",
-     "source": "LTA Padel · Babolat",
-     "desc": "The volley: you hit the ball before it bounces – placed, not hard."
+     "line": "Main goal: **placement** – deep or at their feet.",
+     "source": "Babolat · LTA Padel",
+     "desc": "The volley: you hit the ball before it bounces, close to the net."
     }
    ],
-   "caption": "Volea in padel: the volley – the most common shot at the net. 🎾\n\nIts main goal is to win the point. Fair or fault?\n\nSend it to the partner who tries to smash every volley.\nWhat's your call – and why?\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Volea in padel: the volley – the most common shot at the net. 🎾\n\nIts main goal is to hit the ball hard. Fair or fault?\n\nSend it to the partner who tries to smash every volley.\nWhat's your call – and why?\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padeltips",
