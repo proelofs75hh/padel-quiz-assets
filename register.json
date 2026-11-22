@@ -1247,6 +1247,195 @@
    "claim": "An official match is played with 4 balls.",
    "verdict": "FAULT",
    "format": "reel"
+  },
+  {
+   "id": "2026-11-23-am",
+   "date": "2026-11-23",
+   "pillar": "rules",
+   "topic_key": "rule.direct-opponent-fence",
+   "claim": "Your shot hits their fence before it bounces. You lose the point.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-23-pm",
+   "date": "2026-11-23",
+   "pillar": "lingo",
+   "topic_key": "lingo.remate",
+   "claim": "Its main goal is to win the point.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-24-am",
+   "date": "2026-11-24",
+   "pillar": "gear",
+   "topic_key": "gear.line-colour",
+   "claim": "Court lines can also be black.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-24-pm",
+   "date": "2026-11-24",
+   "pillar": "rules",
+   "topic_key": "rule.touch-own-glass",
+   "claim": "During the rally you touch your own back glass with your hand. The rally goes on.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-25-am",
+   "date": "2026-11-25",
+   "pillar": "rules",
+   "topic_key": "rule.serve-net-then-receiver",
+   "claim": "Your serve clips the net, then hits the receiver before it bounces. You win the point.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-25-pm",
+   "date": "2026-11-25",
+   "pillar": "market",
+   "topic_key": "market.clubs-worldwide",
+   "claim": "There are more than 20,000 padel clubs worldwide.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-26-am",
+   "date": "2026-11-26",
+   "pillar": "lingo",
+   "topic_key": "lingo.salida-de-pared",
+   "claim": "Its main goal is to attack.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-26-pm",
+   "date": "2026-11-26",
+   "pillar": "rules",
+   "topic_key": "rule.serve-bounce-in-own-box",
+   "claim": "You bounce the ball on your partner's side of the centre line, then serve. That's a valid serve.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-27-am",
+   "date": "2026-11-27",
+   "pillar": "rules",
+   "topic_key": "rule.tiebreak-serve-rotation",
+   "claim": "Tie-break: you serve the first point. You also serve the next point.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-27-pm",
+   "date": "2026-11-27",
+   "pillar": "gear",
+   "topic_key": "gear.centre-line-extension",
+   "claim": "The centre line stops exactly at the service line.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-28-am",
+   "date": "2026-11-28",
+   "pillar": "pros",
+   "topic_key": "pros.volley-ball-heading-to-glass",
+   "claim": "Their lob flies straight at his back glass. He volleys it first. He loses the point.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-28-pm",
+   "date": "2026-11-28",
+   "pillar": "rules",
+   "topic_key": "rule.ball-stops-on-wall-top",
+   "claim": "Your shot bounces on their side, then stops on top of their wall. You win the point.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-29-am",
+   "date": "2026-11-29",
+   "pillar": "market",
+   "topic_key": "market.annual-spending",
+   "claim": "Almost €7 billion is spent on padel every year.",
+   "verdict": "FAIR",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-29-pm",
+   "date": "2026-11-29",
+   "pillar": "gear",
+   "topic_key": "gear.tv-lighting",
+   "claim": "TV matches need at least 500 lux.",
+   "verdict": "FAULT",
+   "format": "carousel"
+  },
+  {
+   "id": "2026-11-23-reel",
+   "date": "2026-11-23",
+   "pillar": "gear",
+   "topic_key": "gear.court-vs-tennis-size",
+   "claim": "A tennis court is twice as big as a padel court.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-24-reel",
+   "date": "2026-11-24",
+   "pillar": "rules",
+   "topic_key": "rule.only-one-ball-left",
+   "claim": "You can keep playing with just one ball.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-25-reel",
+   "date": "2026-11-25",
+   "pillar": "gear",
+   "topic_key": "gear.court-openings",
+   "claim": "A padel court can have two doors on each side.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-26-reel",
+   "date": "2026-11-26",
+   "pillar": "rules",
+   "topic_key": "rule.serve-net-post",
+   "claim": "Your serve hits the net post, then lands in the box. You serve again.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-27-reel",
+   "date": "2026-11-27",
+   "pillar": "market",
+   "topic_key": "market.chile-courts",
+   "claim": "Chile has more than 2,000 padel courts.",
+   "verdict": "FAIR",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-28-reel",
+   "date": "2026-11-28",
+   "pillar": "gear",
+   "topic_key": "gear.floor-level",
+   "claim": "The court floor may have bumps of up to 1 cm.",
+   "verdict": "FAULT",
+   "format": "reel"
+  },
+  {
+   "id": "2026-11-29-reel",
+   "date": "2026-11-29",
+   "pillar": "rules",
+   "topic_key": "rule.tiebreak-change-ends",
+   "claim": "In a tie-break, you switch sides every 6 points.",
+   "verdict": "FAIR",
+   "format": "reel"
   }
  ]
 }
