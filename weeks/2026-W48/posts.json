@@ -77,40 +77,34 @@
    "slot": "2026-11-23T17:30:00",
    "pillar": "lingo",
    "series": "lingo",
-   "topic_key": "lingo.resto",
+   "topic_key": "lingo.volea",
    "difficulty": "medium",
-   "fact_source": "The Padel School – The perfect padel return ('The main objective of the return is to keep you in the point.'); Padel Browser – How to return serve in padel (2026: return should force the serving team to defend the back wall and buy time to get to the net; 'Block, place, advance.')",
+   "fact_source": "LTA Padel – Volleys ('Most points in padel are won at the net'; push volley: 'push the ball back deep … to put them under pressure'; block volley 'more defensive'); Babolat – Padel techniques ('The volley is the most frequent shot in padel. The goal is to direct it toward your opponent's feet or angles.' 'Precision always outweighs power at the net.')",
    "slides": [
     {
      "type": "q",
-     "term": "Resto",
-     "say": "[RES-toh] · “return of serve”",
-     "q": "What is the main goal of a resto?",
+     "term": "Volea",
+     "say": "[vo-LEH-ah] · “volley”",
+     "q": "What is the main goal of a volea?",
      "claim": "Its main goal is to win the point.",
      "scene": {
       "view": "side",
       "net": 560,
-      "glass": [
-       [
-        40,
-        220
-       ]
-      ],
       "figures": [
        {
-        "x": 220,
+        "x": 400,
         "y": 528,
         "pose": "forehand"
        }
       ],
       "path": [
-       "M860 300 Q 560 200, 400 690 Q 340 520, 290 440"
+       "M860 330 Q 640 250, 470 400"
       ],
       "ball": [
-       290,
-       440
+       470,
+       400
       ],
-      "alt": "Side view: the serve bounces in front of a player near the back glass, who gets ready to hit it back"
+      "alt": "Side view: a player close to the net is about to hit the ball before it bounces"
      }
     },
     {
@@ -120,12 +114,12 @@
     {
      "type": "verdict",
      "verdict": "FAULT",
-     "line": "Main goal: **stay in the point** and win the net.",
-     "source": "The Padel School · Padel Browser",
-     "desc": "The return of serve: block, lob or play it low – safe first."
+     "line": "Main goal: **keep the net** and build pressure.",
+     "source": "LTA Padel · Babolat",
+     "desc": "The volley: you hit the ball before it bounces – placed, not hard."
     }
    ],
-   "caption": "Resto in padel: the return of serve that starts every rally. 🎾\n\nIts main goal is to win the point. Fair or fault?\n\nSend it to the partner who tries to kill every return.\nFollow @fairorfault – your daily padel quiz.",
+   "caption": "Volea in padel: the volley – the most common shot at the net. 🎾\n\nIts main goal is to win the point. Fair or fault?\n\nSend it to the partner who tries to smash every volley.\nWhat's your call – and why?\nFollow @fairorfault – your daily padel quiz.",
    "hashtags": [
     "padel",
     "padeltips",
