@@ -94,10 +94,14 @@
    ],
    "caption": "Padel court lines: is white the only option? 🎨\n\nCourt lines can also be black. Fair or fault?\n\nSend it to the friend who only plays on blue courts with white lines.\n\nPhoto: José Alejandro Cuffia / Unsplash\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelcourt #padelrules #padelquiz",
    "rev": "7987654059",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18013504100991305",
+    "permalink": "https://www.instagram.com/p/DgH-Y93l4nS/",
+    "at": "2026-11-24T13:39:27+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
