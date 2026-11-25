@@ -202,10 +202,14 @@
    ],
    "caption": "Padel clubs worldwide: how many are there? 🏟️\n\nHow many padel clubs are there in the world? Guess first, then swipe.\n\nSend it to the friend who wants to open a padel club one day.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padelclub #padelworld",
    "rev": "25f9eeb222",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18031923761925533",
+    "permalink": "https://www.instagram.com/p/DgLJFVXoF20/",
+    "at": "2026-11-25T19:10:37+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
