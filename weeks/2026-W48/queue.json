@@ -126,10 +126,10 @@
    ],
    "caption": "Padel wall rule: can you lean on your own glass? 🖐️\n\nMid-rally you put your hand on your own back glass to keep your balance. Play on?\n\nSend this to the partner who hugs the back glass every rally.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "8b230f0d72",
-   "status": "approved",
+   "status": "failed",
    "note": "",
    "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "error": "too late: slot 2026-11-24T17:30:00, now 2026-11-25 01:09",
    "attempts": 1
   },
   {
@@ -146,9 +146,13 @@
    "cover": "weeks/2026-W48/reels/2026-11-24-reel.cover.jpg",
    "caption": "Padel ball rule: down to your last ball? 🎾\n\nWatch and make your call – then send it to the group that always loses balls over the fence.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelball #padelquiz",
    "rev": "9b6cfdd8f0",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
+   "published": {
+    "media_id": "18146337820715637",
+    "permalink": "https://www.instagram.com/reel/DgJNcfLBbLF/",
+    "at": "2026-11-25T01:10:33+01:00"
+   },
    "error": ""
   },
   {
