@@ -253,10 +253,14 @@
    ],
    "caption": "Salida de pared in padel: let the glass work for you. 🪟\n\nIts main goal is to attack. Fair or fault?\n\nSend it to the partner who panics every time the ball goes past them.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padeltips #padelquiz #padellife",
    "rev": "a23f5e7bd7",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "POST 17841415471891360/media -> HTTP 400 9004/2207052: Only photo or video can be accepted as media type.",
+   "published": {
+    "media_id": "18029017913936334",
+    "permalink": "https://www.instagram.com/p/DgM79kcF-kL/",
+    "at": "2026-11-26T11:54:26+01:00"
+   },
+   "error": "",
    "attempts": 2
   },
   {
