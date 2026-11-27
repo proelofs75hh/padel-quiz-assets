@@ -111,7 +111,7 @@
   {
    "id": "2026-11-24-pm",
    "kind": "carousel",
-   "slot": "2026-11-24T17:30:00",
+   "slot": "2026-11-28T12:30:00",
    "series": "settle",
    "pillar": "rules",
    "difficulty": "medium",
@@ -126,11 +126,10 @@
    ],
    "caption": "Padel wall rule: can you lean on your own glass? 🖐️\n\nMid-rally you put your hand on your own back glass to keep your balance. Play on?\n\nSend this to the partner who hugs the back glass every rally.\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelrules #padelquiz #padeltips",
    "rev": "8b230f0d72",
-   "status": "failed",
+   "status": "approved",
    "note": "",
    "published": null,
-   "error": "too late: slot 2026-11-24T17:30:00, now 2026-11-25 01:09",
-   "attempts": 1
+   "error": ""
   },
   {
    "id": "2026-11-24-reel",

@@ -19,6 +19,7 @@ on:
     paths: ["ops/run-request.json"]
 permissions:
   contents: write
+  actions: write   # lets the run re-start itself (see last step)
 concurrency:
   group: instagram-publish
   cancel-in-progress: false
@@ -77,3 +78,13 @@ jobs:
               done ;;
           esac
           [ -z "$FAIL" ]
+      - name: Re-start itself (GitHub's schedule is unreliable, often hours apart)
+        # Only for publish loops; stops by itself when no approved post is waiting.
+        if: always() && github.event_name != 'push' && (github.event.inputs.mode == '' || github.event.inputs.mode == 'publish')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull -q --rebase || true
+          WAITING=$(python3 -c "import json,glob;print(sum(i.get('status')=='approved' and not i.get('published') for f in glob.glob('weeks/*/queue.json') for i in json.load(open(f))['items']))")
+          echo "approved posts waiting: $WAITING"
+          if [ "$WAITING" -gt 0 ]; then gh workflow run publish.yml --ref main -f mode=publish; fi
