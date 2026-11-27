@@ -382,10 +382,14 @@
    "cover": "weeks/2026-W48/reels/2026-11-27-reel.cover.jpg",
    "caption": "Padel in Chile: South America's hidden hotspot? 🇨🇱\n\nGuess the number before it stops – then send it to the friend who dreams of a padel trip to South America.\n\nSource: Global Padel Report 2026 (Playtomic)\nFollow @fairorfault – your daily padel quiz.\n\n#padel #padelquiz #padellife #padelworld",
    "rev": "d927934160",
-   "status": "approved",
+   "status": "published",
    "note": "",
-   "published": null,
-   "error": "container 18160682413515730 status ERROR",
+   "published": {
+    "media_id": "18109661315322064",
+    "permalink": "https://www.instagram.com/reel/DgQYmxahaCg/",
+    "at": "2026-11-27T20:02:48+01:00"
+   },
+   "error": "",
    "attempts": 1
   },
   {
